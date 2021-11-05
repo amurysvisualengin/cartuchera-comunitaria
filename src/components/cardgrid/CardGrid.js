@@ -33,6 +33,7 @@ const CardGrid = () => {
                 color={element.color}
                 type={element.type}
                 cardContent={element.cardType}
+                cardNumber={element.cardNumber}
               />
             )}
           </div>

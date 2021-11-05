@@ -2,11 +2,19 @@
   font-family: "KGHAPPY-solid";
   src: url("./assets/fonts/KGHAPPYSolid.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "KGHAPPY";
+  src: url("./assets/fonts/KGHAPPY.ttf") format("truetype");
+}
 .custom-font {
   font-family: "KGHAPPY-solid";
-  letter-spacing: -0.1rem;
-  
+  /* letter-spacing: -0.1rem; */
 }
+.custom-font-shadow {
+  font-family: "KGHAPPY";
+}
+
 .App {
   text-align: center;
 }

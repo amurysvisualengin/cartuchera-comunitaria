@@ -1,43 +1,104 @@
-import React from "react";
-import SocialMedia from "../socialMedia/SocialMedia";
+import React, { useContext } from "react";
 import "./CardContentPdf.css";
+import CardListContext from "../../context/CardListContext";
 
-const cardContentPdf = (props) => {
-  const { cardContent, title, img } = props;
+const CardContentPdf = (props) => {
+  const { cardContent, title, img, color } = props;
+  const { isMobile } = useContext(CardListContext);
+
   return (
-    <div className="flex justify-center items-center mt-24 m-4 mb-8">
-      <div className="flex">
-        <img src={img} alt="icon type" className="w-96  " />
-        <div className="block text-left ml-14 mt-12">
-          <h2 className="font-bold">Herramientas</h2>
-          <br />
-          <h1 className="text-black text-6xl leading-11 w-96 custom-font">
-            {title}
-          </h1>
-          <h2 className="subtitle-width w-102">{cardContent.subTitle}</h2>
-          {/* <h2>{cardContent.pdf}</h2> */}
-          <div className="flex">
-            {cardContent.pdf.map((e, index) => (
-              <a
-                key={index}
-                href={e.url}
-                target="_blank"
-                rel="noreferrer"
-                className="border-2 border-black px-3 p-2 flex text-white mt-8 rounded-md button-color mr-10"
-              >
-                <img src={e.pdfIcon} alt="" className="mr-3" />
-                {e.name}
-              </a>
+    <div className="flex justify-center  mt-8 lg:mt-20 ">
+      {!isMobile && <img src={img} alt="" className="mr-16 w-32 h-12" />}
+      <div className="block w-96 ml-4 lg:mr-0 lg:w-104 ">
+        <p
+          className="bg-black w-24 lg:w-32 rounded px-2 py-1 text-xs lg:text-base "
+          style={{ color: color }}
+        >
+          HERRAMIENTA
+        </p>
+        <h1 className="custom-font-shadow text-3xl lg:text-6xl mt-6 text-left lg:leading-11">
+          {title}
+        </h1>
+        <div className="text-left mt-3">
+          <h2 className="lg:custom-font lg:text-2xl w-72">
+            {cardContent.subTitle}
+          </h2>
+          <p className="custom-font text-xs lg:text-xs mt-6">
+            ANTES DE EMPEZAR:
+          </p>
+        </div>
+
+        {
+          <div className="lg:flex lg:w-101">
+            {cardContent.beforeStarting.map((element, index) => (
+              <div className="block text-left text-xs border-2 rounded border-black mr-3 w-84 lg:w-60 mb-4 lg:mb-0 ">
+                <div
+                  className="flex lg:flex-grow bg-black custom-font p-2 "
+                  style={{ color: color }}
+                >
+                  <h3
+                    className="mr-4 text-black  rounded-full"
+                    style={{ background: color }}
+                  >
+                    {element.step}
+                  </h3>
+                  <h3 className="items-center">
+                    {element.statement.toUpperCase()}
+                  </h3>
+                </div>
+                <p className="m-4 lg:text-base">{element.sentence}</p>
+                <div className="flex mb-6 justify-center">
+                  {element.pdf && (
+                    <a
+                      href={element.pdf}
+                      className="bg-white p-3 px-8 custom-font rounded"
+                    >
+                      {element.pdfButton}
+                    </a>
+                  )}
+                </div>
+              </div>
             ))}
           </div>
+        }
 
-          <div className="text-left items-start mt-16 container w-full">
-            <SocialMedia />
-          </div>
+        <p className="custom-font text-xs text-left mt-6 mb-1">
+          ¡YA ESTOY LISTX!
+        </p>
+
+        <div className="lg:flex lg:w-101">
+          {cardContent.allReady.map((element, index) => (
+            <div className="block text-left border-2 border-black rounded w-84 mr-4 flex-grow mt-4 lg:mt-0">
+              <div className="flex bg-black p-2">
+                <h3
+                  className="custom-font text-xs mr-4 "
+                  style={{ color: color }}
+                >
+                  {element.step}
+                </h3>
+                <h3 className="custom-font text-xs" style={{ color: color }}>
+                  {element.statement.toUpperCase()}
+                </h3>
+              </div>
+              <p className="m-4 text-xs lg:text-base">{element.sentence}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className=" text-left border-2 border-black w-84 lg:w-100.5 mt-4 mb-16 rounded">
+          <h3
+            className="custom-font text-xs bg-black p-3 "
+            style={{ color: color }}
+          >
+            AL TERMINAR...{cardContent.finishAction}
+          </h3>
+          <p className="mx-4 mb-2 mt-2 whitespace-pre-wrap text-xs lg:text-base ">
+            {cardContent.note1}
+          </p>
         </div>
       </div>
     </div>
   );
 };
 
-export default cardContentPdf;
+export default CardContentPdf;

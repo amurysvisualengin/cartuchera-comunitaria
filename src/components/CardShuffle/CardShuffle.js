@@ -3,6 +3,7 @@ import "./CardShuffle.css";
 import "../../App.css";
 import Mezcla from "../../assets/imgs/mezcla_icon.svg";
 import CardListContext from "../../context/CardListContext";
+import FilterMobile from "../filterMobile/FilterMobile";
 
 const CardShuffle = (props) => {
   const { list, setList } = props;
@@ -14,44 +15,49 @@ const CardShuffle = (props) => {
   };
   if (isMobile) {
     return (
-      <button
-        onClick={() => {
-          handleClick();
-        }}
-        className="button-mix mt-20 p-6 flex"
-      >
-        <img src={Mezcla} alt="Mezcla" />
-        <label htmlFor="button" className="text-white ml-2 cursor-pointer">
-          Mezcla
-        </label>
-      </button>
+      <div className="flex">
+        <FilterMobile />
+        <button
+          onClick={() => {
+            handleClick();
+          }}
+          onTouchStart={() => {
+            handleClick();
+          }}
+          className="mt-24 ml-1 w-32 flex "
+        >
+          <img src={Mezcla} alt="Mezcla" className="ml-5" />
+          <label
+            htmlFor="button"
+            className="text-white ml-2 mr-2 cursor-pointer"
+          ></label>
+        </button>
+      </div>
     );
   }
 
   return (
-    <div
-      className={`p-5 pt-6 pr-7 pb-6 m-2 mr-4 text-center card-item bg-black `}
-    >
-      <h2
+    <div className={`p-5 pt-6 w-48 h-72 ml-2  mr-4 card-item bg-black `}>
+      <div>
+        <button
+          onClick={() => {
+            handleClick();
+          }}
+          className="flex"
+        >
+          <img src={Mezcla} alt="Mezcla" />
+          <label
+            htmlFor="button"
+            className="text-white ml-2 mb-40 cursor-pointer"
+          ></label>
+        </button>
+      </div>
+      <p
         style={{ maxWidth: "7.5rem" }}
-        className="text-white text-sm custom-font"
+        className="text-white font-bold text-sm "
       >
-        Prueba suerte
-      </h2>
-      <p style={{ maxWidth: "7.5rem" }} className="text-white  mt-4">
         Mezcla las cartas y descubre nuevas Herramientas.
       </p>
-      <button
-        onClick={() => {
-          handleClick();
-        }}
-        className="button-mix mt-20 p-6 flex"
-      >
-        <img src={Mezcla} alt="Mezcla" />
-        <label htmlFor="button" className="text-white ml-2 cursor-pointer">
-          Mezcla
-        </label>
-      </button>
     </div>
   );
 };
