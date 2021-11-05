@@ -1,0 +1,240 @@
+[
+  {
+    "id": "construccion-paticipativa",
+    "title": "Construcción Participativa",
+    "img": "./images/construccion-participativa.svg",
+    "color": "#BCBC68",
+    "type": "Audiovisual",
+    "typeId": "audio-visual",
+    "cardType": {
+      "url": "<iframe width= '980' height='500' src='https://www.youtube.com/embed/DG2rSpoWA_E' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    }
+  },
+
+  {
+    "id": "procesos-comunitarios",
+    "title": "Procesos Comunitarios",
+    "img": "./images/procesos-comunitarios.svg",
+    "color": "#A9C0CF",
+    "type": "Rompehielos",
+    "typeId": "rompehielos",
+    "cardType": {
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo."
+    }
+  },
+  {
+    "id": "justicia-narrativa",
+    "title": "Justicia Narrativa",
+    "img": "./images/justicia-narrativa.svg",
+    "color": "#F0B07F",
+    "type": "Herramientas",
+    "typeId": "herramientas",
+    "cardType": {
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo.",
+      "pdf": [
+        {
+          "pdfIcon": "./images/icons/PDF.svg",
+          "name": "Download PDF",
+          "url": "http://www.africau.edu/images/default/sample.pdf"
+        },
+        {
+          "pdfIcon": "./images/icons/PDF.svg",
+          "name": "Download PDF",
+          "url": "http://www.africau.edu/images/default/sample.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "taller-imaginario",
+    "title": "Talleres Imaginario",
+    "img": "./images/talleres-de-imaginario.svg",
+    "color": "#D0AE6D",
+    "type": "Herramientas",
+    "typeId": "herramientas",
+    "cardType": {
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo.",
+      "pdf": [
+        {
+          "pdfIcon": "./images/icons/PDF.svg",
+          "name": "Download PDF",
+          "url": "http://www.africau.edu/images/default/sample.pdf"
+        },
+        {
+          "pdfIcon": "./images/icons/PDF.svg",
+          "name": "Download PDF",
+          "url": "http://www.africau.edu/images/default/sample.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mapeo-comunitario",
+    "title": "Mapeo Comunitario",
+    "img": "./images/mapeo-comunitario.svg",
+    "color": "#CE6F5A",
+    "type": "Herramientas",
+    "typeId": "herramientas",
+    "cardType": {
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo.",
+      "pdf": [
+        {
+          "pdfIcon": "./images/icons/PDF.svg",
+          "name": "Download PDF",
+          "url": "http://www.africau.edu/images/default/sample.pdf"
+        },
+        {
+          "pdfIcon": "./images/icons/PDF.svg",
+          "name": "Download PDF",
+          "url": "http://www.africau.edu/images/default/sample.pdf"
+        }
+      ]
+    }
+  },
+
+  {
+    "id": "construccion-paticipativa",
+    "title": "Construcción Participativa",
+    "img": "./images/construccion-participativa.svg",
+    "color": "#BCBC68",
+    "type": "Rompehielos",
+    "typeId": "rompehielos",
+    "cardType": {
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo."
+    }
+  },
+  {
+    "id": "procesos-comunitarios",
+    "title": "Procesos Comunitarios",
+    "img": "./images/procesos-comunitarios.svg",
+    "color": "#A9C0CF",
+    "type": "Audiovisual",
+    "typeId": "audio-visual",
+    "cardType": {
+      "url": "<iframe width='980' height='500' src='https://www.youtube.com/embed/DG2rSpoWA_E' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    }
+  },
+  {
+    "id": "justicia-narrativa",
+    "title": "Justicia Narrativa",
+    "img": "./images/justicia-narrativa.svg",
+    "color": "#F0B07F",
+    "type": "Rompehielos",
+    "typeId": "rompehielos",
+    "cardType": {
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo."
+    }
+  },
+  {
+    "id": "taller-imaginario",
+    "title": "Talleres Imaginario",
+    "img": "./images/talleres-de-imaginario.svg",
+    "color": "#D0AE6D",
+    "type": "Audiovisual",
+    "typeId": "audio-visual",
+    "cardType": {
+      "url": "<iframe width='980' height='500' src='https://www.youtube.com/embed/DG2rSpoWA_E' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    }
+  },
+  {
+    "id": "mapeo-comunitario",
+    "title": "Mapeo Comunitario",
+    "img": "./images/mapeo-comunitario.svg",
+    "color": "#CE6F5A",
+    "type": "Rompehielos",
+    "typeId": "rompehielos",
+    "cardType": {
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo."
+    }
+  },
+
+  {
+    "id": "construccion-paticipativa",
+    "title": "Construcción Participativa",
+    "img": "./images/construccion-participativa.svg",
+    "color": "#BCBC68",
+    "type": "Herramientas",
+    "typeId": "herramientas",
+    "cardType": {
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicaboLorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo.",
+      "pdf": [
+        {
+          "pdfIcon": "./images/icons/PDF.svg",
+          "name": "Download PDF",
+          "url": "http://www.africau.edu/images/default/sample.pdf"
+        },
+        {
+          "pdfIcon": "./images/icons/PDF.svg",
+          "name": "Download PDF",
+          "url": "http://www.africau.edu/images/default/sample.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "procesos-comunitarios",
+    "title": "Procesos Comunitarios",
+    "img": "./images/procesos-comunitarios.svg",
+    "color": "#A9C0CF",
+    "type": "Herramientas",
+    "typeId": "herramientas",
+    "cardType": {
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo.",
+      "pdf": [
+        {
+          "pdfIcon": "./images/icons/PDF.svg",
+          "name": "Download PDF",
+          "url": "http://www.africau.edu/images/default/sample.pdf"
+        },
+        {
+          "pdfIcon": "./images/icons/PDF.svg",
+          "name": "Download PDF",
+          "url": "http://www.africau.edu/images/default/sample.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "justicia-narrativa",
+    "title": "Justicia Narrativa",
+    "img": "./images/justicia-narrativa.svg",
+    "color": "#F0B07F",
+    "type": "Audiovisual",
+    "typeId": "audio-visual",
+    "cardType": {
+      "url": "<iframe width='980' height='500' src='https://www.youtube.com/embed/DG2rSpoWA_E' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    }
+  },
+  {
+    "id": "taller-imaginario",
+    "title": "Talleres Imaginario",
+    "img": "./images/talleres-de-imaginario.svg",
+    "color": "#D0AE6D",
+    "type": "Rompehielos",
+    "typeId": "rompehielos",
+    "cardType": {
+      "subTitle": "Write subtitle here",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe incidunt quaerat quisquam omnis quas. Ad molestias, nisi distinctio culpa, maiores, eum odio dolorum vero et atque adipisci delectus? Enim, explicabo."
+    }
+  },
+  {
+    "id": "mapeo-comunitario",
+    "title": "Mapeo Comunitario",
+    "img": "./images/mapeo-comunitario.svg",
+    "color": "#CE6F5A",
+    "type": "Audiovisual",
+    "typeId": "audio-visual",
+    "cardType": {
+      "url": "<iframe width='980' height='500' src='https://www.youtube.com/embed/DG2rSpoWA_E' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    }
+  }
+]
