@@ -7,37 +7,46 @@ import SocialMedia from "../socialMedia/SocialMedia";
 import Rompehielos from "../../assets/icons/Rompehielos.svg";
 import Audiovisuales from "../../assets/icons/Audiovisuales.svg";
 import Herramientas from "../../assets/icons/Herramientas.svg";
+import CartucheraLogo from "../../assets/icons/cartuchera-logo.svg";
+import Check from "../../assets/icons/check.svg";
+import Presentacion from "../../assets/icons/presentacion.svg";
 
 const Sidebar = (props) => {
   const filters = [
     {
       id: "construccion-paticipativa",
       title: "Construcción Participativa",
-      color: "#BCBC68",
+      color: "#BEBE3B",
     },
     {
       id: "justicia-narrativa",
       title: "Justicia Narrativa",
-      color: "#F0B07F",
+      color: "#F9A66B",
     },
     {
       id: "procesos-comunitarios",
       title: "Procesos Comunitarios",
-      color: "#A9C0CF",
+      color: "#9BC2D4",
     },
     {
       id: "mapeo-comunitario",
       title: "Mapeo Comunitario",
-      color: "#CE6F5A",
+      color: "#EF604B",
     },
     {
       id: "taller-imaginario",
       title: "Taller Imaginario",
-      color: "#D0AE6D",
+      color: "#E1AC47",
     },
   ];
 
   const types = [
+    {
+      typeId: "presentation",
+      name: "Pesentación",
+      type: "image",
+      src: Presentacion,
+    },
     {
       typeId: "rompehielos",
       name: "Rompehielos",
@@ -52,7 +61,13 @@ const Sidebar = (props) => {
     },
     {
       typeId: "audio-visual",
-      name: "Audiovisuales",
+      name: "Video",
+      type: "image",
+      src: Audiovisuales,
+    },
+    {
+      typeId: "photo",
+      name: "Fotos",
       type: "image",
       src: Audiovisuales,
     },
@@ -71,13 +86,17 @@ const Sidebar = (props) => {
     <div
       style={{ maxWidth: "443px" }}
       className={`p-12 w2/3 sidebar ${
-        isSidebarVisible ? "block" : "hidden"
+        isSidebarVisible ? "block mt-0" : "hidden"
       } lg:block`}
     >
-      <h1 className="text-2xl custom-font">Cartuchera comunitaria</h1>
-      <p className="text-gray-400 mt-4">Lorem ipsum dolor sit amet. </p>
+      <img src={CartucheraLogo} alt="" />
+      <div className="flex mt-16">
+        <img src={Check} alt="" className="mr-4" />
+        <h1 className="text-3xl custom-font">Intrucciones</h1>
+      </div>
+
       <div className="kits mt-14 items-center">
-        <h2 className="ml-7 text-xl custom-font">Ordenar por Kit</h2>
+        <h2 className=" text-xl text-left custom-font">Ordenar por Kit:</h2>
         <div className="text-center mt-4 custom-font">
           {filters.map((element) => (
             <div
@@ -98,10 +117,10 @@ const Sidebar = (props) => {
           ))}
         </div>
       </div>
-      <div className="ml-2 types mt-14">
+      <div className=" types w-96 mt-14">
         <div className="types-checkbox-parent">
-          <div className="p-8 h-72 w-80 shadow-md rounded-md order-type-bg">
-            <h2 className="text-xl custom-font">Ordenar por tipo</h2>
+          <div className="mr-14 h-80 rounded-md">
+            <h2 className="text-xl custom-font">Ordenar por tipo:</h2>
             {types.map((element) => (
               <div
                 onClick={() => {
@@ -109,15 +128,14 @@ const Sidebar = (props) => {
                     setTypeFilter("");
                   } else setTypeFilter(element.typeId);
                 }}
-                //bold
-                className={`flex text-center text-white mt-4 p-2 rounded-md cursor-pointer bg-checkbox custom-font ${
+                className={`flex text-center text-white mt-4 p-4 rounded-md cursor-pointer bg-checkbox  ${
                   !typeFilter || typeFilter === element.typeId
                     ? "opacity-100:"
                     : "opacity-30"
                 }`}
               >
                 <input
-                  className="ml-4"
+                  className="ml-4 mr-10"
                   type={element.type}
                   src={element.src}
                   alt={element.name}
@@ -137,7 +155,7 @@ const Sidebar = (props) => {
             ))}
           </div>
 
-          <div className="w-96">
+          <div className="w-96 mt-107 ">
             <SocialMedia />
           </div>
         </div>

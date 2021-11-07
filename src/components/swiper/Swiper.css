@@ -1,0 +1,13 @@
+.card-styles {
+  position: relative;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  margin-left: 800px;
+}
+
+.swipe {
+  position: absolute;
+}

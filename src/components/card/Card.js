@@ -2,8 +2,8 @@ import React, { useContext, useState } from "react";
 import CardContentAudio from "../cardContentAudio/CardContentAudio";
 import CardContentPdf from "../cardContentPdf/CardContentPdf";
 import CardContentText from "../cardContentText/CardContentText";
-// import CardContentPresentation from "../cardContentPresentation/CardContentPresentation";
-// import CardContentPhoto from "../cardContentPhoto/CardContentPhoto";
+import CardContentPresentation from "../cardContentPresentation/CardContentPresentation";
+import CardContentPhoto from "../cardContentPhoto/CardContentPhoto";
 import CardListContext from "../../context/CardListContext";
 import "./Card.css";
 import "../../App.css";
@@ -97,22 +97,22 @@ const Card = (props) => {
               color={color}
             />
           )}
-          {/* {type === "Presentation" && (
+          {type === "Presentation" && (
             <CardContentPresentation
               cardContent={cardContent}
               img={img}
               title={title}
               color={color}
             />
-          )} */}
-          {/* {type === "Photo" && (
+          )}
+          {type === "Photo" && (
             <CardContentPhoto
               cardContent={cardContent}
               img={img}
               title={title}
               color={color}
             />
-          )} */}
+          )}
         </div>
       </div>
     </React.Fragment>

@@ -9,9 +9,7 @@ const FilterMobile = (props) => {
       onClick={() => {
         setIsSidebarVisible(!isSidebarVisible);
       }}
-    >
-      Filtrar
-    </button>
+    ></button>
   );
 };
 

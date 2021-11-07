@@ -3,6 +3,9 @@ import Card from "../card/Card";
 import CardShuffle from "../CardShuffle/CardShuffle";
 import CardListContext from "../../context/CardListContext";
 import Data from "../../assets/data/Data.json";
+import Swiper from "../swiper/Swiper";
+
+import CartucheraLogo from "../../assets/icons/cartuchera-logo.svg";
 
 const CardGrid = () => {
   const typesCard = Data;
@@ -43,9 +46,25 @@ const CardGrid = () => {
   }
   if (isMobile) {
     return (
-      <div>
-        <h1>Es movil</h1>
-        <CardShuffle list={list} setList={setList} />
+      <div className=" ">
+        <div className="flex border-2 py-4 justify-between">
+          <img src={CartucheraLogo} alt="logo" className="w-20 ml-1" />
+          <div className="flex">
+            <a
+              href="#"
+              className="bg-black text-white w-19 h-6 mr-2 px-1 rounded mt-4 mr-4 "
+            >
+              INFO
+            </a>
+            <button>
+              {/* <img src={Hamburguer} alt="" className="mr-4 mt-4" /> */}
+            </button>
+          </div>
+        </div>
+        <Swiper />
+        <div className="mt-80 flex">
+          <CardShuffle list={list} setList={setList} />
+        </div>
       </div>
     );
   }
