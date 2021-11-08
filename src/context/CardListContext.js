@@ -11,6 +11,8 @@ const CardListContext = createContext({
   setIsSidenarVisible: (visible) => {},
   buttonCardMobile: "",
   setButtonCardMobile: (buttoncard) => {},
+  changeColorMobile: "",
+  setChangeColorMobile: (changeColor) => {},
 });
 
 export default CardListContext;

@@ -17,7 +17,7 @@ const CardShuffle = (props) => {
     return (
       <div className="flex">
         <FilterMobile />
-        <button
+        {/*  <button
           onClick={() => {
             handleClick();
           }}
@@ -31,7 +31,7 @@ const CardShuffle = (props) => {
             htmlFor="button"
             className="text-white ml-2 mr-2 cursor-pointer"
           ></label>
-        </button>
+        </button> */}
       </div>
     );
   }

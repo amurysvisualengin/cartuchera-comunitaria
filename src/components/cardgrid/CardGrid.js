@@ -4,7 +4,7 @@ import CardShuffle from "../CardShuffle/CardShuffle";
 import CardListContext from "../../context/CardListContext";
 import Data from "../../assets/data/Data.json";
 import Swiper from "../swiper/Swiper";
-
+import ColorFilterMobile from "../colorFilterMobile/ColorFilterMobile";
 import CartucheraLogo from "../../assets/icons/cartuchera-logo.svg";
 
 const CardGrid = () => {
@@ -46,12 +46,15 @@ const CardGrid = () => {
   }
   if (isMobile) {
     return (
-      <div className=" ">
-        <div className="flex border-2 py-4 justify-between">
+      <div className=" " style={{ background: "#f5e3b0" }}>
+        <div
+          className="flex border-2 py-4 justify-between mb-5"
+          style={{ background: "#fff" }}
+        >
           <img src={CartucheraLogo} alt="logo" className="w-20 ml-1" />
           <div className="flex">
             <a
-              href="#"
+              href="https://www.youtube.com"
               className="bg-black text-white w-19 h-6 mr-2 px-1 rounded mt-4 mr-4 "
             >
               INFO
@@ -64,6 +67,12 @@ const CardGrid = () => {
         <Swiper />
         <div className="mt-80 flex">
           <CardShuffle list={list} setList={setList} />
+        </div>
+        <div
+          className="border-2 border-white items-center  h-20 mt-72 flex"
+          style={{ background: "#fff" }}
+        >
+          <ColorFilterMobile />
         </div>
       </div>
     );
