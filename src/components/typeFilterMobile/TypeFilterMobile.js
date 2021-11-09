@@ -36,14 +36,22 @@ const TypeFilterMobile = () => {
     <div className="flex">
       {types.map((element, index) => (
         <div
-          className="flex ml-4 "
           onClick={() => {
             if (element.typeId === typeMobile) setTypeMobile("");
             else setTypeMobile(element.typeId);
           }}
+          className={`${
+            !typeMobile || typeMobile === element.typeId
+              ? "opacity-100:"
+              : "opacity-30"
+          }`}
         >
-          <button className=" bg-black w-10 h-10">
-            <img src={element.src} alt="" />
+          <button className=" mt-4 ml-3">
+            <img
+              src={element.src}
+              alt=""
+              className="w-12 h-12 mb-4 bg-black "
+            />
           </button>
         </div>
       ))}
