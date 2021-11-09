@@ -10,6 +10,7 @@ import Herramientas from "../../assets/icons/Herramientas.svg";
 import CartucheraLogo from "../../assets/icons/cartuchera-logo.svg";
 import Check from "../../assets/icons/check.svg";
 import Presentacion from "../../assets/icons/presentacion.svg";
+import Fotos from "../../assets/icons/Fotos.svg";
 
 const Sidebar = (props) => {
   const filters = [
@@ -69,7 +70,7 @@ const Sidebar = (props) => {
       typeId: "photo",
       name: "Fotos",
       type: "image",
-      src: Audiovisuales,
+      src: Fotos,
     },
   ];
 
@@ -119,7 +120,7 @@ const Sidebar = (props) => {
       </div>
       <div className=" types w-96 mt-14">
         <div className="types-checkbox-parent">
-          <div className="mr-14 h-80 rounded-md">
+          <div className="mr-14 rounded-md">
             <h2 className="text-xl custom-font">Ordenar por tipo:</h2>
             {types.map((element) => (
               <div
@@ -135,7 +136,7 @@ const Sidebar = (props) => {
                 }`}
               >
                 <input
-                  className="ml-4 mr-10"
+                  className="ml-4 mr-10 w-8 h-8"
                   type={element.type}
                   src={element.src}
                   alt={element.name}

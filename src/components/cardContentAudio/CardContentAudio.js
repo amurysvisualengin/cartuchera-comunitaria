@@ -6,7 +6,11 @@ const CardContentAudio = (props) => {
   const { cardContent, title, img, color } = props;
   const { isMobile } = useContext(CardListContext);
   return (
-    <div className="flex justify-center lg:mt-10 ml-5">
+    <div
+      className="flex justify-center lg:mt-10 ml-5"
+      draggable="false"
+      ondragstart="event.preventDefault(); event.stopPropagation();"
+    >
       {!isMobile && (
         <img src={img} alt="play logo" className="mr-16 w-20 h-full mt-20" />
       )}

@@ -15,6 +15,7 @@ function App() {
   const [isExpand, setIsExpand] = useState(false);
   const [mobileList, setMobileList] = useState("");
   const [changeColorMobile, setChangeColorMobile] = useState("");
+  const [typeMobile, setTypeMobile] = useState("");
   //choose the screen size
   const handleResize = () => {
     if (window.innerWidth < 720) {
@@ -50,6 +51,8 @@ function App() {
           setMobileList,
           changeColorMobile,
           setChangeColorMobile,
+          typeMobile,
+          setTypeMobile,
         }}
       >
         <Sidebar />

@@ -6,10 +6,11 @@ import Data from "../../assets/data/Data.json";
 import Swiper from "../swiper/Swiper";
 import ColorFilterMobile from "../colorFilterMobile/ColorFilterMobile";
 import CartucheraLogo from "../../assets/icons/cartuchera-logo.svg";
+import TypeFilterMobile from "../typeFilterMobile/TypeFilterMobile";
 
 const CardGrid = () => {
   const typesCard = Data;
-  console.log(typesCard);
+
   const [list, setList] = useState(typesCard);
   const shuffleList = list.sort(() => Math.random() - 0.5);
 
@@ -55,7 +56,7 @@ const CardGrid = () => {
           <div className="flex">
             <a
               href="https://www.youtube.com"
-              className="bg-black text-white w-19 h-6 mr-2 px-1 rounded mt-4 mr-4 "
+              className="bg-black text-white w-19 h-6 px-1 rounded mt-4 "
             >
               INFO
             </a>
@@ -73,6 +74,7 @@ const CardGrid = () => {
           style={{ background: "#fff" }}
         >
           <ColorFilterMobile />
+          <TypeFilterMobile />
         </div>
       </div>
     );

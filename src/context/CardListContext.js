@@ -13,6 +13,8 @@ const CardListContext = createContext({
   setButtonCardMobile: (buttoncard) => {},
   changeColorMobile: "",
   setChangeColorMobile: (changeColor) => {},
+  typeMobile: "",
+  setTypeMobile: (typeFilter) => {},
 });
 
 export default CardListContext;
