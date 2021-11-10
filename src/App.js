@@ -18,7 +18,7 @@ function App() {
   const [typeMobile, setTypeMobile] = useState("");
   //choose the screen size
   const handleResize = () => {
-    if (window.innerWidth < 720) {
+    if (window.innerWidth < 769) {
       setIsMobile(true);
     } else {
       setIsMobile(false);

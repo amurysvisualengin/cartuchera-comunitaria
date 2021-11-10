@@ -10,10 +10,10 @@ const TypeFilterMobile = () => {
   const { typeMobile, setTypeMobile } = useContext(CardListContext);
 
   const types = [
-    {
+    /* {
       typeId: "presentation",
       src: Presentacion,
-    },
+    }, */
     {
       typeId: "rompehielos",
       src: Rompehielos,
@@ -46,11 +46,11 @@ const TypeFilterMobile = () => {
               : "opacity-30"
           }`}
         >
-          <button className=" mt-4 ml-3">
+          <button className=" mt-4 ml-6">
             <img
               src={element.src}
               alt=""
-              className="w-12 h-12 mb-4 bg-black "
+              className="w-12 h-12 mb-4 bg-black filter invert "
             />
           </button>
         </div>

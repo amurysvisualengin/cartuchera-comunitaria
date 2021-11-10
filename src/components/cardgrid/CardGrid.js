@@ -56,7 +56,7 @@ const CardGrid = () => {
           <div className="flex">
             <a
               href="https://www.youtube.com"
-              className="bg-black text-white w-19 h-6 px-1 rounded mt-4 "
+              className="bg-black text-white w-19 h-6 px-1 rounded mt-4 mr-2 "
             >
               INFO
             </a>

@@ -10,7 +10,7 @@
       "presentationName": "Kit de Proyecto Colaborativo",
       "icon": "./images/actua.svg",
       "subTitle": "¡Wepa! soy Marisa, tengo 34 años y soy mejor conocida como la resuelve-todo del barrio Las Yautías.",
-      "description": "No es por tener guille, pero nadie me pone un pie alante cuando de usar herramientas se trata. Por eso me llaman cada vez que hay que reparar algo que se rompió en la casa, limpiar el parque o hasta pensar cómo entrarle aun proyecto de construcción. Yo soy de las que piensa que unx tiene que envolverse en lo que construye en la comunidad, y este kit de Proyecto Colaborativo es perfecto para eso. ",
+      "description": "No es por tener guille, pero nadie me pone un pie alante cuando de usar herramientas se trata. Por eso me llaman cada vez que hay que reparar algo que se rompió en la casa, limpiar el parque o hasta pensar cómo entrarle a un proyecto de construcción. Yo soy de las que piensa que unx tiene que envolverse en lo que se construye en la comunidad, y este Kit de Proyecto Colaborativo es perfecto para eso. ",
       "sentence": "¡Agarra esta cinta métrica y vamos a meterle!",
       "name": "MARISA",
       "nameSvg": "./images/marisa.svg"
@@ -73,7 +73,7 @@
         {
           "icon": "./images/dibuja.svg",
           "subTitle": "DIBUJA",
-          "actionSentence": "Divídase en dos equipos. Tomen turnos de un minuto para dibujar en silencio alguna herramienta o material de construcción o jardinería en una pizarra. Cuando tu equipo adivine, anoten la herramienta. Síguelo hasta que se consuma el minuto. ¡Ah!, y no pueden repetirse herramientas! Gana el equipo con lista más larga al final."
+          "actionSentence": "Divídanse en dos equipos. Tomen turnos de un minuto para dibujar en silencio alguna herramienta o material de construcción o jardinería en una pizarra. Cuando tu equipo adivine, anoten la herramienta. Síguelo hasta que se consuma el minuto. ¡Ah, y no pueden repetirse herramientas! Gana el equipo con la lista más larga al final."
         },
         {
           "icon": "./images/actua.svg",
@@ -108,7 +108,7 @@
         {
           "step": 2,
           "statement": "VERIFIQUEN LA GUÍA.",
-          "sentence": "Lean sobre el proceso de diseño participativo, consideraciones importantes a tener a lahora de llevar una idea a la realidad, y cómo participar en todo proyecto sin importar su escala.",
+          "sentence": "Lean sobre el proceso de diseño participativo, consideraciones importantes a tener a la hora de llevar una idea a la realidad, y cómo participar en todo proyecto sin importar su escala.",
           "pdf": "http://www.africau.edu/images/default/sample.steps",
           "pdfButton": "DESCARGAR GUÍA"
         },
@@ -127,7 +127,7 @@
         {
           "step": 2,
           "statement": "¡ORGANICEN SUS RECURSOS FINANCIEROS!",
-          "sentence": "Mi amiga susi preparó una herramienta bien nítida para esto. Busquen 'Presupuesto transparente en el Kit de Procesos Comunitacios.'"
+          "sentence": "Mi amiga Susi preparó una herramienta bien nítida para esto. Busquen 'Presupuesto transparente en el Kit de Procesos Comunitarios.'"
         },
         {
           "step": 3,
@@ -320,17 +320,17 @@
         {
           "icon": "./images/conversa.svg",
           "subTitle": "CONVERSA",
-          "actionSentence": "¿Cuenta tu comunidad con un liderato u organización de vecinxs? si lo tienen, ¿cómo aporta al bientestar de tu comunidad? Y si no están organizadxs aún, ¿por qué?"
+          "actionSentence": "¿Cuenta tu comunidad con un liderato u organización de vecinxs? si lo tienen, ¿Cómo aporta al bientestar de tu comunidad? Y si no están organizadxs aún, ¿por qué?"
         },
         {
           "icon": "./images/dibuja.svg",
           "subTitle": "DIBUJA",
-          "actionSentence": "Pienta en alguna persona que saería un recurso valioso que tu comunidad no tiene ahora mismo. Por ejemplo ¿cuentan con unx electrcista, unx barberx o unx doctorx? Usen un papel de estraza gigante o una pizarra para dibujar el instrumento de trabajo que caracterice a cada cual."
+          "actionSentence": "Piensa en alguna persona que sería un recurso valioso que tu comunidad no tiene ahora mismo. Por ejemplo ¿cuentan con unx electrcista, unx barberx o unx doctorx? Usen un papel de estraza gigante o una pizarra para dibujar el instrumento de trabajo que caracterice a cada cual."
         },
         {
           "icon": "./images/actua.svg",
           "subTitle": "ACTÚA",
-          "actionSentence": "Piensa en un espacio reconocido de tu vecindario. Sin decir nada, actúa como si estuvises en ese lugar. La idea es que lxs demas adivinen en qué sitio imaginas estar."
+          "actionSentence": "Piensa en un espacio reconocido de tu vecindario. Sin decir nada, actúa como si estuvises en ese lugar. La idea es que lxs demás adivinen en qué sitio imaginas estar."
         },
         {
           "icon": "./images/libre.svg",
@@ -535,7 +535,7 @@
       "presentationName": "Kit de Justicia Narrativa",
       "icon": "./images/actua.svg",
       "subTitle": "¡Hola me llaman Dé y soy nietx de Doña Luz.",
-      "description": "No es por tener guille, pero nadie me pone un pie alante cuando de usar herramientas se trata. Por eso me llaman cada vez que hay que reparar algo que se rompió en la casa, limpiar el parque o hasta pensar cómo entrarle aun proyecto de construcción. Yo soy de las que piensa que unx tiene que envolverse en lo que construye en la comunidad, y este kit de Proyecto Colaborativo es perfecto para eso. ",
+      "description": "No es por tener guille, pero nadie me pone un pie alante cuando de usar herramientas se trata. Por eso me llaman cada vez que hay que reparar algo que se rompió en la casa, limpiar el parque o hasta pensar cómo entrarle a un proyecto de construcción. Yo soy de las que piensa que unx tiene que envolverse en lo que se construye en la comunidad, y este Kit de Proyecto Colaborativo es perfecto para eso. ",
       "sentence": "¡Agarra esta cinta métrica y vamos a meterle!",
       "name": "DÉ",
       "nameSvg": "./images/de.svg"
@@ -597,12 +597,12 @@
         {
           "icon": "./images/dibuja.svg",
           "subTitle": "DIBUJA",
-          "actionSentence": "Dibuja un sitio que anteshabía en tu comunidad y que ya no está. ¿Qué es lo que más recuerdas de ese lugar? ¿Lo extrañas? ¿Qué fue lo que pasó?"
+          "actionSentence": "Dibuja un sitio que antes había en tu comunidad y que ya no está. ¿Qué es lo que más recuerdas de ese lugar? ¿Lo extrañas? ¿Qué fue lo que pasó?"
         },
         {
           "icon": "./images/actua.svg",
           "subTitle": "ACTÚA",
-          "actionSentence": "Piensa en un espacio reconocido de tu vecindario. Sin decir nada, actúa como si estuvises en ese lugar. La idea es que lxs demas adivinen en qué sitio imaginas estar."
+          "actionSentence": "Piensa en un espacio reconocido de tu vecindario. Sin decir nada, actúa como si estuvises en ese lugar. La idea es que lxs demás adivinen en qué sitio imaginas estar."
         },
         {
           "icon": "./images/libre.svg",
@@ -774,7 +774,7 @@
     "cardType": {
       "presentationName": "Kit de Mapeo comunitario",
       "subTitle": "¡Buen día, mijx! Soy Doña Luz y vivo en el Barrio de Yautías desde que nací hace 70 años.",
-      "description": "¡Mira que ha llovido y muchas cosas han cambiado! Me conozco las calles, edificios y árboles de este barrio como la palma de mi mano, y todxs sus vecinxs me piden la bendición. Acompañame a esta travesía por el Kit de Mapeo comunitario para conocer bien nuetro vecindario y ver cómo podemos hacerlo mejor para todxs.",
+      "description": "¡Mira que ha llovido y muchas cosas han cambiado! Me conozco las calles, edificios y árboles de este barrio como la palma de mi mano, y todxs sus vecinxs me piden la bendición. Acompáñame en esta travesía por el Kit de Mapeo Comunitario para conocer bien nuestro vecindario y ver cómo podemos hacerlo mejor para todxs. ",
       "name": "DOÑA LUZ",
       "nameSvg": "./images/donaLuz.svg"
     }
@@ -840,12 +840,12 @@
         {
           "icon": "./images/actua.svg",
           "subTitle": "ACTÚA",
-          "actionSentence": "Piensa en un espacio reconocido de tu vecindario. Sin decir nada, actúa como si estuvises en ese lugar. La idea es que lxs demas adivinen en qué sitio imaginas estar."
+          "actionSentence": "Piensa en un espacio reconocido de tu vecindario. Sin decir nada, actúa como si estuvises en ese lugar. La idea es que lxs demás adivinen en qué sitio imaginas estar."
         },
         {
           "icon": "./images/libre.svg",
           "subTitle": "LIBRE",
-          "actionSentence": "Imagínate que quieres invitar a unxvecinxs a encontrarse en un lugar en tu comunidad. Sin decir el nombre del destino, dale las instrucciones de cómo llegar desde donde están reunidxs, hasta que adivine dónde se dirige."
+          "actionSentence": "Imagínate que quieres invitar a unx vecinx a encontrarse en un lugar en tu comunidad. Sin decir el nombre del destino, dale las instrucciones de cómo llegar desde donde están reunidxs, hasta que adivine dónde se dirige."
         }
       ]
     }

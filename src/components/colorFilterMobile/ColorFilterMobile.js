@@ -18,9 +18,9 @@ const ColorFilterMobile = (props) => {
   };
 
   return (
-    <div onClick={changeColor} className="ml-3">
+    <div onClick={changeColor} className="ml-5">
       <button
-        className="rounded-full border-2 border-black w-14 h-14 mt-1"
+        className="rounded-full border-2 border-black w-12 h-12 "
         style={{ background: changeColorMobile }}
       ></button>
     </div>

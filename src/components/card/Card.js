@@ -13,6 +13,16 @@ const Card = (props) => {
   const [showExpand, setShowExpand] = useState(false);
   const { title, img, type, color, cardNumber, cardContent } = props;
   const [touch, setTouch] = useState(false);
+  const { isExpand, setIsExpand } = useState(CardListContext);
+
+  useEffect(() => {
+    console.log(showExpand);
+  }, [showExpand]);
+
+  const handleShowExpandFalse = () => {
+    console.log("adios");
+    setShowExpand(!showExpand);
+  };
 
   let timer = 0;
   let isMove = false;
@@ -40,7 +50,9 @@ const Card = (props) => {
   };
 
   const handleShowExpand = () => {
-    setShowExpand(!showExpand);
+    if (!showExpand) {
+      setShowExpand(true);
+    }
     console.log("handleShowSpand", showExpand);
   };
 
@@ -56,7 +68,7 @@ const Card = (props) => {
         className={` ${
           isMobile
             ? " ml-5 w-90 h-98 p-16 card-item cursor-pointer"
-            : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72 cursor-pointer "
+            : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72  "
         } `}
         style={{ backgroundColor: color, borderColor: color }}
       >
@@ -78,6 +90,7 @@ const Card = (props) => {
                 img={img}
                 title={title}
                 color={color}
+                handleShowExpandFalse={handleShowExpandFalse}
               />
             </div>
           )}
@@ -87,6 +100,7 @@ const Card = (props) => {
               img={img}
               title={title}
               color={color}
+              handleShowExpandFalse={handleShowExpandFalse}
             />
           )}
           {type === "Rompehielos" && (
@@ -95,6 +109,7 @@ const Card = (props) => {
               img={img}
               title={title}
               color={color}
+              handleShowExpandFalse={handleShowExpandFalse}
             />
           )}
           {type === "Presentation" && (
@@ -103,6 +118,7 @@ const Card = (props) => {
               img={img}
               title={title}
               color={color}
+              handleShowExpandFalse={handleShowExpandFalse}
             />
           )}
           {type === "Photo" && (
@@ -111,6 +127,7 @@ const Card = (props) => {
               img={img}
               title={title}
               color={color}
+              handleShowExpandFalse={handleShowExpandFalse}
             />
           )}
         </div>

@@ -28,6 +28,7 @@ module.exports = {
         96: "24rem",
         97: "30rem",
         98: "35rem",
+        99: "37rem",
         100: "45rem",
         100.5: "46.8rem",
         101: "47.8rem",
@@ -36,6 +37,8 @@ module.exports = {
         106: "42.375rem",
         107: "60rem",
         110: "70rem",
+        111: "150rem",
+        115: "200rem",
       },
       scale: {
         0: "0",
@@ -54,6 +57,12 @@ module.exports = {
       },
       boxShadow: {
         black: "0 2px 2px 0 rgba(0, 0, 0, 0.08)",
+      },
+      zIndex: {
+        "-10": "-10",
+      },
+      rotate: {
+        "-30": "-30deg",
       },
     },
   },

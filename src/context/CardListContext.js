@@ -15,6 +15,8 @@ const CardListContext = createContext({
   setChangeColorMobile: (changeColor) => {},
   typeMobile: "",
   setTypeMobile: (typeFilter) => {},
+  isExpand: "",
+  setIsExpand: (expand) => {},
 });
 
 export default CardListContext;
