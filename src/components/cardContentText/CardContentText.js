@@ -62,9 +62,10 @@ const CardContentText = (props) => {
                       {element.subTitle}
                     </h2>
                   </div>
-                  <p className=" m-4 lg:m-6 text-xs lg:text-base ">
-                    {element.actionSentence}
-                  </p>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: element.actionSentence }}
+                    className="m-4 lg:m-6 text-xs lg:text-base"
+                  ></div>
                 </div>
               </div>
             ))}

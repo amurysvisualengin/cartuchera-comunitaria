@@ -56,7 +56,7 @@ const CardContentAudio = (props) => {
                   className="custom-font bg-black  text-xs lg:text-sm p-2 lg:pl-4 lg:py-2"
                   style={{ color: color }}
                 >
-                  {element.question}
+                  {element.question.toUpperCase()}
                 </h2>
                 <p className="m-2 text-sm lg:text-base">{element.answer}</p>
               </div>

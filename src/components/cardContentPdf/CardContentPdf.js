@@ -30,7 +30,7 @@ const CardContentPdf = (props) => {
         </button>
       </div>
 
-      <div className="flex justify-center  mt-8 lg:mt-14 ml-3 lg:ml-0 ">
+      <div className="flex justify-center mt-8 lg:mt-14 ml-3 lg:ml-0 ">
         {!isMobile && (
           <img src={img} alt="" className="mr-16 w-32 h-12 float-left z-30" />
         )}
@@ -47,22 +47,24 @@ const CardContentPdf = (props) => {
           <div className="text-left mt-3">
             <h2
               className={` ${
-                !isMobile ? "custom-font lg:text-2xl w-100" : "text-base"
+                !isMobile
+                  ? "custom-font lg:text-2xl w-111 mt-8"
+                  : "text-base w-90"
               }`}
             >
               {cardContent.subTitle}
             </h2>
-            <p className="custom-font text-xs lg:text-xs mt-6">
+            <p className="custom-font text-xs lg:text-xs mt-6 mb-2">
               ANTES DE EMPEZAR:
             </p>
           </div>
 
           {
-            <div className="lg:flex lg:w-101">
+            <div className="lg:flex lg:w-104 ">
               {cardContent.beforeStarting.map((element, index) => (
-                <div className="block text-left text-xs border-2 rounded border-black mr-3 w-84 lg:w-60 mb-4 lg:mb-0 ">
+                <div className="flex-grow flex-wrap text-left text-xs border-2 rounded border-black mr-4 w-84 lg:w-96 mb-4 lg:mb-0 ">
                   <div
-                    className="flex lg:flex-grow bg-black custom-font p-2 "
+                    className="flex bg-black custom-font p-4 "
                     style={{ color: color }}
                   >
                     <div
@@ -75,12 +77,16 @@ const CardContentPdf = (props) => {
                       {element.statement.toUpperCase()}
                     </h3>
                   </div>
-                  <p className="m-4 lg:text-base">{element.sentence}</p>
-                  <div className="flex mb-6 justify-center">
+
+                  <div
+                    dangerouslySetInnerHTML={{ __html: element.sentence }}
+                    className="text-base m-4"
+                  ></div>
+                  <div className="flex mb-3  mt-6 justify-center">
                     {element.pdf && (
                       <a
                         href={element.pdf}
-                        className="bg-white p-3 px-8 custom-font rounded"
+                        className="bg-white p-3 px-8 custom-font rounded black-shadow"
                       >
                         {element.pdfButton}
                       </a>
@@ -95,10 +101,10 @@ const CardContentPdf = (props) => {
             ¡YA ESTOY LISTX!
           </p>
 
-          <div className="lg:flex lg:w-101">
+          <div className="lg:flex lg:w-104">
             {cardContent.allReady.map((element, index) => (
-              <div className="block text-left border-2 border-black rounded w-84 mr-4 flex-grow mt-4 lg:mt-0">
-                <div className="flex bg-black p-2">
+              <div className="block text-left border-2 border-black rounded w-84 lg:w-96 mr-4 flex-grow mt-4 lg:mt-0">
+                <div className="flex bg-black p-4">
                   <div
                     className="rounded-full w-4 h-4 mr-4 text-center px-1"
                     style={{ background: color }}
@@ -117,16 +123,17 @@ const CardContentPdf = (props) => {
             ))}
           </div>
 
-          <div className=" text-left border-2 border-black w-84 lg:w-100.5 mt-4 mb-16 rounded">
+          <div className=" text-left border-2 border-black w-84 lg:w-103 mt-4 mb-16 rounded">
             <h3
               className="custom-font text-xs bg-black p-3 "
               style={{ color: color }}
             >
               AL TERMINAR...{cardContent.finishAction}
             </h3>
-            <p className="mx-4 mb-2 mt-2 whitespace-pre-wrap text-xs lg:text-base ">
-              {cardContent.note1}
-            </p>
+            <div
+              dangerouslySetInnerHTML={{ __html: cardContent.note1 }}
+              className="mx-4 mb-4 mt-4 whitespace-pre-wrap text-xs lg:text-base"
+            ></div>
           </div>
         </div>
       </div>

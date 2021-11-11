@@ -25,8 +25,8 @@
     "typeId": "photo",
     "cardType": {
       "typeName": "Álbum de fotos",
-      "subTitle": "Mapeo comunitario",
-      "description": "¡CONOCE LAS FORMAS DIVERSAS EN QUE SE REALIZÓ EL MAPEO COMUNITARIO EN CAROLINA, HUMACAO  Y COMERÍO",
+      "subTitle": "Proyecto Colaborativo",
+      "description": "Aquí puedes ver fotos de los procesos de construcción de distintos proyectos colaborativos en las comunidades de Comerío, Carolina y Humacao, incluyendo la Casa de Iris en San Antón, la Casa de Luis en Vuelta del Dos y el Parque Mis Panitas en Mariana.",
       "picture": "./images/photography.png"
     }
   },
@@ -38,16 +38,21 @@
     "type": "Audiovisual",
     "typeId": "audio-visual",
     "cardType": {
-      "videoType": "Mapeo Comunitario y Censo Comunitario",
+      "videoType": "Proyecto Colaborativo",
       "videoInfoContainer": [
         {
-          "question": "¿QUE SIGNIFICA MAPEAR TU COMUNIDAD?",
-          "answer": "Mira cómo se organizaron lxs vecinxs de los barrio de Mariana y de Humacao, y San Antón y Saint Just de Carolina para trazar juntoxs el Mapa de su Comunidad.",
+          "question": "Prende Paloma",
+          "answer": "Aprende sobre el proyecto Prende Paloma de Comerío, una iniciativa para proveer iluminación nocturna a espacios comunes en el vecindario.",
           "url": "https://www.youtube.com/embed/DG2rSpoWA_E"
         },
         {
-          "question": "¿QUE IMPLICA HACER UN CENSO COMUNITARIO?",
-          "answer": "Acompaña a Mariangelie Ortiz, líder comerieña del barrio Los Guaretos, en su travesía casa por casa para levantar un censocomunitario.",
+          "question": "La Conde",
+          "answer": "Conoce el proyecto La Conde en Carolina, una antigua escuela cerrada por el gobierno en el 2017 que fue rescatada y rediseñada por sus vecinxs para albergar un bosque frutal y un centro comunitario.",
+          "url": "https://www.youtube.com/embed/DG2rSpoWA_E"
+        },
+        {
+          "question": "Agua para Todos",
+          "answer": "Aprende sobre el proyecto Agua para Todos, una colaboración entre La Maraña y un grupo de vecinxs de Humacao para el diseño y construcción de tres pozos de agua. Estos puntos de acceso están conectados a un manantial subterráneo y funcionan por gravedad, así que aseguran agua potable para todxs lxs vecinxs de la comunidad de Mariana en caso de cualquier necesidad.",
           "url": "https://www.youtube.com/embed/DG2rSpoWA_E"
         }
       ]
@@ -103,7 +108,7 @@
         {
           "step": 1,
           "statement": "CONFORME UN COMITÉ DE PROYECTOS.",
-          "sentence": "Conformen un comité de Proyectos. Estxs corillx debe incluir personas organizadas, que tengan 'don de gente' y si saben de algo de construcción, diseño y/o jardinería, ¡mejor!"
+          "sentence": "Conformen un Comité de Proyectos. Estx corillx debe incluir personas organizadas, que tengan “don de gente” y si saben algo de construcción, diseño y/o jardinería, ¡mejor!"
         },
         {
           "step": 2,
@@ -127,7 +132,7 @@
         {
           "step": 2,
           "statement": "¡ORGANICEN SUS RECURSOS FINANCIEROS!",
-          "sentence": "Mi amiga Susi preparó una herramienta bien nítida para esto. Busquen 'Presupuesto transparente en el Kit de Procesos Comunitarios.'"
+          "sentence": "Mi amiga Susi preparó una herramienta bien nítida para esto. Busquen “Presupuesto Transparente” en el Kit de Procesos Comunitarios."
         },
         {
           "step": 3,
@@ -147,7 +152,7 @@
     "type": "Herramientas",
     "typeId": "herramientas",
     "cardType": {
-      "subTitle": "Conozcamos el proceso detrás de un proyecyo",
+      "subTitle": "Conozcamos el proceso detrás de un proyecto",
       "beforeStarting": [
         {
           "step": 1,
@@ -220,7 +225,7 @@
         {
           "step": 1,
           "statement": "¡OBSERVEN EL DIAGRAMA!",
-          "sentence": "Fíjate en los distintos roles y resonsabilidades que deben cumplirse para que el proyecto corra, y cómo se cnoectan unxs y otrxs."
+          "sentence": "Fíjate en los distintos roles y resonsabilidades que deben cumplirse para que el proyecto corra, y cómo se conectan unxs y otrxs."
         },
         {
           "step": 2,
@@ -230,10 +235,10 @@
         {
           "step": 3,
           "statement": "¡BUSQUEN REFUERZOS!",
-          "sentence": "Si hay roles que faltan por asignar, ¡que no cuenda el pánico! Unx no tiene que saberlo todo, siempre y cuando sepa cuándo buscar ayuda externa."
+          "sentence": "Si hay roles que faltan por asignar, ¡que no cunda el pánico! Unx no tiene que saberlo todo, siempre y cuando se sepa cuándo buscar ayuda externa."
         }
       ],
-      "note1": "Ya tienen el plan monta´o. ¡Ahora es cuestión de planificar para ejecutarlo!"
+      "note1": "Ya tienen el plan monta´o. <b> ¡Ahora es cuestión de planificar para ejecutarlo!</b>"
     }
   },
   {
@@ -260,12 +265,12 @@
           "pdfButton": "DESCARGAR GUÍA"
         },
         {
-          "step": 1,
+          "step": 3,
           "statement": "¡PONGAN FECHA Y CONVOQUEN LX CORIILX!",
           "sentence": "Inviten a todoxs sus vecinxs con tiempo."
         },
         {
-          "step": 2,
+          "step": 4,
           "statement": "PREPAREN UN LISTADO DE MATERIALES.",
           "sentence": "¡No hay nada peor que llegar a una brigada de pintura y no tener brochas! Pregúntale a lxs voluntarixs si tienen alguna herramienta que puedan prestar, y procuren conseguir lo que falte."
         }
@@ -279,15 +284,15 @@
         {
           "step": 2,
           "statement": "PREPAREN",
-          "sentence": "Mi amiga susi preparó una herramienta bien nítida para esto. Busquen 'Presupuesto transparente en el Kit de Procesos Comunitacios.'"
+          "sentence": "Preparen una lista de tareas y repártanselas. Les recomiendo hacer grupos de voluntarixs con unx encargadx o líder para cada parte del trabajo."
         },
         {
           "step": 3,
           "statement": "¡TOMEN DESCANSOS E HIDRANTENSE!",
-          "sentence": "Ya que saben qué recursos necesitan, planifiquen cómo conseguirlos."
+          "sentence": "Las tareas de una brigada pueden ser pesadas. Recuerde tomarse pequeños “breaks” y tomar mucha agua."
         }
       ],
-      "note1": "Wao, mi gente, ¡miren lo que han hecho juntxs! Aprovechen y conversen: \n1. ¿Qué pudieron lograr? ¿ Qué faltó por hacer? ¿Cuándo pueden regresar a terminarlo? \n2. Qué les pareció la actividad? ¿Qué cambiarian para una próxima ocasión?"
+      "note1": "Wao, mi gente, <b>¡miren lo que han hecho juntxs!</b> Aprovechen y conversen: \n1. ¿Qué pudieron lograr? ¿ Qué faltó por hacer? ¿Cuándo pueden regresar a terminarlo? \n2. Qué les pareció la actividad? ¿Qué cambiarian para una próxima ocasión?"
     }
   },
 
@@ -350,8 +355,8 @@
     "typeId": "photo",
     "cardType": {
       "typeName": "Álbum de fotos",
-      "subTitle": "Mapeo comunitario",
-      "description": "¡CONOCE LAS FORMAS DIVERSAS EN QUE SE REALIZÓ EL MAPEO COMUNITARIO EN CAROLINA, HUMACAO  Y COMERÍO",
+      "subTitle": "Procesos Comunitarios",
+      "description": "Las comunidades de Humacao, Carolina y Comerío imaginan espacios accesibles y seguros que atiendan las necesidades de sus barrios.",
       "picture": "./images/photography.png"
     }
   },
@@ -363,16 +368,16 @@
     "type": "Audiovisual",
     "typeId": "audio-visual",
     "cardType": {
-      "videoType": "Mapeo Comunitario y Censo Comunitario",
+      "videoType": "Procesos Comunitarios",
       "videoInfoContainer": [
         {
-          "question": "¿QUE SIGNIFICA MAPEAR TU COMUNIDAD?",
-          "answer": "Mira cómo se organizaron lxs vecinxs de los barrio de Mariana y de Humacao, y San Antón y Saint Just de Carolina para trazar juntoxs el Mapa de su Comunidad.",
+          "question": "Votación Comunitaria en Humacao",
+          "answer": "Lxs vecinxs del Barrio Mariana en Humacao votan para decidir qué Proyecto Colaborativo implementar en su comunidad.",
           "url": "https://www.youtube.com/embed/DG2rSpoWA_E"
         },
         {
-          "question": "¿QUE IMPLICA HACER UN CENSO COMUNITARIO?",
-          "answer": "Acompaña a Mariangelie Ortiz, líder comerieña del barrio Los Guaretos, en su travesía casa por casa para levantar un censocomunitario.",
+          "question": "Asamblea Comunitaria en Carolina",
+          "answer": "Las líderes comunitarias de San Antón, Los Mirtos y Saint Just en Carolina presentan a la comunidad los avances en el diseño de una cocina comunitaria en la antigua escuela La Conde.",
           "url": "https://www.youtube.com/embed/DG2rSpoWA_E"
         }
       ]
@@ -397,7 +402,7 @@
         {
           "step": 2,
           "statement": "verifiquen la guía.",
-          "sentence": "Lean sobre el proceso de la participación comunitaria, ipa´que vean lo genial que es organizarse!",
+          "sentence": "Lean sobre la importancia de la participación comunitaria, ¡pa’ que vean lo genial que es organizarse!",
           "pdf": "http://www.africau.edu/images/default/sample.steps",
           "pdfButton": "DESCARGAR GUÍA"
         },
@@ -411,7 +416,7 @@
         {
           "step": 1,
           "statement": "¡utilicen la plantiila correspondiente!",
-          "sentence": "sigan las indicaciones específicas del punto en el proceso en el que están."
+          "sentence": "Sigan las indicaciones específicas del punto en el proceso en el que están."
         },
         {
           "step": 2,
@@ -420,7 +425,7 @@
         }
       ],
       "finishAction": " REÚNANSE:",
-      "note1": "Yo se que los procesos comunitarios pueden ser complejos al principio. No es fácil mediar entre distintas opiniones e ideas, ¡perso hay que hacerlo! Un consejo: luego de terminar la actividad, quédense unos minutos y pregúntense: \n1. ¿Qué les pareció la actividad? \n2. ¿Qué funcionó? ¿Que no? ¿cómo lo cambiarían?"
+      "note1": "Yo se que los procesos comunitarios pueden ser complejos al principio. No es fácil mediar entre distintas opiniones e ideas, ¡perso hay que hacerlo! Un consejo: luego de terminar la actividad, quédense unos minutos y pregúntense: \n1. ¿Qué les pareció la actividad? \n2. ¿Qué funcionó? ¿Que no? ¿Cómo lo cambiarían?"
     }
   },
 
@@ -438,7 +443,7 @@
         {
           "step": 1,
           "statement": "convoquen a la comunidad.",
-          "sentence": "Pueden ir casa por casa, imporimir anuncios o hacer una cadena de mensajes de texto. Recuerden hacerlo con tiempo para que vaya la mayor cantidad posible de vecinxs."
+          "sentence": "Pueden ir casa por casa, imprimir anuncios o hacer una cadena de mensajes de texto. Recuerden hacerlo con tiempo para que vaya la mayor cantidad posible de vecinxs."
         },
         {
           "step": 2,
@@ -487,7 +492,7 @@
         {
           "step": 1,
           "statement": "convoquen a la comunidad.",
-          "sentence": "Pueden ir casa por casa, imporimir anuncios o hacer una cadena de mensajes de texto. Recuerden hacerlo con tiempo para que vaya la mayor cantidad posible de vecinxs."
+          "sentence": "Pueden ir casa por casa, imprimir anuncios o hacer una cadena de mensajes de texto. Recuerden hacerlo con tiempo para que vaya la mayor cantidad posible de vecinxs."
         },
         {
           "step": 2,
@@ -520,7 +525,57 @@
         }
       ],
 
-      "note1": "Ahora que se conocen mejor, pregúntense: \n1. ¿Con qué recursos cuenta nuestra comunidad? Pueden marcarlos en la tarjeta con el índice de talentxs y conocimiento técnico. \n2.¿qúe recursos o talentos nos hacen falta? ¿Cómo y dónde podemos conseguirlos?"
+      "note1": "<b>Ahora que se conocen mejor, pregúntense:</b> \n1. ¿Con qué recursos cuenta nuestra comunidad? Pueden marcarlos en la tarjeta con el índice de talentxs y conocimiento técnico. \n2.¿qúe recursos o talentos nos hacen falta? ¿Cómo y dónde podemos conseguirlos?"
+    }
+  },
+  {
+    "id": "procesos-comunitarios",
+    "cardNumber": 4,
+    "title": "Presupuesto Transparente",
+    "img": "./images/saw.svg",
+    "color": "#9BC2D4",
+    "type": "Herramientas",
+    "typeId": "herramientas",
+    "cardType": {
+      "subTitle": "Manteniendo las cuentas claras",
+      "beforeStarting": [
+        {
+          "step": 1,
+          "statement": "organicen un comité de presupuestos.",
+          "sentence": "Manejar dinero es una tarea que requiere precisión y muuuuucha responsabilidad. Sigan mi consejo: formar un grupo pequeño, de tres a cinco personas de confianza."
+        },
+        {
+          "step": 2,
+          "statement": "reúnanse.",
+          "sentence": "Seleccionen un lugar cómodo y seguro, donde puedan hablar de forma privada y libre."
+        },
+        {
+          "step": 3,
+          "statement": "preparen la herramienta y los materiales",
+          "sentence": "Encuentran una copia en el Archivo de Documentos de la Cartuchera, pero igual pueden descargarla aquí. Confíen: ¡esta herramienta va a ser mucho más divertida de lo que esperan!",
+          "pdf": "http://www.africau.edu/images/default/sample.steps",
+          "pdfButton": "DESCARGAR"
+        }
+      ],
+      "allReady": [
+        {
+          "step": 1,
+          "statement": "elijan",
+          "sentence": "Elijan un punto de inicio dependiendo del objetivo que quieran conseguir. "
+        },
+        {
+          "step": 2,
+          "statement": "¡sigan el flujograma!",
+          "sentence": "¿Se acuerdan del juego de las chorreras y las escaleras? Esto es súper similar: cada vez que contestan una pregunta, avanzan por una vía de acción distinta. "
+        },
+        {
+          "step": 3,
+          "statement": "delineen un plan de acción",
+          "sentence": "El último cuadrito tendrá una recomendación de qué hacer después. ¡Planifiquen cómo ejecutarla!"
+        }
+      ],
+
+      "note1": "<b>Hagan un reporte.</b> Resuman los logros de la reunión, el estatus financiero y los próximos pasos.\n Compartan el reporte por e-mail o preséntenlo durante la próxima asamblea comunitaria. Recuerden que, cuando del dinero de todxs se trata, <b>¡“cuentas claras conservan amistades”!</b>"
     }
   },
 
@@ -550,8 +605,8 @@
     "typeId": "photo",
     "cardType": {
       "typeName": "Álbum de fotos",
-      "subTitle": "Mapeo comunitario",
-      "description": "¡CONOCE LAS FORMAS DIVERSAS EN QUE SE REALIZÓ EL MAPEO COMUNITARIO EN CAROLINA, HUMACAO  Y COMERÍO",
+      "subTitle": "Justicia Narrativa",
+      "description": "Estas fotos muestran la justicia narrativa en acción en las comunidades de Carolina, Comerío y Humacao.",
       "picture": "./images/photography.png"
     }
   },
@@ -563,16 +618,11 @@
     "type": "Audiovisual",
     "typeId": "audio-visual",
     "cardType": {
-      "videoType": "Mapeo Comunitario y Censo Comunitario",
+      "videoType": "Justicia Narrativa",
       "videoInfoContainer": [
         {
-          "question": "¿QUE SIGNIFICA MAPEAR TU COMUNIDAD?",
-          "answer": "Mira cómo se organizaron lxs vecinxs de los barrio de Mariana y de Humacao, y San Antón y Saint Just de Carolina para trazar juntoxs el Mapa de su Comunidad.",
-          "url": "https://www.youtube.com/embed/DG2rSpoWA_E"
-        },
-        {
-          "question": "¿QUE IMPLICA HACER UN CENSO COMUNITARIO?",
-          "answer": "Acompaña a Mariangelie Ortiz, líder comerieña del barrio Los Guaretos, en su travesía casa por casa para levantar un censocomunitario.",
+          "question": "¿Cómo se ve la justicia narrativa?",
+          "answer": "Celebra y conmemora junto a las comunidades de Carolina y Comerío la importancia de contar nuestra propia historia para así hacer justicia narrativa.",
           "url": "https://www.youtube.com/embed/DG2rSpoWA_E"
         }
       ]
@@ -607,7 +657,7 @@
         {
           "icon": "./images/libre.svg",
           "subTitle": "LIBRE",
-          "actionSentence": "¡Hagan un cuento juntxs! Es bien fácil, lo único que necesitan es un reloj. Cada persona tiene 30 segundos para hacer su historia y luego le toca a la próxima seguirlo. Pueden empezar con una frase como esta: 'Había una vez y dos son tres una comunidad llamada... .' ¡No paren hasta que todos hayan participado!"
+          "actionSentence": "¡Hagan un cuento juntxs! Es bien fácil, lo único que necesitan es un reloj. Cada persona tiene 30 segundos para hacer su historia y luego le toca a la próxima seguirlo. Pueden empezar con una frase como esta: “Había una vez y dos son tres una comunidad llamada…”. ¡No paren hasta que todxs hayan participado!"
         }
       ]
     }
@@ -626,40 +676,40 @@
       "beforeStarting": [
         {
           "step": 1,
-          "statement": "CONFORME UN COMITÉ DE PROYECTOS.",
-          "sentence": "Conformen un comité de Proyectos. Estxs corillx debe incluir personas organizadas, que tengan 'don de gente' y si saben de algo de construcción, diseño y/o jardinería, ¡mejor!"
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         },
         {
           "step": 2,
-          "statement": "VERIFIQUEN LA GUÍA.",
-          "sentence": "Lean sobre el proceso de diseño participativo, consideraciones importantes a tener a lahora de llevar una idea a la realidad, y cómo participar en todo proyecto sin importar su escala.",
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
           "pdf": "http://www.africau.edu/images/default/sample.steps",
           "pdfButton": "DESCARGAR GUÍA"
         },
         {
           "step": 3,
-          "statement": "IDENTIFIQUEN",
-          "sentence": "Identifiquen que tipo de proyecto les interesa realizar. La planificación y conocimiento necesarios para llevarlo a cabo va a depender de la escala y complejidad del proyecto."
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         }
       ],
       "allReady": [
         {
           "step": 1,
-          "statement": "¡ORGANICEN SUS RECURSOS HUMANOS!",
-          "sentence": "Pueden usar las herramientas #3 de este kit para chequear con qué recursos cuentan dentro de su propia comunidad y cuáles deben procurar fuera."
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         },
         {
           "step": 2,
-          "statement": "¡ORGANICEN SUS RECURSOS FINANCIEROS!",
-          "sentence": "Mi amiga susi preparó una herramienta bien nítida para esto. Busquen 'Presupuesto transparente en el Kit de Procesos Comunitacios.'"
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         },
         {
           "step": 3,
-          "statement": "¡ELABOREN UN PLAN DE ACCIÓN!",
-          "sentence": "Ya que saben qué recursos necesitan, planifiquen cómo conseguirlos."
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         }
       ],
-      "note1": "1. Anoten lo que discutieron, qué decisiones tomaron y qué tareas se repartieron.",
+      "note1": "1. Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
       "note2": "2. No se vayan sin acordar cuándo reunirse de nuevo. Les recomiendo poner una fecha periódica, como los primeros jueves de cada mes."
     }
   },
@@ -676,40 +726,40 @@
       "beforeStarting": [
         {
           "step": 1,
-          "statement": "CONFORME UN COMITÉ DE PROYECTOS.",
-          "sentence": "Conformen un comité de Proyectos. Estxs corillx debe incluir personas organizadas, que tengan 'don de gente' y si saben de algo de construcción, diseño y/o jardinería, ¡mejor!"
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         },
         {
           "step": 2,
-          "statement": "VERIFIQUEN LA GUÍA.",
-          "sentence": "Lean sobre el proceso de diseño participativo, consideraciones importantes a tener a lahora de llevar una idea a la realidad, y cómo participar en todo proyecto sin importar su escala.",
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
           "pdf": "http://www.africau.edu/images/default/sample.steps",
           "pdfButton": "DESCARGAR GUÍA"
         },
         {
           "step": 3,
-          "statement": "IDENTIFIQUEN",
-          "sentence": "Identifiquen que tipo de proyecto les interesa realizar. La planificación y conocimiento necesarios para llevarlo a cabo va a depender de la escala y complejidad del proyecto."
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         }
       ],
       "allReady": [
         {
           "step": 1,
-          "statement": "¡ORGANICEN SUS RECURSOS HUMANOS!",
-          "sentence": "Pueden usar las herramientas #3 de este kit para chequear con qué recursos cuentan dentro de su propia comunidad y cuáles deben procurar fuera."
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         },
         {
           "step": 2,
-          "statement": "¡ORGANICEN SUS RECURSOS FINANCIEROS!",
-          "sentence": "Mi amiga susi preparó una herramienta bien nítida para esto. Busquen 'Presupuesto transparente en el Kit de Procesos Comunitacios.'"
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         },
         {
           "step": 3,
-          "statement": "¡ELABOREN UN PLAN DE ACCIÓN!",
-          "sentence": "Ya que saben qué recursos necesitan, planifiquen cómo conseguirlos."
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         }
       ],
-      "note1": "1. Anoten lo que discutieron, qué decisiones tomaron y qué tareas se repartieron.",
+      "note1": "1. Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
       "note2": "2. No se vayan sin acordar cuándo reunirse de nuevo. Les recomiendo poner una fecha periódica, como los primeros jueves de cada mes."
     }
   },
@@ -726,40 +776,40 @@
       "beforeStarting": [
         {
           "step": 1,
-          "statement": "CONFORME UN COMITÉ DE PROYECTOS.",
-          "sentence": "Conformen un comité de Proyectos. Estxs corillx debe incluir personas organizadas, que tengan 'don de gente' y si saben de algo de construcción, diseño y/o jardinería, ¡mejor!"
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         },
         {
           "step": 2,
-          "statement": "VERIFIQUEN LA GUÍA.",
-          "sentence": "Lean sobre el proceso de diseño participativo, consideraciones importantes a tener a lahora de llevar una idea a la realidad, y cómo participar en todo proyecto sin importar su escala.",
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
           "pdf": "http://www.africau.edu/images/default/sample.steps",
           "pdfButton": "DESCARGAR GUÍA"
         },
         {
           "step": 3,
-          "statement": "IDENTIFIQUEN",
-          "sentence": "Identifiquen que tipo de proyecto les interesa realizar. La planificación y conocimiento necesarios para llevarlo a cabo va a depender de la escala y complejidad del proyecto."
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         }
       ],
       "allReady": [
         {
           "step": 1,
-          "statement": "¡ORGANICEN SUS RECURSOS HUMANOS!",
-          "sentence": "Pueden usar las herramientas #3 de este kit para chequear con qué recursos cuentan dentro de su propia comunidad y cuáles deben procurar fuera."
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         },
         {
           "step": 2,
-          "statement": "¡ORGANICEN SUS RECURSOS FINANCIEROS!",
-          "sentence": "Mi amiga susi preparó una herramienta bien nítida para esto. Busquen 'Presupuesto transparente en el Kit de Procesos Comunitacios.'"
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         },
         {
           "step": 3,
-          "statement": "¡ELABOREN UN PLAN DE ACCIÓN!",
-          "sentence": "Ya que saben qué recursos necesitan, planifiquen cómo conseguirlos."
+          "statement": "Loren",
+          "sentence": "Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
         }
       ],
-      "note1": "1. Anoten lo que discutieron, qué decisiones tomaron y qué tareas se repartieron.",
+      "note1": "1.Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
       "note2": "2. No se vayan sin acordar cuándo reunirse de nuevo. Les recomiendo poner una fecha periódica, como los primeros jueves de cada mes."
     }
   },
@@ -830,22 +880,22 @@
         {
           "icon": "./images/conversa.svg",
           "subTitle": "CONVERSA",
-          "actionSentence": "Si tuvieras que escoger un elemento que caracteriza a tu vecindario, como un edificio icónico, un puente o un río, ¿cuál sería y porqué?"
+          "actionSentence": "Si tuvieras que <b>escoger un elemento que caracteriza a tu vecindario</b>, como un edificio icónico, un puente o un río, ¿cuál sería y porqué?"
         },
         {
           "icon": "./images/dibuja.svg",
           "subTitle": "DIBUJA",
-          "actionSentence": "Dibuja el lugar que más te gusta y que el que menos te gusta en tu comunidad. Pon los dibujos de todxs en dos grupos y observa. ¿Qué cosas se parecen? ¿Qué cosas son diferentes?"
+          "actionSentence": "Dibuja <b>el lugar que más te gusta y que el que menos</b> te gusta en tu comunidad. Pon los dibujos de todxs en dos grupos y observa. ¿Qué cosas se parecen? ¿Qué cosas son diferentes?"
         },
         {
           "icon": "./images/actua.svg",
           "subTitle": "ACTÚA",
-          "actionSentence": "Piensa en un espacio reconocido de tu vecindario. Sin decir nada, actúa como si estuvises en ese lugar. La idea es que lxs demás adivinen en qué sitio imaginas estar."
+          "actionSentence": "Piensa en un espacio reconocido de tu vecindario. Sin decir nada, <b>actúa como si estuvises en ese lugar.</b> La idea es que lxs demás adivinen en qué sitio imaginas estar."
         },
         {
           "icon": "./images/libre.svg",
           "subTitle": "LIBRE",
-          "actionSentence": "Imagínate que quieres invitar a unx vecinx a encontrarse en un lugar en tu comunidad. Sin decir el nombre del destino, dale las instrucciones de cómo llegar desde donde están reunidxs, hasta que adivine dónde se dirige."
+          "actionSentence": "Imagínate que quieres invitar a unx vecinx a encontrarse en un lugar en tu comunidad. Sin decir el nombre del destino, <b>dale las instrucciones de cómo llegar desde donde están reunidxs,</b> hasta que adivine dónde se dirige."
         }
       ]
     }
@@ -871,7 +921,7 @@
         {
           "step": 2,
           "statement": "escoge un recorrido",
-          "sentence": "Esta guía tiene cinco recorridos por tema y uno libre que pueden planificar a su gusto. considera quíenes van a participar y cuánto tiempo tienen antes de escoger el recorrido y traza la ruta."
+          "sentence": "Esta guía tiene cinco recorridos por tema y uno libre que pueden planificar a su gusto. Considera quiénes van a participar y cuánto tiempo tienen antes de escoger el recorrido y traza la ruta."
         },
         {
           "step": 3,
@@ -883,7 +933,7 @@
         {
           "step": 1,
           "statement": "¡camina y observa!",
-          "sentence": "fíjate en los elementos grandes, como las calles, los lotes y los edificios, pero también en los detallitos como los colores, los sonidos, hasta los olores."
+          "sentence": "Fíjate en los elementos grandes, como las calles, los lotes y los edificios, pero también en los detallitos como los colores, los sonidos, hasta los olores. "
         },
         {
           "step": 2,
@@ -945,7 +995,7 @@
         }
       ],
       "finishAction": "REÚNANSE:",
-      "note1": "1. Hablen sobre lo que imaginaron juntxs. Pueden usar la plantilla de preguntas en la parte 'DESPUES' de la Guía. \n2. ¿Que partes de este lugar soñado son más viables que otros? ¿Qué haría falta para hacerlo posible? \n3.¿Volverían a hacer un taller de imaginario como este? ¿Por qué o por qué no?"
+      "note1": "1. Hablen sobre lo que imaginaron juntxs. Pueden usar la plantilla de preguntas en la parte “DESPUÉS” de la Guía.\n2. ¿Qué partes de este lugar soñado son más viables que otros? ¿Qué haría falta para hacerlo posible? \n3. ¿Volverían a hacer un taller de imaginario como éste? ¿Por qué o por qué no?"
     }
   },
   {
@@ -962,7 +1012,7 @@
         {
           "step": 1,
           "statement": "elige cómo llegar a tus vecinos",
-          "sentence": "Puedes reunir a tu comunidad, hacer un char grupal, o ir de casa en casa."
+          "sentence": " Puedes reunir a tu comunidad, hacer un chat grupal, o ir de casa en casa."
         },
         {
           "step": 2,
@@ -972,7 +1022,7 @@
         {
           "step": 3,
           "statement": "crea un comité de escrutinio",
-          "sentence": "¡el trabajo en equipo es la clave! Cada voluntarix puede encargarse de recolectar los datos de un grupo de vecinxs, una calle o un sector en particular."
+          "sentence": "¡El trabajo en equipo es la clave! Cada voluntarix puede encargarse de recolectar los datos de un grupo de vecinxs, una calle o un sector en particular."
         }
       ],
       "allReady": [
@@ -993,7 +1043,7 @@
         }
       ],
       "finishAction": "REÚNETE CON TU COMUNIDAD O CON EL COMITÉ DE VOLUNTARIXS PARA HABLAR SOBRE LA INFORMACIÓN QUE RECOPILARON.",
-      "note1": "1. ¿Cómo es la gente en la comunidad? ¿Esuna población envejecida? ¿Hay jóvenes profesionales, familias o niñxs? \n2. ¿Con cuáles talentos cuenta la comunidad? \n3. ¿Qué vecinxs son más vulnerables o requieren un cuidado especial?"
+      "note1": "1. ¿Cómo es la gente en la comunidad? ¿Es una población envejecida? ¿Hay jóvenes profesionales, familias o niñxs? \n2. ¿Con cuáles talentos cuenta la comunidad? \n3. ¿Qué vecinxs son más vulnerables o requieren un cuidado especial?"
     }
   },
   {
@@ -1056,8 +1106,8 @@
     "typeId": "photo",
     "cardType": {
       "typeName": "Álbum de fotos",
-      "subTitle": "Mapeo comunitario",
-      "description": "¡CONOCE LAS FORMAS DIVERSAS EN QUE SE REALIZÓ EL MAPEO COMUNITARIO EN CAROLINA, HUMACAO  Y COMERÍO",
+      "subTitle": "Talleres de Imaginario",
+      "description": "Explora las distintas manifestaciones que puede tomar un taller de imaginario con ejemplos vivos de las comunidades de Comerío, Carolina y Humacao.",
       "picture": "./images/photography.png"
     }
   },
@@ -1070,16 +1120,11 @@
     "type": "Audiovisual",
     "typeId": "audio-visual",
     "cardType": {
-      "videoType": "Mapeo Comunitario y Censo Comunitario",
+      "videoType": "Talleres de Imaginario",
       "videoInfoContainer": [
         {
-          "question": "¿QUE SIGNIFICA MAPEAR TU COMUNIDAD?",
-          "answer": "Mira cómo se organizaron lxs vecinxs de los barrio de Mariana y de Humacao, y San Antón y Saint Just de Carolina para trazar juntoxs el Mapa de su Comunidad.",
-          "url": "https://www.youtube.com/embed/DG2rSpoWA_E"
-        },
-        {
-          "question": "¿QUE IMPLICA HACER UN CENSO COMUNITARIO?",
-          "answer": "Acompaña a Mariangelie Ortiz, líder comerieña del barrio Los Guaretos, en su travesía casa por casa para levantar un censocomunitario.",
+          "question": "¿Qué es un Taller de Imaginario?",
+          "answer": "Acompañemos a la comunidad de Carolina a imaginar una casa para su vecina, a la de Comerío a imaginar iluminación en su barrio, y a la de Humacao a imaginar un parque para todxs.",
           "url": "https://www.youtube.com/embed/DG2rSpoWA_E"
         }
       ]
@@ -1099,26 +1144,26 @@
         {
           "step": 1,
           "statement": "hojeen la guía",
-          "sentence": "vayan a la sección que dice qué hacer Antes de empezar el taller.",
+          "sentence": "<p>Vayan a la sección que dice qué hacer <b>ANTES de empezar el taller.</b></p>",
           "pdf": "http://www.africau.edu/images/default/sample.steps",
           "pdfButton": "DESCARGAR GUÍA"
         },
         {
           "step": 2,
           "statement": "escojan que tipo de taller hacer.",
-          "sentence": "Escojan que tipo de taller hacer. \n¿Les gustaría pintar? ¿Qué tal narrar un cuento común? Pueden seleccionar alguna de las actividades sugeridas, o si se sienten creativos como yo, pueden hasta inventarse su propia dinámica. ¡El cielo es el límite!"
+          "sentence": "<p><b>Escojan que tipo de taller hacer.</b> \n¿Les gustaría pintar? ¿Qué tal narrar un cuento común? Pueden seleccionar alguna de las actividades sugeridas, o si se sienten creativos como yo, pueden hasta inventarse su propia dinámica. ¡El cielo es el límite!<p>"
         },
         {
           "step": 3,
           "statement": "Preparen los materiales.",
-          "sentence": "Como cada actividad es diferente, cada una necesitará materiales distintos. PLanifiquen y divídanse las cosas antes de reunirse a tallerear."
+          "sentence": "Como cada actividad es diferente, cada una necesitará materiales distintos. Planifiquen y divídanse las cosas antes de reunirse a tallerear."
         }
       ],
       "allReady": [
         {
           "step": 1,
           "statement": "¡tellereen!",
-          "sentence": "Pueden seguir las indicaciones de la Guía, o también pueden 'fluir' como dice Adriana e inventarse sus propias reglas."
+          "sentence": "Pueden seguir las indicaciones de la Guía, o también pueden “fluir” como dice Adriana e inventarse sus propias reglas."
         },
         {
           "step": 2,
@@ -1127,7 +1172,7 @@
         }
       ],
       "finishAction": " REÚNANSE:",
-      "note1": "1. Hablen sobre lo que imaginaron juntxs. Pueden usar la plantilla de preguntas en la parte 'DESPUES' de la Guía. \n2. ¿que partes de este lugar soñado son mas viables que otros? ¿Qué haría falta para hacerlo posible? \n3. ¿Volverían a hacer un taller imaginario como este? ¿Por qué o por qué no?",
+      "note1": "1. Hablen sobre lo que imaginaron juntxs. Pueden usar la plantilla de preguntas en la parte 'DESPUES' de la Guía. \n2. ¿Qué partes de este lugar soñado son mas viables que otros? ¿Qué haría falta para hacerlo posible? \n3. ¿Volverían a hacer un taller imaginario como este? ¿Por qué o por qué no?",
       "note2": "2. No se vayan sin acordar cuándo reunirse de nuevo. Les recomiendo poner una fecha periódica, como los primeros jueves de cada mes."
     }
   },
@@ -1145,12 +1190,12 @@
         {
           "step": 1,
           "statement": "reúnete con tus vecinxs.",
-          "sentence": "Mientas más personas participen, especialmente si son distintas edades y hasta sectores dentro del vecindario ¡mejor!"
+          "sentence": "<p> <strong>Mientas más personas participen,</strong> especialmente si son distintas edades y hasta sectores dentro del vecindario ¡mejor!<p>"
         },
         {
           "step": 2,
           "statement": "copia",
-          "sentence": "Copia suficientes hojas de Sueños y Hojas de necesidades para todxs. Las encuentras en el Archivo de documentos. Tamnbién puedes descargarlas en cartucheracomunitaria.com y compartirla por mensaje o email."
+          "sentence": "<p> <b>Copia suficientes Hojas de Sueños y Hojas de Necesidades para todxs.</b> Las encuentras en el Archivo de Documentos. También puedes descargarlas en cartucheracomunitaria.com y compartirla por mensaje o email."
         },
         {
           "step": 3,
@@ -1198,12 +1243,12 @@
         {
           "step": 2,
           "statement": "elige una superficie grande donde escribir",
-          "sentence": "Pueden imprimir una copia de la plantilla de Prioridades Comunitarias en cartucheracomunitaria.com, usar la que hay en el Archivi de Documentos o pasar la tabla a un pedazo grande de papel de estraza o una pizarra."
+          "sentence": "<p>Pueden imprimir una copia de la plantilla de Prioridades Comunitarias en <b>cartucheracomunitaria.com,</b> usar la que hay en el Archivo de Documentos o pasar la tabla a un pedazo grande de papel de estraza o una pizarra.</p>"
         },
         {
           "step": 3,
           "statement": "reparte los sellitos.",
-          "sentence": "Reparte una hoja de cada una por persona Recuerda darle las pegatinas de los tres colores a cada persona o grupo familiar. También pueden usar 'post.its' o marcadores con los mismos colores (rojo, anaranjado, verde) y compartirlos. \nUna por grupo familiar."
+          "sentence": "Reparte una hoja de cada una por persoRecuerda darle pegatinas de los tres colores a cada persona o grupo familiar.  También pueden usar “post-its” o marcadores con los mismos colores (rojo, anaranjado y verde) y compartirlos. Una o por grupo familiar."
         }
       ],
       "allReady": [

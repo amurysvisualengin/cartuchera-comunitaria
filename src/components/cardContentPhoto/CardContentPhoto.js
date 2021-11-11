@@ -49,7 +49,7 @@ function CardContentPhoto(props) {
               className="custom-font text-left text-base bg-black  w-104 items-center p-2 rounded mt-6"
               style={{ color: color }}
             >
-              {cardContent.description}
+              {cardContent.description.toUpperCase()}
             </p>
           )}
           <img
