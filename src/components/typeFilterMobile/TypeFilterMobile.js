@@ -7,8 +7,7 @@ import Audiovisuales from "../../assets/icons/Audiovisuales.svg";
 import Fotos from "../../assets/icons/Fotos.svg";
 
 const TypeFilterMobile = () => {
-  const { typeMobile, setTypeMobile } = useContext(CardListContext);
-
+  const { typeMobile, setTypeMobile, isTablet } = useContext(CardListContext);
   const types = [
     /* {
       typeId: "presentation",
@@ -46,11 +45,11 @@ const TypeFilterMobile = () => {
               : "opacity-30"
           }`}
         >
-          <button className=" mt-4 ml-6">
+          <button className={`${isTablet > 400 ? "mt-4 ml-6" : "mt-4 ml-6"}`}>
             <img
               src={element.src}
               alt=""
-              className="w-12 h-12 mb-4 bg-black filter invert "
+              className="w-10 h-6 mb-4 bg-black filter invert "
             />
           </button>
         </div>

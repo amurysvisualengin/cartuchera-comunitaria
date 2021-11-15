@@ -5,6 +5,8 @@ import "./CardContentAudio.css";
 const CardContentAudio = (props) => {
   const { cardContent, title, img, color, handleShowExpandFalse } = props;
   const { isMobile } = useContext(CardListContext);
+  const { setIsExpand } = useContext(CardListContext);
+
   return (
     <div>
       {!isMobile && (
@@ -14,11 +16,13 @@ const CardContentAudio = (props) => {
           className="opacity-10 filter invert fixed -z-10 w-107 ml-44 mb-111 transform scale-150"
         />
       )}
+
       <div
         className="text-right mr-2 mt-2 lg:mt-2 lg:mr-10"
         onClick={() => {
           handleShowExpandFalse();
-          console.log("hola");
+          console.log(handleShowExpandFalse);
+          setIsExpand(false);
         }}
       >
         <button

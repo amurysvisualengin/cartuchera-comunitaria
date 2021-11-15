@@ -4,7 +4,7 @@ import CardListContext from "../../context/CardListContext";
 const ColorFilterMobile = (props) => {
   //   const colors = ["#F9A66B", "#9BC2D4", "#EF604B", "#E1AC47"];
   const [iscolor, setIscolor] = useState("");
-  const { changeColorMobile, setChangeColorMobile } =
+  const { changeColorMobile, setChangeColorMobile, isTablet } =
     useContext(CardListContext);
 
   const changeColor = () => {
@@ -18,9 +18,12 @@ const ColorFilterMobile = (props) => {
   };
 
   return (
-    <div onClick={changeColor} className="ml-5">
+    <div
+      onClick={changeColor}
+      className={`${isTablet > 768 ? "ml-48" : "ml-12"}  `}
+    >
       <button
-        className="rounded-full border-2 border-black w-12 h-12 "
+        className="rounded-full border-2 border-black w-6 h-6 "
         style={{ background: changeColorMobile }}
       ></button>
     </div>

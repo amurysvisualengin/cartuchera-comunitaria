@@ -9,13 +9,38 @@ import ColorFilterMobile from "../colorFilterMobile/ColorFilterMobile";
 
 function Swiper() {
   const card = Data;
-  const { changeColorMobile, isExpand } = useContext(CardListContext);
-  const { typeMobile } = useContext(CardListContext);
+  const { changeColorMobile } = useContext(CardListContext);
+  const { typeMobile, isTablet } = useContext(CardListContext);
+  const { setIsExpand, setCardInfo } = useContext(CardListContext);
+  let timer = 0;
+  let isMove = false;
 
-  console.log(typeMobile, "swiper");
-  return (
+  /* const handleTouchStart = () => {
+    timer = 0;
+    setIsExpand(false);
+    setInterval(() => {
+      timer++;
+    }, 50);
+  };
+
+  const handleTouchMove = () => {
+    isMove = true;
+  };
+
+  const handleTouchEnd = () => {
+    if (timer > 10 && isMove) {
+      setIsExpand(false);
+    }
+    if (timer < 10 && isMove === false) {
+      setIsExpand(true);
+    }
+
+    timer = 0;
+    isMove = false;
+  };
+  setIsExpand(false) */ return (
     <div>
-      <div className="block">
+      <div className={`${isTablet > 766 ? "w-96.5 ml-auto mr-auto" : "block"}`}>
         {card.map(
           (element, index) =>
             // Conditional colors and card types
@@ -29,7 +54,15 @@ function Swiper() {
                 key={index}
                 preventSwipe={["up", "down"]}
               >
-                <div>
+                <div
+                // onTouchStart={handleTouchStart}
+                /* onTouchStart={handleTouchStart}
+                  onTouchMove={handleTouchMove}
+                  onTouchEnd={() => {
+                    handleTouchEnd();
+                    
+                  }} */
+                >
                   <Card
                     key={index}
                     cardNumber={element.cardNumber}
@@ -40,6 +73,7 @@ function Swiper() {
                     cardContent={element.cardType}
                   />
                 </div>
+                <div></div>
               </MobileSwiper>
             )
         )}

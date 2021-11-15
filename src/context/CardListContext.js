@@ -3,6 +3,8 @@ import { createContext } from "react";
 const CardListContext = createContext({
   isMobile: "",
   setIsMobile: (mobile) => {},
+  isTablet: "",
+  setIsTablet: (tablet) => {},
   kitFilter: "",
   setKitFilter: (kit) => {},
   typeFilter: "",
@@ -17,6 +19,10 @@ const CardListContext = createContext({
   setTypeMobile: (typeFilter) => {},
   isExpand: "",
   setIsExpand: (expand) => {},
+  propTitle: "",
+  setPropTitle: (title) => {},
+  cardInfo: "",
+  setCardInfo: (card) => {},
 });
 
 export default CardListContext;

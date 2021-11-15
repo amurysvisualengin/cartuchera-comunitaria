@@ -90,7 +90,6 @@ const Sidebar = (props) => {
         isSidebarVisible ? "block mt-0" : "hidden"
       } lg:block`}
     >
-      <img src={CartucheraLogo} alt="" />
       <div className="flex mt-16">
         <img src={Check} alt="" className="mr-4" />
         <h1 className="text-3xl custom-font">Intrucciones</h1>

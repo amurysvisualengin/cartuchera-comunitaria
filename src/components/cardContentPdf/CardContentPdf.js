@@ -60,9 +60,19 @@ const CardContentPdf = (props) => {
           </div>
 
           {
-            <div className="lg:flex lg:w-104 ">
+            <div
+              className={`lg:flex   lg:w-104 ${
+                cardContent.beforeStarting.length > 3 && "lg:flex-wrap"
+              }`}
+            >
               {cardContent.beforeStarting.map((element, index) => (
-                <div className="flex-grow flex-wrap text-left text-xs border-2 rounded border-black mr-4 w-84 lg:w-96 mb-4 lg:mb-0 ">
+                <div
+                  className={`flex-wrap text-left text-xs border-2 rounded border-black mr-4 w-84 lg:w-96 mb-4 lg:mb-0 ${
+                    cardContent.beforeStarting.length > 3
+                      ? "lg:w-96.5 lg:mb-4"
+                      : "lg:w-96"
+                  } `}
+                >
                   <div
                     className="flex bg-black custom-font p-4 "
                     style={{ color: color }}

@@ -12,15 +12,11 @@ import { useEffect } from "react/cjs/react.development";
 const Card = (props) => {
   const [showExpand, setShowExpand] = useState(false);
   const { title, img, type, color, cardNumber, cardContent } = props;
-  const [touch, setTouch] = useState(false);
-  const { isExpand, setIsExpand } = useState(CardListContext);
+  const { setCardInfo, isExpand, setIsExpand } = useContext(CardListContext);
 
-  useEffect(() => {
-    console.log(showExpand);
-  }, [showExpand]);
+  useEffect(() => {}, [showExpand]);
 
   const handleShowExpandFalse = () => {
-    console.log("adios");
     setShowExpand(!showExpand);
   };
 
@@ -33,19 +29,28 @@ const Card = (props) => {
     setInterval(() => {
       timer++;
     }, 50);
-    // console.log("handleTouchStart", timer);
   };
 
   const handleOnTouchMove = () => {
     isMove = true;
+    timer = 0;
   };
 
   const handleTouchEnd = () => {
-    // console.log("handletouchEnd:", isMove);
     if (timer < 10 && isMove === false) {
       setShowExpand(!showExpand);
+      setIsExpand(true);
+      setCardInfo([
+        title,
+        img,
+        color,
+        type,
+        cardContent,
+        handleShowExpandFalse,
+      ]);
     }
-    // console.log("handleTouchEnd", timer);
+    console.log(isMove);
+
     isMove = false;
   };
 
@@ -68,7 +73,7 @@ const Card = (props) => {
         className={` ${
           isMobile
             ? " ml-5 w-90 h-98 p-16 card-item cursor-pointer"
-            : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72  "
+            : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72"
         } `}
         style={{ backgroundColor: color, borderColor: color }}
       >
@@ -84,15 +89,13 @@ const Card = (props) => {
           style={{ backgroundColor: color }}
         >
           {type === "Audiovisual" && (
-            <div>
-              <CardContentAudio
-                cardContent={cardContent}
-                img={img}
-                title={title}
-                color={color}
-                handleShowExpandFalse={handleShowExpandFalse}
-              />
-            </div>
+            <CardContentAudio
+              cardContent={cardContent}
+              img={img}
+              title={title}
+              color={color}
+              handleShowExpandFalse={handleShowExpandFalse}
+            />
           )}
           {type === "Herramientas" && (
             <CardContentPdf

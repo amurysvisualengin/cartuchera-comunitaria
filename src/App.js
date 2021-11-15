@@ -6,19 +6,26 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import FilterMobile from "./components/filterMobile/FilterMobile";
 import Swiper from "./components/swiper/Swiper";
+import Header from "./components/header/Header";
+import Menu from "./components/menu/Menu";
 
 function App() {
   const [kitFilter, setKitFilter] = useState("");
   const [typeFilter, setTypeFilter] = useState("");
   const [isSidebarVisible, setIsSidebarVisible] = useState("");
   const [isMobile, setIsMobile] = useState("");
-  const [isExpand, setIsExpand] = useState(false);
+  const [isTablet, setIstablet] = useState("");
+  const [isExpand, setIsExpand] = useState("");
   const [mobileList, setMobileList] = useState("");
   const [changeColorMobile, setChangeColorMobile] = useState("");
   const [typeMobile, setTypeMobile] = useState("");
-  //choose the screen size
+  const [propTitle, setPropTitle] = useState("");
+  const [cardInfo, setCardInfo] = useState({});
+
+  //choose the screen size for mobile
   const handleResize = () => {
-    if (window.innerWidth < 769) {
+    if (window.innerWidth <= 768) {
+      setIstablet(window.innerWidth);
       setIsMobile(true);
     } else {
       setIsMobile(false);
@@ -31,10 +38,13 @@ function App() {
   });
   useEffect(() => {
     handleResize();
+    // handleTablet();
   }, []);
 
   return (
     <div className="block lg:flex">
+      {/* {!isMobile && <Header />} */}
+
       <CardListContext.Provider
         value={{
           kitFilter,
@@ -45,6 +55,8 @@ function App() {
           setIsSidebarVisible,
           isMobile,
           setIsMobile,
+          isTablet,
+          setIstablet,
           isExpand,
           setIsExpand,
           mobileList,
@@ -53,8 +65,14 @@ function App() {
           setChangeColorMobile,
           typeMobile,
           setTypeMobile,
+          propTitle,
+          setPropTitle,
+          cardInfo,
+          setCardInfo,
         }}
       >
+        <Menu />
+        {!isMobile && <Header />}
         <Sidebar />
         <CardGrid />
       </CardListContext.Provider>
