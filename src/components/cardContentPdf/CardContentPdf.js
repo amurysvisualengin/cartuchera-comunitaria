@@ -4,7 +4,7 @@ import CardListContext from "../../context/CardListContext";
 
 const CardContentPdf = (props) => {
   const { cardContent, title, img, color, handleShowExpandFalse } = props;
-  const { isMobile } = useContext(CardListContext);
+  const { isMobile, setIsExpand } = useContext(CardListContext);
 
   return (
     <div>
@@ -15,11 +15,12 @@ const CardContentPdf = (props) => {
           className="fixed -z-10 filter invert w-111 transform -rotate-12 opacity-10 scale-120 "
         />
       )}
+
       <div
         className="text-right mr-2 mt-4 lg:mt-4 lg:mr-10"
         onClick={() => {
           handleShowExpandFalse();
-          console.log("hola");
+          setIsExpand(false);
         }}
       >
         <button

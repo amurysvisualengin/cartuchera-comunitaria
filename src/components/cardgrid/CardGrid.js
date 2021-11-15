@@ -9,6 +9,7 @@ import CartucheraLogo from "../../assets/icons/cartuchera-logo.svg";
 import TypeFilterMobile from "../typeFilterMobile/TypeFilterMobile";
 import Header from "../header/Header";
 import CardContentAudio from "../cardContentAudio/CardContentAudio";
+import CardContentPdf from "../cardContentPdf/CardContentPdf";
 
 const CardGrid = () => {
   const typesCard = Data;
@@ -48,7 +49,7 @@ const CardGrid = () => {
     );
   }
   console.log(isExpand, "cardgrid");
-  // console.log(cardInfo);
+  // console.log(cardInfo[4]);
   if (isMobile) {
     return (
       <div>
@@ -95,6 +96,27 @@ const CardGrid = () => {
                 handleShowExpandFalse={cardInfo[5]}
               />
             )}
+            {cardInfo[3] === "Herramientas" && (
+              <CardContentPdf
+                cardContent={cardInfo[4]}
+                title={cardInfo[0]}
+                color={cardInfo[2]}
+                img={cardInfo[1]}
+                type={cardInfo[3]}
+                handleShowExpandFalse={cardInfo[5]}
+              />
+            )}
+            {cardInfo[3] === "Rompehielos" &&
+              {
+                /* <CardContentPdf
+                cardContent={cardInfo[4]}
+                title={cardInfo[0]}
+                color={cardInfo[2]}
+                img={cardInfo[1]}
+                type={cardInfo[3]}
+                handleShowExpandFalse={cardInfo[5]}
+              /> */
+              }}
           </div>
         )}
       </div>
