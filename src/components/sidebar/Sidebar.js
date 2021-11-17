@@ -81,82 +81,85 @@ const Sidebar = (props) => {
     setTypeFilter,
     isSidebarVisible,
     setSidebarVisible,
+    isTablet,
   } = useContext(CardListContext);
-
+  console.log(isTablet);
   return (
-    <div
-      style={{ maxWidth: "443px" }}
-      className={`p-12 w2/3 sidebar ${
-        isSidebarVisible ? "block mt-0" : "hidden"
-      } lg:block`}
-    >
-      <div className="flex mt-16">
-        <img src={Check} alt="" className="mr-4" />
-        <h1 className="text-3xl custom-font">Intrucciones</h1>
-      </div>
-
-      <div className="kits mt-14 items-center">
-        <h2 className=" text-xl text-left custom-font">Ordenar por Kit:</h2>
-        <div className="text-center mt-4 custom-font">
-          {filters.map((element) => (
-            <div
-              onClick={() => {
-                if (element.id === kitFilter) {
-                  setKitFilter("");
-                } else setKitFilter(element.id);
-              }}
-              className={`py-4 text-sm mr-4 ml-1 mt-2 rounded-md cursor-pointer ${
-                !kitFilter || kitFilter === element.id
-                  ? "opacity-100"
-                  : "opacity-30"
-              }`}
-              style={{ backgroundColor: element.color }}
-            >
-              {element.title}
-            </div>
-          ))}
+    <div>
+      <div
+        style={{ maxWidth: "443px" }}
+        className={`p-12 w2/3 sidebar ${
+          isSidebarVisible ? "block mt-0" : "hidden"
+        } xl:block`}
+      >
+        <div className="flex mt-16">
+          <img src={Check} alt="" className="mr-4" />
+          <h1 className="text-3xl custom-font">Intrucciones</h1>
         </div>
-      </div>
-      <div className=" types w-96 mt-14">
-        <div className="types-checkbox-parent">
-          <div className="mr-14 rounded-md">
-            <h2 className="text-xl custom-font">Ordenar por tipo:</h2>
-            {types.map((element) => (
+
+        <div className="kits mt-14 items-center">
+          <h2 className=" text-xl text-left custom-font">Ordenar por Kit:</h2>
+          <div className="text-center mt-4 custom-font">
+            {filters.map((element) => (
               <div
                 onClick={() => {
-                  if (element.typeId === typeFilter) {
-                    setTypeFilter("");
-                  } else setTypeFilter(element.typeId);
+                  if (element.id === kitFilter) {
+                    setKitFilter("");
+                  } else setKitFilter(element.id);
                 }}
-                className={`flex text-center text-white mt-4 p-4 rounded-md cursor-pointer bg-checkbox  ${
-                  !typeFilter || typeFilter === element.typeId
-                    ? "opacity-100:"
+                className={`py-4 text-sm mr-4 ml-1 mt-2 rounded-md cursor-pointer ${
+                  !kitFilter || kitFilter === element.id
+                    ? "opacity-100"
                     : "opacity-30"
                 }`}
+                style={{ backgroundColor: element.color }}
               >
-                <input
-                  className="ml-4 mr-10 w-8 h-8"
-                  type={element.type}
-                  src={element.src}
-                  alt={element.name}
-                  id={element.name}
-                  name={element.name}
-                  value={element.name}
-                />
-                <div>
-                  {
-                    <label className="ml-2 cursor-pointer" for={element.name}>
-                      {element.name}
-                    </label>
-                  }
-                </div>
-                <br />
+                {element.title}
               </div>
             ))}
           </div>
+        </div>
+        <div className=" types w-96 mt-14">
+          <div className="types-checkbox-parent">
+            <div className="mr-14 rounded-md">
+              <h2 className="text-xl custom-font">Ordenar por tipo:</h2>
+              {types.map((element) => (
+                <div
+                  onClick={() => {
+                    if (element.typeId === typeFilter) {
+                      setTypeFilter("");
+                    } else setTypeFilter(element.typeId);
+                  }}
+                  className={`flex text-center text-white mt-4 p-4 rounded-md cursor-pointer bg-checkbox  ${
+                    !typeFilter || typeFilter === element.typeId
+                      ? "opacity-100:"
+                      : "opacity-30"
+                  }`}
+                >
+                  <input
+                    className="ml-4 mr-10 w-8 h-8"
+                    type={element.type}
+                    src={element.src}
+                    alt={element.name}
+                    id={element.name}
+                    name={element.name}
+                    value={element.name}
+                  />
+                  <div>
+                    {
+                      <label className="ml-2 cursor-pointer" for={element.name}>
+                        {element.name}
+                      </label>
+                    }
+                  </div>
+                  <br />
+                </div>
+              ))}
+            </div>
 
-          <div className="w-96 mt-107 ">
-            <SocialMedia />
+            <div className="w-96 mt-107 ">
+              <SocialMedia />
+            </div>
           </div>
         </div>
       </div>

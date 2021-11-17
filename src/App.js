@@ -8,6 +8,7 @@ import FilterMobile from "./components/filterMobile/FilterMobile";
 import Swiper from "./components/swiper/Swiper";
 import Header from "./components/header/Header";
 import Menu from "./components/menu/Menu";
+import InfoMobile from "./components/infoMobile/InfoMobile";
 
 function App() {
   const [kitFilter, setKitFilter] = useState("");
@@ -21,10 +22,12 @@ function App() {
   const [typeMobile, setTypeMobile] = useState("");
   const [propTitle, setPropTitle] = useState("");
   const [cardInfo, setCardInfo] = useState({});
+  const [showMenu, setShowMenu] = useState(false);
+  const [showInformation, setShowInformation] = useState(false);
 
   //choose the screen size for mobile
   const handleResize = () => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth < 1224) {
       setIstablet(window.innerWidth);
       setIsMobile(true);
     } else {
@@ -42,9 +45,7 @@ function App() {
   }, []);
 
   return (
-    <div className="block lg:flex">
-      {/* {!isMobile && <Header />} */}
-
+    <div className="block xl:flex">
       <CardListContext.Provider
         value={{
           kitFilter,
@@ -69,10 +70,15 @@ function App() {
           setPropTitle,
           cardInfo,
           setCardInfo,
+          showMenu,
+          setShowMenu,
+          showInformation,
+          setShowInformation,
         }}
       >
         <Menu />
         {!isMobile && <Header />}
+
         <Sidebar />
         <CardGrid />
       </CardListContext.Provider>

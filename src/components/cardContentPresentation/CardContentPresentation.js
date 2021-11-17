@@ -8,14 +8,15 @@ import Linkedin from "../../assets/icons/Linkedin.svg";
 
 const CardContentPresentation = (props) => {
   const { cardContent, title, img, color, handleShowExpandFalse } = props;
-  const { isMobile } = useContext(CardListContext);
+  const { isMobile, setIsExpand, isTablet } = useContext(CardListContext);
 
   return (
-    <div>
+    <div style={{ backgroundColor: isMobile ? color : "" }}>
       <div
-        className="text-right mr-2 mt-4 lg:mt-4 lg:mr-10"
+        className="text-right mr-2 pt-4 lg:pt-0 lg:mt-4 lg:mr-10"
         onClick={() => {
           handleShowExpandFalse();
+          setIsExpand(false);
         }}
       >
         <button
@@ -26,7 +27,7 @@ const CardContentPresentation = (props) => {
         </button>
       </div>
       <div className="flex justify-center lg:mt-8 lg:mr-20 ">
-        <div className="block mr-14 ">
+        <div className={`block  ${isTablet < 767 ? "mr-14" : "mr-2"}`}>
           {!isMobile && (
             <div>
               <img src={cardContent.nameSvg} alt="name SVG" className="ml-44" />
@@ -41,33 +42,57 @@ const CardContentPresentation = (props) => {
           >
             PRESENTACIÓN
           </h2>
-          <h1 className="text-left text-3xl lg:text-5xl custom-font-shadow lg:w-100">
+          <h1
+            className={`text-left custom-font-shadow lg:w-100 lg:text-5xl ${
+              isTablet < 767 ? "text-3xl" : "text-4xl "
+            }`}
+          >
             {cardContent.presentationName}
           </h1>
           {isMobile && (
-            <div>
-              <img
-                src={cardContent.nameSvg}
-                alt="name SVG"
-                className="mt-10 ml-28"
-              />
-              <img src={img} alt="icon type" className="ml-4 w-40 mr-4 " />
+            <div
+              className={`${
+                isTablet > 767 && isMobile < 1024
+                  ? "flex justify-center"
+                  : "block"
+              }`}
+            >
+              <div>
+                <img
+                  src={cardContent.nameSvg}
+                  alt="name SVG"
+                  className="mt-10 ml-28"
+                />
+                <img src={img} alt="icon type" className="ml-4 w-40 mr-4 " />
+              </div>
             </div>
           )}
-          <div className="w-72 lg:w-100 mt-6 text-left ">
+          <div
+            className={`mt-6 text-left lg:w-100 ${
+              isTablet < 767 ? "w-72" : "w-100 "
+            }`}
+          >
             <h2 className="font-bold lg:text-lg">{cardContent.subTitle}</h2>
             <h2 className=" lg:text-lg mt-4">
               {cardContent.description}
               <span className="font-bold">{cardContent.sentence}</span>
             </h2>
-            <div className="border-4 border-black rounded-md mt-6 w-72 lg:w-100 mb-10 lg:mb-0">
+            <div
+              className={`border-4 border-black rounded-md mt-6 lg:w-100 mb-10 lg:mb-0 ${
+                isTablet < 767 ? "w-72" : "w-100"
+              }`}
+            >
               <h2
                 className=" text-white text-sm tracking-widest border-2 border-black bg-black py-2 px-2 custom-font"
                 style={{ color: color }}
               >
                 ¿CONOCES A ALGUIEN QUE SE PAREZCA A {cardContent.name}?
               </h2>
-              <p className="mt-4 ml-4 mr-4 lg:text-lg">
+              <p
+                className={`mt-4 ml-4 mr-4 lg:text-lg  lg:w-99.5 ${
+                  isTablet < 767 ? "w-48" : "w-99.5"
+                }`}
+              >
                 ¡Queremos conocerla! Escribe a{" "}
                 <b>info@cartucheracomunitaria.com</b> o accede a nuestras redes
                 para contarnos quién es y cuál es su rol en la comunidad.

@@ -4,10 +4,10 @@ import CardListContext from "../../context/CardListContext";
 
 const CardContentPdf = (props) => {
   const { cardContent, title, img, color, handleShowExpandFalse } = props;
-  const { isMobile, setIsExpand } = useContext(CardListContext);
+  const { isMobile, setIsExpand, isTablet } = useContext(CardListContext);
 
   return (
-    <div>
+    <div style={{ backgroundColor: isMobile ? color : "" }}>
       {!isMobile && (
         <img
           src={img}
@@ -17,7 +17,7 @@ const CardContentPdf = (props) => {
       )}
 
       <div
-        className="text-right mr-2 mt-4 lg:mt-4 lg:mr-10"
+        className="text-right mr-2 pt-4 lg:pt-0 lg:mt-4 lg:mr-10"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
@@ -35,14 +35,22 @@ const CardContentPdf = (props) => {
         {!isMobile && (
           <img src={img} alt="" className="mr-16 w-32 h-12 float-left z-30" />
         )}
-        <div className="block w-96 ml-4 lg:mr-0 lg:w-104 ">
+        <div
+          className={`block  ml-4 lg:mr-0 lg:w-104  ${
+            isTablet < 767 ? "w-96" : "w-99.5"
+          }`}
+        >
           <p
             className="bg-black w-24 lg:w-32 rounded px-2 py-1 text-xs lg:text-base "
             style={{ color: color }}
           >
             HERRAMIENTA
           </p>
-          <h1 className="custom-font-shadow text-3xl lg:text-6xl mt-6 text-left lg:leading-11">
+          <h1
+            className={`custom-font-shadow  lg:text-6xl mt-6 text-left lg:leading-11 ${
+              isMobile ? (isTablet < 767 ? "text-3xl" : "text-4xl") : ""
+            }`}
+          >
             {title}
           </h1>
           <div className="text-left mt-3">
@@ -50,7 +58,9 @@ const CardContentPdf = (props) => {
               className={` ${
                 !isMobile
                   ? "custom-font lg:text-2xl w-111 mt-8"
-                  : "text-base w-90"
+                  : isTablet < 767
+                  ? "text-base w-90"
+                  : "custom-font text:base w-100"
               }`}
             >
               {cardContent.subTitle}
@@ -62,13 +72,15 @@ const CardContentPdf = (props) => {
 
           {
             <div
-              className={`lg:flex   lg:w-104 ${
+              className={`lg:flex lg:w-104 ${
                 cardContent.beforeStarting.length > 3 && "lg:flex-wrap"
               }`}
             >
               {cardContent.beforeStarting.map((element, index) => (
                 <div
-                  className={`flex-wrap text-left text-xs border-2 rounded border-black mr-4 w-84 lg:w-96 mb-4 lg:mb-0 ${
+                  className={`flex-wrap text-left text-xs border-2 rounded border-black mr-4   mb-4 lg:mb-0
+                  ${isMobile ? (isTablet < 767 ? "w-84" : "w96") : "w-96"}
+                  ${
                     cardContent.beforeStarting.length > 3
                       ? "lg:w-96.5 lg:mb-4"
                       : "lg:w-96"
@@ -91,9 +103,15 @@ const CardContentPdf = (props) => {
 
                   <div
                     dangerouslySetInnerHTML={{ __html: element.sentence }}
-                    className="text-base m-4"
+                    className={` m-4 ${
+                      isMobile
+                        ? isTablet < 767
+                          ? "text-xs"
+                          : "text-base"
+                        : "text-base"
+                    }`}
                   ></div>
-                  <div className="flex mb-3  mt-6 justify-center">
+                  <div className="flex pb-10  mt-6 justify-center">
                     {element.pdf && (
                       <a
                         href={element.pdf}
@@ -112,9 +130,13 @@ const CardContentPdf = (props) => {
             ¡YA ESTOY LISTX!
           </p>
 
-          <div className="lg:flex lg:w-104">
+          <div className="lg:flex ">
             {cardContent.allReady.map((element, index) => (
-              <div className="block text-left border-2 border-black rounded w-84 lg:w-96 mr-4 flex-grow mt-4 lg:mt-0">
+              <div
+                className={`block text-left border-2 border-black rounded   mr-4 flex-grow mt-4 lg:mt-0
+              ${isMobile ? (isTablet < 767 ? "w-84" : "w-99.4") : "w-96"}
+              `}
+              >
                 <div className="flex bg-black p-4">
                   <div
                     className="rounded-full w-4 h-4 mr-4 text-center px-1"
@@ -129,12 +151,22 @@ const CardContentPdf = (props) => {
                     {element.statement.toUpperCase()}
                   </h3>
                 </div>
-                <p className="m-4 text-xs lg:text-base ">{element.sentence}</p>
+                <p
+                  className={`m-4   ${
+                    isMobile ? (isTablet < 767 ? "text-xs" : "") : "text-base"
+                  } `}
+                >
+                  {element.sentence}
+                </p>
               </div>
             ))}
           </div>
 
-          <div className=" text-left border-2 border-black w-84 lg:w-103 mt-4 mb-16 rounded">
+          <div
+            className={`text-left border-2 border-black mt-8 mb-16 rounded  ${
+              isMobile ? (isTablet < 767 ? "w-84" : "w-99.4") : "w-103"
+            }`}
+          >
             <h3
               className="custom-font text-xs bg-black p-3 "
               style={{ color: color }}
@@ -143,7 +175,13 @@ const CardContentPdf = (props) => {
             </h3>
             <div
               dangerouslySetInnerHTML={{ __html: cardContent.note1 }}
-              className="mx-4 mb-4 mt-4 whitespace-pre-wrap text-xs lg:text-base"
+              className={`mx-4 mb-4 mt-4 whitespace-pre-wrap   ${
+                isMobile
+                  ? isTablet < 767
+                    ? "text-xs"
+                    : "text-base"
+                  : "text-base"
+              }`}
             ></div>
           </div>
         </div>

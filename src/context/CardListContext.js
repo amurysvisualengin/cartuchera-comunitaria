@@ -23,6 +23,10 @@ const CardListContext = createContext({
   setPropTitle: (title) => {},
   cardInfo: "",
   setCardInfo: (card) => {},
+  showMenu: "",
+  setShowMenu: (menu) => {},
+  showInformation: "",
+  setShowInformation: (info) => {},
 });
 
 export default CardListContext;

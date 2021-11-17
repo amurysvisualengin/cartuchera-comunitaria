@@ -12,7 +12,7 @@ import { useEffect } from "react/cjs/react.development";
 const Card = (props) => {
   const [showExpand, setShowExpand] = useState(false);
   const { title, img, type, color, cardNumber, cardContent } = props;
-  const { setCardInfo, isExpand, setIsExpand } = useContext(CardListContext);
+  const { setCardInfo, setIsExpand } = useContext(CardListContext);
 
   useEffect(() => {}, [showExpand]);
 
@@ -40,14 +40,14 @@ const Card = (props) => {
     if (timer < 10 && isMove === false) {
       setShowExpand(!showExpand);
       setIsExpand(true);
-      setCardInfo([
+      setCardInfo({
         title,
         img,
         color,
         type,
         cardContent,
         handleShowExpandFalse,
-      ]);
+      });
     }
     console.log(isMove);
 

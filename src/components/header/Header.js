@@ -4,7 +4,7 @@ import Hamburguer from "../../assets/icons/hamburguer.svg";
 import CardListContext from "../../context/CardListContext";
 
 const Header = () => {
-  //   const { isMobile } = useContext(CardListContext);
+  const { showMenu, setShowMenu } = useContext(CardListContext);
   return (
     <div
       /* className={`border-2 rounded flex fixed z-50 -mt-16 lg:z-10 justify-between bg-white w-full`} */
@@ -15,7 +15,11 @@ const Header = () => {
         alt="cartuchera logo"
         className=" m-2 lg:ml-10"
       />
-      <button>
+      <button
+        onClick={() => {
+          setShowMenu(!showMenu);
+        }}
+      >
         <img src={Hamburguer} alt="menu button" className="lg:mr-8" />
       </button>
     </div>

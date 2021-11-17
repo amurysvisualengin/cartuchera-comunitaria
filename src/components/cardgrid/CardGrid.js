@@ -6,10 +6,15 @@ import Data from "../../assets/data/Data.json";
 import Swiper from "../swiper/Swiper";
 import ColorFilterMobile from "../colorFilterMobile/ColorFilterMobile";
 import CartucheraLogo from "../../assets/icons/cartuchera-logo.svg";
+import Hamburguer from "../../assets/icons/hamburguer.svg";
 import TypeFilterMobile from "../typeFilterMobile/TypeFilterMobile";
-import Header from "../header/Header";
+
 import CardContentAudio from "../cardContentAudio/CardContentAudio";
 import CardContentPdf from "../cardContentPdf/CardContentPdf";
+import CardContentText from "../cardContentText/CardContentText";
+import CardContentPresentation from "../cardContentPresentation/CardContentPresentation";
+import CardContentPhoto from "../cardContentPhoto/CardContentPhoto";
+import InfoMobile from "../infoMobile/InfoMobile";
 
 const CardGrid = () => {
   const typesCard = Data;
@@ -18,7 +23,15 @@ const CardGrid = () => {
   const shuffleList = list.sort(() => Math.random() - 0.5);
 
   const { kitFilter, typeFilter, cardInfo } = useContext(CardListContext);
-  const { isMobile, isExpand, propTitle } = useContext(CardListContext);
+  const {
+    isMobile,
+    isExpand,
+    isTablet,
+    showMenu,
+    setShowMenu,
+    showInformation,
+    setShowInformation,
+  } = useContext(CardListContext);
 
   if (!isMobile) {
     return (
@@ -48,35 +61,48 @@ const CardGrid = () => {
       </div>
     );
   }
-  console.log(isExpand, "cardgrid");
-  // console.log(cardInfo[4]);
+
   if (isMobile) {
     return (
       <div>
         {!isExpand && (
-          <div className=" " style={{ background: "#f5e3b0" }}>
+          <div className="h-screen" style={{ background: "#f5e3b0" }}>
             <div
-              className="flex border-2 py-4 justify-between mb-5"
+              className={`flex border-2 py-2 justify-between ${
+                isTablet > 768 && isTablet < 1224 ? "mb-28" : "mb-5"
+              } `}
               style={{ background: "#fff" }}
             >
-              <img src={CartucheraLogo} alt="logo" className="w-20 ml-1" />
+              <img src={CartucheraLogo} alt="logo" className="w-20 ml-2" />
               <div className="flex">
-                <a
-                  href="https://www.youtube.com"
-                  className="bg-black text-white w-19 h-6 px-1 rounded mt-4 mr-2 "
+                <button
+                  className="text-white bg-black w-12 h-6 rounded-md mt-5 mr-4 text-center"
+                  onClick={() => {
+                    setShowInformation(!showInformation);
+                  }}
                 >
                   INFO
-                </a>
-                <button></button>
+                </button>
+                <div className="absolute top-0 left-0 bottom-0 z-50">
+                  <InfoMobile />
+                </div>
+
+                <button
+                  onClick={() => {
+                    setShowMenu(!showMenu);
+                  }}
+                >
+                  <img src={Hamburguer} alt="" className="mt-2" />
+                </button>
               </div>
             </div>
 
             <Swiper />
-            <div className="mt-80 flex">
+            <div className={`flex`}>
               <CardShuffle list={list} setList={setList} />
             </div>
             <div
-              className="border-2 border-white items-center h-20 mt-72 flex"
+              className="border-2 py-0items-center flex fixed bottom-0 right-0 left-0"
               style={{ background: "#fff" }}
             >
               <ColorFilterMobile />
@@ -86,37 +112,51 @@ const CardGrid = () => {
         )}
         {isExpand && (
           <div>
-            {cardInfo[3] === "Audiovisual" && (
+            {cardInfo.type === "Audiovisual" && (
               <CardContentAudio
-                cardContent={cardInfo[4]}
-                title={cardInfo[0]}
-                color={cardInfo[2]}
-                img={cardInfo[1]}
-                type={cardInfo[3]}
-                handleShowExpandFalse={cardInfo[5]}
+                cardContent={cardInfo.cardContent}
+                img={cardInfo.img}
+                title={cardInfo.title}
+                color={cardInfo.color}
+                handleShowExpandFalse={cardInfo.handleShowExpandFalse}
               />
             )}
-            {cardInfo[3] === "Herramientas" && (
+            {cardInfo.type === "Herramientas" && (
               <CardContentPdf
-                cardContent={cardInfo[4]}
-                title={cardInfo[0]}
-                color={cardInfo[2]}
-                img={cardInfo[1]}
-                type={cardInfo[3]}
-                handleShowExpandFalse={cardInfo[5]}
+                cardContent={cardInfo.cardContent}
+                img={cardInfo.img}
+                title={cardInfo.title}
+                color={cardInfo.color}
+                handleShowExpandFalse={cardInfo.handleShowExpandFalse}
               />
             )}
-            {cardInfo[3] === "Rompehielos" &&
-              {
-                /* <CardContentPdf
-                cardContent={cardInfo[4]}
-                title={cardInfo[0]}
-                color={cardInfo[2]}
-                img={cardInfo[1]}
-                type={cardInfo[3]}
-                handleShowExpandFalse={cardInfo[5]}
-              /> */
-              }}
+            {cardInfo.type === "Rompehielos" && (
+              <CardContentText
+                cardContent={cardInfo.cardContent}
+                img={cardInfo.img}
+                title={cardInfo.title}
+                color={cardInfo.color}
+                handleShowExpandFalse={cardInfo.handleShowExpandFalse}
+              />
+            )}
+            {cardInfo.type === "Presentation" && (
+              <CardContentPresentation
+                cardContent={cardInfo.cardContent}
+                img={cardInfo.img}
+                title={cardInfo.title}
+                color={cardInfo.color}
+                handleShowExpandFalse={cardInfo.handleShowExpandFalse}
+              />
+            )}
+            {cardInfo.type === "Photo" && (
+              <CardContentPhoto
+                cardContent={cardInfo.cardContent}
+                img={cardInfo.img}
+                title={cardInfo.title}
+                color={cardInfo.color}
+                handleShowExpandFalse={cardInfo.handleShowExpandFalse}
+              />
+            )}
           </div>
         )}
       </div>

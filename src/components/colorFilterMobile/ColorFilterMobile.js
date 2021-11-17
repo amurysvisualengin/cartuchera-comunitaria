@@ -1,31 +1,40 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import CardListContext from "../../context/CardListContext";
+import AllColors from "../../assets/icons/ico-all-colors.svg";
 
 const ColorFilterMobile = (props) => {
-  //   const colors = ["#F9A66B", "#9BC2D4", "#EF604B", "#E1AC47"];
-  const [iscolor, setIscolor] = useState("");
   const { changeColorMobile, setChangeColorMobile, isTablet } =
     useContext(CardListContext);
 
   const changeColor = () => {
-    if (iscolor === "") setIscolor("#BEBE3B");
-    if (iscolor === "#BEBE3B") setIscolor("#F9A66B");
-    if (iscolor === "#F9A66B") setIscolor("#9BC2D4");
-    if (iscolor === "#9BC2D4") setIscolor("#EF604B");
-    if (iscolor === "#EF604B") setIscolor("#E1AC47");
-    if (iscolor === "#E1AC47") setIscolor("");
-    setChangeColorMobile(iscolor);
+    if (changeColorMobile === "") {
+      setChangeColorMobile("#BEBE3B");
+    }
+    if (changeColorMobile === "#BEBE3B") setChangeColorMobile("#F9A66B");
+    if (changeColorMobile === "#F9A66B") setChangeColorMobile("#9BC2D4");
+    if (changeColorMobile === "#9BC2D4") setChangeColorMobile("#EF604B");
+    if (changeColorMobile === "#EF604B") setChangeColorMobile("#E1AC47");
+    if (changeColorMobile === "#E1AC47") setChangeColorMobile("");
   };
 
   return (
     <div
       onClick={changeColor}
-      className={`${isTablet > 768 ? "ml-48" : "ml-12"}  `}
+      className={` mt-4 ${isTablet < 768 ? "ml-5 " : "ml-52 "}  `}
     >
       <button
-        className="rounded-full border-2 border-black w-6 h-6 "
+        className={`${
+          changeColorMobile ? "rounded-full border-2 border-black" : ""
+        } w-10 h-10`}
         style={{ background: changeColorMobile }}
-      ></button>
+      >
+        <img
+          src={AllColors}
+          style={{ width: 40, height: 40 }}
+          alt=""
+          className={` ${!changeColorMobile ? "block" : "hidden"} `}
+        />
+      </button>
     </div>
   );
 };

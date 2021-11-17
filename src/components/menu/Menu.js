@@ -3,13 +3,12 @@ import CardListContext from "../../context/CardListContext";
 import Card from "../card/Card";
 
 const Menu = (props) => {
-  const [buttonVisible, setButtonVisible] = useState(false);
-  const { isMobile } = useContext(CardListContext);
+  const { isMobile, showMenu, setShowMenu } = useContext(CardListContext);
 
   return (
     <div
       className={`fixed z-20 bg-black w-full h-full opacity-90 ${
-        buttonVisible ? "hidden" : "visible"
+        !showMenu ? "hidden" : "visible"
       } `}
     >
       <div className=" mt-5 lg:mt-10 mr-5 lg:mr-10 flex  justify-end">
@@ -17,8 +16,8 @@ const Menu = (props) => {
           className={`bg-white lg:text-3xl w-6 lg:w-12 rounded-full 
             `}
           onClick={() => {
-            if (!buttonVisible) {
-              setButtonVisible(!buttonVisible);
+            if (showMenu) {
+              setShowMenu(!showMenu);
             }
           }}
         >

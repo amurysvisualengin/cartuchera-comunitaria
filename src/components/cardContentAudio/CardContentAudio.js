@@ -4,11 +4,14 @@ import CardListContext from "../../context/CardListContext";
 import "./CardContentAudio.css";
 const CardContentAudio = (props) => {
   const { cardContent, title, img, color, handleShowExpandFalse } = props;
-  const { isMobile } = useContext(CardListContext);
+  const { isMobile, isTablet } = useContext(CardListContext);
   const { setIsExpand } = useContext(CardListContext);
 
   return (
-    <div>
+    <div
+      className="h-screem"
+      style={{ backgroundColor: isMobile ? color : "transparent" }}
+    >
       {!isMobile && (
         <img
           src={img}
@@ -18,7 +21,7 @@ const CardContentAudio = (props) => {
       )}
 
       <div
-        className="text-right mr-2 mt-2 lg:mt-2 lg:mr-10"
+        className="text-right mr-2 pt-2 lg:mt-2 lg:mr-10"
         onClick={() => {
           handleShowExpandFalse();
           console.log(handleShowExpandFalse);
@@ -26,14 +29,14 @@ const CardContentAudio = (props) => {
         }}
       >
         <button
-          className="text-2xl bg-black w-10 h-10   rounded-full"
+          className="text-2xl bg-black w-10 h-10 mt-2 mr2  rounded-full"
           style={{ color: color }}
         >
           X
         </button>
       </div>
       <div
-        className="flex justify-center  mt-16 lg:mr-5 mb-20"
+        className="flex justify-center lg:mt-16 lg:mr-5 pb-20 "
         /* draggable="false"
         ondragstart="event.preventDefault(); event.stopPropagation();" */
       >
@@ -47,14 +50,30 @@ const CardContentAudio = (props) => {
           >
             VIDEO
           </h2>
-          <h1 className="custom-font-shadow mt-4  text-left text-4xl lg:text-6xl">
+          <h1
+            className={`custom-font-shadow mt-4 text-left  ${
+              isTablet > 767 && isTablet < 1024
+                ? "text-6xl"
+                : "text-4xl lg:text-6xl"
+            }`}
+          >
             Videogalería
           </h1>
-          <h2 className="custom-font text-xs lg:text-xl text-left mt-4">
+          <h2
+            className={`custom-font  text-left mt-4 ${
+              isTablet > 767 && isTablet < 1024
+                ? "text-xl"
+                : "text-xs lg:text-xl"
+            }`}
+          >
             {cardContent.videoType}
           </h2>
           {cardContent.videoInfoContainer.map((element, index) => (
-            <div className="w-84 lg:w-100 text-left items-center mt-10">
+            <div
+              className={` text-left items-center mt-10 ${
+                isTablet > 767 && isTablet < 1024 ? "w-100" : "w-84 lg:w-100"
+              }`}
+            >
               <div className="border-4 rounded border-black">
                 <h2
                   className="custom-font bg-black  text-xs lg:text-sm p-2 lg:pl-4 lg:py-2"
@@ -70,7 +89,11 @@ const CardContentAudio = (props) => {
                   frameborder="0"
                   allowFullScreen
                   title="video"
-                  className=" w-84 lg:w-100 h-64 lg:h-90"
+                  className={` ${
+                    isTablet > 767 && isTablet < 1024
+                      ? "w-100 h-97"
+                      : "w-84 lg:w-100 h-64 lg:h-90"
+                  }`}
                 ></iframe>
               </div>
             </div>
