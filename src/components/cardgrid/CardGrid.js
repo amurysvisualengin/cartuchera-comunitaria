@@ -102,7 +102,7 @@ const CardGrid = () => {
               <CardShuffle list={list} setList={setList} />
             </div>
             <div
-              className="border-2 py-0items-center flex fixed z-0 bottom-0 right-0 left-0"
+              className="border-2 py-0items-center flex fixed bottom-0 right-0 left-0"
               style={{ background: "#fff" }}
             >
               <ColorFilterMobile />
