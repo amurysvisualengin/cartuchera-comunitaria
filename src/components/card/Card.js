@@ -14,8 +14,6 @@ const Card = (props) => {
   const { title, img, type, color, cardNumber, cardContent } = props;
   const { setCardInfo, setIsExpand } = useContext(CardListContext);
 
-  useEffect(() => {}, [showExpand]);
-
   const handleShowExpandFalse = () => {
     setShowExpand(!showExpand);
   };
