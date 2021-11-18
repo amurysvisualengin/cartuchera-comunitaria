@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/cartuchera-comunitaria/static/css/main.cdf31296.chunk.css",
+    "main.js": "/cartuchera-comunitaria/static/js/main.f5909760.chunk.js",
+    "main.js.map": "/cartuchera-comunitaria/static/js/main.f5909760.chunk.js.map",
+    "runtime-main.js": "/cartuchera-comunitaria/static/js/runtime-main.708e567f.js",
+    "runtime-main.js.map": "/cartuchera-comunitaria/static/js/runtime-main.708e567f.js.map",
+    "static/js/2.cc4eac62.chunk.js": "/cartuchera-comunitaria/static/js/2.cc4eac62.chunk.js",
+    "static/js/2.cc4eac62.chunk.js.map": "/cartuchera-comunitaria/static/js/2.cc4eac62.chunk.js.map",
+    "index.html": "/cartuchera-comunitaria/index.html",
+    "static/css/main.cdf31296.chunk.css.map": "/cartuchera-comunitaria/static/css/main.cdf31296.chunk.css.map",
+    "static/js/2.cc4eac62.chunk.js.LICENSE.txt": "/cartuchera-comunitaria/static/js/2.cc4eac62.chunk.js.LICENSE.txt",
+    "static/media/Audiovisuales.96221ca9.svg": "/cartuchera-comunitaria/static/media/Audiovisuales.96221ca9.svg",
+    "static/media/Facebook.266436bf.svg": "/cartuchera-comunitaria/static/media/Facebook.266436bf.svg",
+    "static/media/Fotos.22da7690.svg": "/cartuchera-comunitaria/static/media/Fotos.22da7690.svg",
+    "static/media/Herramientas.4d3fd5db.svg": "/cartuchera-comunitaria/static/media/Herramientas.4d3fd5db.svg",
+    "static/media/App.css": "/cartuchera-comunitaria/static/media/KGHAPPYSolid.0bbc547e.ttf",
+    "static/media/Linkedin.4e59894a.svg": "/cartuchera-comunitaria/static/media/Linkedin.4e59894a.svg",
+    "static/media/Rompehielos.d8f94f59.svg": "/cartuchera-comunitaria/static/media/Rompehielos.d8f94f59.svg",
+    "static/media/Twitter.85657ba9.svg": "/cartuchera-comunitaria/static/media/Twitter.85657ba9.svg",
+    "static/media/cartuchera-logo.bcc09401.svg": "/cartuchera-comunitaria/static/media/cartuchera-logo.bcc09401.svg",
+    "static/media/check.8cc6bc7d.svg": "/cartuchera-comunitaria/static/media/check.8cc6bc7d.svg",
+    "static/media/hamburguer.b1320e19.svg": "/cartuchera-comunitaria/static/media/hamburguer.b1320e19.svg",
+    "static/media/ico-all-colors.9119bc0a.svg": "/cartuchera-comunitaria/static/media/ico-all-colors.9119bc0a.svg",
+    "static/media/mezcla_icon.bce49813.svg": "/cartuchera-comunitaria/static/media/mezcla_icon.bce49813.svg",
+    "static/media/presentacion.fc927e81.svg": "/cartuchera-comunitaria/static/media/presentacion.fc927e81.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.708e567f.js",
+    "static/js/2.cc4eac62.chunk.js",
+    "static/css/main.cdf31296.chunk.css",
+    "static/js/main.f5909760.chunk.js"
+  ]
+}
