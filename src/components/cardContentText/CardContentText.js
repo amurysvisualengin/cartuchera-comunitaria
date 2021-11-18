@@ -7,7 +7,7 @@ const CardContentText = (props) => {
 
   return (
     <div
-      className="h-full"
+      className={`h-full pb-10 ${isTablet < 1024 ? "pb-20" : "pb-0"}`}
       style={{ backgroundColor: isMobile ? color : "transparent" }}
     >
       {!isMobile && (
@@ -43,7 +43,7 @@ const CardContentText = (props) => {
         <div className={`block mt-16 text-left ml-2 lg:ml-0`}>
           <h2
             className={`bg-black lg:text-xl rounded lg:px-1 lg:pb-1 text-center w-24 lg:w-32
-            ${isMobile && isTablet > 767 && isTablet < 1024 ? "ml-32" : "ml-0"}
+            ${isMobile && isTablet > 767 && isTablet < 1024 ? "ml-11" : "ml-0"}
             `}
             style={{ color: color }}
           >
@@ -53,7 +53,7 @@ const CardContentText = (props) => {
             className={`lg:text-6xl mt-4 custom-font-shadow ${
               isTablet < 767 ? "text-4xl" : "text-5xl"
             }
-            ${isMobile && isTablet > 767 && isTablet < 1024 ? "ml-32" : "ml-0"}
+            ${isMobile && isTablet > 767 && isTablet < 1024 ? "ml-11" : "ml-0"}
             `}
           >
             {cardContent.nameType}
@@ -63,7 +63,7 @@ const CardContentText = (props) => {
              ${isMobile && isTablet < 767 ? "text-2xl" : "custom-font"}
 
             ${
-              isMobile && isTablet > 767 && isTablet < 1024 ? "ml-32" : "ml-0"
+              isMobile && isTablet > 767 && isTablet < 1024 ? "ml-11" : "ml-0"
             }`}
           >
             {cardContent.kitType}{" "}
@@ -79,7 +79,11 @@ const CardContentText = (props) => {
             }`}
           >
             {cardContent.actionTitle.map((element, index) => (
-              <div className="flex border-2 rounded border-black mr-3 w-97 mb-8">
+              <div
+                className={`flex border-2 rounded border-black mr-3 w-97 mb-8 ${
+                  isTablet > 767 && isTablet < 1024 ? "w-99.5" : ""
+                }`}
+              >
                 <div className="block ">
                   <div className="flex items-center bg-black p-1 lg:p-3">
                     <div
