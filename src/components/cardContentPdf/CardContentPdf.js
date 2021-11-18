@@ -59,7 +59,7 @@ const CardContentPdf = (props) => {
                 !isMobile
                   ? "custom-font lg:text-2xl w-111 mt-8"
                   : isTablet < 767
-                  ? "text-base w-90"
+                  ? "text-xl w-90"
                   : "custom-font text:base w-100"
               }`}
             >

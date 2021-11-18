@@ -60,7 +60,7 @@ const CardContentText = (props) => {
           </h1>
           <h2
             className={`lg:text-2xl mt-3  
-             ${isMobile && isTablet < 767 ? "text-2xl" : "custom-font"}
+             ${isMobile && isTablet < 767 ? "text-xl" : "custom-font"}
 
             ${
               isMobile && isTablet > 767 && isTablet < 1024 ? "ml-11" : "ml-0"

@@ -60,7 +60,7 @@ const CardContentAudio = (props) => {
               isMobile
                 ? isTablet > 767 && isTablet < 1024
                   ? "text-xl custom-font"
-                  : "text-base w-72 "
+                  : "text-xl w-72 "
                 : "text-xl custom-font"
             }`}
           >
