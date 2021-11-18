@@ -72,6 +72,8 @@ const Card = (props) => {
           isMobile
             ? isTablet < 376
               ? " ml-5 mr-5 h-99.2 p-16 card-item cursor-pointer"
+              : isTablet < 394
+              ? " ml-5 mr-5 h-98 p-16 card-item cursor-pointer"
               : isTablet < 415
               ? "ml-5 mr-5 h-97.5 p-16 card-item cursor-pointer"
               : "p-16 h-98 card-item cursor-pointer"
