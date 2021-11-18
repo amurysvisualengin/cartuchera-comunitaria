@@ -35,11 +35,7 @@ const CardContentAudio = (props) => {
           X
         </button>
       </div>
-      <div
-        className="flex justify-center lg:mt-16 lg:mr-5 pb-20 "
-        /* draggable="false"
-        ondragstart="event.preventDefault(); event.stopPropagation();" */
-      >
+      <div className="flex justify-center lg:mt-16 lg:mr-5 pb-20 ">
         {!isMobile && (
           <img src={img} alt="play logo" className="mr-16 w-20 h-full " />
         )}
@@ -60,10 +56,12 @@ const CardContentAudio = (props) => {
             Videogalería
           </h1>
           <h2
-            className={`custom-font  text-left mt-4 ${
-              isTablet > 767 && isTablet < 1024
-                ? "text-xl"
-                : "text-xs lg:text-xl"
+            className={`  text-left mt-4 ${
+              isMobile
+                ? isTablet > 767 && isTablet < 1024
+                  ? "text-xl custom-font"
+                  : "text-base w-72 "
+                : "text-xl custom-font"
             }`}
           >
             {cardContent.videoType}
@@ -81,7 +79,11 @@ const CardContentAudio = (props) => {
                 >
                   {element.question.toUpperCase()}
                 </h2>
-                <p className="m-2 text-sm lg:text-base">{element.answer}</p>
+                <p
+                  className={`m-2 ${isTablet < 768 ? "text-xs" : "text-base"}`}
+                >
+                  {element.answer}
+                </p>
               </div>
               <div className="mt-4">
                 <iframe

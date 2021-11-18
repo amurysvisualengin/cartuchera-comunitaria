@@ -51,10 +51,12 @@ function CardContentPhoto(props) {
             {cardContent.typeName}
           </h1>
           <h2
-            className={`custom-font text-left  ${
-              isTablet > 769 && isMobile < 1024
-                ? "text-xl"
-                : "text-xs lg:text-2xl"
+            className={`text-left  ${
+              isMobile
+                ? isTablet > 769 && isMobile < 1024
+                  ? "text-xl custom-font"
+                  : "text-xl"
+                : "text-2xl custom-font"
             }`}
           >
             {cardContent.subTitle}{" "}
@@ -81,7 +83,7 @@ function CardContentPhoto(props) {
           {isMobile && (
             <p
               className={`custom-font text-left  bg-black  items-center p-2 rounded mt-6 ${
-                isTablet > 767 && isTablet < 1224 ? "w-100" : "w-80 text-xs"
+                isTablet > 767 && isTablet < 1224 ? "w-100" : "w-80 text-sm"
               }`}
               style={{ color: color }}
             >
