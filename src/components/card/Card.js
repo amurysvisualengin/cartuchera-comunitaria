@@ -12,7 +12,7 @@ import { useEffect } from "react/cjs/react.development";
 const Card = (props) => {
   const [showExpand, setShowExpand] = useState(false);
   const { title, img, type, color, cardNumber, cardContent } = props;
-  const { setCardInfo, setIsExpand } = useContext(CardListContext);
+  const { setCardInfo, setIsExpand, isTablet } = useContext(CardListContext);
 
   const handleShowExpandFalse = () => {
     setShowExpand(!showExpand);
@@ -70,7 +70,9 @@ const Card = (props) => {
         onTouchEnd={handleTouchEnd}
         className={` ${
           isMobile
-            ? "w-90 h-98 p-16 card-item cursor-pointer"
+            ? isTablet > 768
+              ? "p-16 card-item cursor-pointer"
+              : " ml-5 mr-5 h-full p-5 card-item cursor-pointer"
             : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72"
         } `}
         style={{ backgroundColor: color, borderColor: color }}

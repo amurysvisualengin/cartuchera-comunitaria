@@ -54,15 +54,7 @@ function Swiper() {
                 key={index}
                 preventSwipe={["up", "down"]}
               >
-                <div
-                // onTouchStart={handleTouchStart}
-                /* onTouchStart={handleTouchStart}
-                  onTouchMove={handleTouchMove}
-                  onTouchEnd={() => {
-                    handleTouchEnd();
-                    
-                  }} */
-                >
+                <div>
                   <Card
                     key={index}
                     cardNumber={element.cardNumber}
