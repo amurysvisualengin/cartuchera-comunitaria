@@ -1,7 +1,7 @@
 .card-item {
   border: 2px solid;
   box-sizing: border-box;
-  min-height: 556px;
+
   border-radius: 4px;
 }
 .card-expand {
@@ -22,4 +22,10 @@
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 1024) {
+  .card-item {
+    min-height: 566px;
+    max-height: 566px;
+  }
 }

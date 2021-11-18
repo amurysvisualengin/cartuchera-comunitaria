@@ -70,9 +70,11 @@ const Card = (props) => {
         onTouchEnd={handleTouchEnd}
         className={` ${
           isMobile
-            ? isTablet > 768
-              ? "p-16 card-item cursor-pointer"
-              : " ml-5 mr-5 h-full p-5 card-item cursor-pointer"
+            ? isTablet < 376
+              ? " ml-5 mr-5 h-99.2 p-16 card-item cursor-pointer"
+              : isTablet < 415
+              ? "ml-5 mr-5 h-97.5 p-16 card-item cursor-pointer"
+              : "p-16 h-98 card-item cursor-pointer"
             : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72"
         } `}
         style={{ backgroundColor: color, borderColor: color }}
