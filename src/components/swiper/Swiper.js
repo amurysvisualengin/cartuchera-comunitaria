@@ -50,7 +50,7 @@ function Swiper() {
                 typeMobile === element.typeId) ||
               (changeColorMobile === "" && typeMobile === element.typeId)) && (
               <MobileSwiper
-                className="absolute"
+                className="swipe"
                 key={index}
                 preventSwipe={["up", "down"]}
               >
