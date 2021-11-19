@@ -72,9 +72,13 @@ const CardContentPdf = (props) => {
 
           {
             <div
-              className={`lg:flex w-97 lg:w-104 ${
-                cardContent.beforeStarting.length > 3 && "lg:flex-wrap"
-              }`}
+              className={` ${
+                isMobile
+                  ? isTablet < 768
+                    ? "w-97"
+                    : "w-99.5"
+                  : "lg:flex  lg:w-104"
+              } ${cardContent.beforeStarting.length > 3 && "lg:flex-wrap"}`}
             >
               {cardContent.beforeStarting.map((element, index) => (
                 <div
