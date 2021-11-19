@@ -89,8 +89,8 @@ const Sidebar = (props) => {
       <div
         style={{ maxWidth: "443px" }}
         className={`p-12 w2/3 sidebar ${
-          isSidebarVisible ? "block mt-0" : "hidden"
-        } xl:block`}
+          isSidebarVisible ? "block mt-0 " : "hidden"
+        } xl:block xl:h-full`}
       >
         <div className="flex mt-16">
           <img src={Check} alt="" className="mr-4" />

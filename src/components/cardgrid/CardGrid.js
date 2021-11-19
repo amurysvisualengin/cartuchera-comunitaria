@@ -68,10 +68,10 @@ const CardGrid = () => {
         {!isExpand && (
           <div className="h-screen" style={{ background: "#f5e3b0" }}>
             <div
-              className={`flex border-2 py-2 justify-between ${
+              className={`flex  py-2 justify-between ${
                 isTablet > 768 && isTablet < 1224 ? "mb-28" : "mb-5"
               } `}
-              style={{ background: "#fff" }}
+              style={{ background: "#F8F5ED" }}
             >
               <img src={CartucheraLogo} alt="logo" className="w-20 ml-2" />
               <div className="flex">
@@ -102,8 +102,8 @@ const CardGrid = () => {
               <CardShuffle list={list} setList={setList} />
             </div>
             <div
-              className="border-2 py-0items-center flex fixed bottom-0 right-0 left-0"
-              style={{ background: "#fff" }}
+              className=" py-0items-center flex absolute bottom-0 right-0 left-0"
+              style={{ background: "#F8F5ED" }}
             >
               <ColorFilterMobile />
               <TypeFilterMobile />

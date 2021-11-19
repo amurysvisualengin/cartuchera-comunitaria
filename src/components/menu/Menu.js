@@ -7,9 +7,10 @@ const Menu = (props) => {
 
   return (
     <div
-      className={`fixed z-20 bg-black w-full h-full opacity-90 ${
+      className={`fixed z-20  w-full h-full opacity-90 ${
         !showMenu ? "hidden" : "visible"
       } `}
+      style={{ backgroundColor: "#000000" }}
     >
       <div className=" mt-5 lg:mt-10 mr-5 lg:mr-10 flex  justify-end">
         <button
