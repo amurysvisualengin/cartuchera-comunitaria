@@ -7,8 +7,8 @@ const Header = () => {
   const { showMenu, setShowMenu } = useContext(CardListContext);
   return (
     <div
-      /* className={`border-2 rounded flex fixed z-50 -mt-16 lg:z-10 justify-between bg-white w-full`} */
-      className="flex fixed z-10 w-full justify-between bg-white border-b-2 -mt-80 lg:mt-0"
+      style={{ backgroundColor: "#F8F5ED" }}
+      className="flex fixed z-10 w-full justify-between"
     >
       <img
         src={CatucheraLogo}

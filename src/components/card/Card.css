@@ -23,9 +23,17 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 1024) {
+
+.hover-card {
+  transition: box-shadow 0.2s linear;
+}
+
+.hover-card:hover {
+  box-shadow: 5px 5px black;
+}
+/* @media screen and (max-width: 1024) {
   .card-item {
     min-height: 566px;
     max-height: 566px;
   }
-}
+} */

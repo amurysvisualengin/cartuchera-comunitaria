@@ -7,7 +7,6 @@ import SocialMedia from "../socialMedia/SocialMedia";
 import Rompehielos from "../../assets/icons/Rompehielos.svg";
 import Audiovisuales from "../../assets/icons/Audiovisuales.svg";
 import Herramientas from "../../assets/icons/Herramientas.svg";
-import CartucheraLogo from "../../assets/icons/cartuchera-logo.svg";
 import Check from "../../assets/icons/check.svg";
 import Presentacion from "../../assets/icons/presentacion.svg";
 import Fotos from "../../assets/icons/Fotos.svg";
@@ -99,7 +98,7 @@ const Sidebar = (props) => {
 
         <div className="kits mt-14 items-center">
           <h2 className=" text-xl text-left custom-font">Ordenar por Kit:</h2>
-          <div className="text-center mt-4 custom-font">
+          <div className="text-center mt-4 custom-font ">
             {filters.map((element) => (
               <div
                 onClick={() => {
@@ -107,7 +106,7 @@ const Sidebar = (props) => {
                     setKitFilter("");
                   } else setKitFilter(element.id);
                 }}
-                className={`py-4 text-sm mr-4 ml-1 mt-2 rounded-md cursor-pointer ${
+                className={`py-4 text-sm mr-4 ml-1 mt-2 rounded-md cursor-pointer hover-box ${
                   !kitFilter || kitFilter === element.id
                     ? "opacity-100"
                     : "opacity-30"
@@ -130,7 +129,7 @@ const Sidebar = (props) => {
                       setTypeFilter("");
                     } else setTypeFilter(element.typeId);
                   }}
-                  className={`flex text-center text-white mt-4 p-4 rounded-md cursor-pointer bg-checkbox  ${
+                  className={`flex text-center text-white mt-4 p-4 rounded-md cursor-pointer bg-checkbox hover-box ${
                     !typeFilter || typeFilter === element.typeId
                       ? "opacity-100:"
                       : "opacity-30"

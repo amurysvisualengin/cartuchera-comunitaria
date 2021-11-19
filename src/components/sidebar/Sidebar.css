@@ -11,3 +11,10 @@
   background-color: black;
   height: 3.5rem;
 }
+.hover-box {
+  transition: box-shadow 0.2s linear;
+}
+
+.hover-box:hover {
+  box-shadow: 4px 4px black;
+}
