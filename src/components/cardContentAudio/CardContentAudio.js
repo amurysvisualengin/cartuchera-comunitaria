@@ -39,7 +39,11 @@ const CardContentAudio = (props) => {
         {!isMobile && (
           <img src={img} alt="play logo" className="mr-16 w-20 h-full " />
         )}
-        <div className="block">
+        <div
+          className={`block ${
+            isMobile ? (isTablet < 768 ? "w-full ml-3" : "") : ""
+          }`}
+        >
           <h2
             className="bg-black lg:text-lg mt-10 lg:mt-0 rounded item-center w-14 px-1"
             style={{ color: color }}
@@ -69,7 +73,7 @@ const CardContentAudio = (props) => {
           {cardContent.videoInfoContainer.map((element, index) => (
             <div
               className={` text-left items-center mt-10 ${
-                isTablet > 767 && isTablet < 1024 ? "w-100" : "w-84 lg:w-100"
+                isTablet > 767 && isTablet < 1024 ? "w-100" : "w-90 lg:w-100"
               }`}
             >
               <div className="border-4 rounded border-black">
@@ -80,7 +84,7 @@ const CardContentAudio = (props) => {
                   {element.question.toUpperCase()}
                 </h2>
                 <p
-                  className={`m-2 ${isTablet < 768 ? "text-xs" : "text-base"}`}
+                  className={`m-2 ${isTablet < 768 ? "text-sm" : "text-base"}`}
                 >
                   {element.answer}
                 </p>
@@ -94,7 +98,7 @@ const CardContentAudio = (props) => {
                   className={` ${
                     isTablet > 767 && isTablet < 1024
                       ? "w-100 h-97"
-                      : "w-84 lg:w-100 h-64 lg:h-90"
+                      : "w-90 lg:w-100 h-64 lg:h-90"
                   }`}
                 ></iframe>
               </div>

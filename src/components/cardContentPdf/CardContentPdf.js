@@ -17,7 +17,7 @@ const CardContentPdf = (props) => {
       )}
 
       <div
-        className="text-right mr-2 pt-4 lg:pt-0 lg:mt-4 lg:mr-10"
+        className=" text-right mr-2 pt-4 lg:pt-0 lg:mt-4 lg:mr-10"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
@@ -48,7 +48,7 @@ const CardContentPdf = (props) => {
           </p>
           <h1
             className={`custom-font-shadow  lg:text-6xl mt-6 text-left lg:leading-11 ${
-              isMobile ? (isTablet < 767 ? "text-3xl" : "text-4xl") : ""
+              isMobile ? (isTablet < 767 ? "text-3xl w-90" : "text-4xl") : ""
             }`}
           >
             {title}
@@ -72,14 +72,14 @@ const CardContentPdf = (props) => {
 
           {
             <div
-              className={`lg:flex lg:w-104 ${
+              className={`lg:flex w-97 lg:w-104 ${
                 cardContent.beforeStarting.length > 3 && "lg:flex-wrap"
               }`}
             >
               {cardContent.beforeStarting.map((element, index) => (
                 <div
-                  className={`flex-wrap text-left text-xs border-2 rounded border-black mr-4   mb-4 lg:mb-0
-                  ${isMobile ? (isTablet < 767 ? "w-84" : "w96") : "w-96"}
+                  className={`flex-wrap text-left text-xs border-2 rounded border-black mr-4 mb-4 lg:mb-0
+                  ${isMobile ? (isTablet < 767 ? "w-90" : "w96") : "w-96"}
                   ${
                     cardContent.beforeStarting.length > 3
                       ? "lg:w-96.5 lg:mb-4"
@@ -106,12 +106,12 @@ const CardContentPdf = (props) => {
                     className={` m-4 ${
                       isMobile
                         ? isTablet < 767
-                          ? "text-xs"
+                          ? "text-sm"
                           : "text-base"
                         : "text-base"
                     }`}
                   ></div>
-                  <div className="flex pb-10  mt-6 justify-center">
+                  <div className="flex pb-10 mt-6 justify-center">
                     {element.pdf && (
                       <a
                         href={element.pdf}
@@ -134,7 +134,7 @@ const CardContentPdf = (props) => {
             {cardContent.allReady.map((element, index) => (
               <div
                 className={`block text-left border-2 border-black rounded   mr-4 flex-grow mt-4 lg:mt-0
-              ${isMobile ? (isTablet < 767 ? "w-84" : "w-99.4") : "w-96"}
+              ${isMobile ? (isTablet < 767 ? "w-90" : "w-99.4") : "w-96"}
               `}
               >
                 <div className="flex bg-black p-4">
@@ -153,7 +153,7 @@ const CardContentPdf = (props) => {
                 </div>
                 <p
                   className={`m-4   ${
-                    isMobile ? (isTablet < 767 ? "text-xs" : "") : "text-base"
+                    isMobile ? (isTablet < 767 ? "text-sm" : "") : "text-base"
                   } `}
                 >
                   {element.sentence}
@@ -164,7 +164,7 @@ const CardContentPdf = (props) => {
 
           <div
             className={`text-left border-2 border-black mt-8 mb-16 rounded  ${
-              isMobile ? (isTablet < 767 ? "w-84" : "w-99.4") : "w-103"
+              isMobile ? (isTablet < 767 ? "w-90" : "w-99.4") : "w-103"
             }`}
           >
             <h3
@@ -178,7 +178,7 @@ const CardContentPdf = (props) => {
               className={`mx-4 mb-4 mt-4 whitespace-pre-wrap   ${
                 isMobile
                   ? isTablet < 767
-                    ? "text-xs"
+                    ? "text-sm"
                     : "text-base"
                   : "text-base"
               }`}

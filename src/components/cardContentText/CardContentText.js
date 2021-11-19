@@ -97,7 +97,7 @@ const CardContentText = (props) => {
                       />
                     </div>
                     <h2
-                      className="font-custom font-bold pl-4"
+                      className="custom-font text-xs font-bold pl-4"
                       style={{ color: color }}
                     >
                       {element.subTitle}
@@ -106,7 +106,7 @@ const CardContentText = (props) => {
                   <div
                     dangerouslySetInnerHTML={{ __html: element.actionSentence }}
                     className={`m-4 lg:m-6  lg:text-base ${
-                      isTablet < 767 ? "text-xs" : "text-base"
+                      isTablet < 767 ? "text-sm" : "text-base"
                     }`}
                   ></div>
                 </div>
