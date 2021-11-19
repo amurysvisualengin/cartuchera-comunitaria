@@ -125,7 +125,7 @@ const Sidebar = (props) => {
               {types.map((element) => (
                 <div
                   onClick={() => {
-                    if (element.typeId === typeFilter) {
+                    if (typeFilter === element.typeId) {
                       setTypeFilter("");
                     } else setTypeFilter(element.typeId);
                   }}
