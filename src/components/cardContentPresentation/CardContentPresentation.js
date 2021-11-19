@@ -27,7 +27,7 @@ const CardContentPresentation = (props) => {
         </button>
       </div>
       <div className="flex justify-center lg:mt-8 lg:mr-20 ">
-        <div className={`block  ${isTablet < 767 ? "mr-14" : "mr-2"}`}>
+        <div className={`block  ${isTablet < 767 ? "mr-3" : "mr-2"}`}>
           {!isMobile && (
             <div>
               <img src={cardContent.nameSvg} alt="name SVG" className="ml-44" />
@@ -69,7 +69,7 @@ const CardContentPresentation = (props) => {
           )}
           <div
             className={`mt-6 text-left lg:w-100 ${
-              isTablet < 767 ? "w-72" : "w-100 "
+              isTablet < 767 ? "w-90" : "w-100 "
             }`}
           >
             <h2 className="font-bold lg:text-lg">{cardContent.subTitle}</h2>
@@ -79,7 +79,7 @@ const CardContentPresentation = (props) => {
             </h2>
             <div
               className={`border-4 border-black rounded-md mt-6 lg:w-100 mb-10 lg:mb-0 ${
-                isTablet < 767 ? "w-72" : "w-100"
+                isTablet < 767 ? "w-90" : "w-100"
               }`}
             >
               <h2
