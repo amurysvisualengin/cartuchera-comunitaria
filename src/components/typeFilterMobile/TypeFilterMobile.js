@@ -38,14 +38,14 @@ const TypeFilterMobile = () => {
           className={`${
             !typeMobile || typeMobile === element.typeId
               ? "opacity-100:"
-              : "opacity-30"
+              : "opacity-20"
           }`}
         >
           <button className={`ml-9 ${isTablet < 768 ? "mt-4" : "mt-4 "}`}>
             <img
               src={element.src}
               alt=""
-              className={` bg-black filter invert ${
+              className={` filter invert ${
                 isTablet < 768 ? "w-10 h-10 mb-4" : "w-10 h-10 mb-4"
               }`}
             />
