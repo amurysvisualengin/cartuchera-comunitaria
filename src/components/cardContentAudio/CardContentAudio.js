@@ -41,7 +41,7 @@ const CardContentAudio = (props) => {
         )}
         <div
           className={`block ${
-            isMobile ? (isTablet < 768 ? "w-full ml-3" : "") : ""
+            isMobile ? (isTablet < 768 ? "w-full mx-5" : "") : ""
           }`}
         >
           <h2

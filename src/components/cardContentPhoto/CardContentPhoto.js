@@ -36,7 +36,7 @@ function CardContentPhoto(props) {
         {!isMobile && <img src={img} alt="" className="w-20 h-full mr-10" />}
         <div
           className={`block  ${
-            isTablet < 768 ? "w-full ml-2.5" : "lg:w-100 lg:mr-52"
+            isTablet < 768 ? "w-full mx-5" : "lg:w-100 lg:mr-52"
           }`}
         >
           <h2

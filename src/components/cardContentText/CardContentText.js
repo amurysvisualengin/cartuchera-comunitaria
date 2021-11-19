@@ -40,7 +40,7 @@ const CardContentText = (props) => {
           className={`${isMobile ? "hidden" : "mr-16 w-60 ml-72 h-full mt-16"}`}
         />
 
-        <div className={`block mt-16 text-left ml-2 lg:ml-0`}>
+        <div className={`block mt-16 text-left ml-3 lg:ml-0`}>
           <h2
             className={`bg-black lg:text-xl rounded lg:px-1 lg:pb-1 text-center w-24 lg:w-32
             ${isMobile && isTablet > 767 && isTablet < 1024 ? "ml-11" : "ml-0"}
