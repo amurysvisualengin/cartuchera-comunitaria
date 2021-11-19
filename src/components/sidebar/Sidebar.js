@@ -43,7 +43,7 @@ const Sidebar = (props) => {
   const types = [
     {
       typeId: "presentation",
-      name: "Pesentación",
+      name: "Presentación",
       type: "image",
       src: Presentacion,
     },
@@ -129,29 +129,26 @@ const Sidebar = (props) => {
                       setTypeFilter("");
                     } else setTypeFilter(element.typeId);
                   }}
-                  className={`flex text-center text-white mt-4 p-4 rounded-md cursor-pointer bg-checkbox hover-box ${
-                    !typeFilter || typeFilter === element.typeId
-                      ? "opacity-100:"
-                      : "opacity-30"
-                  }`}
                 >
-                  <input
-                    className="ml-4 mr-10 w-8 h-8"
-                    type={element.type}
-                    src={element.src}
-                    alt={element.name}
-                    id={element.name}
-                    name={element.name}
-                    value={element.name}
-                  />
-                  <div>
-                    {
-                      <label className="ml-2 cursor-pointer" for={element.name}>
-                        {element.name}
-                      </label>
-                    }
+                  <div
+                    className={`flex text-center text-white mt-4 p-4 rounded-md cursor-pointer bg-checkbox hover-box ${
+                      !typeFilter || typeFilter === element.typeId
+                        ? "opacity-100:"
+                        : "opacity-30"
+                    }`}
+                  >
+                    <input
+                      className="ml-4 mr-10 w-8 h-8"
+                      type={element.type}
+                      src={element.src}
+                      alt={element.name}
+                      id={element.name}
+                      name={element.name}
+                      value={element.name}
+                    />
+                    <div>{element.name}</div>
+                    <br />
                   </div>
-                  <br />
                 </div>
               ))}
             </div>
