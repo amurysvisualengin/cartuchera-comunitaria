@@ -37,14 +37,14 @@ const CardShuffle = (props) => {
   }
 
   return (
-    <div className={`p-6 pt-6 w-48 h-72 ml-2 mr-3 card-item bg-black `}>
+    <div
+      className={`p-6 pt-6 w-48 h-72 ml-2 mr-3 card-item bg-black `}
+      onClick={() => {
+        handleClick();
+      }}
+    >
       <div>
-        <button
-          onClick={() => {
-            handleClick();
-          }}
-          className="flex"
-        >
+        <button className="flex">
           <img src={Mezcla} alt="Mezcla" />
           <label
             htmlFor="button"
