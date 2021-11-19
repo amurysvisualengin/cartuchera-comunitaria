@@ -38,7 +38,7 @@ const CardShuffle = (props) => {
 
   return (
     <div
-      className={`p-6 pt-6 w-48 h-72 ml-2 mr-3 card-item bg-black `}
+      className={`p-6 pt-6 w-48 h-72 ml-2 mr-3 card-item bg-black cursor-pointer `}
       onClick={() => {
         handleClick();
       }}
