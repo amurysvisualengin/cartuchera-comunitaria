@@ -26,7 +26,7 @@ function CardContentPhoto(props) {
         }}
       >
         <button
-          className="text-2xl bg-black w-10 h-10 mt-4 mr-4  rounded-full"
+          className="text-2xl bg-black w-10 h-10 mt-4 rounded-full"
           style={{ color: color }}
         >
           X
@@ -34,7 +34,11 @@ function CardContentPhoto(props) {
       </div>
       <div className="flex justify-center mt-16 lg:ml-0 lg:mt-16">
         {!isMobile && <img src={img} alt="" className="w-20 h-full mr-10" />}
-        <div className={"block lg:w-100 lg:mr-52"}>
+        <div
+          className={`block  ${
+            isTablet < 768 ? "w-full ml-2.5" : "lg:w-100 lg:mr-52"
+          }`}
+        >
           <h2
             className="bg-black rounded w-14 px-2 lg:text-base"
             style={{ color: color }}
@@ -83,7 +87,7 @@ function CardContentPhoto(props) {
           {isMobile && (
             <p
               className={`custom-font text-left  bg-black  items-center p-2 rounded mt-6 ${
-                isTablet > 767 && isTablet < 1224 ? "w-100" : "w-80 text-sm"
+                isTablet > 767 && isTablet < 1224 ? "w-100" : "w-90 text-sm"
               }`}
               style={{ color: color }}
             >
