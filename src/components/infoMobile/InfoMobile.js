@@ -53,24 +53,26 @@ const InfoMobile = () => {
             >
               Instrucciones
             </h1>
-            {infoContainer.map((element, index) => (
-              <div className="text-white m-3">
-                <h1
-                  className={`custom-font mb-4 ${
-                    isTablet < 767 ? "text-xl" : "text-3xl"
-                  }`}
-                >
-                  {element.title}
-                </h1>
-                <h2
-                  className={`${
-                    isTablet < 767 ? "text-base pb-4" : "text-xl pb-4"
-                  }`}
-                >
-                  {element.description}
-                </h2>
-              </div>
-            ))}
+            <div className="pb-20">
+              {infoContainer.map((element, index) => (
+                <div className="text-white m-3">
+                  <h1
+                    className={`custom-font mb-4 ${
+                      isTablet < 767 ? "text-xl" : "text-3xl"
+                    }`}
+                  >
+                    {element.title}
+                  </h1>
+                  <h2
+                    className={`${
+                      isTablet < 767 ? "text-base pb-4" : "text-xl pb-4"
+                    }`}
+                  >
+                    {element.description}
+                  </h2>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

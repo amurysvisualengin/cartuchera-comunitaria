@@ -8,7 +8,7 @@ function CardContentPhoto(props) {
 
   return (
     <div
-      className="h-screen "
+      className="h-screen pb-5"
       style={{ backgroundColor: isMobile ? color : "" }}
     >
       {!isMobile && (
