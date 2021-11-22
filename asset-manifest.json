@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/cartuchera-comunitaria/static/css/main.1609329a.chunk.css",
-    "main.js": "/cartuchera-comunitaria/static/js/main.374c2834.chunk.js",
-    "main.js.map": "/cartuchera-comunitaria/static/js/main.374c2834.chunk.js.map",
+    "main.css": "/cartuchera-comunitaria/static/css/main.c86de612.chunk.css",
+    "main.js": "/cartuchera-comunitaria/static/js/main.d4138c34.chunk.js",
+    "main.js.map": "/cartuchera-comunitaria/static/js/main.d4138c34.chunk.js.map",
     "runtime-main.js": "/cartuchera-comunitaria/static/js/runtime-main.708e567f.js",
     "runtime-main.js.map": "/cartuchera-comunitaria/static/js/runtime-main.708e567f.js.map",
     "static/js/2.80adada3.chunk.js": "/cartuchera-comunitaria/static/js/2.80adada3.chunk.js",
     "static/js/2.80adada3.chunk.js.map": "/cartuchera-comunitaria/static/js/2.80adada3.chunk.js.map",
     "index.html": "/cartuchera-comunitaria/index.html",
-    "static/css/main.1609329a.chunk.css.map": "/cartuchera-comunitaria/static/css/main.1609329a.chunk.css.map",
+    "static/css/main.c86de612.chunk.css.map": "/cartuchera-comunitaria/static/css/main.c86de612.chunk.css.map",
     "static/js/2.80adada3.chunk.js.LICENSE.txt": "/cartuchera-comunitaria/static/js/2.80adada3.chunk.js.LICENSE.txt",
     "static/media/Audiovisuales.96221ca9.svg": "/cartuchera-comunitaria/static/media/Audiovisuales.96221ca9.svg",
     "static/media/Facebook.266436bf.svg": "/cartuchera-comunitaria/static/media/Facebook.266436bf.svg",
@@ -20,6 +20,7 @@
     "static/media/Twitter.85657ba9.svg": "/cartuchera-comunitaria/static/media/Twitter.85657ba9.svg",
     "static/media/cartuchera-logo.bcc09401.svg": "/cartuchera-comunitaria/static/media/cartuchera-logo.bcc09401.svg",
     "static/media/check.8cc6bc7d.svg": "/cartuchera-comunitaria/static/media/check.8cc6bc7d.svg",
+    "static/media/close.a1b9f9fe.svg": "/cartuchera-comunitaria/static/media/close.a1b9f9fe.svg",
     "static/media/construccion-participativa-cut.224c46e0.svg": "/cartuchera-comunitaria/static/media/construccion-participativa-cut.224c46e0.svg",
     "static/media/hamburguer.b1320e19.svg": "/cartuchera-comunitaria/static/media/hamburguer.b1320e19.svg",
     "static/media/ico-all-colors.9119bc0a.svg": "/cartuchera-comunitaria/static/media/ico-all-colors.9119bc0a.svg",
@@ -33,7 +34,7 @@
   "entrypoints": [
     "static/js/runtime-main.708e567f.js",
     "static/js/2.80adada3.chunk.js",
-    "static/css/main.1609329a.chunk.css",
-    "static/js/main.374c2834.chunk.js"
+    "static/css/main.c86de612.chunk.css",
+    "static/js/main.d4138c34.chunk.js"
   ]
 }
