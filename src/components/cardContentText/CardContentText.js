@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import SocialMedia from "../socialMedia/SocialMedia";
+import CloseButton from "../../assets/icons/close.svg";
 import CardListContext from "../../context/CardListContext";
 const CardContentText = (props) => {
   const { cardContent, title, img, type, color, handleShowExpandFalse } = props;
@@ -25,12 +25,9 @@ const CardContentText = (props) => {
         }}
       >
         <button
-          className={`text-2xl bg-black w-10 h-10   rounded-full ${
-            isTablet < 767 ? "mt-2 mr-2" : "mt-4 mr-4"
-          }`}
-          style={{ color: color }}
+          className={` ${isTablet < 768 ? "mt-4 mr-4 w-12" : "mt-4 mr-4"}`}
         >
-          X
+          <img src={CloseButton} alt="" />
         </button>
       </div>
       <div className="block lg:flex justify-center ">
@@ -41,14 +38,20 @@ const CardContentText = (props) => {
         />
 
         <div className={`block mt-16 text-left ml-3 lg:ml-0`}>
-          <h2
+          <div
             className={`bg-black lg:text-xl rounded lg:px-1 lg:pb-1 text-center w-24 lg:w-32
-            ${isMobile && isTablet > 767 && isTablet < 1024 ? "ml-11" : "ml-0"}
+            ${
+              isMobile
+                ? isTablet > 767 && isTablet < 1024
+                  ? "ml-11 text-2xl w-40 h-10 text-center items-center"
+                  : "ml-0 text-base py-1 w-26  text-center items-center"
+                : ""
+            }
             `}
             style={{ color: color }}
           >
-            {cardContent.nameType}
-          </h2>
+            <h2>{cardContent.nameType.toUpperCase()}</h2>
+          </div>
           <h1
             className={`lg:text-6xl mt-4 custom-font-shadow ${
               isTablet < 767 ? "text-4xl" : "text-5xl"

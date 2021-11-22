@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./CardContentPdf.css";
 import CardListContext from "../../context/CardListContext";
+import CloseButton from "../../assets/icons/close.svg";
 
 const CardContentPdf = (props) => {
   const { cardContent, title, img, color, handleShowExpandFalse } = props;
@@ -17,38 +18,43 @@ const CardContentPdf = (props) => {
       )}
 
       <div
-        className=" text-right mr-2 pt-4 lg:pt-0 lg:mt-4 lg:mr-10"
+        className="text-right lg:mt-4 lg:mr-10"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
         }}
       >
         <button
-          className="text-2xl bg-black w-10 h-10   rounded-full"
-          style={{ color: color }}
+          className={` ${isTablet < 768 ? "mt-4 mr-4 w-12" : "mt-4 mr-4"}`}
         >
-          X
+          <img src={CloseButton} alt="" />
         </button>
       </div>
 
-      <div className="flex justify-center mt-8 lg:mt-14 ml-3 lg:ml-0 ">
+      <div className="flex justify-center mt-8 lg:mt-14 ml-4 lg:ml-0 ">
         {!isMobile && (
           <img src={img} alt="" className="mr-16 w-32 h-12 float-left z-30" />
         )}
         <div
-          className={`block  ml-4 lg:mr-0 lg:w-104  ${
+          className={`block  ml-5 lg:mr-0 lg:w-104  ${
             isTablet < 767 ? "w-96" : "w-99.5"
           }`}
         >
-          <p
-            className="bg-black w-24 lg:w-32 rounded px-2 py-1 text-xs lg:text-base "
+          <div
+            className={`bg-black w-24 lg:w-32 rounded text-xs lg:text-base ${
+              isMobile
+                ? isTablet < 768
+                  ? "ml-0 text-base w-26 py-1 text-center items-center"
+                  : ""
+                : ""
+            }`}
             style={{ color: color }}
           >
-            HERRAMIENTA
-          </p>
+            <p>HERRAMIENTA</p>
+          </div>
           <h1
             className={`custom-font-shadow  lg:text-6xl mt-6 text-left lg:leading-11 ${
-              isMobile ? (isTablet < 767 ? "text-3xl w-90" : "text-4xl") : ""
+              isMobile ? (isTablet < 767 ? "text-4xl w-90" : "text-4xl") : ""
             }`}
           >
             {title}
@@ -107,15 +113,19 @@ const CardContentPdf = (props) => {
 
                   <div
                     dangerouslySetInnerHTML={{ __html: element.sentence }}
-                    className={` m-4 ${
+                    className={`m-4 ${
                       isMobile
                         ? isTablet < 767
-                          ? "text-sm"
+                          ? "text-sm "
                           : "text-base"
                         : "text-base"
                     }`}
                   ></div>
-                  <div className="flex pb-10 mt-6 justify-center">
+                  <div
+                    className={`flex mt-6 justify-center ${
+                      element.pdf && "pb-10"
+                    }`}
+                  >
                     {element.pdf && (
                       <a
                         href={element.pdf}

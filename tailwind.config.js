@@ -23,6 +23,7 @@ module.exports = {
       },
       spacing: {
         2.5: "0.625rem",
+        26: "7.5rem",
         72: "18rem",
         84: "21rem",
         90: "22rem",
@@ -61,6 +62,9 @@ module.exports = {
         125: "1.25",
         150: "1.5",
         200: "2",
+      },
+      padding: {
+        0.5: "0.2px",
       },
       boxShadow: {
         black: "0 2px 2px 0 rgba(0, 0, 0, 0.08)",

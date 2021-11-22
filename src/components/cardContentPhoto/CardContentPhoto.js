@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import CardListContext from "../../context/CardListContext";
 import "./CardContentPhoto.css";
+import CloseButton from "../../assets/icons/close.svg";
 
 function CardContentPhoto(props) {
   const { cardContent, img, color, handleShowExpandFalse } = props;
@@ -19,17 +20,16 @@ function CardContentPhoto(props) {
         />
       )}
       <div
-        className="text-right mr-2 lg:mt-2 lg:mr-10"
+        className="text-right lg:mt-4 lg:mr-10"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
         }}
       >
         <button
-          className="text-2xl bg-black w-10 h-10 mt-4 rounded-full"
-          style={{ color: color }}
+          className={` ${isTablet < 768 ? "mt-4 mr-4 w-12" : "mt-4 mr-4"}`}
         >
-          X
+          <img src={CloseButton} alt="" />
         </button>
       </div>
       <div className="flex justify-center mt-16 lg:ml-0 lg:mt-16">
@@ -39,12 +39,19 @@ function CardContentPhoto(props) {
             isTablet < 768 ? "w-full mx-5" : "lg:w-100 lg:mr-52"
           }`}
         >
-          <h2
-            className="bg-black rounded w-14 px-2 lg:text-base"
+          <div
+            className={`bg-black  lg:w-32 rounded text-xs lg:text-base ${
+              isMobile
+                ? isTablet < 768
+                  ? "ml-0  w-14 py-1 text-center items-center"
+                  : "text-base w-14 text-center items-center"
+                : ""
+            }`}
             style={{ color: color }}
           >
-            FOTO
-          </h2>
+            <p>FOTO</p>
+          </div>
+
           <h1
             className={`custom-font-shadow text-left text-4xl lg:text-6xl mt-4 mb-4 lg:w-107 ${
               isTablet > 769 && isMobile < 1024
