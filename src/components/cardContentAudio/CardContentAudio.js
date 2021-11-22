@@ -44,7 +44,7 @@ const CardContentAudio = (props) => {
             }`}
           >
             <h2
-              className="bg-black lg:text-lg mt-10 lg:mt-0 rounded item-center w-14 px-1"
+              className="bg-black lg:text-xl lg:w-20 lg:py-1 mt-10 lg:mt-0 rounded item-center w-14 px-1"
               style={{ color: color }}
             >
               VIDEO

@@ -41,12 +41,10 @@ const CardContentPdf = (props) => {
           }`}
         >
           <div
-            className={`bg-black w-24 lg:w-32 rounded text-xs lg:text-base ${
+            className={`bg-black  rounded lg: ${
               isMobile
-                ? isTablet < 768
-                  ? "ml-0 text-base w-26 py-1 text-center items-center"
-                  : ""
-                : ""
+                ? "ml-0 text-base w-26 py-1 text-center items-center"
+                : "w-36 py-1 text-xl"
             }`}
             style={{ color: color }}
           >
