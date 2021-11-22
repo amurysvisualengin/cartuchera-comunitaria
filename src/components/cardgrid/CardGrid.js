@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import "./CardGrid.css";
 import Card from "../card/Card";
 import CardShuffle from "../CardShuffle/CardShuffle";
 import CardListContext from "../../context/CardListContext";
@@ -35,29 +36,31 @@ const CardGrid = () => {
 
   if (!isMobile) {
     return (
-      <div className="p-4 flex flex-wrap content-start items-center ml-20 mt-16">
-        <div>
-          <CardShuffle list={list} setList={setList} />
-        </div>
-
-        {shuffleList.map((element, index) => (
+      <div className="left-shadow">
+        <div className="p-4 flex flex-wrap content-start items-center ml-20 mt-16">
           <div>
-            {((kitFilter === "" && typeFilter === "") ||
-              (kitFilter === "" && typeFilter === element.typeId) ||
-              (kitFilter === element.id && typeFilter === element.typeId) ||
-              (kitFilter === element.id && typeFilter === "")) && (
-              <Card
-                key={index}
-                title={element.title}
-                img={element.img}
-                color={element.color}
-                type={element.type}
-                cardContent={element.cardType}
-                cardNumber={element.cardNumber}
-              />
-            )}
+            <CardShuffle list={list} setList={setList} />
           </div>
-        ))}
+
+          {shuffleList.map((element, index) => (
+            <div>
+              {((kitFilter === "" && typeFilter === "") ||
+                (kitFilter === "" && typeFilter === element.typeId) ||
+                (kitFilter === element.id && typeFilter === element.typeId) ||
+                (kitFilter === element.id && typeFilter === "")) && (
+                <Card
+                  key={index}
+                  title={element.title}
+                  img={element.img}
+                  color={element.color}
+                  type={element.type}
+                  cardContent={element.cardType}
+                  cardNumber={element.cardNumber}
+                />
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

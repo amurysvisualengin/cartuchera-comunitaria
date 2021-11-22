@@ -16,6 +16,7 @@ import Herramientas from "../../assets/icons/Herramientas.svg";
 import Check from "../../assets/icons/check.svg";
 import Presentacion from "../../assets/icons/presentacion.svg";
 import Fotos from "../../assets/icons/Fotos.svg";
+import CartucheraLogo from "../../assets/icons/cartuchera-logo.svg";
 
 const Sidebar = (props) => {
   const filters = [
@@ -101,6 +102,7 @@ const Sidebar = (props) => {
           isSidebarVisible ? "block mt-0" : "hidden"
         } xl:block xl:h-full`}
       >
+        <img src={CartucheraLogo} alt="" />
         <div className="flex mt-16">
           <img src={Check} alt="" className="mr-4" />
           <h1 className="text-3xl custom-font">Intrucciones</h1>

@@ -45,7 +45,7 @@ function App() {
   }, []);
 
   return (
-    <div className="block xl:flex">
+    <div className="block xl:flex background-html">
       <CardListContext.Provider
         value={{
           kitFilter,
