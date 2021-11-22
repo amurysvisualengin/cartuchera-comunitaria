@@ -35,7 +35,7 @@ const CardGrid = () => {
 
   if (!isMobile) {
     return (
-      <div className="p-4 flex flex-wrap content-start items-center ml-24 mt-16">
+      <div className="p-4 flex flex-wrap content-start items-center ml-20 mt-16">
         <div>
           <CardShuffle list={list} setList={setList} />
         </div>

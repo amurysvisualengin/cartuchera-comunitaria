@@ -7,7 +7,7 @@ import Twitter from "../../assets/icons/Twitter.svg";
 import Linkedin from "../../assets/icons/Linkedin.svg";
 
 const CardContentPresentation = (props) => {
-  const { cardContent, title, img, color, handleShowExpandFalse } = props;
+  const { cardContent, img, color, handleShowExpandFalse } = props;
   const { isMobile, setIsExpand, isTablet } = useContext(CardListContext);
 
   return (

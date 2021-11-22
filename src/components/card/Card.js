@@ -7,7 +7,6 @@ import CardContentPhoto from "../cardContentPhoto/CardContentPhoto";
 import CardListContext from "../../context/CardListContext";
 import "./Card.css";
 import "../../App.css";
-import { useEffect } from "react/cjs/react.development";
 
 const Card = (props) => {
   const [showExpand, setShowExpand] = useState(false);
