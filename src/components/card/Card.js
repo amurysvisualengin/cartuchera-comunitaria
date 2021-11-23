@@ -11,8 +11,7 @@ import "../../App.css";
 const Card = (props) => {
   const [showExpand, setShowExpand] = useState(false);
   const { title, img, type, color, cardNumber, cardContent } = props;
-  const { setCardInfo, setIsExpand, isTablet, mobileHeight } =
-    useContext(CardListContext);
+  const { setCardInfo, setIsExpand, isTablet } = useContext(CardListContext);
 
   const handleShowExpandFalse = () => {
     setShowExpand(!showExpand);
@@ -60,7 +59,7 @@ const Card = (props) => {
   };
 
   const { isMobile } = useContext(CardListContext);
-  console.log(mobileHeight);
+
   return (
     <React.Fragment>
       <div
@@ -70,8 +69,8 @@ const Card = (props) => {
         onTouchEnd={handleTouchEnd}
         className={` ${
           isMobile
-            ? isTablet <= 320
-              ? " ml-5 mr-5 h-96 p-16 card-item cursor-pointer"
+            ? isTablet < 376
+              ? " ml-5 mr-5 h-99.2 p-16 card-item cursor-pointer"
               : isTablet < 394
               ? " ml-5 mr-5 h-98 p-16 card-item cursor-pointer"
               : isTablet < 415
@@ -83,7 +82,7 @@ const Card = (props) => {
       >
         <p className="custom-font text-right items-start">{cardNumber}</p>
         <img
-          className={` ${isMobile ? " w-80 h-96" : "w-36 h-60"}`}
+          className={` ${isMobile ? "mt-4 w-80 h-96" : "w-36 h-60"}`}
           src={img}
           alt=""
           srcSet=""
