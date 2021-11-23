@@ -24,6 +24,7 @@ function App() {
   const [cardInfo, setCardInfo] = useState({});
   const [showMenu, setShowMenu] = useState(false);
   const [showInformation, setShowInformation] = useState(false);
+  const [mobileHeight, SetMobileHeight] = useState("");
 
   //choose the screen size for mobile
   const handleResize = () => {
@@ -74,6 +75,8 @@ function App() {
           setShowMenu,
           showInformation,
           setShowInformation,
+          mobileHeight,
+          SetMobileHeight,
         }}
       >
         <Menu />

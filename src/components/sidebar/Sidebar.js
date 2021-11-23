@@ -125,7 +125,7 @@ const Sidebar = (props) => {
                 }`}
                 style={{ backgroundColor: element.color }}
               >
-                <div className="flex items-center">
+                <div className="flex items-center relative">
                   <img className="ml-4 absolute" src={element.src} alt="" />
                   <div className="ml-24 text-base">{element.title}</div>
                 </div>

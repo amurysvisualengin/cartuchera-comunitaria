@@ -27,6 +27,8 @@ const CardListContext = createContext({
   setShowMenu: (menu) => {},
   showInformation: "",
   setShowInformation: (info) => {},
+  mobileHeight: "",
+  SetMobileHeight: (height) => {},
 });
 
 export default CardListContext;
