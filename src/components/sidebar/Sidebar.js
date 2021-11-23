@@ -93,7 +93,7 @@ const Sidebar = (props) => {
     isSidebarVisible,
     isTablet,
   } = useContext(CardListContext);
-  console.log(isTablet);
+
   return (
     <div>
       <div

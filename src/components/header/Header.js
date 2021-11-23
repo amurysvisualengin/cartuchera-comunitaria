@@ -19,7 +19,7 @@ const Header = () => {
     window.addEventListener("scroll", hideHeader);
     return () => window.removeEventListener("scroll", hideHeader);
   }, []);
-  console.log(show);
+
   return (
     <div>
       {!show && (
