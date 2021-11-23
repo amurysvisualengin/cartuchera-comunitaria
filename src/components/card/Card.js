@@ -70,7 +70,7 @@ const Card = (props) => {
         className={` ${
           isMobile
             ? isTablet < 376
-              ? " ml-5 mr-5 h-72 p-16 card-item cursor-pointer"
+              ? " ml-5 mr-5 h-84 p-16 card-item cursor-pointer"
               : isTablet < 394
               ? " ml-5 mr-5 h-98 p-16 card-item cursor-pointer"
               : isTablet < 415
@@ -82,7 +82,7 @@ const Card = (props) => {
       >
         <p className="custom-font text-right items-start">{cardNumber}</p>
         <img
-          className={` ${isMobile ? "mt-4 w-80 h-80" : "w-36 h-60"}`}
+          className={` ${isMobile ? "mt-4 w-80 h-64" : "w-36 h-60"}`}
           src={img}
           alt=""
           srcSet=""
