@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import CardListContext from "../../context/CardListContext";
+import CloseButton from "../../assets/icons/close.svg";
 const InfoMobile = () => {
   const { showInformation, setShowInformation, isTablet } =
     useContext(CardListContext);
@@ -38,8 +39,8 @@ const InfoMobile = () => {
             if (showInformation) setShowInformation(!showInformation);
           }}
         >
-          <button className={`bg-white  mt-4 mr-4 w-8 h-8 rounded-full `}>
-            X
+          <button className={`mt-4 mr-4 w-12`}>
+            <img src={CloseButton} alt="" className="filter invert" />
           </button>
         </div>
 

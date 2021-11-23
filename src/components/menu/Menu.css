@@ -1,0 +1,7 @@
+.hover-close {
+  fill: white;
+}
+
+.hover-close img:hover {
+  fill: red;
+}

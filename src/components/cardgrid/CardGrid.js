@@ -79,7 +79,7 @@ const CardGrid = () => {
               <img src={CartucheraLogo} alt="logo" className="w-20 ml-2" />
               <div className="flex">
                 <button
-                  className="text-white bg-black w-12 h-6 rounded-md mt-5 mr-4 text-center"
+                  className="text-white text-xs bg-black w-12 h-6 mt-5 mr-4 text-center custom-font-shadow"
                   onClick={() => {
                     setShowInformation(!showInformation);
                   }}

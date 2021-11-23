@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import CardListContext from "../../context/CardListContext";
-import Card from "../card/Card";
+import "./Menu.css";
+import CloseButton from "../../assets/icons/close.svg";
 
 const Menu = (props) => {
   const { isMobile, showMenu, setShowMenu } = useContext(CardListContext);
@@ -14,7 +15,7 @@ const Menu = (props) => {
     >
       <div className=" mt-5 lg:mt-10 mr-5 lg:mr-10 flex  justify-end">
         <button
-          className={`bg-white lg:text-3xl w-6 lg:w-12 rounded-full 
+          className={`mt-4 mr-4 w-12 
             `}
           onClick={() => {
             if (showMenu) {
@@ -22,7 +23,7 @@ const Menu = (props) => {
             }
           }}
         >
-          X
+          <img src={CloseButton} alt="" className="filter invert" />
         </button>
       </div>
 
