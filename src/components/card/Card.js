@@ -64,79 +64,89 @@ const Card = (props) => {
   return (
     <React.Fragment>
       <div
-        onClick={handleShowExpand}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleOnTouchMove}
-        onTouchEnd={handleTouchEnd}
-        className={` ${
-          isMobile
-            ? isTablet < 376
-              ? " ml-5 mr-5 h-99.2 p-16 card-item cursor-pointer"
-              : isTablet < 394
-              ? " ml-5 mr-5 h-98 p-16 card-item cursor-pointer"
-              : isTablet < 415
-              ? "ml-5 mr-5 h-97.5 p-16 card-item cursor-pointer"
-              : "p-16 h-98 card-item cursor-pointer"
-            : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72 cursor-pointer hover-card"
-        } `}
-        style={{ backgroundColor: color, borderColor: color }}
+        className={`flex justify-center items-center${
+          isMobile ? "p-5" : "mr-2"
+        }`}
       >
-        <p className="custom-font text-right items-start">{cardNumber}</p>
-        <img
-          className={` ${isMobile ? "mt-4 w-80 h-96" : "w-36 h-60"}`}
-          src={img}
-          alt=""
-          srcSet=""
-        />
         <div
-          className={` card-expand ${showExpand ? "card-expanded" : ""}`}
-          style={{ backgroundColor: color }}
+          onClick={handleShowExpand}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleOnTouchMove}
+          onTouchEnd={handleTouchEnd}
+          className={`w-full rounded-md ${
+            isMobile ? "-mt-5" : "p-6 m-2 text-center card-item h-72"
+          }`}
+
+          /* className={` ${
+          isMobile
+          ? isTablet < 376
+          ? " ml-5 mr-5 h-99.2 p-16 card-item cursor-pointer"
+          : isTablet < 394
+          ? " ml-5 mr-5 h-98 p-16 card-item cursor-pointer"
+          : isTablet < 415
+          ? "ml-5 mr-5 h-97.5 p-16 card-item cursor-pointer"
+          : "p-16 h-98 card-item cursor-pointer"
+          : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72 cursor-pointer hover-card"
+        } `}
+        style={{ backgroundColor: color, borderColor: color }} */
         >
-          {type === "Audiovisual" && (
-            <CardContentAudio
-              cardContent={cardContent}
-              img={img}
-              title={title}
-              color={color}
-              handleShowExpandFalse={handleShowExpandFalse}
-            />
-          )}
-          {type === "Herramientas" && (
-            <CardContentPdf
-              cardContent={cardContent}
-              img={img}
-              title={title}
-              color={color}
-              handleShowExpandFalse={handleShowExpandFalse}
-            />
-          )}
-          {type === "Rompehielos" && (
-            <CardContentText
-              cardContent={cardContent}
-              img={img}
-              title={title}
-              color={color}
-              handleShowExpandFalse={handleShowExpandFalse}
-            />
-          )}
-          {type === "Presentation" && (
-            <CardContentPresentation
-              cardContent={cardContent}
-              img={img}
-              title={title}
-              color={color}
-              handleShowExpandFalse={handleShowExpandFalse}
-            />
-          )}
-          {type === "Photo" && (
-            <CardContentPhoto
-              cardContent={cardContent}
-              img={img}
-              title={title}
-              color={color}
-              handleShowExpandFalse={handleShowExpandFalse}
-            />
-          )}
+          {/* <p className="custom-font text-right items-start">{cardNumber}</p> */}
+          <img
+            className={` ${isMobile ? "mt-4 w-80 h-96" : "w-36 h-60"}`}
+            src={img}
+            alt=""
+            srcSet=""
+          />
+          <div
+            className={` card-expand ${showExpand ? "card-expanded" : ""}`}
+            style={{ backgroundColor: color }}
+          >
+            {type === "Audiovisual" && (
+              <CardContentAudio
+                cardContent={cardContent}
+                img={img}
+                title={title}
+                color={color}
+                handleShowExpandFalse={handleShowExpandFalse}
+              />
+            )}
+            {type === "Herramientas" && (
+              <CardContentPdf
+                cardContent={cardContent}
+                img={img}
+                title={title}
+                color={color}
+                handleShowExpandFalse={handleShowExpandFalse}
+              />
+            )}
+            {type === "Rompehielos" && (
+              <CardContentText
+                cardContent={cardContent}
+                img={img}
+                title={title}
+                color={color}
+                handleShowExpandFalse={handleShowExpandFalse}
+              />
+            )}
+            {type === "Presentation" && (
+              <CardContentPresentation
+                cardContent={cardContent}
+                img={img}
+                title={title}
+                color={color}
+                handleShowExpandFalse={handleShowExpandFalse}
+              />
+            )}
+            {type === "Photo" && (
+              <CardContentPhoto
+                cardContent={cardContent}
+                img={img}
+                title={title}
+                color={color}
+                handleShowExpandFalse={handleShowExpandFalse}
+              />
+            )}
+          </div>
         </div>
       </div>
     </React.Fragment>
