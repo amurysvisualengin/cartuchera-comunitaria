@@ -15,7 +15,7 @@ const Menu = (props) => {
     >
       <div className=" mt-5 lg:mt-10 mr-5 lg:mr-10 flex  justify-end">
         <button
-          className={`mt-4 mr-4 w-12 
+          className={` w-12 
             `}
           onClick={() => {
             if (showMenu) {
