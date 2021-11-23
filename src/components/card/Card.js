@@ -76,6 +76,7 @@ const Card = (props) => {
           className={`w-full rounded-md ${
             isMobile ? "-mt-5" : "p-6 m-2 text-center card-item h-72"
           }`}
+          style={{ backgroundColor: color }}
 
           /* className={` ${
           isMobile
@@ -91,12 +92,28 @@ const Card = (props) => {
         style={{ backgroundColor: color, borderColor: color }} */
         >
           {/* <p className="custom-font text-right items-start">{cardNumber}</p> */}
-          <img
-            className={` ${isMobile ? "mt-4 w-80 h-96" : "w-36 h-60"}`}
-            src={img}
-            alt=""
-            srcSet=""
-          />
+          <div className="flex justify-center items-center">
+            <img
+              className={`${isMobile && "m-10 p-10"} 
+            ${
+              isMobile
+                ? mobileHeight <= 568
+                  ? "w-52 h-72"
+                  : mobileHeight <= 667
+                  ? "w-64 h-90"
+                  : mobileHeight <= 736
+                  ? "w-80 h-96"
+                  : mobileHeight <= 812
+                  ? "w-80 h-97"
+                  : "w-84 h-97 mx-4"
+                : "w-36 h-60"
+            }`}
+              // className={` ${isMobile ? "mt-4 w-80 h-96" : "w-36 h-60"}`}
+              src={img}
+              alt=""
+              srcSet=""
+            />
+          </div>
           <div
             className={` card-expand ${showExpand ? "card-expanded" : ""}`}
             style={{ backgroundColor: color }}
