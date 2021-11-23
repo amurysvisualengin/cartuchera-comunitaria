@@ -67,7 +67,7 @@ const Card = (props) => {
         onTouchStart={handleTouchStart}
         onTouchMove={handleOnTouchMove}
         onTouchEnd={handleTouchEnd}
-        /* className={` ${
+        className={` ${
           isMobile
             ? isTablet < 376
               ? " ml-5 mr-5 h-99.2 p-16 card-item cursor-pointer"
@@ -78,7 +78,7 @@ const Card = (props) => {
               : "p-16 h-98 card-item cursor-pointer"
             : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72 cursor-pointer hover-card"
         } `}
-        style={{ backgroundColor: color, borderColor: color }} */
+        style={{ backgroundColor: color, borderColor: color }}
       >
         <p className="custom-font text-right items-start">{cardNumber}</p>
         <img
