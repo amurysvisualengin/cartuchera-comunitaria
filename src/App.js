@@ -31,6 +31,7 @@ function App() {
     if (window.innerWidth < 1224) {
       setIstablet(window.innerWidth);
       setIsMobile(true);
+      SetMobileHeight(window.innerHeight);
     } else {
       setIsMobile(false);
     }
