@@ -64,106 +64,79 @@ const Card = (props) => {
   return (
     <React.Fragment>
       <div
-        className={`flex justify-center items-center${
-          isMobile ? "p-5" : "mr-2"
-        }`}
-      >
-        <div
-          onClick={handleShowExpand}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleOnTouchMove}
-          onTouchEnd={handleTouchEnd}
-          className={`w-full rounded-md ${
-            isMobile ? "-mt-5" : "p-6 m-2 text-center card-item h-72"
-          }`}
-          style={{ backgroundColor: color }}
-
-          /* className={` ${
+        onClick={handleShowExpand}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleOnTouchMove}
+        onTouchEnd={handleTouchEnd}
+        className={` ${
           isMobile
-          ? isTablet < 376
-          ? " ml-5 mr-5 h-99.2 p-16 card-item cursor-pointer"
-          : isTablet < 394
-          ? " ml-5 mr-5 h-98 p-16 card-item cursor-pointer"
-          : isTablet < 415
-          ? "ml-5 mr-5 h-97.5 p-16 card-item cursor-pointer"
-          : "p-16 h-98 card-item cursor-pointer"
-          : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72 cursor-pointer hover-card"
+            ? isTablet < 376
+              ? " ml-5 mr-5 h-99.2 p-16 card-item cursor-pointer"
+              : isTablet < 394
+              ? " ml-5 mr-5 h-98 p-16 card-item cursor-pointer"
+              : isTablet < 415
+              ? "ml-5 mr-5 h-97.5 p-16 card-item cursor-pointer"
+              : "p-16 h-98 card-item cursor-pointer"
+            : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72 cursor-pointer hover-card"
         } `}
-        style={{ backgroundColor: color, borderColor: color }} */
+        style={{ backgroundColor: color, borderColor: color }}
+      >
+        <p className="custom-font text-right items-start">{cardNumber}</p>
+        <img
+          className={` ${isMobile ? "mt-4 w-80 h-96" : "w-36 h-60"}`}
+          src={img}
+          alt=""
+          srcSet=""
+        />
+        <div
+          className={` card-expand ${showExpand ? "card-expanded" : ""}`}
+          style={{ backgroundColor: color }}
         >
-          {/* <p className="custom-font text-right items-start">{cardNumber}</p> */}
-          <div className="flex justify-center items-center">
-            <img
-              className={`cursor-pointer ${isMobile && "m-10 p-10"} 
-            ${
-              isMobile
-                ? mobileHeight <= 568
-                  ? "w-52 h-72"
-                  : mobileHeight <= 667
-                  ? "w-64 h-90"
-                  : mobileHeight <= 736
-                  ? "w-80 h-96"
-                  : mobileHeight <= 812
-                  ? "w-80 h-97"
-                  : "w-84 h-97 mx-4"
-                : "w-36 h-60 hover-card card-item border-none"
-            }`}
-              // className={` ${isMobile ? "mt-4 w-80 h-96" : "w-36 h-60"}`}
-              src={img}
-              alt=""
-              srcSet=""
+          {type === "Audiovisual" && (
+            <CardContentAudio
+              cardContent={cardContent}
+              img={img}
+              title={title}
+              color={color}
+              handleShowExpandFalse={handleShowExpandFalse}
             />
-          </div>
-          <div
-            className={` card-expand ${showExpand ? "card-expanded" : ""}`}
-            style={{ backgroundColor: color }}
-          >
-            {type === "Audiovisual" && (
-              <CardContentAudio
-                cardContent={cardContent}
-                img={img}
-                title={title}
-                color={color}
-                handleShowExpandFalse={handleShowExpandFalse}
-              />
-            )}
-            {type === "Herramientas" && (
-              <CardContentPdf
-                cardContent={cardContent}
-                img={img}
-                title={title}
-                color={color}
-                handleShowExpandFalse={handleShowExpandFalse}
-              />
-            )}
-            {type === "Rompehielos" && (
-              <CardContentText
-                cardContent={cardContent}
-                img={img}
-                title={title}
-                color={color}
-                handleShowExpandFalse={handleShowExpandFalse}
-              />
-            )}
-            {type === "Presentation" && (
-              <CardContentPresentation
-                cardContent={cardContent}
-                img={img}
-                title={title}
-                color={color}
-                handleShowExpandFalse={handleShowExpandFalse}
-              />
-            )}
-            {type === "Photo" && (
-              <CardContentPhoto
-                cardContent={cardContent}
-                img={img}
-                title={title}
-                color={color}
-                handleShowExpandFalse={handleShowExpandFalse}
-              />
-            )}
-          </div>
+          )}
+          {type === "Herramientas" && (
+            <CardContentPdf
+              cardContent={cardContent}
+              img={img}
+              title={title}
+              color={color}
+              handleShowExpandFalse={handleShowExpandFalse}
+            />
+          )}
+          {type === "Rompehielos" && (
+            <CardContentText
+              cardContent={cardContent}
+              img={img}
+              title={title}
+              color={color}
+              handleShowExpandFalse={handleShowExpandFalse}
+            />
+          )}
+          {type === "Presentation" && (
+            <CardContentPresentation
+              cardContent={cardContent}
+              img={img}
+              title={title}
+              color={color}
+              handleShowExpandFalse={handleShowExpandFalse}
+            />
+          )}
+          {type === "Photo" && (
+            <CardContentPhoto
+              cardContent={cardContent}
+              img={img}
+              title={title}
+              color={color}
+              handleShowExpandFalse={handleShowExpandFalse}
+            />
+          )}
         </div>
       </div>
     </React.Fragment>
