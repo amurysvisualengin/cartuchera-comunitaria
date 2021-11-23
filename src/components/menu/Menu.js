@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { Link } from 'react-router-dom';
 import CardListContext from "../../context/CardListContext";
 import "./Menu.css";
 import CloseButton from "../../assets/icons/close.svg";
@@ -32,19 +33,22 @@ const Menu = (props) => {
           {!isMobile && (
             <ul className="cursor-pointer text-center  ">
               <li className="hover:text-red-400  lg:mb-0">
-                <a href=""></a>Inicio
+                <Link to="/">Inicio</Link>
               </li>
               <li className="hover:text-yellow-200 ">
-                <a href=""></a>Sobre la cartuchera
+               <Link to="/sobre-nosotros">Sobre la cartuchera</Link>
               </li>
               <li className="hover:text-blue-300">
-                <a href=""></a>Cartuchera Comunitaria
+                <Link to="/app">Cartuchera Comunitaria</Link>
               </li>
               <li className="hover:text-green-600">
-                <a href=""></a>Cómo ayudar
+                <Link to="/como-ayudar">Cómo ayudar</Link>
               </li>
               <li className="hover:text-yellow-700">
-                <a href=""></a>Contáctanos
+                <Link to="/contacto">Contáctanos</Link>
+              </li>
+              <li className="hover:text-blue-300 mb-10">
+                <Link to="/tres-comunidades">Tres comunidades</Link>
               </li>
             </ul>
           )}
@@ -52,19 +56,19 @@ const Menu = (props) => {
           {isMobile && (
             <ul className="cursor-pointer text-left ml-6">
               <li className="hover:text-red-400 mb-10 lg:mb-0">
-                <a href=""></a>Home
+              <Link to="/">Inicio</Link>
               </li>
               <li className="hover:text-yellow-200 mb-10">
-                <a href=""></a>Cartuchera Comunitaria
+              <Link to="/app">Cartuchera Comunitaria</Link>
               </li>
               <li className="hover:text-blue-300 mb-10">
-                <a href=""></a>Tres comunidades
+              <Link to="/tres-comunidades">Tres comunidades</Link>
               </li>
               <li className="hover:text-green-600 mb-10">
-                <a href=""></a>Cómo ayudar
+              <Link to="/como-ayudar">Cómo ayudar</Link>
               </li>
               <li className="hover:text-yellow-700">
-                <a href=""></a>Contáctanos
+              <Link to="/contacto">Contáctanos</Link>
               </li>
             </ul>
           )}
