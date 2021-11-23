@@ -94,7 +94,7 @@ const Card = (props) => {
           {/* <p className="custom-font text-right items-start">{cardNumber}</p> */}
           <div className="flex justify-center items-center">
             <img
-              className={`${isMobile && "m-10 p-10"} 
+              className={`cursor-pointer ${isMobile && "m-10 p-10"} 
             ${
               isMobile
                 ? mobileHeight <= 568
@@ -106,7 +106,7 @@ const Card = (props) => {
                   : mobileHeight <= 812
                   ? "w-80 h-97"
                   : "w-84 h-97 mx-4"
-                : "w-36 h-60"
+                : "w-36 h-60 hover-card card-item border-none"
             }`}
               // className={` ${isMobile ? "mt-4 w-80 h-96" : "w-36 h-60"}`}
               src={img}
