@@ -83,7 +83,7 @@ const Card = (props) => {
         <p className="custom-font text-right items-start">{cardNumber}</p>
         <img
           className={` ${
-            isMobile ? (isTablet <= 320 ? "w-52 h-72" : "w-36 h-60") : ""
+            isMobile ? (isTablet <= 320 ? "w-52 h-40" : "w-36 h-60") : ""
           }`}
           src={img}
           alt=""
