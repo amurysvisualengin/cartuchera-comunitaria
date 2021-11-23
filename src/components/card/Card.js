@@ -69,7 +69,7 @@ const Card = (props) => {
         onTouchEnd={handleTouchEnd}
         className={` ${
           isMobile
-            ? isTablet < 376
+            ? isTablet < 320
               ? " ml-5 mr-5 h-99.2 p-16 card-item cursor-pointer"
               : isTablet < 394
               ? " ml-5 mr-5 h-98 p-16 card-item cursor-pointer"
@@ -82,7 +82,9 @@ const Card = (props) => {
       >
         <p className="custom-font text-right items-start">{cardNumber}</p>
         <img
-          className={` ${isMobile ? "mt-4 w-80 h-96" : "w-36 h-60"}`}
+          className={` ${
+            isMobile ? (isTablet <= 320 ? "mt-4 w-52 h-72" : "w-36 h-60") : ""
+          }`}
           src={img}
           alt=""
           srcSet=""
