@@ -83,7 +83,7 @@ const Card = (props) => {
               : "p-16 h-98 card-item cursor-pointer"
             : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72 cursor-pointer hover-card"
         } `} */
-        className={"min-w-max"}
+        className={"min-w-max m-10"}
         style={{ backgroundColor: color, borderColor: color }}
       >
         <p className="custom-font text-right items-start">{cardNumber}</p>
