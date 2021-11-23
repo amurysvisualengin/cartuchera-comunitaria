@@ -71,7 +71,7 @@ const Card = (props) => {
         className={` ${
           isMobile
             ? isTablet <= 320 && mobileHeight <= 568
-              ? "ml-5 mr-5 h-84 p-16 card-item cursor-pointer"
+              ? "ml-5 mr-5 h-90 p-16 card-item cursor-pointer"
               : isTablet <= 375 && mobileHeight <= 667
               ? " ml-5 mr-5 h-97 p-16 card-item cursor-pointer"
               : isTablet <= 375 && mobileHeight <= 812
