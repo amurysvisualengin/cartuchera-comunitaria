@@ -68,7 +68,7 @@ const Card = (props) => {
         onTouchStart={handleTouchStart}
         onTouchMove={handleOnTouchMove}
         onTouchEnd={handleTouchEnd}
-        className={` ${
+        /*  className={` ${
           isMobile
             ? isTablet <= 320 && mobileHeight <= 568
               ? "ml-5 mr-5 h-90 p-16 card-item cursor-pointer"
@@ -82,7 +82,8 @@ const Card = (props) => {
               ? "ml-5 mr-5 h-97.5 p-16 card-item cursor-pointer"
               : "p-16 h-98 card-item cursor-pointer"
             : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72 cursor-pointer hover-card"
-        } `}
+        } `} */
+        className={"min-w-max"}
         style={{ backgroundColor: color, borderColor: color }}
       >
         <p className="custom-font text-right items-start">{cardNumber}</p>
