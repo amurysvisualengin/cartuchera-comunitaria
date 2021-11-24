@@ -1,5 +1,8 @@
 import React, { useContext } from "react";
 import CardListContext from "../../context/CardListContext";
+import CloseButton from "../../assets/icons/close.svg";
+
+import "../cardContentAudio/CardContentAudio.css";
 
 // import "./CardContentPresentation.css";
 import Facebook from "../../assets/icons/Facebook.svg";
@@ -13,17 +16,16 @@ const CardContentPresentation = (props) => {
   return (
     <div style={{ backgroundColor: isMobile ? color : "" }}>
       <div
-        className="text-right mr-2 pt-4 lg:pt-0 lg:mt-4 lg:mr-10"
+        className="flex justify-end  lg:mt-4 lg:mr-10 hover-button"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
         }}
       >
         <button
-          className="text-2xl bg-black w-10 h-10   rounded-full"
-          style={{ color: color }}
+          className={` ${isTablet < 768 ? "mt-4 mr-4 w-12" : "mt-4 mr-4"}`}
         >
-          X
+          <img src={CloseButton} alt="" />
         </button>
       </div>
       <div className="flex justify-center lg:mt-8 lg:mr-20 ">

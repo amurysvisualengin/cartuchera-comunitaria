@@ -18,7 +18,7 @@ const CardContentPdf = (props) => {
       )}
 
       <div
-        className="text-right lg:mt-4 lg:mr-10"
+        className="flex justify-end  lg:mt-4 lg:mr-10 hover-button"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);

@@ -21,16 +21,16 @@ const CardContentAudio = (props) => {
       )}
 
       <div
-        className="text-right lg:mt-4 lg:mr-10"
+        className=" flex justify-end  lg:mt-4 lg:mr-10 hover-button"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
         }}
       >
         <button
-          className={` ${isTablet < 768 ? "mt-4 mr-4 w-12" : "mt-4 mr-4"}`}
+          className={` ${isTablet < 768 ? "mt-4 mr-4 w-12" : "mt-4 mr-4 "} `}
         >
-          <img src={CloseButton} alt="" />
+          <img src={CloseButton} alt="" className=" " />
         </button>
       </div>
       <div className="flex justify-center lg:mt-16 lg:mr-5 pb-20 ">

@@ -5,3 +5,7 @@
 .black-shadow {
   box-shadow: 3px 3px #343434;
 }
+
+.hover-button img:hover {
+  filter: invert();
+}

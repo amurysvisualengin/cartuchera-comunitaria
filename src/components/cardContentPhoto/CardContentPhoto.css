@@ -1,3 +1,6 @@
 .mobile-size {
   width: 22rem;
 }
+.hover-button img:hover {
+  filter: invert();
+}
