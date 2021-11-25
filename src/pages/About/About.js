@@ -2,11 +2,13 @@ import React from "react";
 import HeaderRoutes from "../../components/headerRoutes/HeaderRoutes";
 import DataAbout from "../../assets/data/DataAbout.json";
 import Footer from "../../components/footer/Footer";
+import "./About.css";
 
 import DondeNace from "../../assets/imgs/donde-nace.png";
 import DondeNace2 from "../../assets/imgs/donde-nace-2.png";
 import Childs from "../../assets/imgs/childs.png";
 import BlueShape from "../../assets/icons/blue-shape.svg";
+import YellowShape from "../../assets/icons/yellow-shape.svg";
 
 const About = () => {
   const types = DataAbout;
@@ -82,6 +84,13 @@ const About = () => {
           alt="donde nace"
           className="w-full block lg:flex lg:hidden"
         />
+        <div className="hidden lg:flex lg:visible">
+          <img
+            src={YellowShape}
+            alt="shape"
+            className="lg:absolute -z-10 right-0 top-shape"
+          />
+        </div>
         <img
           src={DondeNace2}
           alt="donde nace"
@@ -89,9 +98,9 @@ const About = () => {
         />
       </div>
       <div className="px-4">
-        <div className="lg:flex lg:justify-around lg:mt-24">
+        <div className="lg:flex lg:justify-around lg:mt-16">
           <div>
-            <h2 className="custom-font-shadow text-4xl lg:text-6xl lg:w-97 mt-10">
+            <h2 className="custom-font-shadow text-4xl lg:text-6xl lg:w-97 mt-10 lg:mt-5">
               ¿De dónde nace?
             </h2>
             {/* lg:custom-font no funciona */}
@@ -137,19 +146,19 @@ const About = () => {
 
         {types.map((element, index) => (
           <div
-            className={`mb-16 lg:flex ${
+            className={`mb-16 lg:flex justify-center lg:mt-72 lg:mb-28   ${
               index % 2 !== 0 ? "flex-row-reverse" : ""
             } `}
           >
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-center lg:w-84 mt-10 mx-26 ">
               <img src={element.img} alt="" />
             </div>
 
-            <div>
-              <h2 className="custom-font-shadow text-4xl mt-10">
+            <div className="">
+              <h2 className="custom-font-shadow text-4xl lg:text-6xl mt-10 lg:w-96">
                 {element.title}
               </h2>
-              <p className="text-xl mt-10">{element.paragraph}</p>
+              <p className="text-xl mt-10 lg:w-97">{element.paragraph}</p>
             </div>
           </div>
         ))}
