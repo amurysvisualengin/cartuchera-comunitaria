@@ -9,7 +9,7 @@ import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
-    <div style={{ backgroundColor: "#E5E5E5" }} className="overflow-x-scroll ">
+    <div style={{ backgroundColor: "#E5E5E5" }}>
       <div className="flex h-20 ">
         <HeaderRoutes />
       </div>
