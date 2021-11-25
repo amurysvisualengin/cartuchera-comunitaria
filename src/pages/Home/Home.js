@@ -1,24 +1,20 @@
-import React, { useContext } from "react";
-import Header from "../../components/header/Header";
-import CartucheraLogo from "../../assets/icons/cartuchera-logo.svg";
+import React from "react";
+import { Link } from "react-router-dom";
 import Play from "../../assets/icons/Audiovisuales.svg";
 import Presentation from "../../assets/icons/presentacion.svg";
 import Dona from "../../assets/icons/dona.svg";
 import CardListContext from "../../context/CardListContext";
+import HeaderRoutes from "../../components/headerRoutes/HeaderRoutes";
 import Footer from "../../components/footer/Footer";
 
 const Home = () => {
-  const { isMobile } = useContext(CardListContext);
-  console.log("hola", isMobile);
   return (
     <div
       style={{ backgroundColor: "#E5E5E5" }}
       className="h-screen overflow-x-scroll "
     >
       <div className="flex h-20 ">
-        {/* hacer un visible del logo para mobile? */}
-        <img src={CartucheraLogo} alt="" className="w-24 h-12 ml-3 mt-4 " />
-        <div className=" block mt-2 mr-20">{/* <Header /> */}</div>
+        <HeaderRoutes />
       </div>
       <div className="lg:flex lg:justify-center">
         <iframe
@@ -44,14 +40,14 @@ const Home = () => {
               className="px-2 h-14 mx-4 flex items-center justify-center rounded-lg mb-4"
               style={{ backgroundColor: "#E1AC47" }}
             >
-              <a href="" className="flex custom-font mx-4 text-base">
+              <Link to="/app" className="flex custom-font mx-4 text-base">
                 <img
                   src={Presentation}
                   alt=""
                   className=" mr-4 filter invert"
                 />
                 ¡ABRE LA CARTUCHERA!
-              </a>
+              </Link>
             </li>
             <li
               className="px-2 h-14 mx-4 lg:w-90 flex items-center justify-center rounded-lg"
