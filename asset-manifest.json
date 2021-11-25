@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cartuchera-comunitaria/static/css/main.cc0c80dd.chunk.css",
-    "main.js": "/cartuchera-comunitaria/static/js/main.5c58a48b.chunk.js",
-    "main.js.map": "/cartuchera-comunitaria/static/js/main.5c58a48b.chunk.js.map",
+    "main.js": "/cartuchera-comunitaria/static/js/main.ee5b5928.chunk.js",
+    "main.js.map": "/cartuchera-comunitaria/static/js/main.ee5b5928.chunk.js.map",
     "runtime-main.js": "/cartuchera-comunitaria/static/js/runtime-main.708e567f.js",
     "runtime-main.js.map": "/cartuchera-comunitaria/static/js/runtime-main.708e567f.js.map",
     "static/js/2.a29a40de.chunk.js": "/cartuchera-comunitaria/static/js/2.a29a40de.chunk.js",
@@ -43,6 +43,6 @@
     "static/js/runtime-main.708e567f.js",
     "static/js/2.a29a40de.chunk.js",
     "static/css/main.cc0c80dd.chunk.css",
-    "static/js/main.5c58a48b.chunk.js"
+    "static/js/main.ee5b5928.chunk.js"
   ]
 }
