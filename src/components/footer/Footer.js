@@ -4,19 +4,19 @@ import FooterForm from "./FooterForm";
 
 export const Footer = () => {
   return (
-    <div className="bg-black h-full w-full pb-20 overflow-x-hidden">
+    <div className="bg-black h-full w-full  pb-20 overflow-x-hidden">
       <div>
-        <img src={FooterImg} alt="" className="w-full " />
+        <img src={FooterImg} alt="" className="w-full h-full" />
       </div>
-      <div className="w-full text-white mt-10 text-xl mx-4">
+      <div className="w-full lg:w-98  text-white mt-10 text-xl mx-4">
         <h1 className="font-bold ">La Cartuchera Comunitaria</h1>
-        <p className="mt-4 mr-6">
+        <p className="mt-4 mr-6 text-tiny ">
           La Cartuchera Comunitaria™ ha sido posible gracias a las tres
           comunidades aliadas al proyecto Imaginación Post-María, el apoyo de
           nuestros donantes, y la aportación ciudadana.
         </p>
-        <div className="mt-4">
-          <a href="https://www.youtube.com" className="underline ">
+        <div className="mt-4 text-tiny">
+          <a href="https://www.youtube.com" className="underline  ">
             www.cartucheracomunitaria.com
           </a>
           <p>lamarana.pr@gmail.com</p>
@@ -33,7 +33,7 @@ export const Footer = () => {
             >
               Aceptar terminos y condiciones{" "}
             </a>
-            <div className="mt-10 mb-20">
+            <div className="mt-10 mb-20 lg:mb-9">
               <hr />
             </div>
             <p className="text-xs font-thin">
