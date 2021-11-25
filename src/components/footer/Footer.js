@@ -53,7 +53,7 @@ export const Footer = () => {
       </div>
 
       <div className="lg:flex lg:justify-between items-center lg:mr-20">
-        <ul className="lg:flex items-center px-20 hidden lg:visible ">
+        <ul className="lg:flex items-center px-20 hidden lg:visible lg:mb-20 ">
           <li className="mr-4">
             <a href="">
               <img src={Instagram} alt="instagram link" />

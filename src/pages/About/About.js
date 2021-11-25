@@ -11,7 +11,7 @@ import BlueShape from "../../assets/icons/blue-shape.svg";
 const About = () => {
   const types = DataAbout;
   return (
-    <div className="h-full pb-32">
+    <div className="h-full">
       <div className="h-24" style={{ backgroundColor: "#F8F5ED" }}>
         <HeaderRoutes />
       </div>
