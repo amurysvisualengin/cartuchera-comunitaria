@@ -17,7 +17,7 @@ const About = () => {
       <div className="h-24" style={{ backgroundColor: "#F8F5ED" }}>
         <HeaderRoutes />
       </div>
-      <div className="absolute -z-10  top-0">
+      <div className="absolute -z-10 top-0">
         <img src={BlueShape} alt="" />
       </div>
       <div className="px-4">
@@ -78,7 +78,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-full mt-9">
+      <div className="w-full mt-9 lg:mt-24">
         <img
           src={DondeNace}
           alt="donde nace"
@@ -150,12 +150,12 @@ const About = () => {
               index % 2 !== 0 ? "flex-row-reverse" : ""
             } `}
           >
-            <div className="flex justify-center lg:w-84 mt-10 mx-26 ">
+            <div className="flex justify-center  mt-10 mx-26 ">
               <img src={element.img} alt="" />
             </div>
 
             <div className="">
-              <h2 className="custom-font-shadow text-4xl lg:text-6xl mt-10 lg:w-96">
+              <h2 className="custom-font-shadow text-4xl lg:text-6xl mt-10 lg:w-97">
                 {element.title}
               </h2>
               <p className="text-xl mt-10 lg:w-97">{element.paragraph}</p>
