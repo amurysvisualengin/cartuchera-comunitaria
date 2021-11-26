@@ -23,11 +23,11 @@ const Help = () => {
         </h1>
       </div>
       {/*  */}
-      <div>
-        <img src={shape} alt="" className="lg:absolute right-3 " />
+      <div className="hidden lg:flex">
+        <img src={shape} alt="" className="lg:absolute -z-10 right-3 top-96 " />
       </div>
-      <div className="mx-4 lg:mx-56 ">
-        <div className="lg:flex ">
+      <div className="mx-4 lg:mx-56">
+        <div className="lg:flex lg:justify-between ">
           <div className="lg:mt-32">
             <div className="custom-font text-center flex justify-center items-center mt-12 mb-4 lg:mb-6 lg:w-80 bg-black text-white h-9 lg:h-12 rounded">
               <h2>COMPRA UNA Y REGALA UNA</h2>
@@ -54,7 +54,7 @@ const Help = () => {
           </div>
         </div>
         {/*  */}
-        <div className="lg:flex">
+        <div className="lg:flex lg:justify-between">
           <div className="lg:mr-20">
             <div className="custom-font text-center flex justify-center items-center mt-12 mb-4 bg-black text-white h-9 rounded lg:w-60 lg:h-12">
               <h2>DONA LA MARAÑA</h2>
