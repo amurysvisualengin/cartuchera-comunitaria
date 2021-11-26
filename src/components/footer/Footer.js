@@ -9,7 +9,7 @@ import Facebook from "../../assets/icons/Facebook.svg";
 
 export const Footer = () => {
   return (
-    <div className="bg-black  ">
+    <div className="bg-black pb-20  ">
       <div>
         <img src={FooterImg} alt="" className="w-full h-full" />
       </div>

@@ -17,7 +17,7 @@ const About = () => {
       <div className="h-24" style={{ backgroundColor: "#F8F5ED" }}>
         <HeaderRoutes />
       </div>
-      <div className="absolute -z-10 top-0">
+      <div className="hidden lg:absolute lg:-z-10 lg:top-0">
         <img src={BlueShape} alt="" />
       </div>
       <div className="px-4">
