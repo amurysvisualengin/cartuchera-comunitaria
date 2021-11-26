@@ -9,6 +9,7 @@ import CreditCards from "../../assets/imgs/credit-cards.png";
 import Ath from "../../assets/imgs/ath-movil.png";
 import SocialNetworks from "../../assets/imgs/social-networks.png";
 import GirlWhite from "../../assets/icons/girl-white.svg";
+import shape from "../../assets/icons/gray-shape.svg";
 
 const Help = () => {
   return (
@@ -22,6 +23,9 @@ const Help = () => {
         </h1>
       </div>
       {/*  */}
+      <div>
+        <img src={shape} alt="" className="lg:absolute right-3 " />
+      </div>
       <div className="mx-4 lg:mx-56 ">
         <div className="lg:flex ">
           <div className="lg:mt-32">
@@ -51,7 +55,7 @@ const Help = () => {
         </div>
         {/*  */}
         <div className="lg:flex">
-          <div className="mr-20">
+          <div className="lg:mr-20">
             <div className="custom-font text-center flex justify-center items-center mt-12 mb-4 bg-black text-white h-9 rounded lg:w-60 lg:h-12">
               <h2>DONA LA MARAÑA</h2>
             </div>
@@ -84,7 +88,7 @@ const Help = () => {
         </div>
 
         <div className="lg:flex lg:mt-16 lg:mb-32">
-          <img src={GirlWhite} alt="" className="hidden lg:flex lg:mr-16" />
+          <img src={GirlWhite} alt="" className="hidden lg:flex lg:mr-20" />
           <div className="max-w-lg">
             <div className="custom-font text-center flex justify-center items-center mt-12 mb-4 bg-black text-white h-9 rounded lg:w-36 lg:h-12">
               <h2>¡COMPARTE!</h2>

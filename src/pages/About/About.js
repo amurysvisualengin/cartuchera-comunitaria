@@ -23,7 +23,7 @@ const About = () => {
       <div className="px-4">
         <div className="lg:flex justify-around lg:px-26">
           <div>
-            <h1 className="custom-font-shadow text-4xl mt-10 lg:text-6xl lg:w-96 lg:mb-10 lg:mt-26">
+            <h1 className="custom-font-shadow text-4xl mt-10 lg:text-6xl lg:max-w-lg lg:mb-10 lg:mt-26">
               Sobre la cartuchera
             </h1>
             {/* no funciona lg:custom-font */}
@@ -37,7 +37,7 @@ const About = () => {
               src="https://www.youtube.com/embed/DG2rSpoWA_E"
               allowFullScreen
               frameborder="0"
-              className="w-full  h-52 lg:w-100 lg:h-96 lg:mt-40"
+              className="w-full  h-52 lg:w-97.5 xl:w-100 lg:min-w-max lg:h-96 lg:mt-40"
             ></iframe>
           </div>
         </div>
@@ -82,9 +82,9 @@ const About = () => {
         <img
           src={DondeNace}
           alt="donde nace"
-          className="w-full block lg:flex lg:hidden"
+          className="w-full block  lg:hidden"
         />
-        <div className="hidden lg:flex lg:visible">
+        <div className="hidden lg:flex ">
           <img
             src={YellowShape}
             alt="shape"
