@@ -1,7 +1,7 @@
 import React from "react";
 import FooterImg from "../../assets/imgs/footer-img.png";
+import FooterImgMobile from "../../assets/imgs/footer-img-mobile.png";
 import FooterForm from "./FooterForm";
-import CardListContext from "../../context/CardListContext";
 
 import Instagram from "../../assets/icons/instagram.svg";
 import Youtube from "../../assets/icons/youtube.svg";
@@ -11,7 +11,12 @@ export const Footer = () => {
   return (
     <div className="bg-black pb-20  ">
       <div>
-        <img src={FooterImg} alt="" className="w-full h-full" />
+        <img src={FooterImg} alt="" className="w-full h-full hidden lg:flex" />
+        <img
+          src={FooterImgMobile}
+          alt=""
+          className="w-full h-full block lg:hidden"
+        />
       </div>
 
       <div className="w-full lg:flex lg:justify-between text-white mt-10 text-xl mx-4 lg:mx-0 lg:px-20">
