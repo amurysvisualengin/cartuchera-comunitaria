@@ -1,6 +1,8 @@
 import React from "react";
+import "./Mariana.css";
 import Cube from "../../../assets/icons/cube.svg";
 import Arecma from "../../../assets/imgs/arecma.png";
+import Yellowshape from "../../../assets/icons/yellow-shape-complete.svg";
 
 const Mariana = () => {
   return (
@@ -28,6 +30,13 @@ const Mariana = () => {
             frameborder="0"
             className="w-full h-52 lg:w-99.5 lg:h-90 lg:mt-10 rounded-lg"
           ></iframe>
+        </div>
+        <div className="hidden lg:block">
+          <img
+            src={Yellowshape}
+            alt=""
+            className="absolute left-96 position-shape z-50"
+          />
         </div>
         <div className="flex justify-center my-10">
           <img src={Cube} alt="" className="w-10 lg:w-20 lg:mt-10 lg:mb-20" />

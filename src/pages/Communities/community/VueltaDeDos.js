@@ -2,6 +2,8 @@ import React from "react";
 import One from "../../../assets/icons/one.svg";
 import Two from "../../../assets/icons/two.svg";
 import Saw from "../../../assets/icons/saw.svg";
+import YellowShape from "../../../assets/icons/yellow-shape-left.svg";
+import "./VueltaDeDos.css";
 
 const VueltaDeDos = () => {
   return (
@@ -38,6 +40,13 @@ const VueltaDeDos = () => {
             frameborder="0"
             className="w-full h-52 lg:w-99.3 lg:h-90 lg:mt-10 rounded-lg"
           ></iframe>
+        </div>
+        <div className="hidden lg:block">
+          <img
+            src={YellowShape}
+            alt=""
+            className="absolute right-0 shape-position"
+          />
         </div>
         <div className="lg:flex lg:justify-evenly lg:mt-24">
           <p className="text-xl text-center lg:text-left mt-10 lg:max-w-xl">
