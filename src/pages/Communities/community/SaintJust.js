@@ -37,7 +37,7 @@ const SaintJust = () => {
         ></iframe>
       </div>
       <div className="lg:flex lg:justify-center">
-        <div className="lg:w-1/2 bg-black text-white mt-10 p-4 rounded">
+        <div className="lg:w-99.3 bg-black text-white mt-10 p-4 rounded">
           <p className="text-xl">
             El trabajo colaborativo entre su comunidad y La Maraña bajo la
             iniciativa Imaginación Post-María permitió la reconstrucción de la
