@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/cartuchera-comunitaria/static/css/main.08c77a82.chunk.css",
-    "main.js": "/cartuchera-comunitaria/static/js/main.5125011e.chunk.js",
-    "main.js.map": "/cartuchera-comunitaria/static/js/main.5125011e.chunk.js.map",
+    "main.css": "/cartuchera-comunitaria/static/css/main.773b0faa.chunk.css",
+    "main.js": "/cartuchera-comunitaria/static/js/main.1e74b4be.chunk.js",
+    "main.js.map": "/cartuchera-comunitaria/static/js/main.1e74b4be.chunk.js.map",
     "runtime-main.js": "/cartuchera-comunitaria/static/js/runtime-main.708e567f.js",
     "runtime-main.js.map": "/cartuchera-comunitaria/static/js/runtime-main.708e567f.js.map",
     "static/js/2.a29a40de.chunk.js": "/cartuchera-comunitaria/static/js/2.a29a40de.chunk.js",
     "static/js/2.a29a40de.chunk.js.map": "/cartuchera-comunitaria/static/js/2.a29a40de.chunk.js.map",
     "index.html": "/cartuchera-comunitaria/index.html",
-    "static/css/main.08c77a82.chunk.css.map": "/cartuchera-comunitaria/static/css/main.08c77a82.chunk.css.map",
+    "static/css/main.773b0faa.chunk.css.map": "/cartuchera-comunitaria/static/css/main.773b0faa.chunk.css.map",
     "static/js/2.a29a40de.chunk.js.LICENSE.txt": "/cartuchera-comunitaria/static/js/2.a29a40de.chunk.js.LICENSE.txt",
     "static/media/Audiovisuales.96221ca9.svg": "/cartuchera-comunitaria/static/media/Audiovisuales.96221ca9.svg",
     "static/media/Facebook.266436bf.svg": "/cartuchera-comunitaria/static/media/Facebook.266436bf.svg",
@@ -24,10 +24,12 @@
     "static/media/childs.09d44abf.png": "/cartuchera-comunitaria/static/media/childs.09d44abf.png",
     "static/media/close.54a7b068.svg": "/cartuchera-comunitaria/static/media/close.54a7b068.svg",
     "static/media/construccion-participativa-cut.71427f88.svg": "/cartuchera-comunitaria/static/media/construccion-participativa-cut.71427f88.svg",
+    "static/media/cube.8988898c.svg": "/cartuchera-comunitaria/static/media/cube.8988898c.svg",
     "static/media/dona.a7ba6d08.svg": "/cartuchera-comunitaria/static/media/dona.a7ba6d08.svg",
     "static/media/donde-nace-2.597dc788.png": "/cartuchera-comunitaria/static/media/donde-nace-2.597dc788.png",
     "static/media/donde-nace.cb25bbe5.png": "/cartuchera-comunitaria/static/media/donde-nace.cb25bbe5.png",
     "static/media/family-white.7f1f08d9.svg": "/cartuchera-comunitaria/static/media/family-white.7f1f08d9.svg",
+    "static/media/footer-img-mobile.4ada52d1.png": "/cartuchera-comunitaria/static/media/footer-img-mobile.4ada52d1.png",
     "static/media/footer-img.f6458d55.png": "/cartuchera-comunitaria/static/media/footer-img.f6458d55.png",
     "static/media/girl-white.95eaa34d.svg": "/cartuchera-comunitaria/static/media/girl-white.95eaa34d.svg",
     "static/media/gray-shape.4034c91f.svg": "/cartuchera-comunitaria/static/media/gray-shape.4034c91f.svg",
@@ -38,8 +40,10 @@
     "static/media/mapeo-comunitario-cut.9e1306a4.svg": "/cartuchera-comunitaria/static/media/mapeo-comunitario-cut.9e1306a4.svg",
     "static/media/mezcla_icon.bce49813.svg": "/cartuchera-comunitaria/static/media/mezcla_icon.bce49813.svg",
     "static/media/one.8b8f2090.svg": "/cartuchera-comunitaria/static/media/one.8b8f2090.svg",
+    "static/media/parceleras-afro-caribenas.6cc09e2c.svg": "/cartuchera-comunitaria/static/media/parceleras-afro-caribenas.6cc09e2c.svg",
     "static/media/presentacion.fc927e81.svg": "/cartuchera-comunitaria/static/media/presentacion.fc927e81.svg",
     "static/media/procesos-comunitarios-cut.fdc042ec.svg": "/cartuchera-comunitaria/static/media/procesos-comunitarios-cut.fdc042ec.svg",
+    "static/media/saw.d42f623b.svg": "/cartuchera-comunitaria/static/media/saw.d42f623b.svg",
     "static/media/talleres-de-imaginario-cut.fa99b9fb.svg": "/cartuchera-comunitaria/static/media/talleres-de-imaginario-cut.fa99b9fb.svg",
     "static/media/transparent-shape.182d9282.svg": "/cartuchera-comunitaria/static/media/transparent-shape.182d9282.svg",
     "static/media/two.6bacfd3e.svg": "/cartuchera-comunitaria/static/media/two.6bacfd3e.svg",
@@ -49,7 +53,7 @@
   "entrypoints": [
     "static/js/runtime-main.708e567f.js",
     "static/js/2.a29a40de.chunk.js",
-    "static/css/main.08c77a82.chunk.css",
-    "static/js/main.5125011e.chunk.js"
+    "static/css/main.773b0faa.chunk.css",
+    "static/js/main.1e74b4be.chunk.js"
   ]
 }
