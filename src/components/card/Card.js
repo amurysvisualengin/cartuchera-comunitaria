@@ -34,9 +34,6 @@ const Card = (props) => {
     timer = 0;
   };
 
-  const handleFirstMove = () => {
-    setFirstTouch(true);
-  }
 
   const handleTouchEnd = () => {
     if (timer < 10 && isMove === false && type) {
@@ -69,7 +66,7 @@ const Card = (props) => {
         onClick={ type && handleShowExpand}
         onTouchStart={handleTouchStart}
         onTouchMove={handleOnTouchMove}
-        onTouchEnd={!type ? handleFirstMove :handleTouchEnd}
+        onTouchEnd={handleTouchEnd}
         className={`${
           isMobile
             ? isTablet < 768

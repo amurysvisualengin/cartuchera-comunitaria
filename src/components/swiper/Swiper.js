@@ -11,7 +11,7 @@ import FirstCard from "../../assets/icons/first-card-mobile.svg";
 function Swiper() {
   const card = Data;
   const { changeColorMobile } = useContext(CardListContext);
-  const { typeMobile, isTablet, firstTouch } = useContext(CardListContext);
+  const { typeMobile, isTablet, firstTouch, setFirstTouch } = useContext(CardListContext);
 
   return (
     <div>
@@ -49,6 +49,7 @@ function Swiper() {
            className="swipe right-3 left-3 top-24 bottom-0"
            key={-1}
            preventSwipe={["up", "down"]}
+           onSwipe={() => setFirstTouch(true)}
          >
          <Card
          title='Testing'
