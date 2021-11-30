@@ -3,15 +3,18 @@ import { Link } from "react-router-dom";
 import Play from "../../assets/icons/Audiovisuales.svg";
 import Presentation from "../../assets/icons/presentacion.svg";
 import Dona from "../../assets/icons/dona.svg";
-import CardListContext from "../../context/CardListContext";
-import HeaderRoutes from "../../components/headerRoutes/HeaderRoutes";
+
 import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
+import Menu from "../../components/menu/Menu";
 
 const Home = () => {
   return (
     <div style={{ backgroundColor: "#E5E5E5" }}>
       <div className="flex h-20 ">
-        <HeaderRoutes />
+        {/* <HeaderRoutes /> */}
+        <Header />
+        <Menu />
       </div>
       <div className="lg:flex lg:justify-center">
         <iframe

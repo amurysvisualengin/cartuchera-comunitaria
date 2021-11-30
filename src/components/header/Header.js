@@ -27,6 +27,7 @@ const Header = () => {
           <button
             onClick={() => {
               setShowMenu(!showMenu);
+              console.log("click", showMenu);
             }}
           >
             <img

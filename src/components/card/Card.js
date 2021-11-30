@@ -47,7 +47,6 @@ const Card = (props) => {
         handleShowExpandFalse,
       });
     }
-    console.log(isMove);
 
     isMove = false;
   };
@@ -56,7 +55,6 @@ const Card = (props) => {
     if (!showExpand) {
       setShowExpand(true);
     }
-    console.log("handleShowSpand", showExpand);
   };
 
   const { isMobile } = useContext(CardListContext);
@@ -68,33 +66,59 @@ const Card = (props) => {
         onTouchStart={handleTouchStart}
         onTouchMove={handleOnTouchMove}
         onTouchEnd={handleTouchEnd}
-        className={` ${
+        className={`${
           isMobile
-            ? isTablet <= 320 && mobileHeight <= 568
-              ? "ml-5 mr-5 h-90 p-16 card-item cursor-pointer"
-              : isTablet <= 375 && mobileHeight <= 667
-              ? " ml-5 mr-5 h-97 p-16 card-item cursor-pointer"
-              : isTablet <= 375 && mobileHeight <= 812
-              ? "ml-5 mr-5 h-96.5 p-16 card-item cursor-pointer"
-              : isTablet < 394
-              ? " ml-5 mr-5 h-98 p-16 card-item cursor-pointer"
-              : isTablet < 415
-              ? "ml-5 mr-5 h-97.5 p-16 card-item cursor-pointer"
-              : "p-16 h-98 card-item cursor-pointer"
-            : // problema con el cursor pointer del interior de las cartas
-              "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72 cursor-pointer hover-card"
-        } `}
+            ? isTablet < 768
+              ? "absolute right-1 left-1 bottom-24 -top-2"
+              : "absolute right-40 left-40 bottom-36 top-10"
+            : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72 cursor-pointer hover-card"
+        }  rounded-md`}
         style={{ backgroundColor: color, borderColor: color }}
       >
-        <p className="custom-font text-right items-start">{cardNumber}</p>
-        <img
-          className={` ${isMobile ? "mt-4 w-80 h-64" : "w-36 h-60"}`}
-          src={img}
-          alt=""
-          srcSet=""
-        />
+        {isMobile && (
+          <div>
+            <p className="custom-font text-right items-start absolute right-6 top-6">
+              {cardNumber}
+            </p>
+            <div className="relative transform translate-y-1/2 flex justify-center">
+              <img
+                className={`${
+                  isTablet < 768
+                    ? type === "Presentation"
+                      ? "top-24 "
+                      : type === "Herramientas"
+                      ? "top-48"
+                      : "top-40 "
+                    : type === "Presentation"
+                    ? "top-40"
+                    : type === "Herramientas"
+                    ? "top-72"
+                    : "top-52"
+                } absolute bottom-0 w-40`}
+                // className={` ${isMobile ? "w-40" : "w-36"}`}
+                src={img}
+                alt=""
+                srcSet=""
+              />
+            </div>
+          </div>
+        )}
+        {!isMobile && (
+          <div>
+            <p className="custom-font text-right items-start">{cardNumber}</p>
+            <img
+              className={` ${isMobile ? "mt-4 w-80 h-64" : "w-36 h-60"}`}
+              src={img}
+              alt=""
+              srcSet=""
+            />
+          </div>
+        )}
+
         <div
-          className={` card-expand ${showExpand ? "card-expanded" : ""}`}
+          className={` card-expand ${
+            showExpand ? "card-expanded cursor-default" : ""
+          }`}
           style={{ backgroundColor: color }}
         >
           {type === "Audiovisual" && (

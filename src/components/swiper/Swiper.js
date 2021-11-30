@@ -6,6 +6,8 @@ import "./Swiper.css";
 import CardListContext from "../../context/CardListContext";
 import MobileSwiper from "react-tinder-card";
 
+import FirstCard from "../../assets/icons/first-card-mobile.svg";
+
 function Swiper() {
   const card = Data;
   const { changeColorMobile } = useContext(CardListContext);
@@ -23,7 +25,7 @@ function Swiper() {
                 typeMobile === element.typeId) ||
               (changeColorMobile === "" && typeMobile === element.typeId)) && (
               <MobileSwiper
-                className="swipe"
+                className="swipe right-3 left-3 top-24 bottom-0"
                 key={index}
                 preventSwipe={["up", "down"]}
               >

@@ -2,6 +2,8 @@ import React from "react";
 import HeaderRoutes from "../../components/headerRoutes/HeaderRoutes";
 import HelpForm from "./HelpForm";
 import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
+import Menu from "../../components/menu/Menu";
 
 import Family from "../../assets/icons/family-white.svg";
 import Paypal from "../../assets/imgs/paypal.png";
@@ -15,7 +17,8 @@ const Help = () => {
   return (
     <div className="overflow-x-hidden">
       <div>
-        <HeaderRoutes />
+        <Header />
+        <Menu />
       </div>
       <div className="mx-4 mt-8">
         <h1 className="custom-font-shadow text-4xl lg:text-6xl lg:w-99.4 lg:ml-28 lg:mt-24">

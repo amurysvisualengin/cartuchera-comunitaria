@@ -2,12 +2,15 @@ import React from "react";
 import HeaderRoutes from "../../components/headerRoutes/HeaderRoutes";
 import Footer from "../../components/footer/Footer";
 import "./Contact.css";
+import Header from "../../components/header/Header";
+import Menu from "../../components/menu/Menu";
 
 const Contact = () => {
   return (
     <div className="overflow-x-hidden">
       <div>
-        <HeaderRoutes />
+        <Header />
+        <Menu />
       </div>
       <div className="lg:flex lg:justify-between  lg:items-center">
         <div className="mx-4 mt-10 lg:ml-40">

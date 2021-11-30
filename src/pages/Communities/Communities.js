@@ -5,12 +5,15 @@ import VueltaDeDos from "./community/VueltaDeDos";
 import Mariana from "./community/Mariana";
 import Footer from "../../components/footer/Footer";
 
+import Header from "../../components/header/Header";
+import Menu from "../../components/menu/Menu";
+
 const Communities = () => {
   return (
     <div>
-      <div>
-        <HeaderRoutes />
-      </div>
+      <Header />
+      <Menu />
+
       <div className="px-4">
         <SaintJust />
       </div>

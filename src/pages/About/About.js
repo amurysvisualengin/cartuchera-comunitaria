@@ -3,7 +3,8 @@ import HeaderRoutes from "../../components/headerRoutes/HeaderRoutes";
 import DataAbout from "../../assets/data/DataAbout.json";
 import Footer from "../../components/footer/Footer";
 import "./About.css";
-
+import Header from "../../components/header/Header";
+import Menu from "../../components/menu/Menu";
 import DondeNace from "../../assets/imgs/donde-nace.png";
 import DondeNace2 from "../../assets/imgs/donde-nace-2.png";
 import Childs from "../../assets/imgs/childs.png";
@@ -14,9 +15,9 @@ const About = () => {
   const types = DataAbout;
   return (
     <div className="h-full">
-      <div className="h-24" style={{ backgroundColor: "#F8F5ED" }}>
-        <HeaderRoutes />
-      </div>
+      <Header />
+      <Menu />
+      <div className="h-24" style={{ backgroundColor: "#F8F5ED" }}></div>
       <div className="hidden lg:absolute lg:-z-10 lg:top-0">
         <img src={BlueShape} alt="" />
       </div>

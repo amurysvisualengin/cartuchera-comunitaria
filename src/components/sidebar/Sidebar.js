@@ -98,7 +98,7 @@ const Sidebar = (props) => {
     <div>
       <div
         style={{ maxWidth: "440px" }}
-        className={`p-12 sidebar ${
+        className={`p-12 sidebar relative ${
           isSidebarVisible ? "block mt-0" : "hidden"
         } xl:block xl:h-full`}
       >
@@ -168,7 +168,7 @@ const Sidebar = (props) => {
               ))}
             </div>
 
-            <div className="w-96 mt-107 ">
+            <div className="w-96 absolute bottom-10 ">
               <SocialMedia />
             </div>
           </div>
