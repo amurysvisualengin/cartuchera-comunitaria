@@ -21,7 +21,7 @@ const VueltaDeDos = () => {
           Comerío, Puerto Rico
         </p>
         <div className="lg:flex lg:justify-center">
-          <p className="text-xl text-center mt-10 lg:max-w-3xl">
+          <p className="text-xl lg:text-base text-center mt-10 lg:max-w-3xl">
             Ubicada en la exuberante región montañosa de Comerío, la pintoresca
             comunidad de Vuelta del Dos, Los Guaretos y Los Padilla en el sector
             Palomas es el hogar de cientos de familias que sufrieron graves
@@ -49,7 +49,7 @@ const VueltaDeDos = () => {
           />
         </div>
         <div className="lg:flex lg:justify-evenly lg:mt-24">
-          <p className="text-xl text-center lg:text-left mt-10 lg:max-w-xl">
+          <p className="text-xl lg:text-base text-center lg:text-left mt-10 lg:max-w-xl">
             Ubicada en la exuberante región montañosa de Comerío, la pintoresca
             comunidad de Vuelta del Dos, Los Guaretos y Los Padilla en el sector
             Palomas es el hogar de cientos de familias que sufrieron graves
@@ -71,7 +71,7 @@ const VueltaDeDos = () => {
             </div>
             <div className="flex items-start mt-4">
               <img src={Two} alt="" className="mr-4 " />
-              <p className=" text-left">
+              <p className=" text-left lg:text-base">
                 <strong>Prende Palomas (2019):</strong> tras una serie de
                 Recorridos Comunitarios y Talleres de Imaginario,la comunidad
                 identificó y atendió el problema de la escasez de iluminación
@@ -84,7 +84,7 @@ const VueltaDeDos = () => {
           <img src={Saw} alt="" />
         </div>
         <div className="flex justify-center text-center ">
-          <p className="max-w-2xl">
+          <p className="max-w-2xl lg:text-base">
             Además de estos proyectos, la comunidad{" "}
             <strong>
               {" "}
@@ -102,13 +102,16 @@ const VueltaDeDos = () => {
         className="w-full lg:h-90 px-4 lg:py-16 mb-10 lg:flex lg:justify-around"
         style={{ backgroundColor: "#BEBE3B" }}
       >
-        <h2 className="custom-font-shadow text-4xl pt-10 ">Brigada Palomas</h2>
-        <div className="text-xl mt-8 pb-8 lg:max-w-2xl">
-          Parte imprescindible de los esfuerzos comunitarios de recuperación fue
-          la acción proactiva de Brigada Palomas. Esta organización sin fines de
-          lucro de base comunitaria y liderada por jóvenes busca impulsar la
-          participación ciudadana en la resolución de asuntos relacionados a los
-          derechos civiles, la tierra, la educación y la sostenibilidad.
+        <h2 className="custom-font-shadow text-4xl  pt-10 ">Brigada Palomas</h2>
+        <div className="text-xl lg:text-base mt-8 pb-8 lg:max-w-2xl">
+          <p>
+            Parte imprescindible de los esfuerzos comunitarios de recuperación
+            fue la acción proactiva de Brigada Palomas. Esta organización sin
+            fines de lucro de base comunitaria y liderada por jóvenes busca
+            impulsar la participación ciudadana en la resolución de asuntos
+            relacionados a los derechos civiles, la tierra, la educación y la
+            sostenibilidad.
+          </p>
         </div>
       </div>
     </div>

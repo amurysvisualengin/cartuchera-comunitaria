@@ -42,7 +42,7 @@ const CardContentText = (props) => {
             className={`bg-black lg:text-xl rounded lg:px-1 lg:pb-1 text-center lg:w-36
             ${
               isMobile
-                ? isTablet > 767 && isTablet <= 1024
+                ? isTablet > 767 && isTablet < 1024
                   ? "ml-11 text-2xl w-40 h-10 text-center items-center"
                   : "ml-0 text-base py-1 w-26  text-center items-center"
                 : ""

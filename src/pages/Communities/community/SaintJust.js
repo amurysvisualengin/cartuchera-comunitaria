@@ -18,7 +18,7 @@ const SaintJust = () => {
         Carolina, Puerto Rico
       </p>
       <div className="lg:flex justify-center">
-        <p className="text-xl text-center mt-10 lg:max-w-2xl">
+        <p className="text-xl lg:text-base text-center mt-10 lg:max-w-2xl">
           Los barrios de San Antón y St. Just y el residencial Los Mirtos,
           localizados en la ruralía de Carolina, son hogar de una comunidad
           históricamente negra que ha atravesado la industrialización de su
@@ -38,7 +38,7 @@ const SaintJust = () => {
       </div>
       <div className="lg:flex lg:justify-center">
         <div className="lg:w-99.3 bg-black text-white mt-10 p-4 rounded">
-          <p className="text-xl">
+          <p className="text-xl lg:text-base">
             El trabajo colaborativo entre su comunidad y La Maraña bajo la
             iniciativa Imaginación Post-María permitió la reconstrucción de la
             Casa de Iris y la reconstrucción del comedor de La Conde.
@@ -59,7 +59,7 @@ const SaintJust = () => {
             PATBA: Parceleras Afrocaribeñas para la Transformación Barrial
           </h2>
         </div>
-        <div className="text-xl mt-8 lg:max-w-2xl lg:py-20">
+        <div className="text-xl lg:text-base mt-8 lg:max-w-2xl lg:py-20">
           <p>
             PATBA - acrónimo de Parceleras Afrocaribeñas para la Transformación
             Barrial - es un grupo intergeneracional de vecinas de la comunidad

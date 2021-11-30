@@ -11,9 +11,15 @@ const Mariana = () => {
         <h1 className="custom-font-shadow text-4xl lg:text-6xl mb-10 lg:mt-24 ">
           Mariana
         </h1>
-        <p className="text-xl mb-10">Humacao, Puerto Rico</p>
+        <p className="text-xl custom-font text-center mt-10 mb-10 hidden lg:block">
+          Humacao, Puerto Rico
+        </p>
+        <p className="text-xl text-center mt-10 mb-10 block lg:hidden">
+          Humacao, Puerto Rico
+        </p>
+
         <div className="lg:flex lg:justify-center">
-          <p className="text-xl mb-10 lg:mb-0 lg:max-w-3xl">
+          <p className="text-xl lg:text-base mb-10 lg:mb-0 lg:max-w-3xl">
             El barrio Mariana en la zona montañosa de Humacao ha atestiguado más
             de tres décadas de liderato y acción comunitaria. En medio de una
             fallida respuesta gubernamental tras el paso del Huracán María, el
@@ -43,7 +49,7 @@ const Mariana = () => {
         </div>
 
         <div className="lg:flex lg:justify-center">
-          <p className="text-xl lg:max-w-4xl">
+          <p className="text-xl lg:text-base lg:max-w-4xl">
             Bajo la sombrilla del proyecto Imaginación Post-María, La Maraña
             colaboró en el desarrollo de dos proyectos de autogestión
             comunitaria: el Parque Mis Panitas en la Loma de la Niña Mariana y
@@ -64,23 +70,24 @@ const Mariana = () => {
           <img
             src={Arecma}
             alt=""
-            className="hidden lg:block lg:mb-4 lg:mt-8 lg:w-20"
+            className="hidden lg:block lg:mb-4 lg:mt-6 lg:w-20"
           />
           <h2 className="custom-font-shadow  text-4xl lg:max-w-xl">
             ARECMA: Asociación Recreativa y Educativa Comunal del Barrio Mariana
           </h2>
         </div>
-        <p className="text-xl my-8 lg:max-w-2xl">
+        <p className="text-xl lg:text-base my-14 lg:max-w-2xl">
           La Asociación Recreativa y Educativa Comunal del Barrio Mariana es una
           organización sin fines de lucro de base comunitaria que desde el 1982
-          ha trabajado por el bienestar y desarrollo integral del barrio. ARECMA
-          ha autogestionado un sinnúmero de proyectos, incluyendo la
-          rehabilitación de la antigua escuela Juan de Dios, la Celebración de
-          27 Festivales de la Pana y la adquisición de 11 cuerdas de terreno que
-          hoy albergan su centro comunitario. Además del co-diseño y
-          construcción del Parque Mis Panitas en la Loma, La Maraña contribuyó
-          en el hincado de tres pozos que, al funcionar por gravedad, permiten
-          el acceso gratuito a agua potable para toda la comunidad.
+          ha trabajado por el bienestar y desarrollo integral del barrio.
+          <br /> <br /> ARECMA ha autogestionado un sinnúmero de proyectos,
+          incluyendo la rehabilitación de la antigua escuela Juan de Dios, la
+          Celebración de 27 Festivales de la Pana y la adquisición de 11 cuerdas
+          de terreno que hoy albergan su centro comunitario.
+          <br /> <br /> Además del co-diseño y construcción del Parque Mis
+          Panitas en la Loma, La Maraña contribuyó en el hincado de tres pozos
+          que, al funcionar por gravedad, permiten el acceso gratuito a agua
+          potable para toda la comunidad.
         </p>
       </div>
     </div>

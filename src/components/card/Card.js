@@ -34,7 +34,6 @@ const Card = (props) => {
     timer = 0;
   };
 
-
   const handleTouchEnd = () => {
     if (timer < 10 && isMove === false && type) {
       setShowExpand(!showExpand);
@@ -48,7 +47,6 @@ const Card = (props) => {
         handleShowExpandFalse,
       });
     }
-
     isMove = false;
   };
 
@@ -63,7 +61,7 @@ const Card = (props) => {
   return (
     <React.Fragment>
       <div
-        onClick={ type && handleShowExpand}
+        onClick={type && handleShowExpand}
         onTouchStart={handleTouchStart}
         onTouchMove={handleOnTouchMove}
         onTouchEnd={handleTouchEnd}
@@ -79,11 +77,14 @@ const Card = (props) => {
         {isMobile && (
           <div>
             {!type && (
-          <div style={{color: '#EBE4CF'}} className="custom-font  absolute left-10 top-10">
-            <p style={{ fontSize: 11 }} >HERRAMIENTA DE DISEÑO</p>
-            <p style={{ fontSize: 11 }} >PARTICIPATIVO </p>
-          </div>
-        )}
+              <div
+                style={{ color: "#EBE4CF" }}
+                className="custom-font  absolute left-10 top-10"
+              >
+                <p style={{ fontSize: 11 }}>HERRAMIENTA DE DISEÑO</p>
+                <p style={{ fontSize: 11 }}>PARTICIPATIVO </p>
+              </div>
+            )}
             <p className="custom-font text-right items-start absolute right-6 top-6">
               {cardNumber}
             </p>
@@ -101,7 +102,9 @@ const Card = (props) => {
                     : type === "Herramientas"
                     ? "top-72"
                     : "top-52"
-                } absolute bottom-0 w-40 ${cardContent === 'disabled' && 'pl-10 pr-10 w-full'}`}
+                } absolute bottom-0 w-40 ${
+                  cardContent === "disabled" && "pl-10 pr-10 w-full"
+                }`}
                 // className={` ${isMobile ? "w-40" : "w-36"}`}
                 src={img}
                 alt=""

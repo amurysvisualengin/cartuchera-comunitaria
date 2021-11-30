@@ -18,10 +18,7 @@ const ColorFilterMobile = (props) => {
   };
 
   return (
-    <div
-      onClick={changeColor}
-      
-    >
+    <div onClick={changeColor}>
       <button
         className={`${
           changeColorMobile ? "rounded-full border-2 border-black" : ""
