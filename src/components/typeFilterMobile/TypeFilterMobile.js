@@ -28,7 +28,7 @@ const TypeFilterMobile = () => {
   ];
 
   return (
-    <div className="flex">
+    <React.Fragment>
       {types.map((element, index) => (
         <div
           onClick={() => {
@@ -52,7 +52,7 @@ const TypeFilterMobile = () => {
           </button>
         </div>
       ))}
-    </div>
+    </React.Fragment>
   );
 };
 

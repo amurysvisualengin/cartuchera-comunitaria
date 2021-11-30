@@ -20,7 +20,7 @@ const ColorFilterMobile = (props) => {
   return (
     <div
       onClick={changeColor}
-      className={`  ${isTablet < 768 ? "ml-5 " : "ml-60 "}  `}
+      
     >
       <button
         className={`${

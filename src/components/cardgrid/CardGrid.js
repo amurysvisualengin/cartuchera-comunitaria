@@ -105,7 +105,7 @@ const CardGrid = () => {
               <CardShuffle list={list} setList={setList} />
             </div>
             <div
-              className=" items-center flex absolute bottom-0 right-0 left-0"
+              className=" items-center flex justify-center pl-4 pr-4 absolute bottom-0 right-0 left-0"
               style={{ background: "#F8F5ED" }}
             >
               <ColorFilterMobile />
