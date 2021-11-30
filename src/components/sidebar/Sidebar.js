@@ -95,7 +95,7 @@ const Sidebar = (props) => {
   } = useContext(CardListContext);
 
   return (
-    <div>
+    <div className="right-shadow">
       <div
         style={{ maxWidth: "440px" }}
         className={`p-12 sidebar relative ${

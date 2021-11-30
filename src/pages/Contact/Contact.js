@@ -9,11 +9,11 @@ const Contact = () => {
   return (
     <div className="overflow-x-hidden">
       <div>
-        <Header />
         <Menu />
+        <Header />
       </div>
-      <div className="lg:flex lg:justify-between  lg:items-center">
-        <div className="mx-4 mt-10 lg:ml-40">
+      <div className="lg:flex lg:justify-between lg:items-center shadow-box  pt-10 lg:mt-6">
+        <div className="mx-4 lg:mt-10 lg:ml-40">
           <div>
             <h1 className="custom-font-shadow text-4xl lg:text-5xl">
               Contáctanos
@@ -57,7 +57,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Mansaje (opcional)"
-                className="mb-4 w-full h-36 rounded px-4 border-form"
+                className="mb-4 w-full pb-36 rounded px-4 border-form"
               />
               <button
                 className="custom-font w-full lg:w-40 h-14 rounded shadow-box lg:mb-40"

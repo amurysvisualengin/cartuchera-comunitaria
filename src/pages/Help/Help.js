@@ -17,8 +17,8 @@ const Help = () => {
   return (
     <div className="overflow-x-hidden">
       <div>
-        <Header />
         <Menu />
+        <Header />
       </div>
       <div className="mx-4 mt-8">
         <h1 className="custom-font-shadow text-4xl lg:text-6xl lg:w-99.4 lg:ml-28 lg:mt-24">

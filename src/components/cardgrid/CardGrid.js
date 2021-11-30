@@ -70,36 +70,6 @@ const CardGrid = () => {
       <div>
         {!isExpand && (
           <div className="h-screen" style={{ background: "#f5e3b0" }}>
-            <div
-              className={`flex  py-2 justify-between ${
-                isTablet > 768 && isTablet < 1224 ? "mb-28" : "mb-5"
-              } `}
-              style={{ background: "#F8F5ED" }}
-            >
-              <img src={CartucheraLogo} alt="logo" className="w-20 ml-2" />
-              <div className="flex">
-                <button
-                  className="text-white text-xs bg-black w-12 h-6 mt-5 mr-4 text-center custom-font-shadow"
-                  onClick={() => {
-                    setShowInformation(!showInformation);
-                  }}
-                >
-                  INFO
-                </button>
-                <div className="absolute top-0 left-0 bottom-0 z-50">
-                  <InfoMobile />
-                </div>
-
-                <button
-                  onClick={() => {
-                    setShowMenu(!showMenu);
-                  }}
-                >
-                  <img src={Hamburguer} alt="" className="mt-2" />
-                </button>
-              </div>
-            </div>
-
             <Swiper />
             <div className={`flex`}>
               <CardShuffle list={list} setList={setList} />

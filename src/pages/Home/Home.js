@@ -10,11 +10,10 @@ import Menu from "../../components/menu/Menu";
 
 const Home = () => {
   return (
-    <div style={{ backgroundColor: "#E5E5E5" }}>
-      <div className="flex h-20 ">
-        {/* <HeaderRoutes /> */}
-        <Header />
+    <div className="overflow-x-hidden" style={{ backgroundColor: "#E5E5E5" }}>
+      <div className="">
         <Menu />
+        <Header />
       </div>
       <div className="lg:flex lg:justify-center">
         <iframe

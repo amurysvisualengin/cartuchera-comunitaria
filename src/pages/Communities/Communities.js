@@ -10,11 +10,13 @@ import Menu from "../../components/menu/Menu";
 
 const Communities = () => {
   return (
-    <div>
-      <Header />
-      <Menu />
+    <div className="overflow-x-hidden">
+      <div>
+        <Menu />
+        <Header />
+      </div>
 
-      <div className="px-4">
+      <div className="px-4 ">
         <SaintJust />
       </div>
       <div>

@@ -6,7 +6,7 @@ import "../Communities.css";
 const SaintJust = () => {
   return (
     <div>
-      <div className="lg:flex lg:justify-center lg:items-center">
+      <div className="lg:flex lg:justify-center lg:items-center lg:mt-20">
         <h1 className="custom-font-shadow text-4xl lg:text-6xl lg:w-103 mt-10 text-center">
           Saint Just, Los Mirtos + San Antón
         </h1>

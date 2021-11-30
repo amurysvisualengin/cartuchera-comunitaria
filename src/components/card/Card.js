@@ -68,7 +68,7 @@ const Card = (props) => {
         className={`${
           isMobile
             ? isTablet < 768
-              ? "absolute right-1 left-1 bottom-24 -top-2"
+              ? "absolute right-1 left-1 bottom-24 top-0"
               : "absolute right-40 left-40 bottom-36 top-10"
             : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72 cursor-pointer hover-card"
         }  rounded-md`}
