@@ -16,7 +16,7 @@ const CardContentPresentation = (props) => {
   return (
     <div style={{ backgroundColor: isMobile ? color : "" }}>
       <div
-        className="flex justify-end  lg:mt-4 lg:mr-10 hover-button"
+        className="flex justify-end lg:mt-4 lg:mr-10 hover-button"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
@@ -29,11 +29,11 @@ const CardContentPresentation = (props) => {
         </button>
       </div>
       <div className="flex justify-center lg:mt-8 lg:mr-20 ">
-        <div className={`block  ${isTablet < 767 ? "mr-3" : "mr-2"}`}>
+        <div className={`block  ${isTablet < 768 ? "mr-3" : "mr-2"}`}>
           {!isMobile && (
             <div>
-              <img src={cardContent.nameSvg} alt="name SVG" className="ml-44" />
-              <img src={img} alt="icon type" className="pb-8 w-84 mr-4 " />
+              <img src={cardContent.nameSvg} alt="name SVG" className="ml-52" />
+              <img src={img} alt="icon type" className="pb-8 w-84 mr-20 " />
             </div>
           )}
         </div>
@@ -98,8 +98,18 @@ const CardContentPresentation = (props) => {
                 ¡Queremos conocerla! Escribe a{" "}
                 <b>info@cartucheracomunitaria.com</b> o accede a nuestras redes
                 para contarnos quién es y cuál es su rol en la comunidad.
-                ¡Recuerda taguearnos <b>@LaMarana</b> y usar el hashtags{" "}
-                <b>#cartucheracomunitaria!</b>{" "}
+                ¡Recuerda taguearnos{" "}
+                <b>
+                  <a href="https://www.instagram.com/la_marana_pr/">
+                    @LaMarana
+                  </a>{" "}
+                </b>{" "}
+                y usar el hashtags{" "}
+                <b>
+                  <a href="https://www.instagram.com/explore/tags/cartucheracomunitaria/">
+                    #cartucheracomunitaria!
+                  </a>{" "}
+                </b>{" "}
               </p>
               <div className="flex m-4">
                 <a

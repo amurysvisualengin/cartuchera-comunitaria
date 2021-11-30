@@ -153,7 +153,7 @@ const Sidebar = (props) => {
                     }`}
                   >
                     <input
-                      className="ml-6 mr-10 w-8 h-8"
+                      className="ml-6 mr-10 w-6 h-8"
                       type={element.type}
                       src={element.src}
                       alt={element.name}

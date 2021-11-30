@@ -81,7 +81,8 @@ const Card = (props) => {
               : isTablet < 415
               ? "ml-5 mr-5 h-97.5 p-16 card-item cursor-pointer"
               : "p-16 h-98 card-item cursor-pointer"
-            : "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72 cursor-pointer hover-card"
+            : // problema con el cursor pointer del interior de las cartas
+              "p-6 lg:m-2 lg:mr-2 text-center card-item lg:h-72 cursor-pointer hover-card"
         } `}
         style={{ backgroundColor: color, borderColor: color }}
       >

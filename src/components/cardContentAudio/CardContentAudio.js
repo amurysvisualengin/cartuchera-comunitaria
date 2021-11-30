@@ -59,7 +59,7 @@ const CardContentAudio = (props) => {
               Videogalería
             </h1>
             <h2
-              className={`  text-left mt-4 ${
+              className={`text-left mt-4 ${
                 isMobile
                   ? isTablet > 767 && isTablet < 1024
                     ? "text-xl custom-font"

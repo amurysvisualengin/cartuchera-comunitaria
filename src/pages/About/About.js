@@ -23,11 +23,11 @@ const About = () => {
       <div className="px-4">
         <div className="lg:flex justify-around lg:px-26">
           <div>
-            <h1 className="custom-font-shadow text-4xl mt-10 lg:text-6xl lg:max-w-lg lg:mb-10 lg:mt-26">
+            <h1 className="custom-font-shadow text-4xl mt-10 lg:text-6xl lg:max-w-lg lg:mb-10 lg:mt-26 leading-11">
               Sobre la cartuchera
             </h1>
             {/* no funciona lg:custom-font */}
-            <p className="text-xl mb-10 lg:w-96 custom-font">
+            <p className="text-xl lg:text-base mb-10 lg:w-96 custom-font">
               Herramientas participativas para el desarrollo sostenible de
               nuestras islas y sus comunidades.
             </p>
@@ -52,7 +52,7 @@ const About = () => {
             <h2 className="custom-font-shadow text-4xl  lg:text-6xl mt-10 ">
               ¿Qué es?
             </h2>
-            <p className="text-xl mb-9 lg:w-98">
+            <p className="text-xl lg:text-base mb-9 lg:w-98">
               Una cartuchera se utiliza para guardar lápices, sacapuntas y
               gomas, pero ésta es especial. En lugar de artículos escolares, la
               Cartuchera Comunitaria™ contiene herramientas colaborativas,
@@ -70,7 +70,7 @@ const About = () => {
             <h2 className="custom-font-shadow  text-4xl lg:text-6xl mt-10">
               ¿Para quién es?
             </h2>
-            <p className="text-xl lg:w-100 lg:mt-6">
+            <p className="text-xl lg:text-base lg:w-100 lg:mt-6">
               Toda persona, familia, grupo de vecinxs, organizaciones
               comunitarias o entidades que se atrevan a soñar y diseñar un mejor
               entorno puede usar esta cartuchera. ¡Es para todxs!
@@ -100,17 +100,17 @@ const About = () => {
       <div className="px-4">
         <div className="lg:flex lg:justify-around lg:mt-16">
           <div>
-            <h2 className="custom-font-shadow text-4xl lg:text-6xl lg:w-97 mt-10 lg:mt-5">
+            <h2 className="custom-font-shadow text-4xl lg:text-6xl lg:w-97 mt-10 lg:mt-5 leading-11">
               ¿De dónde nace?
             </h2>
             {/* lg:custom-font no funciona */}
-            <p className="text-xl lg:w-99 lg:mt-6 custom-font">
+            <p className="text-xl lg:text-base lg:w-99 lg:mt-6 custom-font">
               Este recurso es producto del trabajo colaborativo entre La Maraña
               y tres comunidades puertorriqueñas como parte del proyecto
               Imaginación Post-María, sostenido entre el 2017 y el 2020.
             </p>
           </div>
-          <p className="text-xl mt-10 lg:w-99">
+          <p className="text-xl lg:text-base mt-10 lg:w-99">
             Los procesos de autogestión, trabajo colectivo y liderazgo vecinal
             de las comunidades San Antón, Saint Just y Los Mirtos en Carolina;
             Mariana y Jagüeyes en Humacao; y La Vuelta del Dos, Los Guaretos y
@@ -132,7 +132,7 @@ const About = () => {
             <h2 className="custom-font-shadow text-4xl lg:text-6xl mt-10">
               ¿Qué contiene?
             </h2>
-            <p className="text-xl mt-10 lg:w-102 ">
+            <p className="text-xl lg:text-base mt-10 lg:w-102 ">
               Los materiales y herramientas que componen la Cartuchera
               Comunitaria™ están categorizadas en cinco [5] grupos que llamamos
               kits. Cada kit, identificado con un color distinto, corresponde a
@@ -150,15 +150,17 @@ const About = () => {
               index % 2 !== 0 ? "flex-row-reverse" : ""
             } `}
           >
-            <div className="flex justify-center  mt-10 mx-26 ">
+            <div className="flex justify-center mt-10 mx-26 lg:h-96">
               <img src={element.img} alt="" />
             </div>
 
             <div className="">
-              <h2 className="custom-font-shadow text-4xl lg:text-6xl mt-10 lg:w-97">
+              <h2 className="custom-font-shadow text-4xl lg:text-6xl mt-10 lg:w-97 leading-11">
                 {element.title}
               </h2>
-              <p className="text-xl mt-10 lg:w-97">{element.paragraph}</p>
+              <p className="text-xl lg:text-base mt-10 lg:w-97">
+                {element.paragraph}
+              </p>
             </div>
           </div>
         ))}
