@@ -11,7 +11,7 @@ import "../../App.css";
 const Card = (props) => {
   const [showExpand, setShowExpand] = useState(false);
   const { title, img, type, color, cardNumber, cardContent } = props;
-  const { setCardInfo, setIsExpand, isTablet, mobileHeight } =
+  const { setCardInfo, setIsExpand, isTablet, mobileHeight, setFirstTouch } =
     useContext(CardListContext);
 
   const handleShowExpandFalse = () => {
@@ -34,8 +34,12 @@ const Card = (props) => {
     timer = 0;
   };
 
+  const handleFirstMove = () => {
+    setFirstTouch(true);
+  }
+
   const handleTouchEnd = () => {
-    if (timer < 10 && isMove === false) {
+    if (timer < 10 && isMove === false && type) {
       setShowExpand(!showExpand);
       setIsExpand(true);
       setCardInfo({
@@ -62,10 +66,10 @@ const Card = (props) => {
   return (
     <React.Fragment>
       <div
-        onClick={handleShowExpand}
+        onClick={ type && handleShowExpand}
         onTouchStart={handleTouchStart}
         onTouchMove={handleOnTouchMove}
-        onTouchEnd={handleTouchEnd}
+        onTouchEnd={!type ? handleFirstMove :handleTouchEnd}
         className={`${
           isMobile
             ? isTablet < 768
@@ -77,6 +81,12 @@ const Card = (props) => {
       >
         {isMobile && (
           <div>
+            {!type && (
+          <div style={{color: '#EBE4CF'}} className="custom-font  absolute left-10 top-10">
+            <p style={{ fontSize: 11 }} >HERRAMIENTA DE DISEÑO</p>
+            <p style={{ fontSize: 11 }} >PARTICIPATIVO </p>
+          </div>
+        )}
             <p className="custom-font text-right items-start absolute right-6 top-6">
               {cardNumber}
             </p>
@@ -94,7 +104,7 @@ const Card = (props) => {
                     : type === "Herramientas"
                     ? "top-72"
                     : "top-52"
-                } absolute bottom-0 w-40`}
+                } absolute bottom-0 w-40 ${cardContent === 'disabled' && 'pl-10 pr-10 w-full'}`}
                 // className={` ${isMobile ? "w-40" : "w-36"}`}
                 src={img}
                 alt=""

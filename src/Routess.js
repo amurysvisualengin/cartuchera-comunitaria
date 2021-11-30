@@ -24,6 +24,7 @@ const Routess = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [showInformation, setShowInformation] = useState(false);
   const [mobileHeight, SetMobileHeight] = useState("");
+  const [firstTouch, setFirstTouch] = useState(false);
 
   const handleResize = () => {
     if (window.innerWidth < 1224) {
@@ -75,6 +76,8 @@ const Routess = () => {
         setShowInformation,
         mobileHeight,
         SetMobileHeight,
+        firstTouch,
+        setFirstTouch
       }}
     >
       <BrowserRouter basename="cartuchera-comunitaria">
