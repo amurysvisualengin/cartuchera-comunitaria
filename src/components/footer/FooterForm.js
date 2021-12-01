@@ -11,7 +11,7 @@ const FooterForm = () => {
         />
 
         <button
-          className="w-full lg:w-28 lg:mt-4 h-11 rounded items-center font-bold text-base"
+          className="w-full lg:w-28 lg:mt-4 h-11 rounded items-center font-bold text-smTiny leading-7"
           style={{ backgroundColor: "#37B0FF" }}
         >
           Subscríbete

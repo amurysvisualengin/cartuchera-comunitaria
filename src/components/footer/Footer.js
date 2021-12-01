@@ -19,17 +19,19 @@ export const Footer = () => {
         />
       </div>
 
-      <div className="w-full lg:flex lg:justify-between text-white mt-10 text-xl mx-4 lg:mx-0 lg:px-20">
-        <div className="lg:w-98">
-          <h1 className="font-bold ">La Cartuchera Comunitaria</h1>
-          <p className="mt-4 mr-6 text-tiny ">
+      <div className="w-full lg:flex lg:justify-between  text-white mt-10  mx-4 lg:mx-0 lg:px-20">
+        <div className="lg:max-w-xl">
+          <h1 className="font-bold text-base leading-7 mb-4 ">
+            La Cartuchera Comunitaria
+          </h1>
+          <p className="mt-4 pr-10 text-base leading-6">
             La Cartuchera Comunitaria™ ha sido posible gracias a las tres
             comunidades aliadas al proyecto Imaginación Post-María, el apoyo de
             nuestros donantes, y la aportación ciudadana.
           </p>
 
-          <div className="mt-4 text-tiny">
-            <a href="https://www.youtube.com" className="underline  ">
+          <div className="mt-4 text-base leading-6">
+            <a href="https://www.youtube.com" className="underline">
               www.cartucheracomunitaria.com
             </a>
             <p>lamarana.pr@gmail.com</p>
@@ -37,7 +39,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-10 lg:mt-0 font-bold">
+        <div className="mt-10 lg:mt-0 font-bold text-base leading-7">
           <h2>Subscríbete</h2>
 
           <div>

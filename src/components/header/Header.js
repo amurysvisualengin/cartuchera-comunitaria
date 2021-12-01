@@ -67,7 +67,7 @@ const Header = () => {
       )}
       {isMobile && (
         <div className="flex justify-between items-center bottom-shadow ">
-          <img src={CatucheraLogo} alt="" className="  p-4" />
+          <img src={CatucheraLogo} alt="" className="  p-4 " />
           <div>
             {!show && (
               <div className="">

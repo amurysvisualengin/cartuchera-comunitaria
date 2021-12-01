@@ -30,16 +30,22 @@ const Home = () => {
               className="px-2 h-14 mx-4 lg:w-90 flex items-center justify-center rounded-lg mb-4"
               style={{ backgroundColor: "#9BC2D4" }}
             >
-              <a href="" className="flex custom-font mx-4 text-base">
+              <a
+                href=""
+                className="flex justify-center items-center custom-font mx-4 text-sm"
+              >
                 <img src={Play} alt="" className="filter invert mr-4" />
                 ¡VE EL VÍDEO COMPLETO!
               </a>
             </li>
             <li
-              className="px-2 h-14 mx-4 flex items-center justify-center rounded-lg mb-4"
+              className="px-2 h-14 mx-4 lg:w-90 flex items-center justify-center rounded-lg mb-4"
               style={{ backgroundColor: "#E1AC47" }}
             >
-              <Link to="/app" className="flex custom-font mx-4 text-base">
+              <Link
+                to="/app"
+                className="flex justify-center custom-font mx-4 text-sm "
+              >
                 <img
                   src={Presentation}
                   alt=""
@@ -50,9 +56,12 @@ const Home = () => {
             </li>
             <li
               className="px-2 h-14 mx-4 lg:w-90 flex items-center justify-center rounded-lg"
-              style={{ backgroundColor: "#BEBE3B" }}
+              style={{ backgroundColor: "#BCBC68" }}
             >
-              <a href="" className="flex custom-font mx-4 text-base">
+              <a
+                href=""
+                className="flex justify-center items-center custom-font mx-4 text-sm lg:w-84"
+              >
                 <img src={Dona} alt="" className=" mr-4 " />
                 ¡DONA!
               </a>

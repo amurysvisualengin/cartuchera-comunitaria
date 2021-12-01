@@ -8,17 +8,23 @@ module.exports = {
       tiny: ".9rem",
       base: "1rem",
       lg: "1.125rem",
+      xlLg: "1.188rem",
       xl: "1.25rem",
+      smTiny: "0.938rem",
+      "1.9xl": "1.438rem",
       "2xl": "1.5rem",
       "3xl": "1.875rem",
       "4xl": "2.25rem",
+      "4.5xl": "2.375rem",
       "5xl": "3rem",
+      "5.5xl": "3.75rem",
       "6xl": "4rem",
       "7xl": "5rem",
       "8xl": "7rem",
     },
     extend: {
       lineHeight: {
+        10.5: "2.875rem",
         11: "4.5rem",
       },
       spacing: {

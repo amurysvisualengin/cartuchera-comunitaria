@@ -14,21 +14,25 @@ import YellowShape from "../../assets/icons/yellow-shape.svg";
 const About = () => {
   const types = DataAbout;
   return (
-    <div className="h-full">
+    <div className="h-full overflow-x-hidden">
       <Header />
       <Menu />
-      <div className="h-24" style={{ backgroundColor: "#F8F5ED" }}></div>
+
       <div className="hidden lg:absolute lg:-z-10 lg:top-0">
         <img src={BlueShape} alt="" />
       </div>
       <div className="px-4">
         <div className="lg:flex justify-around lg:px-26">
           <div>
-            <h1 className="custom-font-shadow text-4xl mt-10 lg:text-6xl lg:max-w-lg lg:mb-10 lg:mt-26 leading-11">
+            <h1 className="custom-font-shadow text-4.5xl leading-10.5 mt-10 mb-4 lg:text-5.5xl lg:max-w-lg lg:mb-10 lg:mt-26 lg:leading-11">
               Sobre la cartuchera
             </h1>
             {/* no funciona lg:custom-font */}
-            <p className="text-xl lg:text-base mb-10 lg:w-96 custom-font">
+            <p className="text-xl hidden lg:flex lg:text-base mb-10 lg:w-96 custom-font">
+              Herramientas participativas para el desarrollo sostenible de
+              nuestras islas y sus comunidades.
+            </p>
+            <p className="text-lg mb-10 leading-6 flex lg:hidden  ">
               Herramientas participativas para el desarrollo sostenible de
               nuestras islas y sus comunidades.
             </p>
@@ -50,10 +54,10 @@ const About = () => {
             className="hidden lg:flex lg:visible lg:mr-20"
           />
           <div>
-            <h2 className="custom-font-shadow text-4xl  lg:text-6xl mt-10 ">
+            <h2 className="custom-font-shadow text-4.5xl leading-10.5  lg:text-5.5xl mt-10 ">
               ¿Qué es?
             </h2>
-            <p className="text-xl lg:text-base mb-9 lg:w-98">
+            <p className="text-xlLg leading-7 mt-4 lg:mt-6 lg:text-base mb-9 lg:w-98">
               Una cartuchera se utiliza para guardar lápices, sacapuntas y
               gomas, pero ésta es especial. En lugar de artículos escolares, la
               Cartuchera Comunitaria™ contiene herramientas colaborativas,
@@ -68,10 +72,10 @@ const About = () => {
 
         <div className="lg:flex lg:justify-center lg:text-center">
           <div>
-            <h2 className="custom-font-shadow  text-4xl lg:text-6xl mt-10">
+            <h2 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 mb-9 lg:mb-6 mt-10">
               ¿Para quién es?
             </h2>
-            <p className="text-xl lg:text-base lg:w-100 lg:mt-6">
+            <p className="text-base leading-6 lg:text-base lg:w-100 lg:mt-6">
               Toda persona, familia, grupo de vecinxs, organizaciones
               comunitarias o entidades que se atrevan a soñar y diseñar un mejor
               entorno puede usar esta cartuchera. ¡Es para todxs!
@@ -89,7 +93,7 @@ const About = () => {
           <img
             src={YellowShape}
             alt="shape"
-            className="lg:absolute -z-10 right-0 top-shape"
+            className="lg:absolute -z-10 right-28  transform scale-150 top-shape"
           />
         </div>
         <img
@@ -101,17 +105,27 @@ const About = () => {
       <div className="px-4">
         <div className="lg:flex lg:justify-around lg:mt-16">
           <div>
-            <h2 className="custom-font-shadow text-4xl lg:text-6xl lg:w-97 mt-10 lg:mt-5 leading-11">
+            <h2 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl lg:w-97 mt-10 lg:mt-5 lg:leading-11">
               ¿De dónde nace?
             </h2>
-            {/* lg:custom-font no funciona */}
-            <p className="text-xl lg:text-base lg:w-99 lg:mt-6 custom-font">
-              Este recurso es producto del trabajo colaborativo entre La Maraña
-              y tres comunidades puertorriqueñas como parte del proyecto
-              Imaginación Post-María, sostenido entre el 2017 y el 2020.
-            </p>
+            <div className="hidden lg:flex">
+              <p className="text-1.9xl leading-8 max-w-2xl mt-6 custom-font">
+                Este recurso es producto del trabajo colaborativo entre La
+                Maraña y tres comunidades puertorriqueñas como parte del
+                proyecto Imaginación Post-María, sostenido entre el 2017 y el
+                2020.
+              </p>
+            </div>
+            <div className="flex lg:hidden">
+              <p className="text-xlLg leading-7 mt-5">
+                Este recurso es producto del trabajo colaborativo entre La
+                Maraña y tres comunidades puertorriqueñas como parte del
+                proyecto Imaginación Post-María, sostenido entre el 2017 y el
+                2020.
+              </p>
+            </div>
           </div>
-          <p className="text-xl lg:text-base mt-10 lg:w-99">
+          <p className="text-xlLg leading-7 lg:text-base mt-5  lg:mt-10 lg:w-99">
             Los procesos de autogestión, trabajo colectivo y liderazgo vecinal
             de las comunidades San Antón, Saint Just y Los Mirtos en Carolina;
             Mariana y Jagüeyes en Humacao; y La Vuelta del Dos, Los Guaretos y
@@ -119,21 +133,21 @@ const About = () => {
             comunidad unida y activa en la determinación de su entorno, sino que
             nos permitieron co-desarrollar herramientas para guiar a otras
             comunidades a través de Puerto Rico en su empoderamiento y
-            autodeterminación. Aunque nuestra cartuchera nace a raíz de un
-            contexto post-desastre, son herramientas que se pueden usar en
-            cualquier circunstancia. ¿Cuál es el momento idóneo para usarlas?
-            Siempre que haya un interés en conocer mejor tu comunidad para
-            imaginar, agenciar y ejecutar espacios dignos y sostenibles para
-            todxs.
+            autodeterminación.
+            <br /> <br /> Aunque nuestra cartuchera nace a raíz de un contexto
+            post-desastre, son herramientas que se pueden usar en cualquier
+            circunstancia. ¿Cuál es el momento idóneo para usarlas? Siempre que
+            haya un interés en conocer mejor tu comunidad para imaginar,
+            agenciar y ejecutar espacios dignos y sostenibles para todxs.
           </p>
         </div>
 
         <div className="lg:flex lg:justify-center lg:text-center  lg:mt-48">
           <div className="">
-            <h2 className="custom-font-shadow text-4xl lg:text-6xl mt-10">
+            <h2 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 mt-10">
               ¿Qué contiene?
             </h2>
-            <p className="text-xl lg:text-base mt-10 lg:w-102 ">
+            <p className="text-xlLg leading-7 lg:text-base lg:leading-6 mt-10 mb-10 lg:mb-0 lg:w-102 ">
               Los materiales y herramientas que componen la Cartuchera
               Comunitaria™ están categorizadas en cinco [5] grupos que llamamos
               kits. Cada kit, identificado con un color distinto, corresponde a
@@ -151,15 +165,15 @@ const About = () => {
               index % 2 !== 0 ? "flex-row-reverse" : ""
             } `}
           >
-            <div className="flex justify-center mt-10 mx-26 lg:h-96">
+            <div className="flex justify-center items-center mt-10 mx-10 w-56 lg:w-96">
               <img src={element.img} alt="" />
             </div>
 
             <div className="">
-              <h2 className="custom-font-shadow text-4xl lg:text-6xl mt-10 lg:w-97 leading-11">
+              <h2 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl mt-10 mb-4 lg:w-97 lg:leading-11">
                 {element.title}
               </h2>
-              <p className="text-xl lg:text-base mt-10 lg:w-97">
+              <p className="text-xlLg leading-7 w-80 lg:text-base lg:leading-6 mt-10 lg:mt-2 lg:w-97">
                 {element.paragraph}
               </p>
             </div>
