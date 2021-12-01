@@ -10,28 +10,31 @@ const VueltaDeDos = () => {
     <div>
       <div className="mx-4">
         <div className="lg:flex lg:justify-center lg:items-center">
-          <h2 className="custom-font-shadow text-4xl lg:text-6xl lg:max-w-4xl mt-10 text-center">
+          <h2 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 lg:max-w-4xl mt-10 lg:mt-24 text-center">
             Vuelta del Dos, Los Guaretos + Los Padilla
           </h2>
         </div>
-        <p className="text-xl text-center mt-10 custom-font hidden lg:block">
+        <p className="text-1.9xl text-center lg:mt-7 custom-font hidden lg:block">
           Comerío, Puerto Rico
         </p>
-        <p className="text-xl text-center mt-10 block lg:hidden">
+        <p className="text-lg text-center mt-10 block lg:hidden">
           Comerío, Puerto Rico
         </p>
         <div className="lg:flex lg:justify-center">
-          <p className="text-xl lg:text-base text-center mt-10 lg:max-w-3xl">
-            Ubicada en la exuberante región montañosa de Comerío, la pintoresca
-            comunidad de Vuelta del Dos, Los Guaretos y Los Padilla en el sector
-            Palomas es el hogar de cientos de familias que sufrieron graves
-            pérdidas durante el huracán María. La labor conjunta entre La Maraña
-            y Brigada Palomas dio pie al desarrollo de Imaginación Post María,
-            un modelo participativo de acción ciudadana para la recuperación
-            post-desastre. El resultado de su aplicación incluyó la creación de
-            un Plan Comunitario y la implementación de dos proyectos puntuales
-            de infraestructura y construcción:
-          </p>
+          <div className="hidden lg:flex">
+            <p className="text-xlLg lg:text-base lg:leading-6 text-center mt-10 lg:mt-12 lg:max-w-2xl">
+              Ubicada en la exuberante región montañosa de Comerío, la
+              pintoresca comunidad de Vuelta del Dos, Los Guaretos y Los Padilla
+              en el sector Palomas es el hogar de cientos de familias que
+              sufrieron graves pérdidas durante el huracán María. La labor
+              conjunta entre La Maraña y Brigada Palomas dio pie al desarrollo
+              de Imaginación Post María, un modelo participativo de acción
+              ciudadana para la recuperación post-desastre. El resultado de su
+              aplicación incluyó la creación de un Plan Comunitario y la
+              implementación de dos proyectos puntuales de infraestructura y
+              construcción:
+            </p>
+          </div>
         </div>
         <div className="mt-10 lg:mt-0 lg:flex lg:justify-center">
           <iframe
@@ -45,25 +48,43 @@ const VueltaDeDos = () => {
           <img
             src={YellowShape}
             alt=""
-            className="absolute right-0 shape-position"
+            className="absolute transform scale-150 -right-12 shape-position"
           />
         </div>
         <div className="lg:flex lg:justify-evenly lg:mt-24">
-          <p className="text-xl lg:text-base text-center lg:text-left mt-10 lg:max-w-xl">
-            Ubicada en la exuberante región montañosa de Comerío, la pintoresca
-            comunidad de Vuelta del Dos, Los Guaretos y Los Padilla en el sector
-            Palomas es el hogar de cientos de familias que sufrieron graves
-            pérdidas durante el huracán María. La labor conjunta entre La Maraña
-            y Brigada Palomas dio pie al desarrollo de Imaginación Post María,
-            un modelo participativo de acción ciudadana para la recuperación
-            post-desastre. El resultado de su aplicación incluyó la creación de
-            un Plan Comunitario y la implementación de dos proyectos puntuales
-            de infraestructura y construcción:{" "}
-          </p>
-          <div className=" mt-20 lg:mt-8 lg:max-w-lg">
+          <div className="hidden lg:flex">
+            <p className="text-base lg:max-w-lg ">
+              Ubicada en la exuberante región montañosa de Comerío, la
+              pintoresca comunidad de{" "}
+              <strong>Vuelta del Dos, Los Guaretos y Los Padilla </strong>
+              en el sector Palomas es el hogar de cientos de familias que
+              sufrieron graves pérdidas durante el huracán María. La labor
+              conjunta entre La Maraña y Brigada Palomas dio pie al desarrollo
+              de Imaginación Post María, un modelo participativo de acción
+              ciudadana para la recuperación post-desastre. El resultado de su
+              aplicación incluyó la creación de un Plan Comunitario y la
+              implementación de dos proyectos puntuales de infraestructura y
+              construcción:{" "}
+            </p>
+          </div>
+          <div className="flex lg:hidden ">
+            <p className="text-xlLg mt-10">
+              Ubicada en la exuberante región montañosa de Comerío, la
+              pintoresca comunidad de Vuelta del Dos, Los Guaretos y Los Padilla
+              en el sector Palomas es el hogar de cientos de familias que
+              sufrieron graves pérdidas durante el huracán María. La labor
+              conjunta entre La Maraña y Brigada Palomas dio pie al desarrollo
+              de Imaginación Post María, un modelo participativo de acción
+              ciudadana para la recuperación post-desastre. El resultado de su
+              aplicación incluyó la creación de un Plan Comunitario y la
+              implementación de dos proyectos puntuales de infraestructura y
+              construcción:{" "}
+            </p>
+          </div>
+          <div className=" mt-20 lg:mt-0  lg:max-w-lg">
             <div className="flex items-start">
-              <img src={One} alt="" className="mr-4 mt-5" />
-              <p className=" text-left mt-4">
+              <img src={One} alt="" className="mr-4 mt-4" />
+              <p className="text-left mt-3">
                 <strong>La Casa de Luis (2019):</strong> la comunidad eligió y
                 participó en el rediseño y reconstrucción de una casa destruida
                 por María.
@@ -102,8 +123,10 @@ const VueltaDeDos = () => {
         className="w-full lg:h-90 px-4 lg:py-16 mb-10 lg:flex lg:justify-around"
         style={{ backgroundColor: "#BEBE3B" }}
       >
-        <h2 className="custom-font-shadow text-4xl  pt-10 ">Brigada Palomas</h2>
-        <div className="text-xl lg:text-base mt-8 pb-8 lg:max-w-2xl">
+        <h2 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-3xl  pt-10 ">
+          Brigada Palomas
+        </h2>
+        <div className="text-xlLg pb-16 lg:text-base mt-8 lg:pb-8 lg:max-w-2xl">
           <p>
             Parte imprescindible de los esfuerzos comunitarios de recuperación
             fue la acción proactiva de Brigada Palomas. Esta organización sin

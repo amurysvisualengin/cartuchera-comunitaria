@@ -8,18 +8,18 @@ const Mariana = () => {
   return (
     <div>
       <div className="mx-4 text-center">
-        <h1 className="custom-font-shadow text-4xl lg:text-6xl mb-10 lg:mt-24 ">
+        <h1 className="custom-font-shadow text-4.5xl lg:text-5.5xl  lg:mt-24 ">
           Mariana
         </h1>
-        <p className="text-xl custom-font text-center mt-10 mb-10 hidden lg:block">
+        <p className="lg:text-1.9xl custom-font text-center mt-5 mb-12 hidden lg:block">
           Humacao, Puerto Rico
         </p>
-        <p className="text-xl text-center mt-10 mb-10 block lg:hidden">
+        <p className="text-lg text-center mt-10 mb-10 block lg:hidden">
           Humacao, Puerto Rico
         </p>
 
         <div className="lg:flex lg:justify-center">
-          <p className="text-xl lg:text-base mb-10 lg:mb-0 lg:max-w-3xl">
+          <p className="text-xlLg lg:text-base mb-10 lg:mb-0 lg:max-w-3xl">
             El barrio Mariana en la zona montañosa de Humacao ha atestiguado más
             de tres décadas de liderato y acción comunitaria. En medio de una
             fallida respuesta gubernamental tras el paso del Huracán María, el
@@ -48,8 +48,8 @@ const Mariana = () => {
           <img src={Cube} alt="" className="w-10 lg:w-20 lg:mt-10 lg:mb-20" />
         </div>
 
-        <div className="lg:flex lg:justify-center">
-          <p className="text-xl lg:text-base lg:max-w-4xl">
+        <div className="lg:flex lg:justify-center mx-1 lg:mx-0">
+          <p className="text-xlLg  lg:text-base lg:max-w-4xl">
             Bajo la sombrilla del proyecto Imaginación Post-María, La Maraña
             colaboró en el desarrollo de dos proyectos de autogestión
             comunitaria: el Parque Mis Panitas en la Loma de la Niña Mariana y
@@ -70,13 +70,13 @@ const Mariana = () => {
           <img
             src={Arecma}
             alt=""
-            className="hidden lg:block lg:mb-4 lg:mt-6 lg:w-20"
+            className="hidden lg:block lg:mb-7 lg:mt-6 lg:w-20"
           />
-          <h2 className="custom-font-shadow  text-4xl lg:max-w-xl">
+          <h2 className="custom-font-shadow  text-4.5xl leading-10.5 lg:text-3xl lg:leading-9 lg:max-w-lg">
             ARECMA: Asociación Recreativa y Educativa Comunal del Barrio Mariana
           </h2>
         </div>
-        <p className="text-xl lg:text-base my-14 lg:max-w-2xl">
+        <p className="text-xlLg lg:text-base my-8 lg:my-4 lg:max-w-xl">
           La Asociación Recreativa y Educativa Comunal del Barrio Mariana es una
           organización sin fines de lucro de base comunitaria que desde el 1982
           ha trabajado por el bienestar y desarrollo integral del barrio.

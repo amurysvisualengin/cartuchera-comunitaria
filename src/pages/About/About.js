@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderRoutes from "../../components/headerRoutes/HeaderRoutes";
+
 import DataAbout from "../../assets/data/DataAbout.json";
 import Footer from "../../components/footer/Footer";
 import "./About.css";

@@ -7,18 +7,18 @@ const SaintJust = () => {
   return (
     <div>
       <div className="lg:flex lg:justify-center lg:items-center lg:mt-20">
-        <h1 className="custom-font-shadow text-4xl lg:text-6xl lg:w-103 mt-10 text-center">
+        <h1 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 lg:w-103 mt-10 text-center">
           Saint Just, Los Mirtos + San Antón
         </h1>
       </div>
-      <p className="text-xl custom-font text-center mt-10 hidden lg:block">
+      <p className="text-1.9xl custom-font text-center mt-7 hidden lg:block">
         Carolina, Puerto Rico
       </p>
-      <p className="text-xl text-center mt-10 block lg:hidden">
+      <p className="text-lg leading-6 text-center mt-10 block lg:hidden">
         Carolina, Puerto Rico
       </p>
       <div className="lg:flex justify-center">
-        <p className="text-xl lg:text-base text-center mt-10 lg:max-w-2xl">
+        <p className="text-xlLg leading-7 lg:text-base text-center mt-10 lg:max-w-2xl">
           Los barrios de San Antón y St. Just y el residencial Los Mirtos,
           localizados en la ruralía de Carolina, son hogar de una comunidad
           históricamente negra que ha atravesado la industrialización de su
@@ -38,7 +38,7 @@ const SaintJust = () => {
       </div>
       <div className="lg:flex lg:justify-center">
         <div className="lg:w-99.3 bg-black text-white mt-10 p-4 rounded">
-          <p className="text-xl lg:text-base">
+          <p className="text-xlLg leading-7 lg:text-base lg:leading-6">
             El trabajo colaborativo entre su comunidad y La Maraña bajo la
             iniciativa Imaginación Post-María permitió la reconstrucción de la
             Casa de Iris y la reconstrucción del comedor de La Conde.
@@ -54,12 +54,12 @@ const SaintJust = () => {
         style={{ backgroundColor: "#9BC2D4" }}
       >
         <div>
-          <img src={Parceleras} alt="" className="hidden lg:block lg:mt-32" />
-          <h2 className="custom-font-shadow text-3xl mt-10 lg:max-w-lg ">
+          <img src={Parceleras} alt="" className="hidden lg:block lg:mt-24" />
+          <h2 className="custom-font-shadow lg:text-3xl leading-9  mt-10 lg:max-w-lg ">
             PATBA: Parceleras Afrocaribeñas para la Transformación Barrial
           </h2>
         </div>
-        <div className="text-xl lg:text-base mt-8 lg:max-w-2xl lg:py-20">
+        <div className="text-xl lg:text-base lg:leading-6 lg:pt-24 lg:max-w-2xl lg:py-20">
           <p>
             PATBA - acrónimo de Parceleras Afrocaribeñas para la Transformación
             Barrial - es un grupo intergeneracional de vecinas de la comunidad
