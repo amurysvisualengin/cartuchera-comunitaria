@@ -7,14 +7,14 @@ const FooterForm = () => {
         <input
           type="text"
           placeholder="Email"
-          className="bg-white w-full lg:w-97 h-11 rounded mt-4 mb-3 lg:mb-0 lg:mr-3 pl-5"
+          className="bg-white text-black w-full lg:w-97 h-11 rounded mt-4 mb-3 lg:mb-0 lg:mr-3 pl-5 inter-font"
         />
 
         <button
           className="w-full lg:w-28 lg:mt-4 h-11 rounded items-center font-bold text-smTiny leading-7"
           style={{ backgroundColor: "#37B0FF" }}
         >
-          Subscríbete
+          <p>Subscríbete</p>
         </button>
       </form>
     </div>

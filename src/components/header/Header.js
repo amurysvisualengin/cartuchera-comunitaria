@@ -29,7 +29,12 @@ const Header = () => {
       {!isMobile && (
         <div>
           {!show && (
-            <div className="flex fixed z-10 right-0">
+            <div className="flex justify-between fixed z-10 ">
+              <img
+                src={CatucheraLogo}
+                alt="cartuchera logo"
+                className=" py-6 pl-15 "
+              />
               <button
                 onClick={() => {
                   setShowMenu(!showMenu);
@@ -39,7 +44,7 @@ const Header = () => {
                 <img
                   src={Hamburguer}
                   alt="menu button"
-                  className="lg:mr-8 lg: mt-2"
+                  className="lg:mr-8 lg: mt-2 top-4 right-0 fixed"
                 />
               </button>
             </div>
@@ -52,7 +57,7 @@ const Header = () => {
               <img
                 src={CatucheraLogo}
                 alt="cartuchera logo"
-                className=" m-2 lg:ml-10"
+                className=" py-6 pl-15"
               />
               <button
                 onClick={() => {

@@ -18,13 +18,17 @@ const About = () => {
       <Header />
       <Menu />
 
-      <div className="hidden lg:absolute lg:-z-10 lg:top-0">
-        <img src={BlueShape} alt="" />
+      <div className="hidden lg:flex ">
+        <img
+          src={BlueShape}
+          alt=""
+          className="lg:absolute lg:-z-10 lg:w-110 blue-top "
+        />
       </div>
-      <div className="px-4">
+      <div className="px-4 lg:mt-44">
         <div className="lg:flex justify-around lg:px-26">
           <div>
-            <h1 className="custom-font-shadow text-4.5xl leading-10.5 mt-10 mb-4 lg:text-5.5xl lg:max-w-lg lg:mb-10 lg:mt-26 lg:leading-11">
+            <h1 className="custom-font-shadow text-4.5xl leading-10.5 mt-10 mb-4 lg:text-5.5xl lg:max-w-lg lg:mb-10  lg:leading-11">
               Sobre la cartuchera
             </h1>
             {/* no funciona lg:custom-font */}
@@ -42,19 +46,19 @@ const About = () => {
               src="https://www.youtube.com/embed/DG2rSpoWA_E"
               allowFullScreen
               frameborder="0"
-              className="w-full  h-52 lg:w-97.5 xl:w-100 lg:min-w-max lg:h-96 lg:mt-40"
+              className="w-full  h-52 lg:w-97.5 xl:w-100  lg:h-96"
             ></iframe>
           </div>
         </div>
 
-        <div className="lg:flex lg:mt-48 lg:justify-center">
+        <div className="lg:flex lg:mt-48 lg:justify-center ">
           <img
             src={Childs}
             alt=""
             className="hidden lg:flex lg:visible lg:mr-20"
           />
           <div>
-            <h2 className="custom-font-shadow text-4.5xl leading-10.5  lg:text-5.5xl mt-10 ">
+            <h2 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl mt-10 ">
               ¿Qué es?
             </h2>
             <p className="text-xlLg leading-7 mt-4 lg:mt-6 lg:text-base mb-9 lg:w-98">
@@ -89,13 +93,15 @@ const About = () => {
           alt="donde nace"
           className="w-full block  lg:hidden"
         />
-        <div className="hidden lg:flex ">
-          <img
-            src={YellowShape}
-            alt="shape"
-            className="lg:absolute -z-10 right-28  transform scale-150 top-shape"
-          />
-        </div>
+        {
+          <div className="hidden lg:flex ">
+            <img
+              src={YellowShape}
+              alt="shape"
+              className="lg:absolute -z-10 right-0 overflow-x-hidden w-110.5 top-shape"
+            />
+          </div>
+        }
         <img
           src={DondeNace2}
           alt="donde nace"

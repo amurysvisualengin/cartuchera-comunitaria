@@ -9,7 +9,9 @@ import Family from "../../assets/icons/family-white.svg";
 import Paypal from "../../assets/imgs/paypal.png";
 import CreditCards from "../../assets/imgs/credit-cards.png";
 import Ath from "../../assets/imgs/ath-movil.png";
-import SocialNetworks from "../../assets/imgs/social-networks.png";
+import Facebook from "../../assets/icons/Facebook.svg";
+import Instagram from "../../assets/icons/instagram.svg";
+import Youtube from "../../assets/icons/youtube.svg";
 import GirlWhite from "../../assets/icons/girl-white.svg";
 import shape from "../../assets/icons/gray-shape.svg";
 
@@ -75,7 +77,13 @@ const Help = () => {
             <div className="lg:flex lg:mt-16">
               <div className="lg:mr-5 lg:mt-8">
                 <div className="flex justify-center">
-                  <img src={Paypal} alt="paypal" className="w-52 mb-1" />
+                  <a
+                    href="https://www.paypal.com/donate/?hosted_button_id=YVA6GKYHXCPGQ"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={Paypal} alt="paypal" className="w-52 mb-1" />
+                  </a>
                 </div>
                 <div className="flex justify-center">
                   <img
@@ -114,7 +122,39 @@ const Help = () => {
               </p>
             </div>
             <div className="flex justify-center lg:block mt-4 mb-10">
-              <img src={SocialNetworks} alt="" />
+              <ul className="flex">
+                <li className="mr-4">
+                  <a
+                    href="https://www.instagram.com/la_marana_pr/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src={Instagram}
+                      alt="instagram"
+                      className="filter invert"
+                    />
+                  </a>
+                </li>
+                <li className="mr-4">
+                  <a
+                    href="https://www.facebook.com/lamarana.pr/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={Facebook} alt="facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCKUy3fZFuIiynFWqP9zMiZg"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={Youtube} alt="" className="filter invert  w-9" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

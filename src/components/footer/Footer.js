@@ -21,7 +21,7 @@ export const Footer = () => {
 
       <div className="w-full lg:flex lg:justify-between  text-white mt-10  mx-4 lg:mx-0 lg:px-20">
         <div className="lg:max-w-xl">
-          <h1 className="font-bold text-base leading-7 mb-4 ">
+          <h1 className="font-bold text-base leading-7 mb-4 inter-font">
             La Cartuchera Comunitaria
           </h1>
           <p className="mt-4 pr-10 text-base leading-6">
@@ -31,7 +31,7 @@ export const Footer = () => {
           </p>
 
           <div className="mt-4 text-base leading-6">
-            <a href="https://www.youtube.com" className="underline">
+            <a href="https://www.youtube.com" className="underline inter-font">
               www.cartucheracomunitaria.com
             </a>
             <p>lamarana.pr@gmail.com</p>
@@ -40,7 +40,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-10 lg:mt-0 font-bold text-base leading-7">
-          <h2>Subscríbete</h2>
+          <h2 className="inter-font">Subscríbete</h2>
 
           <div>
             <FooterForm />
@@ -56,18 +56,26 @@ export const Footer = () => {
       </div>
 
       <div className="mt-10 mb-20 lg:mb-9 px-5 lg:px-20">
-        <hr />
+        <hr style={{ backgroundColor: " #474646", height: "1px", border: 0 }} />
       </div>
 
       <div className="lg:flex lg:justify-between items-center lg:mr-20">
         <ul className="lg:flex items-center px-20 hidden lg:visible lg:mb-20 ">
           <li className="mr-4">
-            <a href="">
+            <a
+              href="https://www.instagram.com/la_marana_pr/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={Instagram} alt="instagram link" />
             </a>
           </li>
           <li className="mr-4">
-            <a href="">
+            <a
+              href="https://www.facebook.com/lamarana.pr/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src={Facebook}
                 alt="Facebook link"
@@ -76,14 +84,17 @@ export const Footer = () => {
             </a>
           </li>
           <li className="">
-            <a href="">
+            <a
+              href="https://www.youtube.com/channel/UCKUy3fZFuIiynFWqP9zMiZg"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={Youtube} alt="youtube link" />
             </a>
           </li>
         </ul>
         <p className="text-xs text-white font-thin ml-5 mb-4">
           © 2021 La Cartuchera Comunitaria. All rights reserved{" "}
-          {/* Falta ocultar span en mobile */}
           <span className="hidden lg:inline">
             | Designed & Developed with love by{" "}
             <span className="underline">Mitimiti Estudio</span>

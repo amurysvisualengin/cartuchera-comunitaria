@@ -16,7 +16,7 @@ const Communities = () => {
         <Header />
       </div>
 
-      <div className="px-4 ">
+      <div>
         <SaintJust />
       </div>
       <div>

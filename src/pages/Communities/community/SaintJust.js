@@ -6,7 +6,7 @@ import "../Communities.css";
 const SaintJust = () => {
   return (
     <div>
-      <div className="lg:flex lg:justify-center lg:items-center lg:mt-20">
+      <div className="lg:flex lg:justify-center lg:items-center lg:mt-48">
         <h1 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 lg:w-103 mt-10 text-center">
           Saint Just, Los Mirtos + San Antón
         </h1>
@@ -18,7 +18,7 @@ const SaintJust = () => {
         Carolina, Puerto Rico
       </p>
       <div className="lg:flex justify-center">
-        <p className="text-xlLg leading-7 lg:text-base text-center mt-10 lg:max-w-2xl">
+        <p className="text-xlLg leading-7 lg:text-base text-center mt-10 lg:max-w-2xl mx-4 lg:mx-0">
           Los barrios de San Antón y St. Just y el residencial Los Mirtos,
           localizados en la ruralía de Carolina, son hogar de una comunidad
           históricamente negra que ha atravesado la industrialización de su
@@ -28,7 +28,7 @@ const SaintJust = () => {
           comunitario.
         </p>
       </div>
-      <div className="mt-10 lg:flex lg:justify-center">
+      <div className="mt-10 lg:flex lg:justify-center mx-4 lg:mx-0">
         <iframe
           src="https://www.youtube.com/embed/DG2rSpoWA_E"
           allowFullScreen
@@ -37,7 +37,7 @@ const SaintJust = () => {
         ></iframe>
       </div>
       <div className="lg:flex lg:justify-center">
-        <div className="lg:w-99.3 bg-black text-white mt-10 p-4 rounded">
+        <div className="lg:w-99.3 bg-black text-white mt-10 p-4 rounded mx-4 lg:mx-0">
           <p className="text-xlLg leading-7 lg:text-base lg:leading-6">
             El trabajo colaborativo entre su comunidad y La Maraña bajo la
             iniciativa Imaginación Post-María permitió la reconstrucción de la

@@ -6,3 +6,10 @@ body {
   font-size: 16px;
   background-color: #f8f5ed;
 }
+p {
+  font-family: "Inter", sans-serif;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+}

@@ -20,7 +20,7 @@ const VueltaDeDos = () => {
         <p className="text-lg text-center mt-10 block lg:hidden">
           Comerío, Puerto Rico
         </p>
-        <div className="lg:flex lg:justify-center">
+        <div className="lg:flex lg:justify-center mx-4">
           <div className="hidden lg:flex">
             <p className="text-xlLg lg:text-base lg:leading-6 text-center mt-10 lg:mt-12 lg:max-w-2xl">
               Ubicada en la exuberante región montañosa de Comerío, la
@@ -48,7 +48,7 @@ const VueltaDeDos = () => {
           <img
             src={YellowShape}
             alt=""
-            className="absolute transform scale-150 -right-12 shape-position"
+            className="absolute transform right-0 w-106.5 shape-position"
           />
         </div>
         <div className="lg:flex lg:justify-evenly lg:mt-24">
