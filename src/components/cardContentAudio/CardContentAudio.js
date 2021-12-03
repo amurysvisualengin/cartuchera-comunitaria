@@ -9,7 +9,7 @@ const CardContentAudio = (props) => {
 
   return (
     <div
-      className="h-screem"
+      className="h-screem overflow-hidden"
       style={{ backgroundColor: isMobile ? color : "transparent" }}
     >
       {!isMobile && (
@@ -21,7 +21,9 @@ const CardContentAudio = (props) => {
       )}
 
       <div
-        className=" flex justify-end  lg:mt-4 lg:mr-10 hover-button"
+        className={`flex justify-end  lg:mt-4 lg:mr-10 ${
+          !isMobile && "hover-button"
+        } `}
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
@@ -33,76 +35,76 @@ const CardContentAudio = (props) => {
           <img src={CloseButton} alt="" className=" " />
         </button>
       </div>
-      <div className="flex justify-center lg:mt-16 lg:mr-5 pb-20 ">
+      <div className="lg:flex lg:justify-center lg:mt-14 lg:mr-5 pb-20 ">
         {!isMobile && (
           <img src={img} alt="play logo" className="mr-16 w-20 h-full " />
         )}
-        <div className="flex justify-center">
-          <div
-            className={`block ${
-              isMobile ? (isTablet < 768 ? "w-full mx-5" : "") : ""
-            }`}
-          >
+        <div className="lg:flex lg:justify-center mx-4 lg:mx-0">
+          <div className={`block `}>
             <h2
-              className="bg-black lg:text-xl lg:w-20 lg:py-1 mt-10 lg:mt-0 rounded item-center w-14 px-1"
+              className="bg-black inter-font text-xs text-center w-16 lg:w-20 p-2 rounded item-center"
               style={{ color: color }}
             >
               VIDEO
             </h2>
             <h1
-              className={`custom-font-shadow mt-4 text-left  ${
-                isTablet > 767 && isTablet < 1024
-                  ? "text-6xl"
-                  : "text-4xl lg:text-6xl"
-              }`}
+              className={`custom-font-shadow mt-6 text-left text-4.5xl  lg:text-5.5xl lg:leading-11`}
             >
               Videogalería
             </h1>
             <h2
-              className={`text-left mt-4 ${
-                isMobile
-                  ? isTablet > 767 && isTablet < 1024
-                    ? "text-xl custom-font"
-                    : "text-xl w-72 "
-                  : "text-xl custom-font"
-              }`}
+              className={`text-left mt-6 lg:mt-10 ${
+                isMobile ? "inter-font text-xlLg" : "custom-font text-1.9xl"
+              } `}
             >
               {cardContent.videoType}
             </h2>
             {cardContent.videoInfoContainer.map((element, index) => (
-              <div
-                className={` text-left items-center mt-10 ${
-                  isTablet > 767 && isTablet < 1024 ? "w-100" : "w-90 lg:w-100"
-                }`}
-              >
-                <div className="border-4 rounded border-black">
-                  <h2
-                    className="custom-font bg-black  text-xs lg:text-sm p-2 lg:pl-4 lg:py-2"
-                    style={{ color: color }}
-                  >
-                    {element.question.toUpperCase()}
-                  </h2>
-                  <p
-                    className={`m-2 ${
-                      isTablet < 768 ? "text-sm" : "text-base"
-                    }`}
-                  >
-                    {element.answer}
-                  </p>
-                </div>
-                <div className="mt-4">
-                  <iframe
-                    src={element.url}
-                    frameborder="0"
-                    allowFullScreen
-                    title="video"
-                    className={` ${
-                      isTablet > 767 && isTablet < 1024
-                        ? "w-100 h-97"
-                        : "w-90 lg:w-100 h-64 lg:h-90"
-                    }`}
-                  ></iframe>
-                </div>
+              <div className="overflow-hidden">
+                {!isMobile && (
+                  <div className={`text-left items-center mt-10 w-100`}>
+                    <div className="border-2 rounded border-black">
+                      <h2
+                        className="custom-font bg-black lg:text-sm p-4 "
+                        style={{ color: color }}
+                      >
+                        {element.question.toUpperCase()}
+                      </h2>
+                      <p className={`p-4 text-base`}>{element.answer}</p>
+                    </div>
+                    <div className="mt-4">
+                      <iframe
+                        src={element.url}
+                        frameborder="0"
+                        allowFullScreen
+                        title="video"
+                        className={`w-100 h-90`}
+                      ></iframe>
+                    </div>
+                  </div>
+                )}
+                {isMobile && (
+                  <div className={`text-left mt-10 `}>
+                    <div className="mt-4">
+                      <iframe
+                        src={element.url}
+                        frameborder="0"
+                        allowFullScreen
+                        title="video"
+                        className={`w-full h-auto rounded-md`}
+                      ></iframe>
+                    </div>
+                    <div className="border-2 rounded border-black mt-6">
+                      <h2
+                        className="custom-font bg-black text-sm leading-5 p-4 "
+                        style={{ color: color }}
+                      >
+                        {element.question.toUpperCase()}
+                      </h2>
+                      <p className={`p-4 text-xlLg`}>{element.answer}</p>
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>

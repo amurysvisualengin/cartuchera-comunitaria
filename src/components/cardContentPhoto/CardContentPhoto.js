@@ -32,7 +32,7 @@ function CardContentPhoto(props) {
           <img src={CloseButton} alt="" />
         </button>
       </div>
-      <div className="flex justify-center  mt-16 lg:ml-0 lg:mt-16">
+      <div className="flex justify-center  lg:mx-0  lg:ml-0 lg:mt-16">
         {!isMobile && <img src={img} alt="" className="w-20 h-full mr-10" />}
         <div className="flex justify-center pb-32">
           <div
@@ -41,62 +41,38 @@ function CardContentPhoto(props) {
             }`}
           >
             <div
-              className={`bg-black  lg:w-32 rounded text-xs lg:text-base ${
-                isMobile
-                  ? isTablet < 768
-                    ? "ml-0  w-14 py-1 text-center items-center"
-                    : "text-base w-14 text-center items-center"
-                  : ""
-              }`}
+              className={`bg-black p-2 w-14 text-center rounded text-xs lg:text-xs`}
               style={{ color: color }}
             >
               <p>FOTO</p>
             </div>
 
             <h1
-              className={`custom-font-shadow text-left text-4xl lg:text-6xl mt-4 mb-4 lg:w-107 ${
-                isTablet > 769 && isMobile < 1024
-                  ? "text-5xl"
-                  : "text-4xl lg:text-6xl mt-4 mb-4 lg:w-107"
-              }`}
+              className={`custom-font-shadow text-left text-4.5xl lg:text-5.5xl mt-4 mb-4 lg:w-107 `}
             >
               {cardContent.typeName}
             </h1>
             <h2
-              className={`text-left  ${
+              className={`text-left ${
                 isMobile
-                  ? isTablet > 769 && isMobile < 1024
-                    ? "text-xl custom-font"
-                    : "text-xl"
-                  : "text-2xl custom-font"
+                  ? "inter-font text-lg mt-6 mb-6"
+                  : "custom-font text-1.9xl mt-10"
               }`}
             >
               {cardContent.subTitle}{" "}
             </h2>
             {!isMobile && (
               <p
-                className="custom-font text-left text-base bg-black lg:max-w-4xl xl items-center p-2 rounded mt-6"
+                className="custom-font text-left lg:text-sm bg-black  items-center p-4 rounded mt-6"
                 style={{ color: color }}
               >
                 {cardContent.description.toUpperCase()}
               </p>
             )}
-            <img
-              src={cardContent.picture}
-              alt="Foto"
-              className={`  ${
-                isMobile
-                  ? isTablet > 767 && isTablet < 1224
-                    ? "w-100 mt-8"
-                    : "mobile-size mt-4"
-                  : "lg:mt-20  lg:transform lg:scale-100"
-              }`}
-            />
+            <img src={cardContent.picture} alt="Foto" className={`w-full `} />
             {isMobile && (
               <p
-                className={`custom-font text-left  bg-black  items-center p-2 rounded mt-6 ${
-                  isTablet > 767 && isTablet < 1224 ? "w-100" : "w-90 text-sm"
-                }`}
+                className={`custom-font text-left  bg-black  items-center p-2 rounded mt-6`}
                 style={{ color: color }}
               >
                 {cardContent.description}

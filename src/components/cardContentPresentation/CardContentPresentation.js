@@ -14,7 +14,7 @@ const CardContentPresentation = (props) => {
   const { isMobile, setIsExpand, isTablet } = useContext(CardListContext);
 
   return (
-    <div style={{ backgroundColor: isMobile ? color : "" }}>
+    <div className="pb-20" style={{ backgroundColor: isMobile ? color : "" }}>
       <div
         className="flex justify-end lg:mt-4 lg:mr-10 hover-button"
         onClick={() => {
@@ -28,8 +28,8 @@ const CardContentPresentation = (props) => {
           <img src={CloseButton} alt="" />
         </button>
       </div>
-      <div className="flex justify-center lg:mt-8 lg:mr-20 ">
-        <div className={`block  ${isTablet < 768 ? "mr-3" : "mr-2"}`}>
+      <div className="lg:flex lg:justify-center lg:mt-8 lg:mr-20 ">
+        <div className={` ${isTablet < 768 ? "mr-3" : "mr-2"}`}>
           {!isMobile && (
             <div>
               <img src={cardContent.nameSvg} alt="name SVG" className="ml-52" />
@@ -37,15 +37,15 @@ const CardContentPresentation = (props) => {
             </div>
           )}
         </div>
-        <div className="block ">
+        <div className="block mx-4 lg:mx-0 ">
           <h2
-            className="text-white rounded-md text-xs lg:text-sm bg-black w-24 lg:w-28 mt-10 mb-6 py-1 px-1 "
+            className="text-white rounded-md text-sm text-center bg-black w-32 mt-10 mb-6 py-1 px-1 inter-font "
             style={{ color: color }}
           >
             PRESENTACIÓN
           </h2>
           <h1
-            className={`text-left custom-font-shadow lg:w-100 lg:text-5xl ${
+            className={`text-left custom-font-shadow lg:w-100 text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 ${
               isTablet < 767 ? "text-3xl" : "text-4xl "
             }`}
           >
@@ -59,30 +59,28 @@ const CardContentPresentation = (props) => {
                   : "block"
               }`}
             >
-              <div>
-                <img
-                  src={cardContent.nameSvg}
-                  alt="name SVG"
-                  className="mt-10 ml-28"
-                />
-                <img src={img} alt="icon type" className="ml-4 w-40 mr-4 " />
+              <div className="flex justify-center">
+                <div>
+                  <img
+                    src={cardContent.nameSvg}
+                    alt="name SVG"
+                    className="mt-10 ml-28"
+                  />
+                  <img src={img} alt="icon type" className="ml-4 w-40 mr-4 " />
+                </div>
               </div>
             </div>
           )}
-          <div
-            className={`mt-6 text-left lg:w-100 ${
-              isTablet < 767 ? "w-90" : "w-100 "
-            }`}
-          >
-            <h2 className="font-bold lg:text-lg">{cardContent.subTitle}</h2>
-            <h2 className=" lg:text-lg mt-4">
+          <div className={`mt-10 lg:mt-6 text-left w-full lg:w-100`}>
+            <h2 className="font-bold lg:text-base lg:mt-10 inter-font">
+              {cardContent.subTitle}
+            </h2>
+            <h2 className=" lg:text-base mt-2 lg:mt-6 inter-font">
               {cardContent.description}
               <span className="font-bold">{cardContent.sentence}</span>
             </h2>
             <div
-              className={`border-4 border-black rounded-md mt-6 lg:w-100 mb-10 lg:mb-0 ${
-                isTablet < 767 ? "w-90" : "w-100"
-              }`}
+              className={`border-4 border-black rounded-md mt-10 w-full lg:w-100 lg:mb-0 `}
             >
               <h2
                 className=" text-white text-sm tracking-widest border-2 border-black bg-black py-2 px-2 custom-font"
@@ -90,11 +88,7 @@ const CardContentPresentation = (props) => {
               >
                 ¿CONOCES A ALGUIEN QUE SE PAREZCA A {cardContent.name}?
               </h2>
-              <p
-                className={`mt-4 ml-4 mr-4 lg:text-lg  lg:w-99.5 ${
-                  isTablet < 767 ? "w-48" : "w-99.5"
-                }`}
-              >
+              <p className={`mt-4 px-2 lg:text-lg w-fulll lg:w-99.5 `}>
                 ¡Queremos conocerla! Escribe a{" "}
                 <b>info@cartucheracomunitaria.com</b> o accede a nuestras redes
                 para contarnos quién es y cuál es su rol en la comunidad.

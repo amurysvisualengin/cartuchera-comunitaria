@@ -77,7 +77,7 @@ const Routess = () => {
         mobileHeight,
         SetMobileHeight,
         firstTouch,
-        setFirstTouch
+        setFirstTouch,
       }}
     >
       <BrowserRouter basename="cartuchera-comunitaria">

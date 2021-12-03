@@ -49,7 +49,14 @@ export const Footer = () => {
               className="text-xs font-thin "
               style={{ color: "#FFFFFF" }}
             >
-              Aceptar terminos y condiciones{" "}
+              <p className="block lg:hidden">Aceptar terminos y condiciones</p>
+              <p
+                className="hidden lg:block lg:max-w-sm lg:text-xs lg:leading-4 lg:mt-4"
+                style={{ color: "#FFFFFF" }}
+              >
+                Añade tu correo electrónico para recibir las últimas noticias
+                sobre la Cartuchera Comunitaria y otros proyectos de La Maraña.
+              </p>
             </a>
           </div>
         </div>
@@ -93,7 +100,7 @@ export const Footer = () => {
             </a>
           </li>
         </ul>
-        <p className="text-xs text-white font-thin ml-5 mb-4">
+        <p className="text-xs    font-thin ml-5 mb-4">
           © 2021 La Cartuchera Comunitaria. All rights reserved{" "}
           <span className="hidden lg:inline">
             | Designed & Developed with love by{" "}

@@ -30,6 +30,7 @@ const CardContentText = (props) => {
           <img src={CloseButton} alt="" />
         </button>
       </div>
+
       <div className="block lg:flex justify-center ">
         <img
           src={img}
