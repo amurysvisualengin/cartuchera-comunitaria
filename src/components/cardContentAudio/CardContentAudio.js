@@ -91,7 +91,7 @@ const CardContentAudio = (props) => {
                         frameborder="0"
                         allowFullScreen
                         title="video"
-                        className={`w-full h-auto rounded-md`}
+                        className={`w-full h-48 rounded-md`}
                       ></iframe>
                     </div>
                     <div className="border-2 rounded border-black mt-6">
