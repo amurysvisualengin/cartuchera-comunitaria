@@ -56,7 +56,7 @@ const Contact = () => {
               />
               <input
                 type="text"
-                placeholder="Mansaje (opcional)"
+                placeholder="Mensaje (opcional)"
                 className="mb-4 w-full pb-36 rounded px-4 border-form"
               />
               <button

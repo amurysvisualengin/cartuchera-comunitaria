@@ -53,13 +53,13 @@ const SaintJust = () => {
         className="p-4 lg:flex justify-around"
         style={{ backgroundColor: "#9BC2D4" }}
       >
-        <div>
+        <div className="">
           <img src={Parceleras} alt="" className="hidden lg:block lg:mt-24" />
-          <h2 className="custom-font-shadow lg:text-3xl leading-9  mt-10 lg:max-w-lg ">
+          <h2 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-3xl lg:leading-9 mt-10 lg:max-w-lg ">
             PATBA: Parceleras Afrocaribeñas para la Transformación Barrial
           </h2>
         </div>
-        <div className="text-xl lg:text-base lg:leading-6 lg:pt-24 lg:max-w-2xl lg:py-20">
+        <div className=" text-xl lg:text-base lg:leading-6 lg:pt-24 lg:max-w-2xl lg:py-20">
           <p>
             PATBA - acrónimo de Parceleras Afrocaribeñas para la Transformación
             Barrial - es un grupo intergeneracional de vecinas de la comunidad

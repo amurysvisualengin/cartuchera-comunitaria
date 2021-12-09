@@ -93,10 +93,19 @@ const Card = (props) => {
                 className={`${
                   isTablet < 768
                     ? type === "Presentation"
-                      ? "top-24 "
+                      ? mobileHeight < 569
+                        ? "top-20 h-56"
+                        : "top-24 "
                       : type === "Herramientas"
-                      ? "top-48"
-                      : "top-40 "
+                      ? mobileHeight < 569
+                        ? "top-40"
+                        : "top-48"
+                      : (type === "Rompehielos" ||
+                          type === "Audiovisual" ||
+                          type === "Photo") &&
+                        mobileHeight < 569
+                      ? "top-32"
+                      : "top-40"
                     : type === "Presentation"
                     ? "top-40"
                     : type === "Herramientas"
@@ -105,7 +114,6 @@ const Card = (props) => {
                 } absolute bottom-0 w-40 ${
                   cardContent === "disabled" && "pl-10 pr-10 w-full"
                 }`}
-                // className={` ${isMobile ? "w-40" : "w-36"}`}
                 src={img}
                 alt=""
                 srcSet=""
@@ -116,12 +124,7 @@ const Card = (props) => {
         {!isMobile && (
           <div>
             <p className="custom-font text-right items-start">{cardNumber}</p>
-            <img
-              className={` ${isMobile ? "mt-4 w-80 h-64" : "w-36 h-60"}`}
-              src={img}
-              alt=""
-              srcSet=""
-            />
+            <img className={`w-36 h-60`} src={img} alt="" srcSet="" />
           </div>
         )}
 
