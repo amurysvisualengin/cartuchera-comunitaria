@@ -55,7 +55,7 @@ const SaintJust = () => {
       >
         <div className="">
           <img src={Parceleras} alt="" className="hidden lg:block lg:mt-24" />
-          <h2 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-3xl lg:leading-9 mt-10 lg:max-w-lg ">
+          <h2 className="custom-font-shadow break-words text-4.5xl leading-10.5 lg:text-3xl lg:leading-9 mt-10 lg:max-w-lg ">
             PATBA: Parceleras Afrocaribeñas para la Transformación Barrial
           </h2>
         </div>

@@ -22,12 +22,12 @@ const ColorFilterMobile = (props) => {
       <button
         className={`${
           changeColorMobile ? "rounded-full border-2 border-black" : ""
-        } w-10 h-10`}
+        } w-7.5 h-7.5`}
         style={{ background: changeColorMobile }}
       >
         <img
           src={AllColors}
-          style={{ width: 40, height: 40 }}
+          style={{ width: 30, height: 30 }}
           alt=""
           className={` ${!changeColorMobile ? "block" : "hidden"} `}
         />

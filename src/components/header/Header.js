@@ -80,20 +80,23 @@ const Header = () => {
       {isMobile && (
         <div className="flex justify-between items-center bottom-shadow ">
           <img src={CatucheraLogo} alt="" className="  p-4 " />
+          {/* info button div */}
+          <div className="absolute right-12 top-4">
+            <button
+              className="custom-font-shadow text-white bg-black text-xs px-2 h-6 mt-3 mr-5 rounded"
+              onClick={() => {
+                setShowInformation(!showInformation);
+              }}
+            >
+              INFO
+            </button>
+          </div>
+          <div className="fixed overflow-scroll top-0 left-0 bottom-0 z-50">
+            <InfoMobile />
+          </div>
           <div>
             {!show && (
               <div className="flex">
-                <button
-                  className="custom-font-shadow text-white bg-black text-xs px-2 h-6 mt-3 mr-5 rounded"
-                  onClick={() => {
-                    setShowInformation(!showInformation);
-                  }}
-                >
-                  INFO
-                </button>
-                <div className="absolute top-0 left-0 bottom-0 z-50">
-                  <InfoMobile />
-                </div>
                 <button
                   onClick={() => {
                     setShowMenu(!showMenu);
