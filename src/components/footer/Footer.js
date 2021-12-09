@@ -100,7 +100,7 @@ export const Footer = () => {
             </a>
           </li>
         </ul>
-        <p className="text-xs    font-thin ml-5 mb-4">
+        <p className="text-xs text-white font-thin ml-5 mb-4">
           © 2021 La Cartuchera Comunitaria. All rights reserved{" "}
           <span className="hidden lg:inline">
             | Designed & Developed with love by{" "}

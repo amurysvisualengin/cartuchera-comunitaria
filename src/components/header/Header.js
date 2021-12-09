@@ -2,10 +2,17 @@ import React, { useContext, useEffect, useState } from "react";
 import CatucheraLogo from "../../assets/icons/cartuchera-logo.svg";
 import Hamburguer from "../../assets/icons/hamburguer.svg";
 import CardListContext from "../../context/CardListContext";
+import InfoMobile from "../infoMobile/InfoMobile";
 import "./Header.css";
 
 const Header = () => {
-  const { showMenu, setShowMenu, isMobile } = useContext(CardListContext);
+  const {
+    showMenu,
+    setShowMenu,
+    isMobile,
+    setShowInformation,
+    showInformation,
+  } = useContext(CardListContext);
   const [show, setShow] = useState(false);
 
   const hideHeader = () => {
@@ -75,7 +82,18 @@ const Header = () => {
           <img src={CatucheraLogo} alt="" className="  p-4 " />
           <div>
             {!show && (
-              <div className="">
+              <div className="flex">
+                <button
+                  className="custom-font-shadow text-white bg-black text-xs px-2 h-6 mt-3 mr-5 rounded"
+                  onClick={() => {
+                    setShowInformation(!showInformation);
+                  }}
+                >
+                  INFO
+                </button>
+                <div className="absolute top-0 left-0 bottom-0 z-50">
+                  <InfoMobile />
+                </div>
                 <button
                   onClick={() => {
                     setShowMenu(!showMenu);

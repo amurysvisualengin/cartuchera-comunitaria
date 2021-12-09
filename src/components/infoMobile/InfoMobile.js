@@ -39,36 +39,24 @@ const InfoMobile = () => {
             if (showInformation) setShowInformation(!showInformation);
           }}
         >
-          <button className={`mt-4 mr-4 w-12`}>
+          <button className={`mt-4 mr-4 `}>
             <img src={CloseButton} alt="" className="filter invert" />
           </button>
         </div>
 
-        <div className=" mt-4 m-4">
-          <h1 className="w-12 bg-white text-center rounded-md ml-3">INFO</h1>
+        <div className="w-full mt-4 p-4">
+          <h1 className="w-12 inter-font text-xs p-2 bg-white font-bold text-center rounded-md mb-6">
+            INFO
+          </h1>
           <div className="text-left text-white ">
-            <h1
-              className={`custom-font-shadow mt-4  ml-2 mb-10 ${
-                isTablet < 767 ? "text-4xl" : "text-5xl"
-              }`}
-            >
-              Instrucciones
-            </h1>
+            <h1 className={`custom-font-shadow text-4.5xl`}>Instrucciones</h1>
             <div className="pb-20">
               {infoContainer.map((element, index) => (
-                <div className="text-white m-3">
-                  <h1
-                    className={`custom-font mb-4 ${
-                      isTablet < 767 ? "text-xl" : "text-3xl"
-                    }`}
-                  >
+                <div className="text-white my-3">
+                  <h1 className="custom-font text-base leading-6">
                     {element.title}
                   </h1>
-                  <h2
-                    className={`${
-                      isTablet < 767 ? "text-base pb-4" : "text-xl pb-4"
-                    }`}
-                  >
+                  <h2 className="inter-font text-base mt-4">
                     {element.description}
                   </h2>
                 </div>

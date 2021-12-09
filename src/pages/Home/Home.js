@@ -24,11 +24,11 @@ const Home = () => {
           className="w-full h-52 lg:w-99 lg:h-90 lg:mt-44"
         ></iframe>
       </div>
-      <div className="flex justify-center items-center mt-10 lg:mt-20">
+      <div className="lg:flex lg:justify-center lg:items-center px-4 lg:px-0 mt-10 lg:mt-20">
         <div>
           <ul className="lg:flex">
             <li
-              className="px-2 h-14 mx-4 lg:w-90 flex items-center justify-center rounded-lg mb-4 box-hover"
+              className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg mb-4 box-hover"
               style={{ backgroundColor: "#9BC2D4" }}
             >
               <a
@@ -40,12 +40,12 @@ const Home = () => {
               </a>
             </li>
             <li
-              className="px-2 h-14 mx-4 lg:w-90 flex items-center justify-center rounded-lg mb-4 box-hover"
+              className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg mb-4 box-hover"
               style={{ backgroundColor: "#E1AC47" }}
             >
               <Link
                 to="/app"
-                className="flex justify-center custom-font mx-4 text-sm "
+                className="flex justify-center custom-font  text-sm "
               >
                 <img
                   src={Presentation}
@@ -56,7 +56,7 @@ const Home = () => {
               </Link>
             </li>
             <li
-              className="px-2 h-14 mx-4 lg:w-90 flex items-center justify-center rounded-lg box-hover"
+              className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg box-hover"
               style={{ backgroundColor: "#BCBC68" }}
             >
               <a

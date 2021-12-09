@@ -61,9 +61,19 @@ const Menu = (props) => {
           )}
 
           {isMobile && (
-            <ul className="cursor-pointer text-left ml-6">
+            <ul
+              className="cursor-pointer text-left ml-6"
+              onClick={() => {
+                if (showMenu) {
+                  setShowMenu(!showMenu);
+                }
+              }}
+            >
               <li className="hover:text-red-400 mb-10 lg:mb-0">
                 <Link to="/">Inicio</Link>
+              </li>
+              <li className="hover:text-yellow-200 mb-10 ">
+                <Link to="/sobre-nosotros">Sobre la cartuchera</Link>
               </li>
               <li className="hover:text-yellow-200 mb-10">
                 <Link to="/app">Cartuchera Comunitaria</Link>

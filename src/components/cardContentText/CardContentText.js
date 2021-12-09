@@ -31,11 +31,11 @@ const CardContentText = (props) => {
         </button>
       </div>
 
-      <div className="block lg:flex justify-center ">
+      <div className="block lg:flex lg:justify-center ">
         <img
           src={img}
           alt="rompehielos logo"
-          className={`${isMobile ? "hidden" : "mr-16 w-60 ml-72 h-full mt-16"}`}
+          className={`${isMobile ? "hidden" : "mr-16 w-60 h-full mt-16"}`}
         />
 
         <div className={`block mt-16 text-left ml-3 lg:ml-0`}>
