@@ -17,7 +17,7 @@ const Home = () => {
         <Header />
       </div>
       <div className="lg:flex lg:justify-center">
-        <iframe
+         <iframe
           src="https://www.youtube.com/embed/DG2rSpoWA_E"
           allowFullScreen
           frameborder="0"
@@ -28,7 +28,7 @@ const Home = () => {
         <div>
           <ul className="lg:flex">
             <li
-              className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg mb-4 box-hover"
+              className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg mb-4 lg:mr-6 box-hover"
               style={{ backgroundColor: "#9BC2D4" }}
             >
               <a
@@ -40,7 +40,7 @@ const Home = () => {
               </a>
             </li>
             <li
-              className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg mb-4 box-hover"
+              className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg mb-4 lg:mr-6 box-hover"
               style={{ backgroundColor: "#E1AC47" }}
             >
               <Link

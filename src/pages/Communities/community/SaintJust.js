@@ -2,6 +2,7 @@ import React from "react";
 import TransparentShape from "../../../assets/icons/transparent-shape.svg";
 import Parceleras from "../../../assets/icons/parceleras-afro-caribenas.svg";
 import "../Communities.css";
+import Carousel from "../../../components/carousel/Carousel";
 
 const SaintJust = () => {
   return (
@@ -48,7 +49,9 @@ const SaintJust = () => {
       <div className="block lg:hidden">
         <img src={TransparentShape} alt="" className="absolute top-absolute" />
       </div>
-      <div className="mt-10">Carrousel</div>
+      <div>
+        <Carousel />
+      </div>
       <div
         className="p-4 lg:flex justify-around"
         style={{ backgroundColor: "#9BC2D4" }}
