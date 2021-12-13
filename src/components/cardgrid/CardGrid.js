@@ -67,11 +67,11 @@ const CardGrid = () => {
 
   if (isMobile) {
     return (
-      <div className>
+      <div>
         {!isExpand && (
           <div className="h-screen" style={{ background: "#f5e3b0" }}>
             <Swiper />
-            <div className={`flex`}>
+            <div>
               <CardShuffle list={list} setList={setList} />
             </div>
             <div

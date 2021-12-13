@@ -93,7 +93,7 @@ const Sidebar = (props) => {
     isSidebarVisible,
     isTablet,
   } = useContext(CardListContext);
-
+  console.log("kitfilter:", kitFilter);
   return (
     <div className="right-shadow">
       <div
@@ -167,10 +167,16 @@ const Sidebar = (props) => {
                 </div>
               ))}
             </div>
+            {kitFilter === "" && typeFilter === "" && (
+              <div className={`w-96 absolute bottom-10`}>
+                <SocialMedia />
+              </div>
+            )}
+            {(kitFilter !== "" || typeFilter !== "") && <SocialMedia />}
 
-            <div className="w-96 absolute bottom-10 ">
+            {/* <div className={`w-96 absolute bottom-10`}>
               <SocialMedia />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

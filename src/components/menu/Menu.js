@@ -6,7 +6,7 @@ import CloseButton from "../../assets/icons/close.svg";
 
 const Menu = (props) => {
   const { isMobile, showMenu, setShowMenu } = useContext(CardListContext);
-  console.log(showMenu);
+
   return (
     <div
       className={`fixed z-20  w-full h-full opacity-90 ${
