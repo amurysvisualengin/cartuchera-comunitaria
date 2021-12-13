@@ -173,10 +173,6 @@ const Sidebar = (props) => {
               </div>
             )}
             {(kitFilter !== "" || typeFilter !== "") && <SocialMedia />}
-
-            {/* <div className={`w-96 absolute bottom-10`}>
-              <SocialMedia />
-            </div> */}
           </div>
         </div>
       </div>

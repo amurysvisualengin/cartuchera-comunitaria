@@ -31,9 +31,14 @@ export const Footer = () => {
           </p>
 
           <div className="mt-4 text-base leading-6">
-            <a href="https://www.youtube.com" className="underline inter-font">
-              www.cartucheracomunitaria.com
-            </a>
+            <div className="mr-10">
+              <a
+                href="https://www.youtube.com"
+                className="underline inter-font break-all"
+              >
+                www.cartucheracomunitaria.com
+              </a>
+            </div>
             <p>lamarana.pr@gmail.com</p>
             <p>San Juan, Puerto Rico</p>
           </div>

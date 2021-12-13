@@ -17,9 +17,9 @@ const Home = () => {
         <Header />
       </div>
       <div className="lg:flex lg:justify-center">
-         <iframe
-          src="https://www.youtube.com/embed/DG2rSpoWA_E"
-          allowFullScreen
+        <iframe
+          src="https://player.vimeo.com/video/639634522?h=eebafcdd44"
+          fullscreen
           frameborder="0"
           className="w-full h-52 lg:w-99 lg:h-90 lg:mt-44"
         ></iframe>
@@ -32,7 +32,9 @@ const Home = () => {
               style={{ backgroundColor: "#9BC2D4" }}
             >
               <a
-                href=""
+                href="https://player.vimeo.com/video/639634522?h=eebafcdd44"
+                target="_blank"
+                rel="noreferrer"
                 className="flex justify-center items-center custom-font mx-4 text-sm"
               >
                 <img src={Play} alt="" className="filter invert mr-4" />
