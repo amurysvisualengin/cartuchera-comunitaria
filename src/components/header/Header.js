@@ -12,6 +12,7 @@ const Header = () => {
     isMobile,
     setShowInformation,
     showInformation,
+    isExpand,
   } = useContext(CardListContext);
   const [show, setShow] = useState(false);
 
@@ -78,7 +79,13 @@ const Header = () => {
         </div>
       )}
       {isMobile && (
-        <div className="flex justify-between items-center bottom-shadow ">
+        <div
+          className={`${
+            isExpand
+              ? "hidden"
+              : "flex justify-between items-center bottom-shadow"
+          } `}
+        >
           <img src={CatucheraLogo} alt="" className="  p-4 " />
           {/* info button div */}
           <div className="absolute right-12 top-4">

@@ -28,7 +28,7 @@ const Menu = (props) => {
         </button>
       </div>
 
-      <div className="flex justify-center items-center mt-16 ">
+      <div className="flex justify-center items-center lg:mt-16 ">
         <div className="block text-white custom-font-shadow text-3xl lg:text-5xl">
           {!isMobile && (
             <ul
@@ -62,26 +62,26 @@ const Menu = (props) => {
 
           {isMobile && (
             <ul
-              className="cursor-pointer text-left ml-6"
+              className=" cursor-pointer text-left mx-4"
               onClick={() => {
                 if (showMenu) {
                   setShowMenu(!showMenu);
                 }
               }}
             >
-              <li className="hover:text-red-400 mb-10 lg:mb-0">
+              <li className="hover:text-red-400 mt-4 mb-8 lg:mb-0">
                 <Link to="/">Inicio</Link>
               </li>
-              <li className="hover:text-yellow-200 mb-10 ">
+              <li className="hover:text-yellow-200 mb-8 ">
                 <Link to="/sobre-nosotros">Sobre la cartuchera</Link>
               </li>
-              <li className="hover:text-yellow-200 mb-10">
+              <li className="hover:text-yellow-200 mb-8">
                 <Link to="/app">Cartuchera Comunitaria</Link>
               </li>
-              <li className="hover:text-blue-300 mb-10">
+              <li className="hover:text-blue-300 mb-8">
                 <Link to="/tres-comunidades">Tres comunidades</Link>
               </li>
-              <li className="hover:text-green-600 mb-10">
+              <li className="hover:text-green-600 mb-8">
                 <Link to="/como-ayudar">Cómo ayudar</Link>
               </li>
               <li className="hover:text-yellow-700">
