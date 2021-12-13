@@ -105,7 +105,7 @@ const Sidebar = (props) => {
         {/* <img src={CartucheraLogo} alt="" /> */}
         <div className="flex mt-16">
           <img src={Check} alt="" className="mr-4" />
-          <h1 className="text-3xl custom-font">Intrucciones</h1>
+          <h1 className="text-3xl custom-font">Instrucciones</h1>
         </div>
 
         <div className="kits mt-14 items-center">

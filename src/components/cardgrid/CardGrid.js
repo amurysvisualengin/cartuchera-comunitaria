@@ -67,7 +67,7 @@ const CardGrid = () => {
 
   if (isMobile) {
     return (
-      <div className="h-screen" style={{ backgroundColor: "#f5e3b0" }}>
+      <div className="h-full" style={{ backgroundColor: "#f5e3b0" }}>
         {!isExpand && (
           <div>
             <Swiper />
