@@ -17,6 +17,7 @@ import Check from "../../assets/icons/check.svg";
 import Presentacion from "../../assets/icons/presentacion.svg";
 import Fotos from "../../assets/icons/Fotos.svg";
 import CartucheraLogo from "../../assets/icons/cartuchera-logo.svg";
+import InfoMobile from "../infoMobile/InfoMobile";
 
 const Sidebar = (props) => {
   const filters = [
@@ -91,9 +92,14 @@ const Sidebar = (props) => {
     typeFilter,
     setTypeFilter,
     isSidebarVisible,
-    isTablet,
+    showInformation,
+    setShowInformation,
   } = useContext(CardListContext);
-  console.log("kitfilter:", kitFilter);
+
+  const handleShowInfo = () => {
+    setShowInformation(!showInformation);
+  };
+
   return (
     <div className="right-shadow">
       <div
@@ -102,10 +108,15 @@ const Sidebar = (props) => {
           isSidebarVisible ? "block mt-0" : "hidden"
         } xl:block xl:h-full`}
       >
-        {/* <img src={CartucheraLogo} alt="" /> */}
-        <div className="flex mt-16">
-          <img src={Check} alt="" className="mr-4" />
-          <h1 className="text-3xl custom-font">Instrucciones</h1>
+        <button onClick={handleShowInfo}>
+          <div className="flex mt-16">
+            <img src={Check} alt="" className="mr-4" />
+
+            <h1 className="text-3xl custom-font">Instrucciones</h1>
+          </div>
+        </button>
+        <div className="fixed overflow-scroll top-0 left-0 bottom-0 z-50">
+          <InfoMobile />
         </div>
 
         <div className="kits mt-14 items-center">
