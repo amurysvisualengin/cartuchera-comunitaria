@@ -40,11 +40,13 @@ const CardContentPdf = (props) => {
         {!isMobile && <img src={img} alt="" className="mr-20 w-44" />}
         <div className="flex justify-center items-center">
           <div className={`block mx-4 lg:mx-0 w-full lg:w-104`}>
-            <div
-              className={`bg-black rounded text-xs text-center px-2 py-2 w-28 `}
-              style={{ color: color }}
-            >
-              <p>HERRAMIENTA</p>
+            <div>
+              <p
+                className={`bg-black rounded text-xs font-bold tracking-special text-center px-2 py-2 w-32 `}
+                style={{ color: color }}
+              >
+                HERRAMIENTA
+              </p>
             </div>
             <h1
               className={`custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl mt-6 text-left lg:leading-11 `}
