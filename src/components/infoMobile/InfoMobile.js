@@ -32,7 +32,7 @@ const InfoMobile = () => {
   ];
   return (
     <div className={`${!showInformation ? "hidden" : "visible"}`}>
-      <div className=" bg-black h-full lg:h-screen">
+      <div className=" bg-black min-h-screen lg:h-screen">
         <div
           className="flex justify-end"
           onClick={() => {

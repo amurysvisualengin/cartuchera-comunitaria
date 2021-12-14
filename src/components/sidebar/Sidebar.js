@@ -115,7 +115,7 @@ const Sidebar = (props) => {
             <h1 className="text-3xl custom-font">Instrucciones</h1>
           </div>
         </button>
-        <div className="fixed overflow-scroll top-0 left-0 bottom-0 z-50">
+        <div className="fixed  top-0 left-0 bottom-0 z-50">
           <InfoMobile />
         </div>
 
