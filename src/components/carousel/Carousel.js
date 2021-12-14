@@ -1,17 +1,26 @@
 import React from "react";
+import { useContext } from "react";
 import "slick-carousel/slick/slick.css";
 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import CardListContext from "../../context/CardListContext";
 
 const Carousel = () => {
+  const { isMobile } = useContext(CardListContext);
   const settings = {
     dots: true,
     infinite: true,
     spedd: 500,
-    slidesToShow: 3.5,
+    slidesToShow: 0,
     slidesToScroll: 1,
   };
+  if (!isMobile) {
+    settings.slidesToShow = 3.5;
+  }
+  if (isMobile) {
+    settings.slidesToShow = 1.035;
+  }
   return (
     <Slider {...settings}>
       <div>

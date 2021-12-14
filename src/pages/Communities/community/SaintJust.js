@@ -49,7 +49,7 @@ const SaintJust = () => {
       <div className="block lg:hidden">
         <img src={TransparentShape} alt="" className="absolute top-absolute" />
       </div>
-      <div>
+      <div className="lg:mb-26 lg:mt-24 my-10 lg:my-0">
         <Carousel />
       </div>
       <div

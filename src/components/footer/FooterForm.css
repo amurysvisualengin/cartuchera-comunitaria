@@ -1,7 +1,7 @@
-.hover-button {
+.suscribe-button {
   background-color: #37b0ff;
 }
-.hover-button:hover {
+.suscribe-button:hover {
   background-color: rgba(252, 249, 249, 0.974);
   box-shadow: 2px 2px #37b0ff;
   color: #37b0ff;
