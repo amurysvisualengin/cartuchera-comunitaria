@@ -9,7 +9,7 @@ import Facebook from "../../assets/icons/Facebook.svg";
 
 export const Footer = () => {
   return (
-    <div className="bg-black pb-20  ">
+    <div className="bg-black pb-20 lg:pb-0">
       <div>
         <img src={FooterImg} alt="" className="w-full h-full hidden lg:flex" />
         <img
@@ -33,13 +33,17 @@ export const Footer = () => {
           <div className="mt-4 text-base leading-6">
             <div className="mr-10">
               <a
-                href="https://www.youtube.com"
+                href="https://www.cartucheracomunitaria.org"
+                target="_blank"
+                rel="noreferrer"
                 className="underline inter-font break-all"
               >
                 www.cartucheracomunitaria.com
               </a>
             </div>
-            <p>lamarana.pr@gmail.com</p>
+            <a href="mailto:lamarana.pr@gmail.com?subject=Mail from our Website">
+              <p>lamarana.pr@gmail.com</p>
+            </a>
             <p>San Juan, Puerto Rico</p>
           </div>
         </div>
@@ -71,7 +75,7 @@ export const Footer = () => {
         <hr style={{ backgroundColor: " #474646", height: "1px", border: 0 }} />
       </div>
 
-      <div className="lg:flex lg:justify-between items-center lg:mr-20">
+      <div className="lg:flex lg:justify-between lg:items-start lg:mr-20">
         <ul className="lg:flex items-center px-20 hidden lg:visible lg:mb-20 ">
           <li className="mr-4">
             <a
@@ -105,7 +109,7 @@ export const Footer = () => {
             </a>
           </li>
         </ul>
-        <p className="text-xs text-white font-thin ml-5 mb-4">
+        <p className="text-xs text-white font-thin ml-5 mb-4 mt-2">
           © 2021 La Cartuchera Comunitaria. All rights reserved{" "}
           <span className="hidden lg:inline">
             | Designed & Developed with love by{" "}

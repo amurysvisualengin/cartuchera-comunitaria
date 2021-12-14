@@ -8,10 +8,7 @@ function CardContentPhoto(props) {
   const { isMobile, setIsExpand, isTablet } = useContext(CardListContext);
 
   return (
-    <div
-      className="h-screen pb-5"
-      style={{ backgroundColor: isMobile ? color : "" }}
-    >
+    <div className="h-full " style={{ backgroundColor: isMobile ? color : "" }}>
       {!isMobile && (
         <img
           src={img}
@@ -20,7 +17,7 @@ function CardContentPhoto(props) {
         />
       )}
       <div
-        className="flex justify-end  lg:mt-4 lg:mr-10 hover-button"
+        className="flex justify-end lg:mt-4 lg:mr-10 hover-button"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
@@ -32,7 +29,7 @@ function CardContentPhoto(props) {
           <img src={CloseButton} alt="" />
         </button>
       </div>
-      <div className="flex justify-center  lg:mx-0  lg:ml-0 lg:mt-16">
+      <div className="flex justify-center lg:mx-0 lg:ml-0 lg:mt-16">
         {!isMobile && <img src={img} alt="" className="w-20 h-full mr-10" />}
         <div className="flex justify-center pb-32">
           <div
@@ -40,15 +37,17 @@ function CardContentPhoto(props) {
               isTablet < 768 ? "w-full mx-5" : "lg:w-100 lg:mr-52"
             }`}
           >
-            <div
-              className={`bg-black p-2 w-14 text-center rounded text-xs lg:text-xs`}
-              style={{ color: color }}
-            >
-              <p>FOTO</p>
+            <div>
+              <p
+                className={`bg-black font-bold tracking-special p-2 w-14 text-center rounded text-xs lg:text-xs`}
+                style={{ color: color }}
+              >
+                FOTO
+              </p>
             </div>
 
             <h1
-              className={`custom-font-shadow text-left text-4.5xl lg:text-5.5xl mt-4 mb-4 lg:w-107 `}
+              className={`custom-font-shadow text-left text-4.5xl lg:text-5.5xl lg:leading-11 mt-6 lg:w-107 `}
             >
               {cardContent.typeName}
             </h1>
@@ -56,23 +55,27 @@ function CardContentPhoto(props) {
               className={`text-left ${
                 isMobile
                   ? "inter-font text-lg mt-6 mb-6"
-                  : "custom-font text-1.9xl mt-10"
+                  : "custom-font text-1.9xl my-10"
               }`}
             >
               {cardContent.subTitle}{" "}
             </h2>
             {!isMobile && (
               <p
-                className="custom-font text-left lg:text-sm bg-black  items-center p-4 rounded mt-6"
+                className="custom-font text-left lg:text-sm max-w-4xl bg-black  items-center p-4 rounded mb-6"
                 style={{ color: color }}
               >
                 {cardContent.description.toUpperCase()}
               </p>
             )}
-            <img src={cardContent.picture} alt="Foto" className={`w-full `} />
+            <img
+              src={cardContent.picture}
+              alt="Foto"
+              className={`w-full lg:max-w-4xl `}
+            />
             {isMobile && (
               <p
-                className={`custom-font text-left  bg-black  items-center p-2 rounded mt-6`}
+                className={`custom-font text-left bg-black  items-center p-2 rounded mt-6`}
                 style={{ color: color }}
               >
                 {cardContent.description}

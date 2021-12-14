@@ -8,6 +8,8 @@ import "../cardContentAudio/CardContentAudio.css";
 import Facebook from "../../assets/icons/Facebook.svg";
 import Twitter from "../../assets/icons/Twitter.svg";
 import Linkedin from "../../assets/icons/Linkedin.svg";
+import Instagram from "../../assets/icons/instagram.svg";
+import Youtube from "../../assets/icons/youtube.svg";
 
 const CardContentPresentation = (props) => {
   const { cardContent, img, color, handleShowExpandFalse } = props;
@@ -45,9 +47,7 @@ const CardContentPresentation = (props) => {
             PRESENTACIÓN
           </h2>
           <h1
-            className={`text-left custom-font-shadow lg:w-100 text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 ${
-              isTablet < 767 ? "text-3xl" : "text-4xl "
-            }`}
+            className={`text-left custom-font-shadow lg:w-100 text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 `}
           >
             {cardContent.presentationName}
           </h1>
@@ -72,27 +72,33 @@ const CardContentPresentation = (props) => {
             </div>
           )}
           <div className={`mt-10 lg:mt-6 text-left w-full lg:w-100`}>
-            <h2 className="font-bold lg:text-base lg:mt-10 inter-font">
+            <h2 className="font-bold text-xlLg lg:text-base lg:mt-10 inter-font">
               {cardContent.subTitle}
             </h2>
-            <h2 className=" lg:text-base mt-2 lg:mt-6 inter-font">
+            <h2 className="text-xlLg lg:text-base mt-2 lg:mt-6 inter-font">
               {cardContent.description}
               <span className="font-bold">{cardContent.sentence}</span>
             </h2>
             <div
-              className={`border-4 border-black rounded-md mt-10 w-full lg:w-100 lg:mb-0 `}
+              className={`border-2 border-black rounded-md mt-10 w-full lg:w-100 lg:mb-0 `}
             >
               <h2
-                className=" text-white text-sm tracking-widest border-2 border-black bg-black py-2 px-2 custom-font"
+                className=" text-white text-sm text-base tracking-widest border-1 border-black bg-black py-2 px-2 custom-font"
                 style={{ color: color }}
               >
                 ¿CONOCES A ALGUIEN QUE SE PAREZCA A {cardContent.name}?
               </h2>
-              <p className={`mt-4 px-2 lg:text-lg w-fulll lg:w-99.5 `}>
+              <p
+                className={`mt-4 px-4 text-xlLg lg:text-base w-fulll lg:w-99.5 `}
+              >
                 ¡Queremos conocerla! Escribe a{" "}
-                <b>info@cartucheracomunitaria.com</b> o accede a nuestras redes
-                para contarnos quién es y cuál es su rol en la comunidad.
-                ¡Recuerda taguearnos{" "}
+                <b>
+                  <a href="mailto:info@cartucheracomunitaria.com">
+                    info@cartucheracomunitaria.com
+                  </a>
+                </b>{" "}
+                o accede a nuestras redes para contarnos quién es y cuál es su
+                rol en la comunidad. ¡Recuerda taguearnos{" "}
                 <b>
                   <a href="https://www.instagram.com/la_marana_pr/">
                     @LaMarana
@@ -107,28 +113,36 @@ const CardContentPresentation = (props) => {
               </p>
               <div className="flex m-4">
                 <a
-                  href="https://www.facebook.com/lamarana.pr"
+                  href="https://www.youtube.com/channel/UCKUy3fZFuIiynFWqP9zMiZg"
                   target="_blank"
                   rel="noreferrer"
                   className="mr-2"
                 >
-                  <img src={Facebook} alt="Facebook icon" />
+                  <img
+                    src={Youtube}
+                    alt="Facebook icon"
+                    className="filter invert"
+                  />
                 </a>
                 <a
-                  href="https://twitter.com/la_marana_pr?lang=es"
+                  href="https://www.facebook.com/lamarana.pr"
                   target="_blanck"
                   rel="noopener"
                   className="mr-2"
                 >
-                  <img src={Twitter} alt="Twitter icon" />
+                  <img src={Facebook} alt="Twitter icon" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/la-mara%C3%B1a-pr/about/"
+                  href="https://www.instagram.com/la_marana_pr/"
                   target="_blanck"
                   rel="noopener"
                   className="mr-2"
                 >
-                  <img src={Linkedin} alt="Linkedin icon" />
+                  <img
+                    src={Instagram}
+                    alt="Linkedin icon"
+                    className="filter invert"
+                  />
                 </a>
               </div>
             </div>

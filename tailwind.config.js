@@ -22,6 +22,9 @@ module.exports = {
       "7xl": "5rem",
       "8xl": "7rem",
     },
+    letterSpacing: {
+      special: "0.15em",
+    },
     extend: {
       lineHeight: {
         10.5: "2.875rem",

@@ -27,27 +27,23 @@ const Home = () => {
       <div className="lg:flex lg:justify-center lg:items-center px-4 lg:px-0 mt-10 lg:mt-20">
         <div>
           <ul className="lg:flex">
-            <li
-              className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg mb-4 lg:mr-6 box-hover"
-              style={{ backgroundColor: "#9BC2D4" }}
-            >
+            <li className="">
               <a
                 href="https://player.vimeo.com/video/639634522?h=eebafcdd44"
                 target="_blank"
                 rel="noreferrer"
-                className="flex justify-center items-center custom-font mx-4 text-sm"
+                className="px-2 h-14 custom-font text-sm lg:w-90 flex items-center justify-center rounded-lg mb-4 lg:mr-6 box-hover cursor-pointer"
+                style={{ backgroundColor: "#9BC2D4" }}
               >
                 <img src={Play} alt="" className="filter invert mr-4" />
                 ¡VE EL VÍDEO COMPLETO!
               </a>
             </li>
-            <li
-              className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg mb-4 lg:mr-6 box-hover"
-              style={{ backgroundColor: "#E1AC47" }}
-            >
+            <li>
               <Link
                 to="/app"
-                className="flex justify-center custom-font  text-sm "
+                className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg mb-4 lg:mr-6 box-hover custom-font  text-sm "
+                style={{ backgroundColor: "#E1AC47" }}
               >
                 <img
                   src={Presentation}
@@ -58,14 +54,14 @@ const Home = () => {
               </Link>
             </li>
             <li
-              className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg box-hover"
-              style={{ backgroundColor: "#BCBC68" }}
+            // className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg box-hover"
             >
               <a
                 href="https://www.paypal.com/donate/?hosted_button_id=YVA6GKYHXCPGQ"
                 target="_blank"
                 rel="noreferrer"
-                className="flex justify-center items-center custom-font mx-4 text-sm lg:w-84"
+                className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg box-hover custom-font text-sm"
+                style={{ backgroundColor: "#BCBC68" }}
               >
                 <img src={Dona} alt="" className=" mr-4 " />
                 ¡DONA!
