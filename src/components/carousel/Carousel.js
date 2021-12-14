@@ -19,7 +19,7 @@ const Carousel = () => {
     settings.slidesToShow = 3.5;
   }
   if (isMobile) {
-    settings.slidesToShow = 1.035;
+    settings.slidesToShow = 1;
   }
   return (
     <Slider {...settings}>
