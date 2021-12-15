@@ -3,10 +3,15 @@ import "./Mariana.css";
 import Cube from "../../../assets/icons/cube.svg";
 import Arecma from "../../../assets/imgs/arecma.png";
 import Yellowshape from "../../../assets/icons/yellow-shape-complete.svg";
+import Carousel from "../../../components/carousel/Carousel";
+
+import CardListContext from "../../../context/CardListContext";
+import { useContext } from "react";
 
 const Mariana = () => {
+  const { isMobile } = useContext(CardListContext);
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="mx-4 text-center">
         <h1 className="custom-font-shadow text-4.5xl lg:text-5.5xl  lg:mt-24 ">
           Mariana
@@ -41,7 +46,7 @@ const Mariana = () => {
           <img
             src={Yellowshape}
             alt=""
-            className="absolute left-96 position-shape z-50"
+            className="absolute left-96 position-shape z-0"
           />
         </div>
         <div className="flex justify-center my-10">
@@ -61,7 +66,10 @@ const Mariana = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center my-10">CARROUSEL</div>
+      <div className="lg:mb-32 my-10 lg:my-0 lg:mt-16">
+        <Carousel />
+      </div>
+
       <div
         className="w-full p-4 lg:py-24 lg:flex lg:justify-around"
         style={{ backgroundColor: "#F9A66B" }}

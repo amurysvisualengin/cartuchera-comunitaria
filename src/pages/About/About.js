@@ -5,6 +5,8 @@ import Footer from "../../components/footer/Footer";
 import "./About.css";
 import Header from "../../components/header/Header";
 import Menu from "../../components/menu/Menu";
+import Carousel from "../../components/carousel/Carousel";
+
 import DondeNace from "../../assets/imgs/donde-nace.png";
 import DondeNace2 from "../../assets/imgs/donde-nace-2.png";
 import Childs from "../../assets/imgs/childs.png";
@@ -71,8 +73,9 @@ const About = () => {
             </p>
           </div>
         </div>
-        {/* CARROUSEL!!! */}
-        <p className="lg:mt-26">CARROUSEL</p>
+        <div className="lg:mt-52 lg:mb-20">
+          <Carousel />
+        </div>
 
         <div className="lg:flex lg:justify-center lg:text-center">
           <div>

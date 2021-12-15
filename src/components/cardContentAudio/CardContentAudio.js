@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import CloseButton from "../../assets/icons/close.svg";
 import CardListContext from "../../context/CardListContext";
 import "./CardContentAudio.css";
+
 const CardContentAudio = (props) => {
   const { cardContent, title, img, color, handleShowExpandFalse } = props;
   const { isMobile, isTablet } = useContext(CardListContext);

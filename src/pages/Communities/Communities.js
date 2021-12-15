@@ -10,7 +10,7 @@ import Menu from "../../components/menu/Menu";
 
 const Communities = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-hidden">
       <div>
         <Menu />
         <Header />

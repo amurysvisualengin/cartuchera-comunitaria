@@ -4,6 +4,7 @@ import Two from "../../../assets/icons/two.svg";
 import Saw from "../../../assets/icons/saw.svg";
 import YellowShape from "../../../assets/icons/yellow-shape-left.svg";
 import "./VueltaDeDos.css";
+import Carousel from "../../../components/carousel/Carousel";
 
 const VueltaDeDos = () => {
   return (
@@ -117,7 +118,9 @@ const VueltaDeDos = () => {
             atravesaron. <strong>¡Chequéala aquí!</strong>
           </p>
         </div>
-        <div className="flex justify-center my-10">CARRROUSEL</div>
+        <div className="my-10 lg:my-0 lg:mt-14 lg:mb-26">
+          <Carousel />
+        </div>
       </div>
       <div
         className="w-full lg:h-90 px-4 lg:py-16 mb-10 lg:flex lg:justify-around"
