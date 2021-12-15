@@ -15,7 +15,10 @@ function Swiper() {
     useContext(CardListContext);
 
   return (
-    <div>
+    <div
+      className="absolute top-0 bottom-0 right-0 left-0 -z-10"
+      style={{ backgroundColor: "#f5e3b0" }}
+    >
       <div className={`${isTablet > 766 ? "w-96.5 ml-auto mr-auto" : "block"}`}>
         {card.map(
           (element, index) =>
