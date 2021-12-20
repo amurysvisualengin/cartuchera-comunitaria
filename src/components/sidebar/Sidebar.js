@@ -157,7 +157,7 @@ const Sidebar = (props) => {
                   }}
                 >
                   <div
-                    className={`flex text-center py-4 text-white mt-2 items-center rounded-md cursor-pointer bg-checkbox hover-box ${
+                    className={`flex text-center py-4 text-white mt-2 items-center rounded-md cursor-pointer bg-checkbox hover-box-red ${
                       !typeFilter || typeFilter === element.typeId
                         ? "opacity-100:"
                         : "opacity-30"
