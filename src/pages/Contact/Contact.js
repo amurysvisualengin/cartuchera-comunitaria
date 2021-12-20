@@ -58,7 +58,7 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Mensaje (opcional)"
-                  className="mb-4 w-full pb-36 rounded px-4 border-form"
+                  className="mb-4 w-full pb-36 rounded px-4 pt-4"
                 />
               </div>
               <div className="mx-4 lg:mx-0">
