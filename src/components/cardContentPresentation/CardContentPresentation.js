@@ -83,7 +83,7 @@ const CardContentPresentation = (props) => {
               className={`border-2 border-black rounded-md mt-10 w-full lg:w-100 lg:mb-0 `}
             >
               <h2
-                className=" text-white text-sm text-base tracking-widest border-1 border-black bg-black py-2 px-2 custom-font"
+                className=" p-4 text-white text-sm text-base tracking-widest border-1 border-black bg-black custom-font"
                 style={{ color: color }}
               >
                 ¿CONOCES A ALGUIEN QUE SE PAREZCA A {cardContent.name}?
