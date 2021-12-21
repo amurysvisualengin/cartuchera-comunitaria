@@ -32,6 +32,14 @@ const Header = () => {
     }
   }, []);
 
+  useEffect(() => {
+    if (showMenu) {
+    document.body.style.overflow = 'hidden';
+     return ()=> document.body.style.overflow = 'unset';
+    }
+    
+  },[showMenu])
+
   return (
     <div>
       {!isMobile && (

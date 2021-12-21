@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import CardListContext from "../../context/CardListContext";
 import "./Menu.css";
@@ -6,10 +6,11 @@ import CloseButton from "../../assets/icons/close.svg";
 
 const Menu = (props) => {
   const { isMobile, showMenu, setShowMenu } = useContext(CardListContext);
+  
 
   return (
     <div
-      className={`fixed z-20  w-full h-full opacity-90 ${
+      className={`fixed z-20 overflow-scroll  w-full h-full opacity-90 ${
         !showMenu ? "hidden" : "visible"
       } `}
       style={{ backgroundColor: "#000000" }}
