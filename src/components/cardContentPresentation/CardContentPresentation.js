@@ -3,7 +3,7 @@ import CardListContext from "../../context/CardListContext";
 import CloseButton from "../../assets/icons/close.svg";
 
 import "../cardContentAudio/CardContentAudio.css";
-
+import "./CardContentPresentation.css";
 // import "./CardContentPresentation.css";
 import Facebook from "../../assets/icons/Facebook.svg";
 import Twitter from "../../assets/icons/Twitter.svg";
@@ -16,7 +16,10 @@ const CardContentPresentation = (props) => {
   const { isMobile, setIsExpand, isTablet } = useContext(CardListContext);
 
   return (
-    <div className="pb-20" style={{ backgroundColor: isMobile ? color : "" }}>
+    <div
+      className="pb-20 card-content-presentation"
+      style={{ backgroundColor: isMobile ? color : "" }}
+    >
       <div
         className="flex justify-end lg:mt-4 lg:mr-10 hover-button"
         onClick={() => {

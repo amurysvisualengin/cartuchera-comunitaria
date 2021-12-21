@@ -112,7 +112,7 @@ const Sidebar = (props) => {
           <div className="flex mt-16">
             <img src={Check} alt="" className="mr-4" />
 
-            <h1 className="text-3xl custom-font">Instrucciones</h1>
+            <h1 className="text-3xl custom-font hover:underline">Instrucciones</h1>
           </div>
         </button>
         <div className="fixed  top-0 left-0 bottom-0 z-50">
@@ -157,7 +157,7 @@ const Sidebar = (props) => {
                   }}
                 >
                   <div
-                    className={`flex text-center py-4 text-white mt-2 items-center rounded-md cursor-pointer bg-checkbox hover-box ${
+                    className={`flex text-center py-4 text-white mt-2 items-center rounded-md cursor-pointer bg-checkbox hover-box-red ${
                       !typeFilter || typeFilter === element.typeId
                         ? "opacity-100:"
                         : "opacity-30"

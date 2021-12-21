@@ -4,3 +4,7 @@
 .border-form {
   border: thin solid black;
 }
+
+textarea:focus, input:focus{
+    outline: none;
+}
