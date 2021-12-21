@@ -12,7 +12,7 @@ const Contact = () => {
         <Menu />
         <Header />
       </div>
-      <div className="lg:flex lg:justify-between lg:items-center shadow-box  pt-10 lg:mt-4">
+      <div className="lg:flex lg:justify-between lg:items-center shadow-box mt-32 lg:pt-10 lg:mt-4">
         <div className="mx-4  lg:ml-40">
           <div>
             <h1 className="custom-font-shadow text-4.5xl lg:text-5.5xl">
@@ -58,7 +58,7 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Mensaje (opcional)"
-                  className="mb-4 w-full pb-36 rounded px-4 border-form"
+                  className="mb-4 w-full pb-36 rounded px-4 pt-4 border-form"
                 />
               </div>
               <div className="mx-4 lg:mx-0">

@@ -55,10 +55,10 @@ const CardShuffle = (props) => {
         </button>
       </div>
       <p
-        style={{ maxWidth: "7.5rem" }}
-        className="text-white font-bold text-sm "
+        style={{ maxWidth: "7.5rem", color: "#EBE4CF" }}
+        className="text-white font-bold text-xSs leading-4 tracking-shuffle custom-font "
       >
-        Mezcla las cartas y descubre nuevas Herramientas.
+        MEZCLA LAS CARTAS Y DESCUBRE NUEVAS HERRAMIENTAS.
       </p>
     </div>
   );

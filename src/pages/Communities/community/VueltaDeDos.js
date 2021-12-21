@@ -126,7 +126,7 @@ const VueltaDeDos = () => {
         className="w-full lg:h-90 px-4 lg:py-16 mb-10 lg:flex lg:justify-around"
         style={{ backgroundColor: "#BEBE3B" }}
       >
-        <h2 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-3xl  pt-10 ">
+        <h2 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-3xl pt-10 ">
           Brigada Palomas
         </h2>
         <div className="text-xlLg pb-16 lg:text-base mt-8 lg:pb-8 lg:max-w-2xl">

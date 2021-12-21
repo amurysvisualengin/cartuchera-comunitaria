@@ -16,7 +16,7 @@ const Home = () => {
         <Menu />
         <Header />
       </div>
-      <div className="lg:flex lg:justify-center">
+      <div className="lg:flex lg:justify-center mt-20 lg:mt-0">
         <iframe
           src="https://player.vimeo.com/video/639634522?h=eebafcdd44"
           fullscreen

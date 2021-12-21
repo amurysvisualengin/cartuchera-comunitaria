@@ -53,31 +53,28 @@ export const Footer = () => {
 
           <div>
             <FooterForm />
-            <a
-              href="https://www.youtube.com"
-              className="text-xs font-thin "
+
+            <p className="block lg:hidden text-xs font-thin inter-font">
+              Aceptar terminos y condiciones
+            </p>
+            <p
+              className="hidden lg:block lg:max-w-sm lg:text-xs lg:leading-4 lg:mt-4 text-xs font-thin inter-font"
               style={{ color: "#FFFFFF" }}
             >
-              <p className="block lg:hidden">Aceptar terminos y condiciones</p>
-              <p
-                className="hidden lg:block lg:max-w-sm lg:text-xs lg:leading-4 lg:mt-4"
-                style={{ color: "#FFFFFF" }}
-              >
-                Añade tu correo electrónico para recibir las últimas noticias
-                sobre la Cartuchera Comunitaria y otros proyectos de La Maraña.
-              </p>
-            </a>
+              Añade tu correo electrónico para recibir las últimas noticias
+              sobre la Cartuchera Comunitaria y otros proyectos de La Maraña.
+            </p>
           </div>
         </div>
       </div>
 
-      <div className="mt-10 mb-20 lg:mb-9 px-5 lg:px-20">
+      <div className="mt-10 mb-6 lg:mb-9 px-5 lg:px-20">
         <hr style={{ backgroundColor: " #474646", height: "1px", border: 0 }} />
       </div>
 
       <div className="lg:flex lg:justify-between lg:items-start lg:mr-20">
-        <ul className="lg:flex items-center px-20 hidden lg:visible lg:mb-20 ">
-          <li className="mr-4">
+        <ul className="flex items-center lg:px-20 mb-6 lg:mb-20 ">
+          <li className="mr-4 ml-4 lg:ml-0">
             <a
               href="https://www.instagram.com/la_marana_pr/"
               target="_blank"

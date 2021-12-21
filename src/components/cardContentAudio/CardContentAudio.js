@@ -43,13 +43,13 @@ const CardContentAudio = (props) => {
         <div className="lg:flex lg:justify-center mx-4 lg:mx-0">
           <div className={`block `}>
             <h2
-              className="bg-black inter-font text-xs font-bold tracking-special text-center w-16  p-2 rounded item-center"
+              className="bg-black inter-font text-xs font-bold tracking-special text-center w-16 p-2 rounded item-center"
               style={{ color: color }}
             >
               VIDEO
             </h2>
             <h1
-              className={`custom-font-shadow mt-6 text-left text-4.5xl  lg:text-5.5xl lg:leading-11`}
+              className={`custom-font-shadow mt-6 text-left text-4.5xl lg:text-5.5xl lg:leading-11`}
             >
               Videogalería
             </h1>

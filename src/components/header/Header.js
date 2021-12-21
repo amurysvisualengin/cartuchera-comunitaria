@@ -83,14 +83,15 @@ const Header = () => {
           className={`${
             isExpand
               ? "hidden"
-              : "flex justify-between items-center bottom-shadow"
+              : "flex fixed z-10 w-full justify-between bottom-shadow"
           } `}
+          style={{ backgroundColor: "#f8f5ed" }}
         >
           <img src={CatucheraLogo} alt="" className="  p-4 " />
           {/* info button div */}
           <div className="absolute right-12 top-4">
             <button
-              className="custom-font-shadow text-white bg-black text-xs px-2 h-6 mt-3 mr-5 rounded"
+              className="custom-font-shadow text-white bg-black text-xs px-2 h-6 mt-3 mr-10 rounded"
               onClick={() => {
                 setShowInformation(!showInformation);
               }}
@@ -113,7 +114,7 @@ const Header = () => {
                   <img
                     src={Hamburguer}
                     alt="menu button"
-                    className="lg:mr-8 lg: "
+                    className=" mt-4 mr-4"
                   />
                 </button>
               </div>

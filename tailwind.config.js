@@ -3,6 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontSize: {
+      xSs: "0.688rem",
       xs: ".75rem",
       sm: ".875rem",
       tiny: ".9rem",
@@ -23,6 +24,7 @@ module.exports = {
       "8xl": "7rem",
     },
     letterSpacing: {
+      shuffle: "0.08em",
       special: "0.15em",
     },
     extend: {
@@ -32,14 +34,20 @@ module.exports = {
       },
       spacing: {
         0.5: "0.125rem",
+        1.5: "0.375rem",
         2.5: "0.625rem",
         7.5: "1.875rem",
         15: "3.75rem",
         19: "5.5rem",
+        24.5: "6.743rem",
         26: "7.5rem",
         72: "18rem",
+        73: "19.06rem",
+        76: "20.137rem",
+        77: "20.636rem",
         84: "21rem",
         90: "22rem",
+        91: "23.348rem",
         96: "24rem",
         96.5: "26.5rem",
         97: "30rem",

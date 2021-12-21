@@ -41,7 +41,7 @@ const CardContentText = (props) => {
         <div>
           <div>
             <h2
-              className="bg-black inter-font font-bold text-xs tracking-special  p-2 rounded w-32 lg:mt-14 "
+              className="bg-black inter-font font-bold text-xs tracking-special p-2 rounded w-32 lg:mt-14 "
               style={{ color: color }}
             >
               {cardContent.nameType.toUpperCase()}
@@ -67,9 +67,9 @@ const CardContentText = (props) => {
                 className={`flex border-2 rounded border-black mr-3 w-full lg:w-97 mb-4 lg:mb-8 `}
               >
                 <div className="block ">
-                  <div className="flex items-center bg-black p-1 lg:p-3">
+                  <div className="flex items-center bg-black p-1 py-1.5 lg:p-3">
                     <div
-                      className="w-8 h-8 rounded-full flex justify-center items-center ml-2"
+                      className="w-8 h-8 rounded-full flex justify-center  items-center ml-2"
                       style={{ background: color }}
                     >
                       <img
@@ -87,7 +87,7 @@ const CardContentText = (props) => {
                   </div>
                   <div
                     dangerouslySetInnerHTML={{ __html: element.actionSentence }}
-                    className={`m-4 lg:m-6 inter-font text-left text-xlLg lg:text-base}`}
+                    className={`m-4 lg:m-6 inter-font text-left text-base lg:text-xlLg}`}
                   ></div>
                 </div>
               </div>
