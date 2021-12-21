@@ -6,7 +6,7 @@ import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
 import Help from "./pages/Help/Help";
 import Communities from "./pages/Communities/Communities";
-
+import ScrollToTop from "./components/ScrollToTop";
 import CardListContext from "./context/CardListContext";
 
 const Routess = () => {
@@ -81,14 +81,16 @@ const Routess = () => {
       }}
     >
       <BrowserRouter basename="cartuchera-comunitaria">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sobrelacartuchera" element={<About />} />
-          <Route path="/juegodecartas" element={<App />} />
-          <Route path="/contacto" element={<Contact />} />
-          <Route path="/apoyalagesta" element={<Help />} />
-          <Route path="/trescomunidades" element={<Communities />} />
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/sobrelacartuchera" element={<About />} />
+            <Route path="/juegodecartas" element={<App />} />
+            <Route path="/contacto" element={<Contact />} />
+            <Route path="/apoyalagesta" element={<Help />} />
+            <Route path="/trescomunidades" element={<Communities />} />
+          </Routes>
+        </ScrollToTop>
       </BrowserRouter>
     </CardListContext.Provider>
   );
