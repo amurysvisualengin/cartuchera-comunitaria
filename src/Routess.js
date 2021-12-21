@@ -83,11 +83,11 @@ const Routess = () => {
       <BrowserRouter basename="cartuchera-comunitaria">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/sobre-nosotros" element={<About />} />
-          <Route path="/app" element={<App />} />
+          <Route path="/sobrelacartuchera" element={<About />} />
+          <Route path="/juegodecartas" element={<App />} />
           <Route path="/contacto" element={<Contact />} />
-          <Route path="/como-ayudar" element={<Help />} />
-          <Route path="/tres-comunidades" element={<Communities />} />
+          <Route path="/apoyalagesta" element={<Help />} />
+          <Route path="/trescomunidades" element={<Communities />} />
         </Routes>
       </BrowserRouter>
     </CardListContext.Provider>

@@ -44,19 +44,19 @@ const Menu = (props) => {
                 <Link to="/">Inicio</Link>
               </li>
               <li className="hover:text-yellow-200 ">
-                <Link to="/sobre-nosotros">Sobre la cartuchera</Link>
+                <Link to="/sobrelacartuchera">Sobre la cartuchera</Link>
               </li>
               <li className="hover:text-blue-300">
-                <Link to="/app">Cartuchera Comunitaria</Link>
+                <Link to="/juegodecartas">Cartuchera Comunitaria</Link>
               </li>
               <li className="hover:text-green-600">
-                <Link to="/como-ayudar">Cómo ayudar</Link>
+                <Link to="/apoyalagesta">Cómo ayudar</Link>
               </li>
               <li className="hover:text-yellow-700">
                 <Link to="/contacto">Contáctanos</Link>
               </li>
               <li className="hover:text-blue-300 mb-10">
-                <Link to="/tres-comunidades">Tres comunidades</Link>
+                <Link to="/trescomunidades ">Tres comunidades</Link>
               </li>
             </ul>
           )}
@@ -74,16 +74,16 @@ const Menu = (props) => {
                 <Link to="/">Inicio</Link>
               </li>
               <li className="hover:text-yellow-200 mb-8 ">
-                <Link to="/sobre-nosotros">Sobre la cartuchera</Link>
+                <Link to="/sobrelacartuchera">Sobre la cartuchera</Link>
               </li>
               <li className="hover:text-yellow-200 mb-8">
-                <Link to="/app">Cartuchera Comunitaria</Link>
+                <Link to="/juegodecartas">Cartuchera Comunitaria</Link>
               </li>
               <li className="hover:text-blue-300 mb-8">
-                <Link to="/tres-comunidades">Tres comunidades</Link>
+                <Link to="/trescomunidades">Tres comunidades</Link>
               </li>
               <li className="hover:text-green-600 mb-8">
-                <Link to="/como-ayudar">Cómo ayudar</Link>
+                <Link to="/apoyalagesta">Cómo ayudar</Link>
               </li>
               <li className="hover:text-yellow-700">
                 <Link to="/contacto">Contáctanos</Link>
