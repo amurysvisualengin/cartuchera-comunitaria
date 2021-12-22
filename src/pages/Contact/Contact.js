@@ -12,7 +12,7 @@ const Contact = () => {
         <Menu />
         <Header />
       </div>
-      <div className="lg:flex lg:justify-between lg:items-center shadow-box  pt-10 lg:mt-4">
+      <div className="lg:flex lg:justify-between lg:items-center shadow-box mt-32 lg:pt-10 lg:mt-4">
         <div className="mx-4  lg:ml-40">
           <div>
             <h1 className="custom-font-shadow text-4.5xl lg:text-5.5xl">

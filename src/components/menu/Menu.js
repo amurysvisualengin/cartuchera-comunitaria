@@ -15,7 +15,7 @@ const Menu = (props) => {
       } `}
       style={{ backgroundColor: "#000000" }}
     >
-      <div className=" mt-5 lg:mt-10 mr-5 lg:mr-10 flex  justify-end">
+      <div className=" mt-5 lg:mt-10 mr-5 lg:mr-10 flex justify-end">
         <button
           className={` w-12 
             `}

@@ -23,7 +23,7 @@ const Help = () => {
         <Header />
       </div>
       <div className="mx-4 mt-8">
-        <h1 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 lg:w-99.4 lg:ml-28 lg:mt-48">
+        <h1 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 lg:w-99.4 lg:ml-28 mt-32 lg:mt-48">
           ¿Cómo apoyo este proyecto?
         </h1>
       </div>
@@ -61,12 +61,12 @@ const Help = () => {
           </div>
         </div>
         {/*  */}
-        <div className="lg:flex lg:justify-between">
-          <div className="lg:mr-20">
+        <div className="lg:flex ">
+          <div className="lg:mr-32">
             <div className="custom-font text-sm leading-5 text-center flex justify-center items-center mt-12 mb-4 lg:mb-6 bg-black text-white h-9 rounded lg:w-60 lg:h-12">
               <h2>DONA LA MARAÑA</h2>
             </div>
-            <p className="text-xlLg leading-7 lg:text-base lg:leading-6 lg:max-w-lg">
+            <p className="text-xlLg leading-7 lg:text-base lg:leading-6 lg:max-w-lg lg: max-w-md">
               La Maraña es una organización sin fines de lucro que ha logrado
               sostener sus labores gracias al apoyo económico de decenas de
               entidades y aliados, incluyendo donativos de personas como tú. No
@@ -75,14 +75,14 @@ const Help = () => {
           </div>
           <div className="flex justify-center mt-4">
             <div className="lg:flex lg:mt-16">
-              <div className="lg:mr-5 lg:mt-8">
+              <div className="lg:mr-6 lg:mt-8">
                 <div className="flex justify-center">
                   <a
                     href="https://www.paypal.com/donate/?hosted_button_id=YVA6GKYHXCPGQ"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={Paypal} alt="paypal" className="w-52 mb-1" />
+                    <img src={Paypal} alt="paypal" className="w-64 mb-1" />
                   </a>
                 </div>
                 <div className="flex justify-center">
@@ -94,7 +94,7 @@ const Help = () => {
                 </div>
               </div>
               <div className="flex justify-center">
-                <img src={Ath} alt="ath" className=" w-36 h-16 mt-4 lg:mt-9" />
+                <img src={Ath} alt="ath" className=" w-60 h-24 mt-4 lg:mt-9" />
               </div>
             </div>
           </div>

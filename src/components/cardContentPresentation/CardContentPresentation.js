@@ -3,7 +3,7 @@ import CardListContext from "../../context/CardListContext";
 import CloseButton from "../../assets/icons/close.svg";
 
 import "../cardContentAudio/CardContentAudio.css";
-import './CardContentPresentation.css'
+import "./CardContentPresentation.css";
 // import "./CardContentPresentation.css";
 import Facebook from "../../assets/icons/Facebook.svg";
 import Twitter from "../../assets/icons/Twitter.svg";
@@ -16,7 +16,10 @@ const CardContentPresentation = (props) => {
   const { isMobile, setIsExpand, isTablet } = useContext(CardListContext);
 
   return (
-    <div className="pb-20 card-content-presentation" style={{ backgroundColor: isMobile ? color : "" }}>
+    <div
+      className="pb-20 card-content-presentation"
+      style={{ backgroundColor: isMobile ? color : "" }}
+    >
       <div
         className="flex justify-end lg:mt-4 lg:mr-10 hover-button"
         onClick={() => {
@@ -41,13 +44,13 @@ const CardContentPresentation = (props) => {
         </div>
         <div className="block mx-4 lg:mx-0 ">
           <h2
-            className="text-white rounded-md text-sm text-center bg-black w-32 mt-10 mb-6 py-1 px-1 inter-font "
+            className="text-white rounded text-xs font-bold leading-4 tracking-special text-center bg-black w-32 mt-10 mb-6 p-2 inter-font "
             style={{ color: color }}
           >
             PRESENTACIÓN
           </h2>
           <h1
-            className={`text-left custom-font-shadow lg:w-100 text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 `}
+            className={`text-left custom-font-shadow lg:w-100 text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 mb-10 lg:mb-0 `}
           >
             {cardContent.presentationName}
           </h1>
@@ -59,12 +62,12 @@ const CardContentPresentation = (props) => {
                   : "block"
               }`}
             >
-              <div className="flex justify-center">
+              <div className="flex justify-center mb-10 lg:mb-0">
                 <div>
                   <img
                     src={cardContent.nameSvg}
                     alt="name SVG"
-                    className="mt-10 ml-28"
+                    className="lg:mt-10 ml-28"
                   />
                   <img src={img} alt="icon type" className="ml-4 w-40 mr-4 " />
                 </div>
@@ -83,7 +86,7 @@ const CardContentPresentation = (props) => {
               className={`border-2 border-black rounded-md mt-10 w-full lg:w-100 lg:mb-0 `}
             >
               <h2
-                className=" p-4 text-white text-sm text-base tracking-widest border-1 border-black bg-black custom-font"
+                className=" text-white  text-base tracking-shuffle lg:text-sm  border-1 border-black bg-black p-4 custom-font"
                 style={{ color: color }}
               >
                 ¿CONOCES A ALGUIEN QUE SE PAREZCA A {cardContent.name}?
@@ -116,7 +119,7 @@ const CardContentPresentation = (props) => {
                   href="https://www.youtube.com/channel/UCKUy3fZFuIiynFWqP9zMiZg"
                   target="_blank"
                   rel="noreferrer"
-                  className="mr-2"
+                  className="mr-6"
                 >
                   <img
                     src={Youtube}
@@ -128,7 +131,7 @@ const CardContentPresentation = (props) => {
                   href="https://www.facebook.com/lamarana.pr"
                   target="_blanck"
                   rel="noopener"
-                  className="mr-2"
+                  className="mr-6"
                 >
                   <img src={Facebook} alt="Twitter icon" />
                 </a>
@@ -136,7 +139,7 @@ const CardContentPresentation = (props) => {
                   href="https://www.instagram.com/la_marana_pr/"
                   target="_blanck"
                   rel="noopener"
-                  className="mr-2"
+                  className="mr-6"
                 >
                   <img
                     src={Instagram}

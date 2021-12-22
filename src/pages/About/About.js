@@ -30,7 +30,7 @@ const About = () => {
       <div className="px-4 lg:mt-44">
         <div className="lg:flex justify-around lg:px-26">
           <div>
-            <h1 className="custom-font-shadow text-4.5xl leading-10.5 mt-10 mb-4 lg:text-5.5xl lg:max-w-lg lg:mb-10  lg:leading-11">
+            <h1 className="custom-font-shadow text-4.5xl leading-10.5 mt-32 mb-4 lg:text-5.5xl lg:max-w-lg lg:mb-10  lg:leading-11">
               Sobre la cartuchera
             </h1>
             {/* no funciona lg:custom-font */}
@@ -170,19 +170,40 @@ const About = () => {
 
         {types.map((element, index) => (
           <div
-            className={`mb-16 lg:flex justify-center lg:mt-72 lg:mb-28   ${
+            className={`mb-16 lg:flex justify-center  lg:mt-72 lg:mb-28   ${
               index % 2 !== 0 ? "flex-row-reverse" : ""
             } `}
           >
-            <div className="flex justify-center items-center mt-10 mx-10 w-56 lg:w-96">
-              <img src={element.img} alt="" />
+            <div
+              className={`flex justify-center items-center mt-10 mx-10  lg:w-96 ${
+                index % 2 !== 0 ? "lg:ml-24.5" : "lg:mr-24.5"
+              }
+              
+              `}
+            >
+              <img
+                className={`${
+                  element.title === "Mapeo Comunitario"
+                    ? "lg:w-76"
+                    : element.title === "Talleres de imaginario"
+                    ? "lg:w-91"
+                    : element.title === "Procesos comunitarios" ||
+                      element.title === "Justicia Narrativa"
+                    ? "lg:w-77"
+                    : element.title === "Construcción participativa"
+                    ? "lg:w-73"
+                    : ""
+                }`}
+                src={element.img}
+                alt=""
+              />
             </div>
 
             <div className="">
-              <h2 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl mt-10 mb-4 lg:w-97 lg:leading-11">
+              <h2 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl mt-10 lg:mt-24 mb-4 lg:w-97 lg:leading-11">
                 {element.title}
               </h2>
-              <p className="text-xlLg leading-7 w-80 lg:text-base lg:leading-6 mt-10 lg:mt-2 lg:w-97">
+              <p className="text-xlLg leading-7 lg:text-base lg:leading-6 mt-10 lg:mt-6 lg:w-97">
                 {element.paragraph}
               </p>
             </div>

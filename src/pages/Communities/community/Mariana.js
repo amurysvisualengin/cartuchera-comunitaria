@@ -80,7 +80,7 @@ const Mariana = () => {
             alt=""
             className="hidden lg:block lg:mb-7 lg:mt-6 lg:w-20"
           />
-          <h2 className="custom-font-shadow  text-4.5xl leading-10.5 lg:text-3xl lg:leading-9 lg:max-w-lg">
+          <h2 className="custom-font-shadow pt-10 lg:pt-0  text-4.5xl leading-10.5 lg:text-3xl lg:leading-9 lg:max-w-lg">
             ARECMA: Asociación Recreativa y Educativa Comunal del Barrio Mariana
           </h2>
         </div>

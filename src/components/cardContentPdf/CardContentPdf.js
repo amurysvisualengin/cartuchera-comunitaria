@@ -36,7 +36,7 @@ const CardContentPdf = (props) => {
         </button>
       </div>
 
-      <div className="lg:flex lg:justify-center lg:items-start mt-8 lg:mt-20  lg:ml-0 ">
+      <div className="lg:flex lg:justify-center lg:items-start mt-2 lg:mt-20  lg:ml-0 ">
         {!isMobile && <img src={img} alt="" className="mr-20 w-44" />}
         <div className="flex justify-center items-center">
           <div className={`block mx-4 lg:mx-0 w-full lg:w-104`}>
@@ -70,7 +70,7 @@ const CardContentPdf = (props) => {
               >
                 {cardContent.subTitle}
               </h2>
-              <p className="custom-font text-xs lg:text-sm mt-6 mb-2">
+              <p className="custom-font text-xs lg:text-sm mt-10 lg:mt-6 mb-2">
                 ANTES DE EMPEZAR:
               </p>
             </div>
@@ -116,9 +116,7 @@ const CardContentPdf = (props) => {
                       dangerouslySetInnerHTML={{ __html: element.sentence }}
                       className={`p-4 inter-font  text-xlLg lg:text-base`}
                     ></div>
-                    <div
-                      className={`flex mt-6 px-4  ${element.pdf && "pb-10"}`}
-                    >
+                    <div className={`flex mt-6 px-4  ${element.pdf && "pb-4"}`}>
                       {element.pdf && (
                         <a
                           href={element.pdf}

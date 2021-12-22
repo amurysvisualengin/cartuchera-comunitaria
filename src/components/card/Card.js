@@ -11,7 +11,7 @@ import "../../App.css";
 const Card = (props) => {
   const [showExpand, setShowExpand] = useState(false);
   const { title, img, type, color, cardNumber, cardContent } = props;
-  const { setCardInfo, setIsExpand, isTablet, mobileHeight, setFirstTouch } =
+  const { setCardInfo, setIsExpand, isTablet, mobileHeight } =
     useContext(CardListContext);
 
   const handleShowExpandFalse = () => {

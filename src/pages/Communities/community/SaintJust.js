@@ -8,11 +8,11 @@ const SaintJust = () => {
   return (
     <div>
       <div className="lg:flex lg:justify-center lg:items-center lg:mt-48">
-        <h1 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 lg:w-103 mt-10 text-center">
+        <h1 className="custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 lg:w-103 mt-32 lg:mt-10 text-center">
           Saint Just, Los Mirtos + San Antón
         </h1>
       </div>
-      <p className="text-1.9xl custom-font text-center mt-7 hidden lg:block">
+      <p className="text-1.9xl custom-font text-center lg:mt-7 hidden lg:block">
         Carolina, Puerto Rico
       </p>
       <p className="text-lg leading-6 text-center mt-10 block lg:hidden">
@@ -38,8 +38,11 @@ const SaintJust = () => {
         ></iframe>
       </div>
       <div className="lg:flex lg:justify-center">
-        <div className="lg:w-99.3 bg-black text-white mt-10 p-4 rounded mx-4 lg:mx-0">
-          <p className="text-xlLg leading-7 lg:text-base lg:leading-6">
+        <div className="lg:w-99.3 bg-black mt-10 p-4 rounded mx-4 lg:mx-0">
+          <p
+            className="text-xlLg leading-7 lg:text-base lg:leading-6 "
+            style={{ color: "#EBE4CF" }}
+          >
             El trabajo colaborativo entre su comunidad y La Maraña bajo la
             iniciativa Imaginación Post-María permitió la reconstrucción de la
             Casa de Iris y la reconstrucción del comedor de La Conde.
@@ -62,7 +65,7 @@ const SaintJust = () => {
             PATBA: Parceleras Afrocaribeñas para la Transformación Barrial
           </h2>
         </div>
-        <div className=" text-xl lg:text-base lg:leading-6 lg:pt-24 lg:max-w-2xl lg:py-20">
+        <div className=" text-xl lg:text-base lg:leading-6 pt-10 lg:pt-24 lg:max-w-2xl lg:py-20">
           <p>
             PATBA - acrónimo de Parceleras Afrocaribeñas para la Transformación
             Barrial - es un grupo intergeneracional de vecinas de la comunidad
@@ -72,7 +75,7 @@ const SaintJust = () => {
             transformación en un epicentro de cultura, educación y agricultura
             por y para la comunidad.
           </p>
-          <p className="mt-4">
+          <p className="mt-10 pb-10 lg:pb-0">
             La labor conjunta PATBA y La Maraña permitió la reconstrucción del
             comedor escolar. Este espacio no sólo permitirá la distribución de
             comidas calientes a la comunidad durante periodos de emergencia,

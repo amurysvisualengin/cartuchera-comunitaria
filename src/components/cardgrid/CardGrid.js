@@ -6,8 +6,6 @@ import CardListContext from "../../context/CardListContext";
 import Data from "../../assets/data/Data.json";
 import Swiper from "../swiper/Swiper";
 import ColorFilterMobile from "../colorFilterMobile/ColorFilterMobile";
-import CartucheraLogo from "../../assets/icons/cartuchera-logo.svg";
-import Hamburguer from "../../assets/icons/hamburguer.svg";
 import TypeFilterMobile from "../typeFilterMobile/TypeFilterMobile";
 
 import CardContentAudio from "../cardContentAudio/CardContentAudio";
@@ -15,7 +13,6 @@ import CardContentPdf from "../cardContentPdf/CardContentPdf";
 import CardContentText from "../cardContentText/CardContentText";
 import CardContentPresentation from "../cardContentPresentation/CardContentPresentation";
 import CardContentPhoto from "../cardContentPhoto/CardContentPhoto";
-import InfoMobile from "../infoMobile/InfoMobile";
 
 const CardGrid = () => {
   const typesCard = Data;
@@ -27,11 +24,11 @@ const CardGrid = () => {
   const {
     isMobile,
     isExpand,
-    isTablet,
+    /* isTablet,
     showMenu,
     setShowMenu,
     showInformation,
-    setShowInformation,
+    setShowInformation, */
   } = useContext(CardListContext);
 
   if (!isMobile) {
@@ -67,7 +64,7 @@ const CardGrid = () => {
 
   if (isMobile) {
     return (
-      <div className="" style={{ backgroundColor: "#f5e3b0" }}>
+      <div>
         {!isExpand && (
           <div>
             <Swiper />

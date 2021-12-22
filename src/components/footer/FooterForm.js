@@ -1,7 +1,10 @@
 import React from "react";
 import "./FooterForm.css";
+import CardListContext from "../../context/CardListContext";
+import { useContext } from "react";
 
 const FooterForm = () => {
+  const { isMobile } = useContext(CardListContext);
   return (
     <div className=" ">
       <form
@@ -24,7 +27,9 @@ const FooterForm = () => {
 
         <button
           type="submit"
-          className="w-full lg:w-28 lg:mt-4 h-11 rounded items-center font-bold text-smTiny leading-7 suscribe-button"
+          className={`w-full lg:w-28 lg:mt-4 h-11 rounded items-center text-smTiny leading-7 suscribe-button ${
+            !isMobile && "font-bold"
+          }`}
           // style={{ backgroundColor: "#37B0FF" }}
         >
           <p className="">Subscríbete</p>
