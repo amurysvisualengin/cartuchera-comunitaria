@@ -100,8 +100,12 @@ const Help = () => {
           </div>
         </div>
 
-        <div className="lg:flex lg:mt-16 lg:mb-32">
-          <img src={GirlWhite} alt="" className="hidden lg:flex lg:mr-20" />
+        <div className="lg:flex lg:mt-20 lg:mb-32">
+          <img
+            src={GirlWhite}
+            alt=""
+            className="hidden lg:flex lg:mr-20 lg:ml-6"
+          />
           <div className="max-w-lg">
             <div className="custom-font text-sm leading-5 text-center flex justify-center items-center mt-12 mb-4 bg-black text-white h-9 rounded lg:w-36 lg:h-12">
               <h2>¡COMPARTE!</h2>

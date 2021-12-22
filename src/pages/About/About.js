@@ -170,7 +170,7 @@ const About = () => {
 
         {types.map((element, index) => (
           <div
-            className={`mb-16 lg:flex justify-center  lg:mt-72 lg:mb-28   ${
+            className={`mb-16 lg:flex justify-center  lg:mt-24 lg:mb-28   ${
               index % 2 !== 0 ? "flex-row-reverse" : ""
             } `}
           >

@@ -36,9 +36,12 @@ const CardContentPresentation = (props) => {
       <div className="lg:flex lg:justify-center lg:mt-8 lg:mr-20 ">
         <div className={` ${isTablet < 768 ? "mr-3" : "mr-2"}`}>
           {!isMobile && (
-            <div>
-              <img src={cardContent.nameSvg} alt="name SVG" className="ml-52" />
-              <img src={img} alt="icon type" className="pb-8 w-84 mr-20 " />
+            <div className={``}>
+              <img
+                src={cardContent.nameSvg}
+                alt="name SVG"
+                className="ml-52 mr-20 "
+              />
             </div>
           )}
         </div>

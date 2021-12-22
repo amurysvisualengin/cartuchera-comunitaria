@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import CardListContext from "../../context/CardListContext";
 import "./CardContentPhoto.css";
 import CloseButton from "../../assets/icons/close.svg";
-
+import SlidersPhoto from "./SlidersPhoto";
 function CardContentPhoto(props) {
   const { cardContent, img, color, handleShowExpandFalse } = props;
   const { isMobile, setIsExpand, isTablet } = useContext(CardListContext);
@@ -73,6 +73,7 @@ function CardContentPhoto(props) {
               alt="Foto"
               className={`w-full lg:max-w-4xl `}
             />
+            {/* <SlidersPhoto /> */}
             {isMobile && (
               <p
                 className={`custom-font text-left bg-black  items-center p-4 rounded mt-6`}

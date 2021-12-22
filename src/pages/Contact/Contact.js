@@ -38,31 +38,44 @@ const Contact = () => {
             Escríbenos aquí para ponernos en contacto:
           </p>
           <div>
-            <form action="" className="pb-10 lg:pr-20 overflow-x-hidden">
+            <form
+              action="https://formsubmit.co/amurys@visual-engin.com"
+              method="POST"
+              target="_blank"
+              className="pb-10 lg:pr-20 overflow-x-hidden"
+            >
               <div className="mx-4 lg:mx-0">
                 <input
                   type="text"
+                  name="Nombre"
                   placeholder="Tu nombre"
                   className="mb-4 w-full h-14 rounded px-4 border-form"
+                  required
                 />
                 <input
-                  type="text"
+                  type="email"
+                  name="Email"
                   placeholder="Tu email"
                   className="mb-4 w-full h-14 rounded px-4 border-form"
+                  required
                 />
                 <input
                   type="tel"
+                  name="Teléfono"
                   placeholder="Tu teléfono (opcional)"
                   className="mb-4 w-full h-14 rounded px-4 border-form"
                 />
                 <input
                   type="text"
+                  name="Mensaje"
                   placeholder="Mensaje (opcional)"
                   className="mb-4 w-full pb-36 rounded px-4 pt-4 border-form"
+                  required
                 />
               </div>
               <div className="mx-4 lg:mx-0">
                 <button
+                  type="submit"
                   className="custom-font w-full  text-sm lg:w-40 h-14 rounded shadow-box lg:mb-40"
                   style={{ backgroundColor: "#9BC2D4" }}
                 >
