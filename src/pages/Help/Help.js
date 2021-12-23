@@ -181,8 +181,7 @@ const Help = () => {
                       "messenger",
                     ],
                     padding: 10, // padding within buttons (INTEGER)
-                    radius: 4, // the corner radius on each button (INTEGER)
-
+                    radius: 10, // the corner radius on each button (INTEGER)
                     size: 35, // the size of each button (INTEGER)
                   }}
                 />

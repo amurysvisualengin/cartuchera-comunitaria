@@ -91,14 +91,14 @@ const Header = () => {
             isExpand
               ? "hidden"
               : "flex fixed z-10 w-full justify-between bottom-shadow"
-          } `}
+          } h-20 `}
           style={{ backgroundColor: "#f8f5ed" }}
         >
-          <img src={CatucheraLogo} alt="" className="  p-4 " />
-          {/* info button div */}
+          <img src={CatucheraLogo} alt="" className="p-4" />
+
           <div className="absolute right-12 top-4">
             <button
-              className="custom-font-shadow text-white bg-black text-xs px-2 h-6 mt-3 mr-10 rounded"
+              className="custom-font-shadow text-white bg-black text-xs px-2 h-6 mt-3 mr-6 rounded"
               onClick={() => {
                 setShowInformation(!showInformation);
               }}
@@ -110,7 +110,15 @@ const Header = () => {
             <InfoMobile />
           </div>
 
-          <div>
+          <button
+            onClick={() => {
+              setShowMenu(!showMenu);
+              console.log("click", showMenu);
+            }}
+          >
+            <img src={Hamburguer} alt="menu button" className=" mt-0 mr-1" />
+          </button>
+          {/* <div>
             {!show && (
               <div className="flex">
                 <button
@@ -146,7 +154,7 @@ const Header = () => {
                 </button>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
       )}
     </div>
