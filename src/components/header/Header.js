@@ -34,11 +34,10 @@ const Header = () => {
 
   useEffect(() => {
     if (showMenu) {
-    document.body.style.overflow = 'hidden';
-     return ()=> document.body.style.overflow = 'unset';
+      document.body.style.overflow = "hidden";
+      return () => (document.body.style.overflow = "unset");
     }
-    
-  },[showMenu])
+  }, [showMenu]);
 
   return (
     <div>
@@ -110,6 +109,7 @@ const Header = () => {
           <div className="fixed overflow-scroll top-0 left-0 bottom-0 z-50">
             <InfoMobile />
           </div>
+
           <div>
             {!show && (
               <div className="flex">

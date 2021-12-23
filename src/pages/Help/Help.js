@@ -1,9 +1,10 @@
 import React from "react";
-import HeaderRoutes from "../../components/headerRoutes/HeaderRoutes";
+import CardListContext from "../../context/CardListContext";
 import HelpForm from "./HelpForm";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import Menu from "../../components/menu/Menu";
+import { InlineShareButtons } from "sharethis-reactjs";
 
 import Family from "../../assets/icons/family-white.svg";
 import Paypal from "../../assets/imgs/paypal.png";
@@ -14,8 +15,11 @@ import Instagram from "../../assets/icons/instagram.svg";
 import Youtube from "../../assets/icons/youtube.svg";
 import GirlWhite from "../../assets/icons/girl-white.svg";
 import shape from "../../assets/icons/gray-shape.svg";
+import { useContext } from "react";
 
 const Help = () => {
+  const { isMobile } = useContext(CardListContext);
+
   return (
     <div className="overflow-x-hidden">
       <div>
@@ -125,9 +129,68 @@ const Help = () => {
                 <strong>#cartucheracomunitaria.</strong>
               </p>
             </div>
-            <div className="mt-6 -ml-5">
+            {!isMobile && (
+              <div className="mt-6 -ml-2 ">
+                <InlineShareButtons
+                  config={{
+                    alignment: "center", // alignment of buttons (left, center, right)
+                    color: "social", // set the color of buttons (social, white)
+                    enabled: true, // show/hide buttons (true, false)
+                    font_size: 10, // font size for the buttons
+                    // labels: "cta", // button labels (cta, counts, null)
+                    language: "en", // which language to use (see LANGUAGES)
+                    networks: [
+                      // which networks to include (see SHARING NETWORKS)
+                      "facebook",
+                      "twitter",
+                      "pinterest",
+                      "email",
+                      "telegram",
+                      "whatsapp",
+                      "linkedin",
+                      "messenger",
+                    ],
+                    padding: 12, // padding within buttons (INTEGER)
+                    radius: 4, // the corner radius on each button (INTEGER)
+
+                    size: 35, // the size of each button (INTEGER)
+                  }}
+                />
+              </div>
+            )}
+            {isMobile && (
+              <div className="mt-4 mb-10 ">
+                <InlineShareButtons
+                  config={{
+                    alignment: "center", // alignment of buttons (left, center, right)
+                    color: "social", // set the color of buttons (social, white)
+                    enabled: true, // show/hide buttons (true, false)
+                    font_size: 10, // font size for the buttons
+                    // labels: "cta", // button labels (cta, counts, null)
+                    language: "en", // which language to use (see LANGUAGES)
+                    networks: [
+                      // which networks to include (see SHARING NETWORKS)
+                      "facebook",
+                      "twitter",
+                      "pinterest",
+                      "email",
+                      "telegram",
+                      "whatsapp",
+                      "linkedin",
+                      "messenger",
+                    ],
+                    padding: 11, // padding within buttons (INTEGER)
+                    radius: 4, // the corner radius on each button (INTEGER)
+
+                    size: 30, // the size of each button (INTEGER)
+                  }}
+                />
+              </div>
+            )}
+
+            {/* <div className="mt-4 mb-10 lg:mb-0 lg:mt-6 lg:-ml-5">
               <div className="sharethis-inline-share-buttons"></div>
-            </div>
+            </div> */}
 
             {/* <div className="flex justify-center lg:block mt-4 mb-10">
               <ul className="flex">
