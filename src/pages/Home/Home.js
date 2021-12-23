@@ -41,7 +41,7 @@ const Home = () => {
             </li>
             <li>
               <Link
-                to="/app"
+                to="/juegodecartas"
                 className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg mb-4 lg:mr-6 box-hover custom-font  text-sm "
                 style={{ backgroundColor: "#E1AC47" }}
               >

@@ -125,7 +125,11 @@ const Help = () => {
                 <strong>#cartucheracomunitaria.</strong>
               </p>
             </div>
-            <div className="flex justify-center lg:block mt-4 mb-10">
+            <div className="mt-6 -ml-5">
+              <div className="sharethis-inline-share-buttons"></div>
+            </div>
+
+            {/* <div className="flex justify-center lg:block mt-4 mb-10">
               <ul className="flex">
                 <li className="mr-4">
                   <a
@@ -159,7 +163,7 @@ const Help = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

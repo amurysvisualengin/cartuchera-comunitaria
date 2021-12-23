@@ -80,7 +80,11 @@ export const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={Instagram} alt="instagram link" />
+              <img
+                src={Instagram}
+                alt="instagram link"
+                className="filter invert"
+              />
             </a>
           </li>
           <li className="mr-4">
