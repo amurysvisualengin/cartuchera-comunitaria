@@ -110,7 +110,7 @@ const Help = () => {
             alt=""
             className="hidden lg:flex lg:mr-20 lg:ml-6"
           />
-          <div className="max-w-lg">
+          <div className="">
             <div className="custom-font text-sm leading-5 text-center flex justify-center items-center mt-12 mb-4 bg-black text-white h-9 rounded lg:w-36 lg:h-12">
               <h2>¡COMPARTE!</h2>
             </div>
@@ -174,15 +174,16 @@ const Help = () => {
                       "twitter",
                       "pinterest",
                       "email",
+                      "sms",
                       "telegram",
                       "whatsapp",
                       "linkedin",
                       "messenger",
                     ],
-                    padding: 11, // padding within buttons (INTEGER)
+                    padding: 10, // padding within buttons (INTEGER)
                     radius: 4, // the corner radius on each button (INTEGER)
 
-                    size: 30, // the size of each button (INTEGER)
+                    size: 35, // the size of each button (INTEGER)
                   }}
                 />
               </div>
