@@ -40,7 +40,7 @@ const SliderPhoto = () => {
             className="w-102"
           />
         </div>
-        <div>
+        {/*  <div>
           <img
             src="https://static.onecms.io/wp-content/uploads/sites/34/2018/08/12170314/dog-with-bowl-0818.jpg"
             className="w-102"
@@ -57,7 +57,7 @@ const SliderPhoto = () => {
             src="https://static.onecms.io/wp-content/uploads/sites/34/2018/08/12170314/dog-with-bowl-0818.jpg"
             className="w-102"
           />
-        </div>
+        </div> */}
       </Slider>
     </div>
   );

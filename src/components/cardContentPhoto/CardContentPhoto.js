@@ -3,6 +3,7 @@ import CardListContext from "../../context/CardListContext";
 import "./CardContentPhoto.css";
 import CloseButton from "../../assets/icons/close.svg";
 import SliderPhoto from "./SliderPhoto";
+// import SimpleImageSlider from "react-simple-image-slider";
 
 function CardContentPhoto(props) {
   const { cardContent, img, color, handleShowExpandFalse } = props;
@@ -68,12 +69,14 @@ function CardContentPhoto(props) {
                 {cardContent.description.toUpperCase()}
               </p>
             )}
-            <img
+            {/*  <img
               src={cardContent.picture}
               alt="Foto"
               className={`w-full lg:max-w-4xl `}
-            />{" "}
-            <div className="">{/* <SliderPhoto /> */}</div>
+            />{" "} */}
+            <div className="">
+              <SliderPhoto />
+            </div>
             {isMobile && (
               <p
                 className={`custom-font text-left bg-black  items-center p-4 rounded mt-6`}
