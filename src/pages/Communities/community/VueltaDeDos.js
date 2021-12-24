@@ -52,7 +52,7 @@ const VueltaDeDos = () => {
             className="absolute transform right-0 w-106.5 shape-position"
           />
         </div>
-        <div className="lg:flex lg:justify-evenly lg:mt-24">
+        <div className="lg:flex lg:justify-evenly lg:mt-10">
           <div className="hidden lg:flex">
             <p className="text-base lg:max-w-lg ">
               Ubicada en la exuberante región montañosa de Comerío, la
@@ -84,16 +84,16 @@ const VueltaDeDos = () => {
           </div>
           <div className=" mt-20 lg:mt-0  lg:max-w-lg">
             <div className="flex items-start">
-              <img src={One} alt="" className="mr-4 mt-4" />
-              <p className="text-left mt-3">
+              <img src={One} alt="" className="mr-4 mt-2" />
+              <p className="text-left lg:mt-1 text-xlLg lg:text-base">
                 <strong>La Casa de Luis (2019):</strong> la comunidad eligió y
                 participó en el rediseño y reconstrucción de una casa destruida
                 por María.
               </p>
             </div>
             <div className="flex items-start mt-4">
-              <img src={Two} alt="" className="mr-4 " />
-              <p className=" text-left lg:text-base">
+              <img src={Two} alt="" className="mr-4 mt-2 lg:mt-0 " />
+              <p className=" text-left text-xlLg lg:text-base">
                 <strong>Prende Palomas (2019):</strong> tras una serie de
                 Recorridos Comunitarios y Talleres de Imaginario,la comunidad
                 identificó y atendió el problema de la escasez de iluminación
@@ -102,7 +102,7 @@ const VueltaDeDos = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center my-10 lg:my-16">
+        <div className="flex justify-center my-10 lg:my-10">
           <img src={Saw} alt="" />
         </div>
         <div className="flex justify-center text-center ">

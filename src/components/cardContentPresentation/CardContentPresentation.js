@@ -66,14 +66,12 @@ const CardContentPresentation = (props) => {
               }`}
             >
               <div className="flex justify-center mb-10 lg:mb-0">
-                <div>
-                  <img
-                    src={cardContent.nameSvg}
-                    alt="name SVG"
-                    className="lg:mt-10 ml-28"
-                  />
-                  <img src={img} alt="icon type" className="ml-4 w-40 mr-4 " />
-                </div>
+                <img
+                  src={cardContent.nameSvg}
+                  alt="name SVG"
+                  className="hidden lg:flex lg:mt-10 ml-28"
+                />
+                <img src={img} alt="icon type" className="ml-4 w-40 mr-4 " />
               </div>
             </div>
           )}
@@ -144,11 +142,7 @@ const CardContentPresentation = (props) => {
                   rel="noopener"
                   className="mr-6"
                 >
-                  <img
-                    src={Instagram}
-                    alt="Linkedin icon"
-                    className="filter invert"
-                  />
+                  <img src={Instagram} alt="Linkedin icon" className="" />
                 </a>
               </div>
             </div>

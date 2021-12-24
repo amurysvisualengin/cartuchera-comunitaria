@@ -12,7 +12,7 @@ const Carousel = () => {
     dots: true,
     infinite: true,
     spedd: 500,
-    slidesToShow: 0,
+    slidesToShow: 1,
     slidesToScroll: 1,
   };
   if (!isMobile) {
