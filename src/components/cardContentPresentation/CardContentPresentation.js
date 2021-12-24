@@ -40,7 +40,19 @@ const CardContentPresentation = (props) => {
               <img
                 src={cardContent.nameSvg}
                 alt="name SVG"
-                className="ml-52 mr-20 "
+                className={`mr-20 ${
+                  cardContent.name === "DOÑA LUZ"
+                    ? "-mt-10"
+                    : cardContent.name === "MARISA"
+                    ? "-mt-8"
+                    : cardContent.name === "TONY"
+                    ? "-mt-5"
+                    : cardContent.name === "SUSANA"
+                    ? "-mt-5"
+                    : cardContent.name === "DÉ"
+                    ? "-mt-8"
+                    : ""
+                }`}
               />
             </div>
           )}
@@ -65,7 +77,7 @@ const CardContentPresentation = (props) => {
                   : "block"
               }`}
             >
-              <div className="flex justify-center mb-10 lg:mb-0">
+              <div className="flex justify-center  mb-10 lg:mb-0">
                 <img
                   src={cardContent.nameSvg}
                   alt="name SVG"

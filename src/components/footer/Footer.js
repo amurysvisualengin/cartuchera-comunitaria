@@ -54,11 +54,11 @@ export const Footer = () => {
           <div>
             <FooterForm />
 
-            <p className="block lg:hidden text-xs font-thin inter-font">
+            {/* <p className="block lg:hidden text-xs font-thin inter-font">
               Aceptar terminos y condiciones
-            </p>
+            </p> */}
             <p
-              className="hidden lg:block lg:max-w-sm lg:text-xs lg:leading-4 lg:mt-4 text-xs font-thin inter-font"
+              className="lg:max-w-sm text-xs lg:leading-4 mt-2 lg:mt-4 mr-7 lg:mr-0 font-thin inter-font"
               style={{ color: "#FFFFFF" }}
             >
               Añade tu correo electrónico para recibir las últimas noticias
