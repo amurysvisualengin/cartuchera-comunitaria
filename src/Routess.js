@@ -8,6 +8,7 @@ import Help from "./pages/Help/Help";
 import Communities from "./pages/Communities/Communities";
 import ScrollToTop from "./components/ScrollToTop";
 import CardListContext from "./context/CardListContext";
+import Data from "./assets/data/Data.json";
 
 const Routess = () => {
   const [kitFilter, setKitFilter] = useState("");
@@ -25,6 +26,7 @@ const Routess = () => {
   const [showInformation, setShowInformation] = useState(false);
   const [mobileHeight, SetMobileHeight] = useState("");
   const [firstTouch, setFirstTouch] = useState(false);
+  const [card, setCard] = useState(Data);
 
   const handleResize = () => {
     if (window.innerWidth < 1224) {
@@ -78,6 +80,8 @@ const Routess = () => {
         SetMobileHeight,
         firstTouch,
         setFirstTouch,
+        card,
+        setCard,
       }}
     >
       <BrowserRouter basename="cartuchera-comunitaria">

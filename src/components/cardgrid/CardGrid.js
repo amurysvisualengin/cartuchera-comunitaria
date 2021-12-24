@@ -13,23 +13,15 @@ import CardContentPdf from "../cardContentPdf/CardContentPdf";
 import CardContentText from "../cardContentText/CardContentText";
 import CardContentPresentation from "../cardContentPresentation/CardContentPresentation";
 import CardContentPhoto from "../cardContentPhoto/CardContentPhoto";
+import { handleReload } from "../../components/swiper/Swiper";
 
 const CardGrid = () => {
   const typesCard = Data;
-
   const [list, setList] = useState(typesCard);
   const shuffleList = list.sort(() => Math.random() - 0.5);
 
   const { kitFilter, typeFilter, cardInfo } = useContext(CardListContext);
-  const {
-    isMobile,
-    isExpand,
-    /* isTablet,
-    showMenu,
-    setShowMenu,
-    showInformation,
-    setShowInformation, */
-  } = useContext(CardListContext);
+  const { isMobile, isExpand } = useContext(CardListContext);
 
   if (!isMobile) {
     return (
@@ -68,9 +60,8 @@ const CardGrid = () => {
         {!isExpand && (
           <div>
             <Swiper />
-            <div>
-              <CardShuffle list={list} setList={setList} />
-            </div>
+            <div>{/* <CardShuffle list={list} setList={setList} /> */}</div>
+
             <div
               className=" items-center flex justify-center h-20 px-4 absolute bottom-0 right-0 left-0 filters-shadow"
               style={{ background: "#F8F5ED" }}

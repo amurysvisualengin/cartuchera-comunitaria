@@ -76,13 +76,24 @@ const Card = (props) => {
       >
         {isMobile && (
           <div>
-            {!type && (
+            {!type && title === "Testing" && (
               <div
                 style={{ color: "#EBE4CF" }}
                 className="custom-font  absolute left-10 top-10"
               >
                 <p style={{ fontSize: 11 }}>HERRAMIENTA DE DISEÑO</p>
                 <p style={{ fontSize: 11 }}>PARTICIPATIVO </p>
+              </div>
+            )}
+            {!type && title === "Reload" && (
+              <div
+                style={{ color: "#EBE4CF" }}
+                className="custom-font-shadow text-4.5xl flex flex-col items-center text-center mt-52"
+              >
+                <button>
+                  <h2>VOLVER A </h2>
+                  <h2>EMPEZAR!</h2>
+                </button>
               </div>
             )}
             <p className="custom-font text-right items-start absolute right-6 top-6">

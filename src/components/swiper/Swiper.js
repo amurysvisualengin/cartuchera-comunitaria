@@ -7,12 +7,26 @@ import CardListContext from "../../context/CardListContext";
 import MobileSwiper from "react-tinder-card";
 
 import FirstCard from "../../assets/icons/first-card-mobile.svg";
+import { useEffect } from "react";
+import { useState } from "react";
 
 function Swiper() {
-  const card = Data;
-  const { changeColorMobile } = useContext(CardListContext);
+  // let card = Data;
+
+  const { changeColorMobile, setChangeColorMobile } =
+    useContext(CardListContext);
+
   const { typeMobile, isTablet, firstTouch, setFirstTouch } =
     useContext(CardListContext);
+
+  const { card, setCard } = useContext(CardListContext);
+
+  const handleReload = () => {
+    setCard((prevCard) => [...prevCard].sort(() => Math.random() - 0.5));
+
+    console.log("handlereload");
+    console.log(card);
+  };
 
   return (
     <div
@@ -20,6 +34,18 @@ function Swiper() {
       style={{ backgroundColor: "#f5e3b0" }}
     >
       <div className={`${isTablet > 766 ? "w-96.5 ml-auto mr-auto" : "block"}`}>
+        {
+          <div onTouchStart={() => handleReload()}>
+            <MobileSwiper
+              className="swipe right-3 left-3 top-24 bottom-0"
+              key={-2}
+              preventSwipe={["up", "down", "left", "right"]}
+            >
+              <Card title="Reload" color="black" cardContent="disabled" />
+            </MobileSwiper>
+          </div>
+        }
+
         {card.map(
           (element, index) =>
             // Conditional colors and card types
@@ -47,6 +73,7 @@ function Swiper() {
               </MobileSwiper>
             )
         )}
+
         {!firstTouch && (
           <MobileSwiper
             className="swipe right-3 left-3 top-24 bottom-0"
