@@ -2,9 +2,8 @@ import React, { useContext } from "react";
 import CardListContext from "../../context/CardListContext";
 import "./CardContentPhoto.css";
 import CloseButton from "../../assets/icons/close.svg";
-import SliderPhoto from "./SliderPhoto";
-import Carousel from "../carousel/Carousel";
 
+import SimpleSlider from "./SimpleSlider";
 // import SimpleImageSlider from "react-simple-image-slider";
 
 function CardContentPhoto(props) {
@@ -35,7 +34,7 @@ function CardContentPhoto(props) {
       </div>
       <div className="flex justify-center lg:mx-0 lg:ml-0 lg:mt-16">
         {!isMobile && <img src={img} alt="" className="w-20 h-full mr-10" />}
-        <div className="flex justify-center">
+        <div className="flex justify-center pb-32">
           <div
             className={`block  ${
               isTablet < 768 ? "w-full mx-5" : "lg:w-100 lg:mr-52"
@@ -76,7 +75,7 @@ function CardContentPhoto(props) {
               alt="Foto"
               className={`w-full lg:max-w-4xl `}
             />{" "} */}
-            <div className=""></div>
+            <SimpleSlider />
             {isMobile && (
               <p
                 className={`custom-font text-left bg-black  items-center p-4 rounded mt-6`}
@@ -87,9 +86,6 @@ function CardContentPhoto(props) {
             )}
           </div>
         </div>
-      </div>
-      <div className="lg:flex lg:justify-center lg:ml-14">
-        <SliderPhoto />
       </div>
     </div>
   );
