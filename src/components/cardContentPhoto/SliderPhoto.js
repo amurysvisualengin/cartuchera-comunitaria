@@ -14,7 +14,7 @@ const SliderPhoto = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="max-w-xs ml-4 lg:max-w-4xl">
+    <div className="max-w-4xl">
       <Slider {...settings}>
         <div>
           <img

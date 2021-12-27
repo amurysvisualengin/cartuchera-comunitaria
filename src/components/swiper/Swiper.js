@@ -13,11 +13,14 @@ import { useState } from "react";
 function Swiper() {
   // let card = Data;
 
-  const { changeColorMobile, setChangeColorMobile } =
-    useContext(CardListContext);
-
-  const { typeMobile, isTablet, firstTouch, setFirstTouch } =
-    useContext(CardListContext);
+  const {
+    typeMobile,
+    isTablet,
+    firstTouch,
+    setFirstTouch,
+    changeColorMobile,
+    setChangeColorMobile,
+  } = useContext(CardListContext);
 
   const { card, setCard } = useContext(CardListContext);
 
