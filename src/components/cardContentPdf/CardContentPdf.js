@@ -99,13 +99,15 @@ const CardContentPdf = (props) => {
                       className="flex bg-black custom-font p-4 "
                       style={{ color: color }}
                     >
-                      <div
-                        className="rounded-full w-5 h-5  mr-4"
-                        style={{ background: color }}
-                      >
-                        <h3 className="text-black text-sm text-center ">
-                          {element.step}
-                        </h3>
+                      <div className="w-10">
+                        <div
+                          className="circle  mr-4"
+                          style={{ background: color }}
+                        >
+                          <h3 className="text-black text-sm text-center ">
+                            {element.step}
+                          </h3>
+                        </div>
                       </div>
                       <h3 className="items-center text-sm">
                         {element.statement.toUpperCase()}
@@ -143,13 +145,15 @@ const CardContentPdf = (props) => {
               `}
                 >
                   <div className="flex bg-black p-4">
-                    <div
-                      className="rounded-full w-5 h-5 mr-4 text-center px-1"
-                      style={{ background: color }}
-                    >
-                      <h3 className="custom-font text-black text-sm">
-                        {element.step}
-                      </h3>
+                    <div className="w-10">
+                      <div
+                        className="circle  mr-4"
+                        style={{ background: color }}
+                      >
+                        <h3 className="text-black text-sm text-center custom-font">
+                          {element.step}
+                        </h3>
+                      </div>
                     </div>
 
                     <h3

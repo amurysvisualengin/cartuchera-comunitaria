@@ -9,3 +9,11 @@
 .hover-button img:hover {
   filter: invert();
 }
+
+.circle {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  /* text-align: center; */
+}
