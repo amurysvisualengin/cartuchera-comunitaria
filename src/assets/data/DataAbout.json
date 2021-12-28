@@ -1,26 +1,26 @@
 [
   {
-    "img": "./images/old-woman.png",
+    "img": "./images/old-woman.svg",
     "title": "Mapeo Comunitario",
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,porttitor sit justo nullam lectus consectetur arcu eget suspendisse. Donec sit suspendisse quis sit pharetra. Eget tortor amet scelerisque ipsum rhoncus, iaculis gravida sem. Consequat, augue eu congue blandit."
   },
   {
-    "img": "./images/family.png",
+    "img": "./images/family.svg",
     "title": "Talleres de imaginario",
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,porttitor sit justo nullam lectus consectetur arcu eget suspendisse. Donec sit suspendisse quis sit pharetra. Eget tortor amet scelerisque ipsum rhoncus, iaculis gravida sem. Consequat, augue eu congue blandit."
   },
   {
-    "img": "./images/girl-1.png",
+    "img": "./images/girl-1.svg",
     "title": "Procesos comunitarios",
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,porttitor sit justo nullam lectus consectetur arcu eget suspendisse. Donec sit suspendisse quis sit pharetra. Eget tortor amet scelerisque ipsum rhoncus, iaculis gravida sem. Consequat, augue eu congue blandit."
   },
   {
-    "img": "./images/boy.png",
+    "img": "./images/boy.svg",
     "title": "Justicia Narrativa",
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,porttitor sit justo nullam lectus consectetur arcu eget suspendisse. Donec sit suspendisse quis sit pharetra. Eget tortor amet scelerisque ipsum rhoncus, iaculis gravida sem. Consequat, augue eu congue blandit."
   },
   {
-    "img": "./images/girl-2.png",
+    "img": "./images/girl-2.svg",
     "title": "Construcción participativa",
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,porttitor sit justo nullam lectus consectetur arcu eget suspendisse. Donec sit suspendisse quis sit pharetra. Eget tortor amet scelerisque ipsum rhoncus, iaculis gravida sem. Consequat, augue eu congue blandit."
   }

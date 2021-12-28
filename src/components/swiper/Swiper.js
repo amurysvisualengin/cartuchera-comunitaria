@@ -1,18 +1,13 @@
 import React, { useContext } from "react";
-import Data from "../../assets/data/Data.json";
 import Card from "../card/Card";
 import "./Swiper.css";
 import StarterMobile from "../../assets/icons/starter-mobile.svg";
 import CardListContext from "../../context/CardListContext";
 import MobileSwiper from "react-tinder-card";
 
-import FirstCard from "../../assets/icons/first-card-mobile.svg";
-import { useEffect } from "react";
 import { useState } from "react";
 
 function Swiper() {
-  // let card = Data;
-
   const {
     typeMobile,
     setTypeMobile,
