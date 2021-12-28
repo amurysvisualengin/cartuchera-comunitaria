@@ -15,6 +15,7 @@ function Swiper() {
 
   const {
     typeMobile,
+    setTypeMobile,
     isTablet,
     firstTouch,
     setFirstTouch,
@@ -23,13 +24,17 @@ function Swiper() {
   } = useContext(CardListContext);
 
   const { card, setCard } = useContext(CardListContext);
+  const [reload, SetReload] = useState(false);
 
   const handleReload = () => {
+    setChangeColorMobile("");
+    setTypeMobile("");
     setCard((prevCard) => [...prevCard].sort(() => Math.random() - 0.5));
-
+    SetReload(!reload);
     console.log("handlereload");
     console.log(card);
   };
+  console.log("reload:", reload);
 
   return (
     <div
@@ -48,34 +53,64 @@ function Swiper() {
             </MobileSwiper>
           </div>
         }
-
-        {card.map(
-          (element, index) =>
-            // Conditional colors and card types
-            ((changeColorMobile === "" && typeMobile === "") ||
-              (changeColorMobile === element.color && typeMobile === "") ||
-              (changeColorMobile === element.color &&
-                typeMobile === element.typeId) ||
-              (changeColorMobile === "" && typeMobile === element.typeId)) && (
-              <MobileSwiper
-                className="swipe right-3 left-3 top-24 bottom-0"
-                key={index}
-                preventSwipe={["up", "down"]}
-              >
-                <div>
-                  <Card
-                    key={index}
-                    cardNumber={element.cardNumber}
-                    title={element.title}
-                    img={element.img}
-                    color={element.color}
-                    type={element.type}
-                    cardContent={element.cardType}
-                  />
-                </div>
-              </MobileSwiper>
-            )
-        )}
+        {reload === false &&
+          card.map(
+            (element, index) =>
+              // Conditional colors and card types
+              ((changeColorMobile === "" && typeMobile === "") ||
+                (changeColorMobile === element.color && typeMobile === "") ||
+                (changeColorMobile === element.color &&
+                  typeMobile === element.typeId) ||
+                (changeColorMobile === "" &&
+                  typeMobile === element.typeId)) && (
+                <MobileSwiper
+                  className="swipe right-3 left-3 top-24 bottom-0"
+                  key={index}
+                  preventSwipe={["up", "down"]}
+                >
+                  <div>
+                    <Card
+                      key={index}
+                      cardNumber={element.cardNumber}
+                      title={element.title}
+                      img={element.img}
+                      color={element.color}
+                      type={element.type}
+                      cardContent={element.cardType}
+                    />
+                  </div>
+                </MobileSwiper>
+              )
+          )}
+        {reload === true &&
+          card.map(
+            (element, index) =>
+              // Conditional colors and card types
+              ((changeColorMobile === "" && typeMobile === "") ||
+                (changeColorMobile === element.color && typeMobile === "") ||
+                (changeColorMobile === element.color &&
+                  typeMobile === element.typeId) ||
+                (changeColorMobile === "" &&
+                  typeMobile === element.typeId)) && (
+                <MobileSwiper
+                  className="swipe right-3 left-3 top-24 bottom-0"
+                  key={index}
+                  preventSwipe={["up", "down"]}
+                >
+                  <div>
+                    <Card
+                      key={index}
+                      cardNumber={element.cardNumber}
+                      title={element.title}
+                      img={element.img}
+                      color={element.color}
+                      type={element.type}
+                      cardContent={element.cardType}
+                    />
+                  </div>
+                </MobileSwiper>
+              )
+          )}
 
         {!firstTouch && (
           <MobileSwiper

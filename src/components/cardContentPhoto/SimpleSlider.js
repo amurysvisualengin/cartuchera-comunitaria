@@ -1,17 +1,23 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import "./SimpleSlider.css";
+
 const SimpleSlider = () => {
   return (
     <div className="max-w-4xl">
       <Carousel
-        showArrows={false}
+        showArrows={true}
         showThumbs={false}
         infiniteLoop={true}
         swipeable={true}
         emulateTouch={true}
       >
+        <div>
+          <img src="https://www.seekpng.com/png/full/190-1906751_dog-bowl-hunting-dog.png" />
+        </div>
+        <div>
+          <img src="https://www.seekpng.com/png/full/190-1906751_dog-bowl-hunting-dog.png" />
+        </div>
         <div>
           <img src="https://www.seekpng.com/png/full/190-1906751_dog-bowl-hunting-dog.png" />
         </div>
