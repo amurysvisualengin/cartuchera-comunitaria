@@ -7,6 +7,7 @@ import CardContentPhoto from "../cardContentPhoto/CardContentPhoto";
 import CardListContext from "../../context/CardListContext";
 import "./Card.css";
 import "../../App.css";
+import SimpleSlider from "../cardContentPhoto/SimpleSlider";
 
 const Card = (props) => {
   const [showExpand, setShowExpand] = useState(false);
@@ -182,13 +183,15 @@ const Card = (props) => {
             />
           )}
           {type === "Photo" && (
-            <CardContentPhoto
-              cardContent={cardContent}
-              img={img}
-              title={title}
-              color={color}
-              handleShowExpandFalse={handleShowExpandFalse}
-            />
+            <div>
+              <CardContentPhoto
+                cardContent={cardContent}
+                img={img}
+                title={title}
+                color={color}
+                handleShowExpandFalse={handleShowExpandFalse}
+              />
+            </div>
           )}
         </div>
       </div>

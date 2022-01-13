@@ -6,7 +6,6 @@ import CloseButton from "../../assets/icons/close.svg";
 
 const Menu = (props) => {
   const { isMobile, showMenu, setShowMenu } = useContext(CardListContext);
-  
 
   return (
     <div
@@ -29,8 +28,8 @@ const Menu = (props) => {
         </button>
       </div>
 
-      <div className="flex justify-center items-center lg:mt-16 ">
-        <div className="block text-white custom-font-shadow text-3xl lg:text-5xl">
+      <div className="flex justify-center items-center lg:mt-16 2xl:mt-20 ">
+        <div className="block text-white custom-font-shadow text-3xl lg:text-5xl 2xl:text-6xl">
           {!isMobile && (
             <ul
               className="cursor-pointer text-center  "

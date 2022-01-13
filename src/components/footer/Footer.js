@@ -75,17 +75,19 @@ export const Footer = () => {
       <div className="lg:flex lg:justify-between lg:items-start lg:mr-20">
         <ul className="flex items-center lg:px-20 mb-6 lg:mb-20 ">
           <li className="mr-4 ml-4 lg:ml-0">
-            <a
-              href="https://www.instagram.com/la_marana_pr/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={Instagram}
-                alt="instagram link"
-                className="filter invert"
-              />
-            </a>
+            <div className="rounded-full border-white border-2 h-9 w-9">
+              <a
+                href="https://www.instagram.com/la_marana_pr/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={Instagram}
+                  alt="instagram link"
+                  className="filter invert w-4 m-2"
+                />
+              </a>
+            </div>
           </li>
           <li className="mr-4">
             <a

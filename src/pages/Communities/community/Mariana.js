@@ -3,13 +3,14 @@ import "./Mariana.css";
 import Cube from "../../../assets/icons/cube.svg";
 import Arecma from "../../../assets/imgs/arecma.png";
 import Yellowshape from "../../../assets/icons/yellow-shape-complete.svg";
-import Carousel from "../../../components/carousel/Carousel";
+import CarouselHumacao from "../../../components/carousel/CarouselHumacao";
 
 import CardListContext from "../../../context/CardListContext";
 import { useContext } from "react";
+import DataHumacaoPhotos from "../../../assets/data/DataHumacaoPhotos.json";
 
 const Mariana = () => {
-  const { isMobile } = useContext(CardListContext);
+  const { isMobile, setCarouselPhotosHumacao } = useContext(CardListContext);
   return (
     <div className="overflow-hidden">
       <div className="mx-4 text-center">
@@ -67,7 +68,8 @@ const Mariana = () => {
         </div>
       </div>
       <div className="lg:mb-32 my-10 lg:my-0 lg:mt-16">
-        <Carousel />
+        {setCarouselPhotosHumacao(DataHumacaoPhotos)}
+        <CarouselHumacao />
       </div>
 
       <div

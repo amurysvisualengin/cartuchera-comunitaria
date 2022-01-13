@@ -7,7 +7,9 @@ import Slider from "react-slick";
 import CardListContext from "../../context/CardListContext";
 
 const Carousel = () => {
-  const { isMobile } = useContext(CardListContext);
+  const { isMobile, carouselPhotosCarolina } = useContext(CardListContext);
+  carouselPhotosCarolina.map((e, i) => console.log(e.img));
+
   const settings = {
     dots: true,
     infinite: true,
@@ -23,42 +25,9 @@ const Carousel = () => {
   }
   return (
     <Slider {...settings}>
-      <div>
-        <img
-          src="https://www.kindpng.com/picc/m/772-7720806_camas-para-perros-de-espuma-hd-png-download.png"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://www.kindpng.com/picc/m/772-7720806_camas-para-perros-de-espuma-hd-png-download.png"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://www.kindpng.com/picc/m/772-7720806_camas-para-perros-de-espuma-hd-png-download.png"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://www.kindpng.com/picc/m/772-7720806_camas-para-perros-de-espuma-hd-png-download.png"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://www.kindpng.com/picc/m/772-7720806_camas-para-perros-de-espuma-hd-png-download.png"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://www.kindpng.com/picc/m/772-7720806_camas-para-perros-de-espuma-hd-png-download.png"
-          alt=""
-        />
-      </div>
+      {carouselPhotosCarolina.map((e, i) => (
+        <img src={e.img} alt="" />
+      ))}
     </Slider>
   );
 };

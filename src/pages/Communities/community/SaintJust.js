@@ -3,8 +3,13 @@ import TransparentShape from "../../../assets/icons/transparent-shape.svg";
 import Parceleras from "../../../assets/icons/parceleras-afro-caribenas.svg";
 import "../Communities.css";
 import Carousel from "../../../components/carousel/Carousel";
+import DataCarolinaPhotos from "../../../assets/data/DataCaralinaPhotos.json";
+import CardListContext from "../../../context/CardListContext";
+import { useContext } from "react";
 
 const SaintJust = () => {
+  const { setCarouselPhotosCarolina } = useContext(CardListContext);
+
   return (
     <div>
       <div className="lg:flex lg:justify-center lg:items-center lg:mt-48">
@@ -53,6 +58,7 @@ const SaintJust = () => {
         <img src={TransparentShape} alt="" className="absolute top-absolute" />
       </div>
       <div className="lg:mb-26 lg:mt-24 my-10 lg:my-0">
+        {setCarouselPhotosCarolina(DataCarolinaPhotos)}
         <Carousel />
       </div>
       <div

@@ -21,7 +21,7 @@ const CardContentPresentation = (props) => {
       style={{ backgroundColor: isMobile ? color : "" }}
     >
       <div
-        className="flex justify-end lg:mt-4 lg:mr-10 hover-button"
+        className="flex justify-end lg:mt-4 2xl:mt-8 lg:mr-10 2xl:mr-14 hover-button"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
@@ -36,7 +36,7 @@ const CardContentPresentation = (props) => {
       <div className="lg:flex lg:justify-center lg:mt-8 lg:mr-20 ">
         <div className={` ${isTablet < 768 ? "mr-3" : "mr-2"}`}>
           {!isMobile && (
-            <div className={``}>
+            <div className={`2xl:mt-6`}>
               <img
                 src={cardContent.nameSvg}
                 alt="name SVG"
@@ -57,7 +57,7 @@ const CardContentPresentation = (props) => {
             </div>
           )}
         </div>
-        <div className="block mx-4 lg:mx-0 ">
+        <div className="block mx-4 lg:mx-0 2xl:mt-4 ">
           <h2
             className="text-white rounded text-xs font-bold leading-4 tracking-special text-center bg-black w-32 mt-10 mb-6 p-2 inter-font "
             style={{ color: color }}
@@ -148,14 +148,20 @@ const CardContentPresentation = (props) => {
                 >
                   <img src={Facebook} alt="Twitter icon" />
                 </a>
-                <a
-                  href="https://www.instagram.com/la_marana_pr/"
-                  target="_blanck"
-                  rel="noopener"
-                  className="mr-6"
-                >
-                  <img src={Instagram} alt="Linkedin icon" className="" />
-                </a>
+                <div className="rounded-full border-black border-2 h-9 w-9">
+                  <a
+                    href="https://www.instagram.com/la_marana_pr/"
+                    target="_blanck"
+                    rel="noopener"
+                    className="mr-6"
+                  >
+                    <img
+                      src={Instagram}
+                      alt="Linkedin icon"
+                      className="w-4 m-2"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

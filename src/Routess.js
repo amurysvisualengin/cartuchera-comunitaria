@@ -27,6 +27,9 @@ const Routess = () => {
   const [mobileHeight, SetMobileHeight] = useState("");
   const [firstTouch, setFirstTouch] = useState(false);
   const [card, setCard] = useState(Data);
+  const [carouselPhotosCarolina, setCarouselPhotosCarolina] = useState([]);
+  const [carouselPhotosComerio, setCarouselPhotosComerio] = useState([]);
+  const [carouselPhotosHumacao, setCarouselPhotosHumacao] = useState([]);
 
   const handleResize = () => {
     if (window.innerWidth < 1224) {
@@ -82,6 +85,12 @@ const Routess = () => {
         setFirstTouch,
         card,
         setCard,
+        carouselPhotosCarolina,
+        setCarouselPhotosCarolina,
+        carouselPhotosComerio,
+        setCarouselPhotosComerio,
+        carouselPhotosHumacao,
+        setCarouselPhotosHumacao,
       }}
     >
       <BrowserRouter basename="cartuchera-comunitaria">

@@ -27,7 +27,36 @@
       "typeName": "Álbum de fotos",
       "subTitle": "Proyecto Colaborativo",
       "description": "Aquí puedes ver fotos de los procesos de construcción de distintos proyectos colaborativos en las comunidades de Comerío, Carolina y Humacao, incluyendo la Casa de Iris en San Antón, la Casa de Luis en Vuelta del Dos y el Parque Mis Panitas en Mariana.",
-      "picture": "./images/photography.png"
+      "picture": [
+        {
+          "id": 1,
+          "img": "./images/proyecto-colaborativo-photo/1.jpg"
+        },
+        {
+          "id": 2,
+          "img": "./images/proyecto-colaborativo-photo/2.jpg"
+        },
+        {
+          "id": 3,
+          "img": "./images/proyecto-colaborativo-photo/4.jpg"
+        },
+        {
+          "id": 4,
+          "img": "./images/proyecto-colaborativo-photo/5.jpg"
+        },
+        {
+          "id": 5,
+          "img": "./images/proyecto-colaborativo-photo/6.jpg"
+        },
+        {
+          "id": 6,
+          "img": "./images/proyecto-colaborativo-photo/7.jpg"
+        },
+        {
+          "id": 7,
+          "img": "./images/proyecto-colaborativo-photo/8.jpg"
+        }
+      ]
     }
   },
   {
@@ -357,7 +386,60 @@
       "typeName": "Álbum de fotos",
       "subTitle": "Procesos Comunitarios",
       "description": "Las comunidades de Humacao, Carolina y Comerío imaginan espacios accesibles y seguros que atiendan las necesidades de sus barrios.",
-      "picture": "./images/photography.png"
+      "picture": [
+        {
+          "id": 1,
+          "img": "./images/proceso-comunitario-photo/1.jpg"
+        },
+        {
+          "id": 2,
+          "img": "./images/proceso-comunitario-photo/2.jpg"
+        },
+        {
+          "id": 3,
+          "img": "./images/proceso-comunitario-photo/3.jpg"
+        },
+        {
+          "id": 4,
+          "img": "./images/proceso-comunitario-photo/4.jpg"
+        },
+        {
+          "id": 5,
+          "img": "./images/proceso-comunitario-photo/5.jpg"
+        },
+        {
+          "id": 6,
+          "img": "./images/proceso-comunitario-photo/6.jpg"
+        },
+        {
+          "id": 7,
+          "img": "./images/proceso-comunitario-photo/7.jpg"
+        },
+        {
+          "id": 8,
+          "img": "./images/proceso-comunitario-photo/8.jpg"
+        },
+        {
+          "id": 9,
+          "img": "./images/proceso-comunitario-photo/9.jpg"
+        },
+        {
+          "id": 10,
+          "img": "./images/proceso-comunitario-photo/10.jpg"
+        },
+        {
+          "id": 11,
+          "img": "./images/proceso-comunitario-photo/11.jpg"
+        },
+        {
+          "id": 12,
+          "img": "./images/proceso-comunitario-photo/12.jpg"
+        },
+        {
+          "id": 13,
+          "img": "./images/proceso-comunitario-photo/13.jpg"
+        }
+      ]
     }
   },
   {
@@ -607,7 +689,36 @@
       "typeName": "Álbum de fotos",
       "subTitle": "Justicia Narrativa",
       "description": "Estas fotos muestran la justicia narrativa en acción en las comunidades de Carolina, Comerío y Humacao.",
-      "picture": "./images/photography.png"
+      "picture": [
+        {
+          "id": 1,
+          "img": "./images/justicia-narrativa-photo/1.jpg"
+        },
+        {
+          "id": 2,
+          "img": "./images/justicia-narrativa-photo/2.jpg"
+        },
+        {
+          "id": 3,
+          "img": "./images/justicia-narrativa-photo/3.jpg"
+        },
+        {
+          "id": 4,
+          "img": "./images/justicia-narrativa-photo/4.jpg"
+        },
+        {
+          "id": 5,
+          "img": "./images/justicia-narrativa-photo/5.jpg"
+        },
+        {
+          "id": 6,
+          "img": "./images/justicia-narrativa-photo/6.jpg"
+        },
+        {
+          "id": 7,
+          "img": "./images/justicia-narrativa-photo/7.jpg"
+        }
+      ]
     }
   },
   {
@@ -840,7 +951,48 @@
       "typeName": "Álbum de fotos",
       "subTitle": "Mapeo comunitario",
       "description": "¡CONOCE LAS FORMAS DIVERSAS EN QUE SE REALIZÓ EL MAPEO COMUNITARIO EN CAROLINA, HUMACAO  Y COMERÍO",
-      "picture": "./images/photography.png"
+      "picture": [
+        {
+          "id": 1,
+          "img": "./images/mapeo-comunitario-photo/1.jpg"
+        },
+        {
+          "id": 2,
+          "img": "./images/mapeo-comunitario-photo/2.jpg"
+        },
+        {
+          "id": 3,
+          "img": "./images/mapeo-comunitario-photo/3.jpg"
+        },
+        {
+          "id": 4,
+          "img": "./images/mapeo-comunitario-photo/4.jpg"
+        },
+        {
+          "id": 5,
+          "img": "./images/mapeo-comunitario-photo/5.jpg"
+        },
+        {
+          "id": 6,
+          "img": "./images/mapeo-comunitario-photo/6.jpg"
+        },
+        {
+          "id": 7,
+          "img": "./images/mapeo-comunitario-photo/7.jpg"
+        },
+        {
+          "id": 8,
+          "img": "./images/mapeo-comunitario-photo/8.jpg"
+        },
+        {
+          "id": 9,
+          "img": "./images/mapeo-comunitario-photo/9.jpg"
+        },
+        {
+          "id": 10,
+          "img": "./images/mapeo-comunitario-photo/10.jpg"
+        }
+      ]
     }
   },
   {
@@ -1107,7 +1259,52 @@
       "typeName": "Álbum de fotos",
       "subTitle": "Talleres de Imaginario",
       "description": "Explora las distintas manifestaciones que puede tomar un taller de imaginario con ejemplos vivos de las comunidades de Comerío, Carolina y Humacao.",
-      "picture": "./images/photography.png"
+      "picture": [
+        {
+          "id": 0,
+          "img": "./images/taller-imaginario-photo/0.jpg"
+        },
+        {
+          "id": 1,
+          "img": "./images/taller-imaginario-photo/1.jpg"
+        },
+        {
+          "id": 2,
+          "img": "./images/taller-imaginario-photo/2.jpg"
+        },
+        {
+          "id": 3,
+          "img": "./images/taller-imaginario-photo/3.jpg"
+        },
+        {
+          "id": 4,
+          "img": "./images/taller-imaginario-photo/4.jpg"
+        },
+        {
+          "id": 5,
+          "img": "./images/taller-imaginario-photo/5.jpg"
+        },
+        {
+          "id": 6,
+          "img": "./images/taller-imaginario-photo/6.jpg"
+        },
+        {
+          "id": 7,
+          "img": "./images/taller-imaginario-photo/7.jpg"
+        },
+        {
+          "id": 8,
+          "img": "./images/taller-imaginario-photo/8.jpg"
+        },
+        {
+          "id": 97,
+          "img": "./images/taller-imaginario-photo/9.jpg"
+        },
+        {
+          "id": 10,
+          "img": "./images/taller-imaginario-photo/10.jpg"
+        }
+      ]
     }
   },
 

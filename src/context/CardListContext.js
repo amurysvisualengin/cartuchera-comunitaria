@@ -33,6 +33,13 @@ const CardListContext = createContext({
   setFirstTouch: (height) => {},
   card: "",
   setCard: (card) => {},
+  // Carousels
+  carouselPhotosCarolina: [],
+  setCarouselPhotosCarolina: (carouselCarolina) => {},
+  carouselPhotosComerio: [],
+  setCarouselPhotosComerio: (carouselComerio) => {},
+  carouselPhotosHumacao: [],
+  setCarouselPhotosHumacao: (carouselHumacao) => {},
 });
 
 export default CardListContext;

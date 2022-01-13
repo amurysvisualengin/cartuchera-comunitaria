@@ -70,12 +70,8 @@ function CardContentPhoto(props) {
                 {cardContent.description.toUpperCase()}
               </p>
             )}
-            {/*  <img
-              src={cardContent.picture}
-              alt="Foto"
-              className={`w-full lg:max-w-4xl `}
-            />{" "} */}
-            <SimpleSlider />
+
+            <SimpleSlider cardContent={cardContent} />
             {isMobile && (
               <p
                 className={`custom-font text-left bg-black  items-center p-4 rounded mt-6`}
