@@ -3,7 +3,7 @@ import TransparentShape from "../../../assets/icons/transparent-shape.svg";
 import Parceleras from "../../../assets/icons/parceleras-afro-caribenas.svg";
 import "../Communities.css";
 import Carousel from "../../../components/carousel/Carousel";
-import DataCarolinaPhotos from "../../../assets/data/DataCaralinaPhotos.json";
+import DataCarolinaPhotos from "../../../assets/data/DataCarolinaPhotos.json";
 import CardListContext from "../../../context/CardListContext";
 import { useContext } from "react";
 

@@ -10,7 +10,7 @@ import { useContext } from "react";
 import DataHumacaoPhotos from "../../../assets/data/DataHumacaoPhotos.json";
 
 const Mariana = () => {
-  const { isMobile, setCarouselPhotosHumacao } = useContext(CardListContext);
+  const { setCarouselPhotosHumacao } = useContext(CardListContext);
   return (
     <div className="overflow-hidden">
       <div className="mx-4 text-center">
