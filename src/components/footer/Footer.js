@@ -75,7 +75,7 @@ export const Footer = () => {
       <div className="lg:flex lg:justify-between lg:items-start lg:mr-20">
         <ul className="flex items-center lg:px-20 mb-6 lg:mb-20 ">
           <li className="mr-4 ml-4 lg:ml-0">
-            <div className="rounded-full border-white border-2 h-9 w-9">
+            <div className="rounded-full border-white border-2 h-9.5 w-9.5">
               <a
                 href="https://www.instagram.com/la_marana_pr/"
                 target="_blank"
@@ -84,7 +84,7 @@ export const Footer = () => {
                 <img
                   src={Instagram}
                   alt="instagram link"
-                  className="filter invert w-4 m-2"
+                  className="filter invert w-4 mt-2.4 ml-2"
                 />
               </a>
             </div>
@@ -95,11 +95,13 @@ export const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src={Facebook}
-                alt="Facebook link"
-                className="filter invert"
-              />
+              <div className="border-white border-2 rounded-full w-9.5 h-9.5">
+                <img
+                  src={Facebook}
+                  alt="Facebook link"
+                  className="filter m-2 ml-3 mt-2.5"
+                />
+              </div>
             </a>
           </li>
           <li className="">
@@ -108,7 +110,7 @@ export const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={Youtube} alt="youtube link" />
+              <img src={Youtube} alt="youtube link" className="filter invert" />
             </a>
           </li>
         </ul>

@@ -1,9 +1,9 @@
 import React from "react";
 import "./SocialMedia.css";
 
-import Linkedin from "../../assets/icons/Linkedin.svg";
 import Facebook from "../../assets/icons/Facebook.svg";
-import Twitter from "../../assets/icons/Twitter.svg";
+import Instagram from "../../assets/icons/instagram.svg";
+import Youtube from "../../assets/icons/youtube.svg";
 
 const SocialMedia = () => {
   return (
@@ -20,11 +20,12 @@ const SocialMedia = () => {
       <ul className="flex mt-4 social-media">
         <li className="mr-2 lg:mr-5">
           <a
-            href="https://www.linkedin.com/company/la-mara%C3%B1a-pr/about/"
-            target="_blanck"
-            rel="noopener"
+            href="https://www.youtube.com/channel/UCKUy3fZFuIiynFWqP9zMiZg"
+            target="_blank"
+            rel="noreferrer"
+            className="mr-6"
           >
-            <img src={Linkedin} alt="Link to Likedin" />
+            <img src={Youtube} alt="Facebook icon" className="filter " />
           </a>
         </li>
         <li className="mr-2 lg:mr-5">
@@ -33,17 +34,26 @@ const SocialMedia = () => {
             target="_blanck"
             rel="noopener"
           >
-            <img src={Facebook} alt="Link to Facebook" />
+            <div className="rounded-full border-black border-2 h-9 w-9">
+              <img
+                src={Facebook}
+                alt="Link to Facebook"
+                className="filter invert m-2 ml-3 mt-2"
+              />
+            </div>
           </a>
         </li>
         <li className="mr-5">
-          <a
-            href="https://twitter.com/la_marana_pr?lang=es"
-            target="_blanck"
-            rel="noopener"
-          >
-            <img src={Twitter} alt="Link to Twitter" />
-          </a>
+          <div className="rounded-full border-black border-2 h-9 w-9">
+            <a
+              href="https://www.instagram.com/la_marana_pr/"
+              target="_blanck"
+              rel="noopener"
+              className="mr-6"
+            >
+              <img src={Instagram} alt="Linkedin icon" className="w-4 m-2" />
+            </a>
+          </div>
         </li>
       </ul>
     </div>

@@ -6,8 +6,6 @@ import "../cardContentAudio/CardContentAudio.css";
 import "./CardContentPresentation.css";
 // import "./CardContentPresentation.css";
 import Facebook from "../../assets/icons/Facebook.svg";
-import Twitter from "../../assets/icons/Twitter.svg";
-import Linkedin from "../../assets/icons/Linkedin.svg";
 import Instagram from "../../assets/icons/instagram.svg";
 import Youtube from "../../assets/icons/youtube.svg";
 
@@ -134,11 +132,7 @@ const CardContentPresentation = (props) => {
                   rel="noreferrer"
                   className="mr-6"
                 >
-                  <img
-                    src={Youtube}
-                    alt="Facebook icon"
-                    className="filter invert"
-                  />
+                  <img src={Youtube} alt="Facebook icon" className="filter " />
                 </a>
                 <a
                   href="https://www.facebook.com/lamarana.pr"
@@ -146,7 +140,13 @@ const CardContentPresentation = (props) => {
                   rel="noopener"
                   className="mr-6"
                 >
-                  <img src={Facebook} alt="Twitter icon" />
+                  <div className="rounded-full border-black border-2 h-9 w-9">
+                    <img
+                      src={Facebook}
+                      alt="Twitter icon"
+                      className="filter invert m-2 ml-3 mt-2"
+                    />
+                  </div>
                 </a>
                 <div className="rounded-full border-black border-2 h-9 w-9">
                   <a
