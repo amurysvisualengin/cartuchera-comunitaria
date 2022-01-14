@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/cartuchera-comunitaria/static/css/main.04217ee1.chunk.css",
-    "main.js": "/cartuchera-comunitaria/static/js/main.49e3ebfc.chunk.js",
-    "main.js.map": "/cartuchera-comunitaria/static/js/main.49e3ebfc.chunk.js.map",
+    "main.css": "/cartuchera-comunitaria/static/css/main.bd4e0aea.chunk.css",
+    "main.js": "/cartuchera-comunitaria/static/js/main.0c2ea457.chunk.js",
+    "main.js.map": "/cartuchera-comunitaria/static/js/main.0c2ea457.chunk.js.map",
     "runtime-main.js": "/cartuchera-comunitaria/static/js/runtime-main.0eded166.js",
     "runtime-main.js.map": "/cartuchera-comunitaria/static/js/runtime-main.0eded166.js.map",
     "static/css/2.d65b3a7d.chunk.css": "/cartuchera-comunitaria/static/css/2.d65b3a7d.chunk.css",
@@ -10,16 +10,14 @@
     "static/js/2.da3f6a49.chunk.js.map": "/cartuchera-comunitaria/static/js/2.da3f6a49.chunk.js.map",
     "index.html": "/cartuchera-comunitaria/index.html",
     "static/css/2.d65b3a7d.chunk.css.map": "/cartuchera-comunitaria/static/css/2.d65b3a7d.chunk.css.map",
-    "static/css/main.04217ee1.chunk.css.map": "/cartuchera-comunitaria/static/css/main.04217ee1.chunk.css.map",
+    "static/css/main.bd4e0aea.chunk.css.map": "/cartuchera-comunitaria/static/css/main.bd4e0aea.chunk.css.map",
     "static/js/2.da3f6a49.chunk.js.LICENSE.txt": "/cartuchera-comunitaria/static/js/2.da3f6a49.chunk.js.LICENSE.txt",
     "static/media/Audiovisuales.96221ca9.svg": "/cartuchera-comunitaria/static/media/Audiovisuales.96221ca9.svg",
-    "static/media/Facebook.efac5ddb.svg": "/cartuchera-comunitaria/static/media/Facebook.efac5ddb.svg",
+    "static/media/Facebook.e1257039.svg": "/cartuchera-comunitaria/static/media/Facebook.e1257039.svg",
     "static/media/Fotos.22da7690.svg": "/cartuchera-comunitaria/static/media/Fotos.22da7690.svg",
     "static/media/Herramientas.4d3fd5db.svg": "/cartuchera-comunitaria/static/media/Herramientas.4d3fd5db.svg",
     "static/media/App.css": "/cartuchera-comunitaria/static/media/KGHAPPYSolid.0bbc547e.ttf",
-    "static/media/Linkedin.4e59894a.svg": "/cartuchera-comunitaria/static/media/Linkedin.4e59894a.svg",
     "static/media/Rompehielos.d8f94f59.svg": "/cartuchera-comunitaria/static/media/Rompehielos.d8f94f59.svg",
-    "static/media/Twitter.85657ba9.svg": "/cartuchera-comunitaria/static/media/Twitter.85657ba9.svg",
     "static/media/blue-shape.9a7c39a7.svg": "/cartuchera-comunitaria/static/media/blue-shape.9a7c39a7.svg",
     "static/media/cartuchera-logo.bcc09401.svg": "/cartuchera-comunitaria/static/media/cartuchera-logo.bcc09401.svg",
     "static/media/check.8cc6bc7d.svg": "/cartuchera-comunitaria/static/media/check.8cc6bc7d.svg",
@@ -54,13 +52,13 @@
     "static/media/yellow-shape-complete.fad18053.svg": "/cartuchera-comunitaria/static/media/yellow-shape-complete.fad18053.svg",
     "static/media/yellow-shape-left.0ba0db62.svg": "/cartuchera-comunitaria/static/media/yellow-shape-left.0ba0db62.svg",
     "static/media/yellow-shape.5070c797.svg": "/cartuchera-comunitaria/static/media/yellow-shape.5070c797.svg",
-    "static/media/youtube.1b95d89d.svg": "/cartuchera-comunitaria/static/media/youtube.1b95d89d.svg"
+    "static/media/youtube.f637611b.svg": "/cartuchera-comunitaria/static/media/youtube.f637611b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0eded166.js",
     "static/css/2.d65b3a7d.chunk.css",
     "static/js/2.da3f6a49.chunk.js",
-    "static/css/main.04217ee1.chunk.css",
-    "static/js/main.49e3ebfc.chunk.js"
+    "static/css/main.bd4e0aea.chunk.css",
+    "static/js/main.0c2ea457.chunk.js"
   ]
 }
