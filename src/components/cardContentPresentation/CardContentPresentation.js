@@ -132,7 +132,13 @@ const CardContentPresentation = (props) => {
                   rel="noreferrer"
                   className="mr-6"
                 >
-                  <img src={Youtube} alt="Facebook icon" className="filter " />
+                  <div className="border-2 border-black rounded-full w-9.5 h-9.5">
+                    <img
+                      src={Youtube}
+                      alt="youtube link"
+                      className="w-5 mt-2.45 ml-1.5 filter invert"
+                    />
+                  </div>
                 </a>
                 <a
                   href="https://www.facebook.com/lamarana.pr"
