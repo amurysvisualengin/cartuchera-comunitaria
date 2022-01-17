@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/cartuchera-comunitaria/static/css/main.bd4e0aea.chunk.css",
-    "main.js": "/cartuchera-comunitaria/static/js/main.aaa5db13.chunk.js",
-    "main.js.map": "/cartuchera-comunitaria/static/js/main.aaa5db13.chunk.js.map",
+    "main.css": "/cartuchera-comunitaria/static/css/main.4305bfb0.chunk.css",
+    "main.js": "/cartuchera-comunitaria/static/js/main.f45a5195.chunk.js",
+    "main.js.map": "/cartuchera-comunitaria/static/js/main.f45a5195.chunk.js.map",
     "runtime-main.js": "/cartuchera-comunitaria/static/js/runtime-main.0eded166.js",
     "runtime-main.js.map": "/cartuchera-comunitaria/static/js/runtime-main.0eded166.js.map",
     "static/css/2.d65b3a7d.chunk.css": "/cartuchera-comunitaria/static/css/2.d65b3a7d.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.da3f6a49.chunk.js.map": "/cartuchera-comunitaria/static/js/2.da3f6a49.chunk.js.map",
     "index.html": "/cartuchera-comunitaria/index.html",
     "static/css/2.d65b3a7d.chunk.css.map": "/cartuchera-comunitaria/static/css/2.d65b3a7d.chunk.css.map",
-    "static/css/main.bd4e0aea.chunk.css.map": "/cartuchera-comunitaria/static/css/main.bd4e0aea.chunk.css.map",
+    "static/css/main.4305bfb0.chunk.css.map": "/cartuchera-comunitaria/static/css/main.4305bfb0.chunk.css.map",
     "static/js/2.da3f6a49.chunk.js.LICENSE.txt": "/cartuchera-comunitaria/static/js/2.da3f6a49.chunk.js.LICENSE.txt",
     "static/media/Audiovisuales.96221ca9.svg": "/cartuchera-comunitaria/static/media/Audiovisuales.96221ca9.svg",
     "static/media/Facebook.e1257039.svg": "/cartuchera-comunitaria/static/media/Facebook.e1257039.svg",
@@ -54,13 +54,13 @@
     "static/media/yellow-shape-complete.fad18053.svg": "/cartuchera-comunitaria/static/media/yellow-shape-complete.fad18053.svg",
     "static/media/yellow-shape-left.0ba0db62.svg": "/cartuchera-comunitaria/static/media/yellow-shape-left.0ba0db62.svg",
     "static/media/yellow-shape.5070c797.svg": "/cartuchera-comunitaria/static/media/yellow-shape.5070c797.svg",
-    "static/media/youtube.f637611b.svg": "/cartuchera-comunitaria/static/media/youtube.f637611b.svg"
+    "static/media/youtube.7af78e3f.svg": "/cartuchera-comunitaria/static/media/youtube.7af78e3f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0eded166.js",
     "static/css/2.d65b3a7d.chunk.css",
     "static/js/2.da3f6a49.chunk.js",
-    "static/css/main.bd4e0aea.chunk.css",
-    "static/js/main.aaa5db13.chunk.js"
+    "static/css/main.4305bfb0.chunk.css",
+    "static/js/main.f45a5195.chunk.js"
   ]
 }
