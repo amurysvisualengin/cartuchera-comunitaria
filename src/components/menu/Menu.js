@@ -9,7 +9,7 @@ const Menu = (props) => {
 
   return (
     <div
-      className={`fixed z-20 overflow-scroll  w-full h-full opacity-90 ${
+      className={`fixed z-20 overflow-scroll lg:overflow-x-hidden w-full h-full opacity-90 ${
         !showMenu ? "hidden" : "visible"
       } `}
       style={{ backgroundColor: "#000000" }}

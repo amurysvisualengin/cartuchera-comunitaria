@@ -75,7 +75,10 @@ export const Footer = () => {
       <div className="lg:flex lg:justify-between lg:items-start lg:mr-20">
         <ul className="flex items-center lg:px-20 mb-6 lg:mb-20 ">
           <li className="mr-4 ml-4 lg:ml-0">
-            <div className="rounded-full border-white border-2 h-9.5 w-9.5">
+            <div
+              className="rounded-full border-2 h-9.5 w-9.5"
+              style={{ borderColor: "#474646" }}
+            >
               <a
                 href="https://www.instagram.com/la_marana_pr/"
                 target="_blank"
@@ -95,7 +98,10 @@ export const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="border-white border-2 rounded-full w-9.5 h-9.5">
+              <div
+                className="border-2 rounded-full w-9.5 h-9.5"
+                style={{ borderColor: "#474646" }}
+              >
                 <img
                   src={Facebook}
                   alt="Facebook link"
@@ -110,7 +116,16 @@ export const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={Youtube} alt="youtube link" className="filter invert" />
+              <div
+                className="border-2 rounded-full w-9.5 h-9.5"
+                style={{ borderColor: "#474646" }}
+              >
+                <img
+                  src={Youtube}
+                  alt="youtube link"
+                  className="w-5 mt-2.45 ml-1.5"
+                />
+              </div>
             </a>
           </li>
         </ul>

@@ -18,14 +18,19 @@ const SocialMedia = () => {
         el hashtag <span className="font-bold">#cartucheracomunitaria.</span>{" "}
       </p>
       <ul className="flex mt-4 social-media">
-        <li className="mr-2 lg:mr-5">
+        <li className="mr-5">
           <a
             href="https://www.youtube.com/channel/UCKUy3fZFuIiynFWqP9zMiZg"
             target="_blank"
             rel="noreferrer"
-            className="mr-6"
           >
-            <img src={Youtube} alt="Facebook icon" className="filter " />
+            <div className="border-2 border-black rounded-full w-9.5 h-9.5">
+              <img
+                src={Youtube}
+                alt="youtube link"
+                className="w-5 mt-2.45 ml-1.5 filter invert"
+              />
+            </div>
           </a>
         </li>
         <li className="mr-2 lg:mr-5">
@@ -34,17 +39,17 @@ const SocialMedia = () => {
             target="_blanck"
             rel="noopener"
           >
-            <div className="rounded-full border-black border-2 h-9 w-9">
+            <div className="rounded-full border-black border-2 h-9.5 w-9.5">
               <img
                 src={Facebook}
                 alt="Link to Facebook"
-                className="filter invert m-2 ml-3 mt-2"
+                className="filter invert m-2 ml-3 mt-2.45"
               />
             </div>
           </a>
         </li>
         <li className="mr-5">
-          <div className="rounded-full border-black border-2 h-9 w-9">
+          <div className="rounded-full border-black border-2 h-9.5 w-9.5">
             <a
               href="https://www.instagram.com/la_marana_pr/"
               target="_blanck"
