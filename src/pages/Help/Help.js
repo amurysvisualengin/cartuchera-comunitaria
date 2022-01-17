@@ -89,13 +89,6 @@ const Help = () => {
                     <img src={Paypal} alt="paypal" className="w-64 mb-1" />
                   </a>
                 </div>
-                <div className="flex justify-center">
-                  <img
-                    src={CreditCards}
-                    alt="credit cards"
-                    className="w-32 mb-1"
-                  />
-                </div>
               </div>
               <div className="flex justify-center">
                 <img src={Ath} alt="ath" className=" w-60 h-24 mt-4 lg:mt-9" />
