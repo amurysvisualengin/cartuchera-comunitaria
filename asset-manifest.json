@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cartuchera-comunitaria/static/css/main.bd4e0aea.chunk.css",
-    "main.js": "/cartuchera-comunitaria/static/js/main.0c2ea457.chunk.js",
-    "main.js.map": "/cartuchera-comunitaria/static/js/main.0c2ea457.chunk.js.map",
+    "main.js": "/cartuchera-comunitaria/static/js/main.aaa5db13.chunk.js",
+    "main.js.map": "/cartuchera-comunitaria/static/js/main.aaa5db13.chunk.js.map",
     "runtime-main.js": "/cartuchera-comunitaria/static/js/runtime-main.0eded166.js",
     "runtime-main.js.map": "/cartuchera-comunitaria/static/js/runtime-main.0eded166.js.map",
     "static/css/2.d65b3a7d.chunk.css": "/cartuchera-comunitaria/static/css/2.d65b3a7d.chunk.css",
@@ -18,6 +18,7 @@
     "static/media/Herramientas.4d3fd5db.svg": "/cartuchera-comunitaria/static/media/Herramientas.4d3fd5db.svg",
     "static/media/App.css": "/cartuchera-comunitaria/static/media/KGHAPPYSolid.0bbc547e.ttf",
     "static/media/Rompehielos.d8f94f59.svg": "/cartuchera-comunitaria/static/media/Rompehielos.d8f94f59.svg",
+    "static/media/ath-movil.e472031c.png": "/cartuchera-comunitaria/static/media/ath-movil.e472031c.png",
     "static/media/blue-shape.9a7c39a7.svg": "/cartuchera-comunitaria/static/media/blue-shape.9a7c39a7.svg",
     "static/media/cartuchera-logo.bcc09401.svg": "/cartuchera-comunitaria/static/media/cartuchera-logo.bcc09401.svg",
     "static/media/check.8cc6bc7d.svg": "/cartuchera-comunitaria/static/media/check.8cc6bc7d.svg",
@@ -41,6 +42,7 @@
     "static/media/mezcla_icon.bce49813.svg": "/cartuchera-comunitaria/static/media/mezcla_icon.bce49813.svg",
     "static/media/one.405b6874.svg": "/cartuchera-comunitaria/static/media/one.405b6874.svg",
     "static/media/parceleras-afro-caribenas.39d5d951.svg": "/cartuchera-comunitaria/static/media/parceleras-afro-caribenas.39d5d951.svg",
+    "static/media/paypal.71a4e1b6.png": "/cartuchera-comunitaria/static/media/paypal.71a4e1b6.png",
     "static/media/presentacion.fc927e81.svg": "/cartuchera-comunitaria/static/media/presentacion.fc927e81.svg",
     "static/media/procesos-comunitarios-cut.fdc042ec.svg": "/cartuchera-comunitaria/static/media/procesos-comunitarios-cut.fdc042ec.svg",
     "static/media/saw.d42f623b.svg": "/cartuchera-comunitaria/static/media/saw.d42f623b.svg",
@@ -59,6 +61,6 @@
     "static/css/2.d65b3a7d.chunk.css",
     "static/js/2.da3f6a49.chunk.js",
     "static/css/main.bd4e0aea.chunk.css",
-    "static/js/main.0c2ea457.chunk.js"
+    "static/js/main.aaa5db13.chunk.js"
   ]
 }
