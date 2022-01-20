@@ -10,7 +10,6 @@ function CardContentPhoto(props) {
   const { cardContent, img, color, handleShowExpandFalse } = props;
   const { isMobile, setIsExpand, isTablet } = useContext(CardListContext);
 
-  console.log(isTablet, "tablet?");
   return (
     <div className="h-full " style={{ backgroundColor: isMobile ? color : "" }}>
       {!isMobile && (

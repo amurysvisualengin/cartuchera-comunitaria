@@ -32,19 +32,19 @@ const InfoMobile = () => {
   ];
   return (
     <div className={`${!showInformation ? "hidden" : "visible"}`}>
-      <div className=" bg-black min-h-screen lg:h-screen">
+      <div className=" bg-black min-h-screen xl:h-screen">
         <div
           className="flex justify-end"
           onClick={() => {
             if (showInformation) setShowInformation(!showInformation);
           }}
         >
-          <button className={`mt-4 mr-4 lg:mt-6 lg:mr-6 `}>
+          <button className={`mt-4 mr-4 lg:mt-6 lg:mr-6`}>
             <img src={CloseButton} alt="" className="filter invert" />
           </button>
         </div>
 
-        <div className="w-full mt-4 p-4 lg:px-96 ">
+        <div className="w-full mt-4 p-4 xl:px-96 ">
           <h1 className="w-12 inter-font text-xs p-2 bg-white font-bold text-center rounded-md mb-6">
             INFO
           </h1>
@@ -54,7 +54,7 @@ const InfoMobile = () => {
             </h1>
             <div className="pb-20">
               {infoContainer.map((element, index) => (
-                <div className="text-whiteº my-3 lg:mt-6">
+                <div className="text-white my-3 lg:mt-6">
                   <h1 className="custom-font text-base lg:text-xlLg leading-6">
                     {element.title}
                   </h1>

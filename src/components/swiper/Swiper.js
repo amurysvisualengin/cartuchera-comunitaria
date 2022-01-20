@@ -29,7 +29,6 @@ function Swiper() {
     console.log("handlereload");
     console.log(card);
   };
-  console.log("reload:", reload);
 
   return (
     <div

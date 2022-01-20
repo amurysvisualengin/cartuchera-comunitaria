@@ -58,7 +58,7 @@ const Card = (props) => {
   };
 
   const { isMobile } = useContext(CardListContext);
-
+  console.log(mobileHeight);
   return (
     <React.Fragment>
       <div
@@ -80,7 +80,7 @@ const Card = (props) => {
             {!type && title === "Testing" && (
               <div
                 style={{ color: "#EBE4CF" }}
-                className="custom-font  absolute left-10 top-10"
+                className="custom-font absolute left-10 top-10"
               >
                 <p style={{ fontSize: 11 }}>HERRAMIENTA DE DISEÑO</p>
                 <p style={{ fontSize: 11 }}>PARTICIPATIVO </p>
@@ -100,8 +100,54 @@ const Card = (props) => {
             <p className="custom-font text-right items-start absolute right-6 top-6">
               {cardNumber}
             </p>
-            <div className="relative transform translate-y-1/2 flex justify-center">
+            <div
+              className={`${
+                isTablet < 1181 && isTablet > 768
+                  ? " relative transform translate-y-26 flex justify-center"
+                  : "relative transform translate-y-1/2 flex justify-center"
+              } `}
+            >
               <img
+                className={`
+                ${
+                  isTablet < 1181 && isTablet > 768
+                    ? type === "Presentation"
+                      ? "top-4 h-56"
+                      : type === "Herramientas"
+                      ? "top-16"
+                      : type === "Rompehielos" ||
+                        type === "Audiovisual" ||
+                        type === "Photo"
+                      ? "top-4"
+                      : ""
+                    : isTablet < 768
+                    ? type === "Presentation"
+                      ? mobileHeight < 569
+                        ? "top-20 h-56"
+                        : "top-24 "
+                      : type === "Herramientas"
+                      ? mobileHeight < 569
+                        ? "top-40"
+                        : "top-48"
+                      : (type === "Rompehielos" ||
+                          type === "Audiovisual" ||
+                          type === "Photo") &&
+                        mobileHeight < 569
+                      ? "top-32"
+                      : "top-40"
+                    : type === "Presentation"
+                    ? "top-40"
+                    : type === "Herramientas"
+                    ? "top-72"
+                    : "top-52"
+                } absolute bottom-0 w-40 ${
+                  cardContent === "disabled" && "pl-10 pr-10 w-full"
+                }
+              `}
+                src={img}
+                alt=""
+              />
+              {/* <img
                 className={`${
                   isTablet < 768
                     ? type === "Presentation"
@@ -129,7 +175,7 @@ const Card = (props) => {
                 src={img}
                 alt=""
                 srcSet=""
-              />
+              /> */}
             </div>
           </div>
         )}
