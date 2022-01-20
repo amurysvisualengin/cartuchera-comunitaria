@@ -9,7 +9,7 @@ import DataComerioPhotos from "../../../assets/data/DataComerioPhotos.json";
 import CardListContext from "../../../context/CardListContext";
 
 const VueltaDeDos = () => {
-  const { setCarouselPhotosComerio } = useContext(CardListContext);
+  const { setCarouselPhotosComerio, isTablet } = useContext(CardListContext);
 
   return (
     <div>
@@ -47,7 +47,9 @@ const VueltaDeDos = () => {
               src="https://www.youtube.com/embed/DG2rSpoWA_E"
               allowFullScreen
               frameborder="0"
-              className="w-full h-52 lg:w-99.3 lg:h-90 lg:mt-10 rounded-lg"
+              className={`w-full h-52 lg:w-99.3 lg:h-90 lg:mt-10 rounded-lg ${
+                isTablet > 767 && isTablet < 1024 && "h-97"
+              }`}
             ></iframe>
           </div>
           <div className="hidden lg:block">

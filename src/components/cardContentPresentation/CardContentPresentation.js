@@ -75,13 +75,19 @@ const CardContentPresentation = (props) => {
                   : "block"
               }`}
             >
-              <div className="flex justify-center  mb-10 lg:mb-0">
+              <div className="flex justify-center mb-10 lg:mb-0">
                 <img
                   src={cardContent.nameSvg}
                   alt="name SVG"
                   className="hidden lg:flex lg:mt-10 ml-28"
                 />
-                <img src={img} alt="icon type" className="ml-4 w-40 mr-4 " />
+                <img
+                  src={img}
+                  alt="icon type"
+                  className={`ml-4  mr-4 ${
+                    isTablet > 767 && isTablet < 1024 ? "h-96.5" : "w-40"
+                  }`}
+                />
               </div>
             </div>
           )}

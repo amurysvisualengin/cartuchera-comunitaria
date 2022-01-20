@@ -92,7 +92,9 @@ const CardContentAudio = (props) => {
                         frameborder="0"
                         allowFullScreen
                         title="video"
-                        className={`w-full h-48 rounded-md`}
+                        className={`w-full rounded-md ${
+                          isTablet > 767 && isTablet < 1024 ? "h-96" : "h-48"
+                        }`}
                       ></iframe>
                     </div>
                     <div className="border-2 rounded border-black mt-6">
@@ -106,6 +108,9 @@ const CardContentAudio = (props) => {
                     </div>
                   </div>
                 )}
+                <div
+                  className={`${isMobile & (isTablet < 1024) && "mb-10"}`}
+                ></div>
               </div>
             ))}
           </div>

@@ -10,6 +10,7 @@ function CardContentPhoto(props) {
   const { cardContent, img, color, handleShowExpandFalse } = props;
   const { isMobile, setIsExpand, isTablet } = useContext(CardListContext);
 
+  console.log(isTablet, "tablet?");
   return (
     <div className="h-full " style={{ backgroundColor: isMobile ? color : "" }}>
       {!isMobile && (
@@ -37,7 +38,7 @@ function CardContentPhoto(props) {
         <div className="flex justify-center pb-32">
           <div
             className={`block  ${
-              isTablet < 768 ? "w-full mx-5" : "lg:w-100 lg:mr-52"
+              isTablet < 1024 ? "w-full mx-5" : "lg:w-100 lg:mr-52"
             }`}
           >
             <div>

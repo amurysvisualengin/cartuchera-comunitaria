@@ -1,5 +1,6 @@
 import React from "react";
 import "./HelpForm.css";
+
 const HelpForm = () => {
   return (
     <div>
@@ -22,7 +23,7 @@ const HelpForm = () => {
         />
         <button
           type="submit"
-          className="w-full text-tiny leading-5 lg:w-32 text-center  mb-12 h-14 button-style custom-font"
+          className={`w-full text-tiny mt-4 lg:mt-0 leading-5 lg:w-32 text-center mb-12 h-14 button-style custom-font`}
         >
           AVÍSAME
         </button>

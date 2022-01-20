@@ -41,7 +41,7 @@ const Help = () => {
             <div className="custom-font text-sm leading-5 p-4 text-center flex justify-center items-center mt-12 mb-4 lg:mb-6 lg:w-72 bg-black text-white h-9 lg:h-12 rounded">
               <h2>COMPRA UNA Y REGALA UNA</h2>
             </div>
-            <div className=" max-w-xs  lg:max-w-md">
+            <div className="   lg:max-w-md">
               <p className="text-xlLg leading-7 lg:text-base lg:leading-6 lg:max-w-lg">
                 Aspiramos a que la Cartuchera Comunitaria llegue a cada
                 rinconcito de nuestro archipiélago y más allá. ¡Ayúdanos a
@@ -70,7 +70,7 @@ const Help = () => {
             <div className="custom-font text-sm leading-5 text-center flex justify-center items-center mt-12 mb-4 lg:mb-6 bg-black text-white h-9 rounded lg:w-60 lg:h-12">
               <h2>DONA LA MARAÑA</h2>
             </div>
-            <p className="text-xlLg leading-7 lg:text-base lg:leading-6 lg:max-w-lg lg: max-w-md">
+            <p className="text-xlLg leading-7 lg:text-base lg:leading-6 lg:max-w-lg">
               La Maraña es una organización sin fines de lucro que ha logrado
               sostener sus labores gracias al apoyo económico de decenas de
               entidades y aliados, incluyendo donativos de personas como tú. No

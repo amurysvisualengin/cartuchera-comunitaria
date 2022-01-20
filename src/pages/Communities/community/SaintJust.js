@@ -8,7 +8,7 @@ import CardListContext from "../../../context/CardListContext";
 import { useContext } from "react";
 
 const SaintJust = () => {
-  const { setCarouselPhotosCarolina } = useContext(CardListContext);
+  const { setCarouselPhotosCarolina, isTablet } = useContext(CardListContext);
 
   return (
     <div>
@@ -39,7 +39,9 @@ const SaintJust = () => {
           src="https://www.youtube.com/embed/DG2rSpoWA_E"
           allowFullScreen
           frameborder="0"
-          className="w-full h-52 lg:w-99.3 lg:h-90 lg:mt-20 rounded-lg"
+          className={`w-full h-52 lg:w-99.3 lg:h-90 lg:mt-20 rounded-lg ${
+            isTablet > 767 && isTablet < 1024 && "h-97"
+          }`}
         ></iframe>
       </div>
       <div className="lg:flex lg:justify-center">
