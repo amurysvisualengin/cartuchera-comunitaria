@@ -114,6 +114,7 @@ function Swiper() {
             onSwipe={() => setFirstTouch(true)}
           >
             <Card
+              className="absolute top-16"
               title="Testing"
               color="black"
               img={StarterMobile}
