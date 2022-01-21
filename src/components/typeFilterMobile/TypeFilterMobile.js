@@ -41,7 +41,11 @@ const TypeFilterMobile = () => {
               : "opacity-20"
           }`}
         >
-          <button className={`ml-12 ${isTablet < 768 ? "mt-1" : "mt-1 "}`}>
+          <button
+            className={`ml-12 md:ml-17 lg:ml-14 ${
+              isTablet < 768 ? "mt-1" : "mt-1 "
+            }`}
+          >
             <img
               src={element.src}
               alt=""

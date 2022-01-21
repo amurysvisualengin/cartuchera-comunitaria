@@ -7,8 +7,8 @@ const CardContentText = (props) => {
 
   return (
     <div
-      className={`lg:h-full pb-10 pl-3 lg:pl-0 ${
-        isTablet < 1024 ? "pb-20" : "pb-0"
+      className={`xl:h-full pb-10 pl-3 xl:pl-0 ${
+        isTablet < 1181 ? "pb-20" : "pb-0"
       }`}
       style={{ backgroundColor: isMobile ? color : "transparent" }}
     >
@@ -20,7 +20,7 @@ const CardContentText = (props) => {
         />
       )}
       <div
-        className="text-right lg:mt-4 lg:mr-10"
+        className="text-right xl:mt-4 xl:mr-10"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
@@ -41,13 +41,13 @@ const CardContentText = (props) => {
         <div>
           <div>
             <h2
-              className="bg-black inter-font font-bold text-xs tracking-special p-2 rounded w-32 lg:mt-14 "
+              className="bg-black inter-font font-bold text-xs tracking-special p-2 rounded w-32 xl:mt-14 "
               style={{ color: color }}
             >
               {cardContent.nameType.toUpperCase()}
             </h2>
           </div>
-          <h1 className="custom-font-shadow text-4.5xl lg:text-5.5xl mt-4 lg:mt-6 text-left">
+          <h1 className="custom-font-shadow text-4.5xl xl:text-5.5xl mt-4 xl:mt-6 text-left">
             {cardContent.nameType}{" "}
           </h1>
           {!isMobile && (
@@ -61,13 +61,13 @@ const CardContentText = (props) => {
               {cardContent.kitType}
             </h2>
           )}
-          <div className="flex flex-wrap lg:max-w-5xl mt-10 lg:mb-20">
+          <div className="flex flex-wrap xl:max-w-5xl mt-10 xl:mb-20">
             {cardContent.actionTitle.map((element, index) => (
               <div
-                className={`flex border-2 rounded border-black mr-3 w-full lg:w-97 mb-4 lg:mb-8 `}
+                className={`flex border-2 rounded border-black mr-3 w-full xl:w-97 mb-4 xl:mb-8 `}
               >
                 <div className="block ">
-                  <div className="flex items-center bg-black p-1 py-1.5 lg:p-3">
+                  <div className="flex items-center bg-black p-1 py-1.5 xl:p-3">
                     <div
                       className="w-8 h-8 rounded-full flex justify-center  items-center ml-2"
                       style={{ background: color }}
@@ -75,11 +75,11 @@ const CardContentText = (props) => {
                       <img
                         src={element.icon}
                         alt=""
-                        className=" lg:ml-0 w-5 h-5 items-center "
+                        className=" xl:ml-0 w-5 h-5 items-center "
                       />
                     </div>
                     <h2
-                      className="custom-font text-base lg:text-sm pl-4"
+                      className="custom-font text-base xl:text-sm pl-4"
                       style={{ color: color }}
                     >
                       {element.subTitle}
@@ -87,7 +87,7 @@ const CardContentText = (props) => {
                   </div>
                   <div
                     dangerouslySetInnerHTML={{ __html: element.actionSentence }}
-                    className={`m-4 lg:m-6 inter-font text-left text-base lg:text-xlLg}`}
+                    className={`m-4 xl:m-6 inter-font text-left text-base xl:text-xlLg}`}
                   ></div>
                 </div>
               </div>

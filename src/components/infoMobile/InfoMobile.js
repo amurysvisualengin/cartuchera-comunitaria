@@ -39,7 +39,7 @@ const InfoMobile = () => {
             if (showInformation) setShowInformation(!showInformation);
           }}
         >
-          <button className={`mt-4 mr-4 lg:mt-6 lg:mr-6`}>
+          <button className={`mt-4 mr-4 xl:mt-6 xl:mr-6 `}>
             <img src={CloseButton} alt="" className="filter invert" />
           </button>
         </div>
@@ -49,13 +49,13 @@ const InfoMobile = () => {
             INFO
           </h1>
           <div className="text-left text-white ">
-            <h1 className={`custom-font-shadow text-4.5xl lg:text-5.5xl`}>
+            <h1 className={`custom-font-shadow text-4.5xl xl:text-5.5xl`}>
               Instrucciones
             </h1>
             <div className="pb-20">
               {infoContainer.map((element, index) => (
-                <div className="text-white my-3 lg:mt-6">
-                  <h1 className="custom-font text-base lg:text-xlLg leading-6">
+                <div className="text-whiteº my-3 xl:mt-6">
+                  <h1 className="custom-font text-base xl:text-xlLg leading-6">
                     {element.title}
                   </h1>
                   <h2 className="inter-font text-base mt-4">

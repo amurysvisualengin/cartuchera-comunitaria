@@ -20,7 +20,7 @@ function CardContentPhoto(props) {
         />
       )}
       <div
-        className="flex justify-end xl:mt-4 xl:mr-10 hover-button"
+        className="flex justify-end xl:mt-4 xl:mr-10 xl:hover-button"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);

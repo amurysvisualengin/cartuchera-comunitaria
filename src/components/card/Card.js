@@ -70,8 +70,8 @@ const Card = (props) => {
         className={`${
           isMobile
             ? "absolute right-1 left-1 bottom-24 top-0 md:right-40 md:left-40 md:bottom-36 md:top-10 lg:right-80 lg:left-80 lg:bottom-24 lg:top-0 "
-            : "p-6 xl:m-2 xl:mr-2 text-center card-item xl:h-72 cursor-pointer hover-card"
-          /* ? isTablet < 1181 && isTablet > 820
+            : "p-6 m-2 mr-2 text-center card-item h-72 cursor-pointer hover-card"
+          /* isTablet < 1181 && isTablet > 820
               ? "absolute right-80 left-80 bottom-24 top-0"
               : isTablet <= 820 && isTablet > 768
               ? "absolute right-40 left-40 bottom-36 top-10"
@@ -115,13 +115,13 @@ const Card = (props) => {
               <img
                 className={`${props.className} ${
                   type === "Presentation"
-                    ? "sm:-top-4 top-28 md:top-20 md:h-72  lg:-top-20 lg:h-72"
+                    ? "xs:top-20 xs:h-56 smd:top-28 md:top-20 md:h-72  lg:-top-20 lg:h-72"
                     : type === "Herramientas"
-                    ? "sm:top-10 top-60 md:top-48 lg:top-20"
+                    ? "xs:top-44 xs:w-32 smd:w-44 smd:top-60 md:top-48 lg:top-24"
                     : type === "Rompehielos" ||
                       type === "Audiovisual" ||
                       type === "Photo"
-                    ? "sm:top-10 top-52 md:top-32 lg:top-10"
+                    ? "xs:top-36 xs:h-24 smd:h-32 smd:top-52 md:top-32 md:h-44 lg:top-10"
                     : ""
                 }
                  absolute bottom-0 w-40 ${

@@ -11,19 +11,19 @@ const HelpForm = () => {
         name="mc-embedded-subscribe-form"
         target="_blank"
         novalidate
-        className="w-screen lg:w-98 pr-8 lg:pr-0 lg:flex "
+        className="w-screen xl:w-98 pr-8 xl:pr-0 xl:flex "
       >
         <input
           id="mce-EMAIL"
           name="EMAIL"
           type="text"
           placeholder="Enter your email..."
-          className="w-full pl-4 lg:w-72 lg:mr-4 h-14 input-style"
+          className="w-full pl-4 xl:w-72 xl:mr-4 h-14 input-style"
           required
         />
         <button
           type="submit"
-          className={`w-full text-tiny mt-4 lg:mt-0 leading-5 lg:w-32 text-center mb-12 h-14 button-style custom-font`}
+          className={`w-full text-tiny mt-4 xl:mt-0 leading-5 xl:w-32 text-center mb-12 h-14 button-style custom-font`}
         >
           AVÍSAME
         </button>

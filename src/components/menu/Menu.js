@@ -14,7 +14,7 @@ const Menu = (props) => {
       } `}
       style={{ backgroundColor: "#000000" }}
     >
-      <div className=" mt-5 lg:mt-10 mr-5 lg:mr-10 flex justify-end">
+      <div className=" mt-5 xl:mt-10 mr-5 xl:mr-10 flex justify-end">
         <button
           className={` w-12 
             `}
@@ -28,8 +28,8 @@ const Menu = (props) => {
         </button>
       </div>
 
-      <div className="flex justify-center items-center lg:mt-16 2xl:mt-20 ">
-        <div className="block text-white custom-font-shadow text-3xl lg:text-5xl 2xl:text-6xl">
+      <div className="flex justify-center items-center xl:mt-16 2xl:mt-20 ">
+        <div className="block text-white custom-font-shadow text-3xl md:text-5xl md:mt-14 lg:-mt-4 xl:text-5xl 2xl:text-6xl">
           {!isMobile && (
             <ul
               className="cursor-pointer text-center  "
@@ -39,7 +39,7 @@ const Menu = (props) => {
                 }
               }}
             >
-              <li className="hover:text-red-400  lg:mb-0">
+              <li className="xl:hover:text-red-400  xl:mb-0">
                 <Link to="/">Inicio</Link>
               </li>
               <li className="hover:text-yellow-200 ">
@@ -62,14 +62,14 @@ const Menu = (props) => {
 
           {isMobile && (
             <ul
-              className=" cursor-pointer text-left mx-4"
+              className="cursor-pointer text-left mx-4"
               onClick={() => {
                 if (showMenu) {
                   setShowMenu(!showMenu);
                 }
               }}
             >
-              <li className="hover:text-red-400 mt-4 mb-8 lg:mb-0">
+              <li className="hover:text-red-400 mt-4 mb-8 xl:mb-0">
                 <Link to="/">Inicio</Link>
               </li>
               <li className="hover:text-yellow-200 mb-8 ">
