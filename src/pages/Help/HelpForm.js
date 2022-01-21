@@ -17,7 +17,7 @@ const HelpForm = () => {
           id="mce-EMAIL"
           name="EMAIL"
           type="text"
-          placeholder="Enter your email..."
+          placeholder="Introduce tu email..."
           className="w-full pl-4 xl:w-72 xl:mr-4 h-14 input-style"
           required
         />
