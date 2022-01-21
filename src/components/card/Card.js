@@ -108,20 +108,20 @@ const Card = (props) => {
             <div
               className={`${
                 isTablet < 1181 && isTablet > 768
-                  ? " relative transform translate-y-26 flex justify-center"
+                  ? "relative transform translate-y-26 flex justify-center"
                   : "relative transform translate-y-1/2 flex justify-center"
               } `}
             >
               <img
                 className={`${props.className} ${
                   type === "Presentation"
-                    ? "sm:-top-10 top-28 md:top-20 md:h-56 lg:-top-20 lg:h-72"
+                    ? "sm:-top-4 top-28 md:top-20 md:h-72  lg:-top-20 lg:h-72"
                     : type === "Herramientas"
-                    ? "sm:top-10 top-60 lg:top-10"
+                    ? "sm:top-10 top-60 md:top-48 lg:top-20"
                     : type === "Rompehielos" ||
                       type === "Audiovisual" ||
                       type === "Photo"
-                    ? "sm:top-10 top-52 md:top-32 lg:top-0"
+                    ? "sm:top-10 top-52 md:top-32 lg:top-10"
                     : ""
                 }
                  absolute bottom-0 w-40 ${
