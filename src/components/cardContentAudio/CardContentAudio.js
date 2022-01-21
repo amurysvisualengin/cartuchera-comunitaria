@@ -94,7 +94,7 @@ const CardContentAudio = (props) => {
                         title="video"
                         className={`w-full rounded-md ${
                           isTablet < 1181
-                            ? "h-97.5"
+                            ? "smd:h-60 md:h-97.5"
                             : isTablet > 767
                             ? "h-96"
                             : "h-48"
