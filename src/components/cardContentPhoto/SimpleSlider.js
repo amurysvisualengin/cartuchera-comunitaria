@@ -9,7 +9,7 @@ const SimpleSlider = (props) => {
   // console.log(cardContent.picture.map((e, i) => console.log(e.img)));
 
   return (
-    <div className="max-w-4xl">
+    <div className="xl:max-w-4xl">
       <Carousel
         showArrows={true}
         showThumbs={false}

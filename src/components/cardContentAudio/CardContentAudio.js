@@ -22,7 +22,7 @@ const CardContentAudio = (props) => {
       )}
 
       <div
-        className={`flex justify-end  lg:mt-4 lg:mr-10 ${
+        className={`flex justify-end  xl:mt-4 xl:mr-10 ${
           !isMobile && "hover-button"
         } `}
         onClick={() => {
@@ -36,11 +36,11 @@ const CardContentAudio = (props) => {
           <img src={CloseButton} alt="" className=" " />
         </button>
       </div>
-      <div className="lg:flex lg:justify-center lg:mt-14 lg:mr-5 pb-20 ">
+      <div className="xl:flex xl:justify-center xl:mt-14 xl:mr-5 pb-20 ">
         {!isMobile && (
           <img src={img} alt="play logo" className="mr-16 w-20 h-full " />
         )}
-        <div className="lg:flex lg:justify-center mx-4 lg:mx-0">
+        <div className="xl:flex xl:justify-center mx-4 xl:mx-0">
           <div className={`block `}>
             <h2
               className="bg-black inter-font text-xs font-bold tracking-special text-center w-16 p-2 rounded item-center"
@@ -49,7 +49,7 @@ const CardContentAudio = (props) => {
               VIDEO
             </h2>
             <h1
-              className={`custom-font-shadow mt-6 text-left text-4.5xl lg:text-5.5xl lg:leading-11`}
+              className={`custom-font-shadow mt-6 text-left text-4.5xl xl:text-5.5xl xl:leading-11`}
             >
               Videogalería
             </h1>
@@ -66,7 +66,7 @@ const CardContentAudio = (props) => {
                   <div className={`text-left items-center mt-10 w-100`}>
                     <div className="border-2 rounded border-black">
                       <h2
-                        className="custom-font bg-black lg:text-sm p-4 "
+                        className="custom-font bg-black xl:text-sm p-4 "
                         style={{ color: color }}
                       >
                         {element.question.toUpperCase()}
@@ -93,7 +93,11 @@ const CardContentAudio = (props) => {
                         allowFullScreen
                         title="video"
                         className={`w-full rounded-md ${
-                          isTablet > 767 && isTablet < 1024 ? "h-96" : "h-48"
+                          isTablet < 1181
+                            ? "h-97.5"
+                            : isTablet > 767
+                            ? "h-96"
+                            : "h-48"
                         }`}
                       ></iframe>
                     </div>

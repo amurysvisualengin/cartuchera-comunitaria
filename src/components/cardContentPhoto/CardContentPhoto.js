@@ -20,7 +20,7 @@ function CardContentPhoto(props) {
         />
       )}
       <div
-        className="flex justify-end lg:mt-4 lg:mr-10 hover-button"
+        className="flex justify-end xl:mt-4 xl:mr-10 hover-button"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
@@ -32,24 +32,24 @@ function CardContentPhoto(props) {
           <img src={CloseButton} alt="" />
         </button>
       </div>
-      <div className="flex justify-center lg:mx-0 lg:ml-0 lg:mt-16">
+      <div className="flex justify-center xl:mx-0 xl:ml-0 xl:mt-16">
         {!isMobile && <img src={img} alt="" className="w-20 h-full mr-10" />}
         <div className="flex justify-center pb-32">
           <div
             className={`block  ${
-              isTablet < 1024 ? "w-full mx-5" : "lg:w-100 lg:mr-52"
+              isTablet < 1181 ? "w-full mx-5" : "xl:w-100 xl:mr-52"
             }`}
           >
             <div>
               <p
-                className={`bg-black font-bold tracking-special p-2 w-14 text-center rounded text-xs lg:text-xs`}
+                className={`bg-black font-bold tracking-special p-2 w-14 text-center rounded text-xs xl:text-xs`}
                 style={{ color: color }}
               >
                 FOTO
               </p>
             </div>
             <h1
-              className={`custom-font-shadow text-left text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 mt-6 lg:w-107 `}
+              className={`custom-font-shadow text-left text-4.5xl leading-10.5 xl:text-5.5xl xl:leading-11 mt-6 xl:w-107 `}
             >
               {cardContent.typeName}
             </h1>
@@ -64,7 +64,7 @@ function CardContentPhoto(props) {
             </h2>
             {!isMobile && (
               <p
-                className="custom-font text-left lg:text-sm max-w-4xl bg-black  items-center p-4 rounded mb-6"
+                className="custom-font text-left xl:text-sm max-w-4xl bg-black  items-center p-4 rounded mb-6"
                 style={{ color: color }}
               >
                 {cardContent.description.toUpperCase()}

@@ -15,11 +15,11 @@ const CardContentPresentation = (props) => {
 
   return (
     <div
-      className="pb-20 card-content-presentation"
+      className="pb-20 card-content-presentation overflow-x-hidden"
       style={{ backgroundColor: isMobile ? color : "" }}
     >
       <div
-        className="flex justify-end lg:mt-4 2xl:mt-8 lg:mr-10 2xl:mr-14 hover-button"
+        className="flex justify-end xl:mt-4 2xl:mt-8 xl:mr-10 2xl:mr-14 hover-button"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
@@ -31,7 +31,7 @@ const CardContentPresentation = (props) => {
           <img src={CloseButton} alt="" />
         </button>
       </div>
-      <div className="lg:flex lg:justify-center lg:mt-8 lg:mr-20 ">
+      <div className="xl:flex xl:justify-center xl:mt-8 xl:mr-20 ">
         <div className={` ${isTablet < 768 ? "mr-3" : "mr-2"}`}>
           {!isMobile && (
             <div className={`2xl:mt-6`}>
@@ -55,7 +55,7 @@ const CardContentPresentation = (props) => {
             </div>
           )}
         </div>
-        <div className="block mx-4 lg:mx-0 2xl:mt-4 ">
+        <div className="block mx-4 xl:mx-0 2xl:mt-4 ">
           <h2
             className="text-white rounded text-xs font-bold leading-4 tracking-special text-center bg-black w-32 mt-10 mb-6 p-2 inter-font "
             style={{ color: color }}
@@ -63,7 +63,7 @@ const CardContentPresentation = (props) => {
             PRESENTACIÓN
           </h2>
           <h1
-            className={`text-left custom-font-shadow lg:w-100 text-4.5xl leading-10.5 lg:text-5.5xl lg:leading-11 mb-10 lg:mb-0 `}
+            className={`text-left custom-font-shadow xl:w-100 text-4.5xl leading-10.5 xl:text-5.5xl xl:leading-11 mb-10 xl:mb-0 `}
           >
             {cardContent.presentationName}
           </h1>
@@ -75,41 +75,41 @@ const CardContentPresentation = (props) => {
                   : "block"
               }`}
             >
-              <div className="flex justify-center mb-10 lg:mb-0">
+              <div className="flex justify-center mb-10 xl:mb-0">
                 <img
                   src={cardContent.nameSvg}
                   alt="name SVG"
-                  className="hidden lg:flex lg:mt-10 ml-28"
+                  className="hidden xl:flex xl:mt-10 ml-28"
                 />
                 <img
                   src={img}
                   alt="icon type"
                   className={`ml-4  mr-4 ${
-                    isTablet > 767 && isTablet < 1024 ? "h-96.5" : "w-40"
+                    isTablet > 767 && isTablet < 11814 ? "h-96.5" : "w-40"
                   }`}
                 />
               </div>
             </div>
           )}
-          <div className={`mt-10 lg:mt-6 text-left w-full lg:w-100`}>
-            <h2 className="font-bold text-xlLg lg:text-base lg:mt-10 inter-font">
+          <div className={`mt-10 xl:mt-6 text-left w-full xl:w-100`}>
+            <h2 className="font-bold text-xlLg xl:text-base xl:mt-10 inter-font">
               {cardContent.subTitle}
             </h2>
-            <h2 className="text-xlLg lg:text-base mt-2 lg:mt-6 inter-font">
+            <h2 className="text-xlLg xl:text-base mt-2 xl:mt-6 inter-font">
               {cardContent.description}
               <span className="font-bold">{cardContent.sentence}</span>
             </h2>
             <div
-              className={`border-2 border-black rounded-md mt-10 w-full lg:w-100 lg:mb-0 `}
+              className={`border-2 border-black rounded-md mt-10 w-full xl:w-100 lg:mb-0 `}
             >
               <h2
-                className=" text-white  text-base tracking-shuffle lg:text-sm  border-1 border-black bg-black p-4 custom-font"
+                className=" text-white  text-base tracking-shuffle xl:text-sm  border-1 border-black bg-black p-4 custom-font"
                 style={{ color: color }}
               >
                 ¿CONOCES A ALGUIEN QUE SE PAREZCA A {cardContent.name}?
               </h2>
               <p
-                className={`mt-4 px-4 text-xlLg lg:text-base w-fulll lg:w-99.5 `}
+                className={`mt-4 px-4 text-xlLg xl:text-base w-fulll xl:w-99.5 `}
               >
                 ¡Queremos conocerla! Escribe a{" "}
                 <b>

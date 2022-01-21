@@ -22,7 +22,7 @@ const CardContentPdf = (props) => {
       )}
 
       <div
-        className="flex justify-end  lg:mt-4 lg:mr-10 hover-button"
+        className="flex justify-end  xl:mt-4 xl:mr-10 hover-button"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);
@@ -36,10 +36,10 @@ const CardContentPdf = (props) => {
         </button>
       </div>
 
-      <div className="lg:flex lg:justify-center lg:items-start mt-2 lg:mt-20  lg:ml-0 ">
+      <div className="xl:flex xl:justify-center xl:items-start mt-2 xl:mt-20  xl:ml-0 ">
         {!isMobile && <img src={img} alt="" className="mr-20 w-44" />}
         <div className="flex justify-center items-center">
-          <div className={`block mx-4 lg:mx-0 w-full lg:w-104`}>
+          <div className={`block mx-4 xl:mx-0 w-full xl:w-104`}>
             <div>
               <p
                 className={`bg-black rounded text-xs font-bold tracking-special text-center px-2 py-2 w-32 `}
@@ -49,7 +49,7 @@ const CardContentPdf = (props) => {
               </p>
             </div>
             <h1
-              className={`custom-font-shadow text-4.5xl leading-10.5 lg:text-5.5xl mt-6 text-left lg:leading-11 `}
+              className={`custom-font-shadow text-4.5xl leading-10.5 xl:text-5.5xl mt-6 text-left xl:leading-11 `}
             >
               {title}
             </h1>
@@ -70,7 +70,7 @@ const CardContentPdf = (props) => {
               >
                 {cardContent.subTitle}
               </h2>
-              <p className="custom-font text-xs lg:text-sm mt-10 lg:mt-6 mb-2">
+              <p className="custom-font text-xs xl:text-sm mt-10 xl:mt-6 mb-2">
                 ANTES DE EMPEZAR:
               </p>
             </div>
@@ -82,17 +82,17 @@ const CardContentPdf = (props) => {
                     ? isTablet < 768
                       ? "w-full"
                       : "w-full"
-                    : "lg:flex  lg:w-104"
-                } ${cardContent.beforeStarting.length > 3 && "lg:flex-wrap"}`}
+                    : "xl:flex  xl:w-104"
+                } ${cardContent.beforeStarting.length > 3 && "xl:flex-wrap"}`}
               >
                 {cardContent.beforeStarting.map((element, index) => (
                   <div
-                    className={`flex-wrap text-left text-xs border-2 rounded border-black mr-4 mb-4 lg:mb-0
+                    className={`flex-wrap text-left text-xs border-2 rounded border-black mr-4 mb-4 xl:mb-0
                 ${isMobile ? (isTablet < 767 ? "w-full" : "w-full") : "w-96"}
                 ${
                   cardContent.beforeStarting.length > 3
-                    ? "lg:w-96.5 lg:mb-4"
-                    : "lg:w-96"
+                    ? "xl:w-96.5 xl:mb-4"
+                    : "xl:w-96"
                 } `}
                   >
                     <div
@@ -116,7 +116,7 @@ const CardContentPdf = (props) => {
 
                     <div
                       dangerouslySetInnerHTML={{ __html: element.sentence }}
-                      className={`p-4 inter-font  text-xlLg lg:text-base`}
+                      className={`p-4 inter-font  text-xlLg xl:text-base`}
                     ></div>
                     <div className={`flex mt-6 px-4  ${element.pdf && "pb-4"}`}>
                       {element.pdf && (
@@ -137,10 +137,10 @@ const CardContentPdf = (props) => {
               ¡YA ESTOY LISTX!
             </p>
 
-            <div className="lg:flex ">
+            <div className="xl:flex ">
               {cardContent.allReady.map((element, index) => (
                 <div
-                  className={`block text-left border-2 border-black rounded mr-4 flex-grow mt-4 lg:mt-0
+                  className={`block text-left border-2 border-black rounded mr-4 flex-grow mt-4 xl:mt-0
               ${isMobile ? (isTablet < 767 ? "w-full" : "w-full") : "w-96"}
               `}
                 >
@@ -163,7 +163,7 @@ const CardContentPdf = (props) => {
                       {element.statement.toUpperCase()}
                     </h3>
                   </div>
-                  <p className={`p-4 inter-font text-xlLg lg:text-base`}>
+                  <p className={`p-4 inter-font text-xlLg xl:text-base`}>
                     {element.sentence}
                   </p>
                 </div>
@@ -183,7 +183,7 @@ const CardContentPdf = (props) => {
               </h3>
               <div
                 dangerouslySetInnerHTML={{ __html: cardContent.note1 }}
-                className={`p-4 inter-font whitespace-pre-wrap text-xlLg lg:text-base`}
+                className={`p-4 inter-font whitespace-pre-wrap text-xlLg xl:text-base`}
               ></div>
             </div>
           </div>

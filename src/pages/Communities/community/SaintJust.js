@@ -23,8 +23,8 @@ const SaintJust = () => {
       <p className="text-lg leading-6 text-center mt-10 block lg:hidden">
         Carolina, Puerto Rico
       </p>
-      <div className="lg:flex justify-center">
-        <p className="text-xlLg leading-7 lg:text-base text-center mt-10 lg:max-w-2xl mx-4 lg:mx-0">
+      <div className="xl:flex justify-center">
+        <p className="text-xlLg leading-7 xl:text-base text-center mt-10 xl:max-w-2xl mx-4 xl:mx-0">
           Los barrios de San Antón y St. Just y el residencial Los Mirtos,
           localizados en la ruralía de Carolina, son hogar de una comunidad
           históricamente negra que ha atravesado la industrialización de su
@@ -34,20 +34,20 @@ const SaintJust = () => {
           comunitario.
         </p>
       </div>
-      <div className="mt-10 lg:flex lg:justify-center mx-4 lg:mx-0">
+      <div className="mt-10 xl:flex xl:justify-center mx-4 xl:mx-0">
         <iframe
           src="https://www.youtube.com/embed/DG2rSpoWA_E"
           allowFullScreen
           frameborder="0"
-          className={`w-full h-52 lg:w-99.3 lg:h-90 lg:mt-20 rounded-lg ${
-            isTablet > 767 && isTablet < 1024 && "h-97"
+          className={`w-full h-52 xl:w-99.3 xl:h-90 xl:mt-20 rounded-lg ${
+            isTablet > 767 && isTablet < 1181 && "h-97"
           }`}
         ></iframe>
       </div>
-      <div className="lg:flex lg:justify-center">
-        <div className="lg:w-99.3 bg-black mt-10 p-4 rounded mx-4 lg:mx-0">
+      <div className="xl:flex xl:justify-center">
+        <div className="xl:w-99.3 bg-black mt-10 p-4 rounded mx-4 xl:mx-0">
           <p
-            className="text-xlLg leading-7 lg:text-base lg:leading-6 "
+            className="text-xlLg leading-7 xl:text-base xl:leading-6 "
             style={{ color: "#EBE4CF" }}
           >
             El trabajo colaborativo entre su comunidad y La Maraña bajo la
@@ -56,24 +56,24 @@ const SaintJust = () => {
           </p>
         </div>
       </div>
-      <div className="block lg:hidden">
+      <div className="block xl:hidden">
         <img src={TransparentShape} alt="" className="absolute top-absolute" />
       </div>
-      <div className="lg:mb-26 lg:mt-24 my-10 lg:my-0">
+      <div className="xl:mb-26 xl:mt-24 my-10 xl:my-0">
         {setCarouselPhotosCarolina(DataCarolinaPhotos)}
         <Carousel />
       </div>
       <div
-        className="p-4 lg:flex justify-around"
+        className="p-4 xl:flex justify-around"
         style={{ backgroundColor: "#9BC2D4" }}
       >
         <div className="">
-          <img src={Parceleras} alt="" className="hidden lg:block lg:mt-24" />
-          <h2 className="custom-font-shadow break-words text-4.5xl leading-10.5 lg:text-3xl lg:leading-9 mt-10 lg:max-w-lg ">
+          <img src={Parceleras} alt="" className="hidden xl:block xl:mt-24" />
+          <h2 className="custom-font-shadow break-words text-4.5xl leading-10.5 xl:text-3xl xl:leading-9 mt-10 xl:max-w-lg ">
             PATBA: Parceleras Afrocaribeñas para la Transformación Barrial
           </h2>
         </div>
-        <div className=" text-xl lg:text-base lg:leading-6 pt-10 lg:pt-24 lg:max-w-2xl lg:py-20">
+        <div className=" text-xl lg:text-base xl:leading-6 pt-10 xl:pt-24 xl:max-w-2xl xl:py-20">
           <p>
             PATBA - acrónimo de Parceleras Afrocaribeñas para la Transformación
             Barrial - es un grupo intergeneracional de vecinas de la comunidad
@@ -83,7 +83,7 @@ const SaintJust = () => {
             transformación en un epicentro de cultura, educación y agricultura
             por y para la comunidad.
           </p>
-          <p className="mt-10 pb-10 lg:pb-0">
+          <p className="mt-10 pb-10 xl:pb-0">
             La labor conjunta PATBA y La Maraña permitió la reconstrucción del
             comedor escolar. Este espacio no sólo permitirá la distribución de
             comidas calientes a la comunidad durante periodos de emergencia,

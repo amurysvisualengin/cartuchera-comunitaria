@@ -14,18 +14,18 @@ const Mariana = () => {
   return (
     <div className="overflow-hidden">
       <div className="mx-4 text-center">
-        <h1 className="custom-font-shadow text-4.5xl lg:text-5.5xl  lg:mt-24 ">
+        <h1 className="custom-font-shadow text-4.5xl xl:text-5.5xl  xl:mt-24 ">
           Mariana
         </h1>
-        <p className="lg:text-1.9xl custom-font text-center mt-5 mb-12 hidden lg:block">
+        <p className="xl:text-1.9xl custom-font text-center mt-5 mb-12 hidden xl:block">
           Humacao, Puerto Rico
         </p>
-        <p className="text-lg text-center mt-10 mb-10 block lg:hidden">
+        <p className="text-lg text-center mt-10 mb-10 block xl:hidden">
           Humacao, Puerto Rico
         </p>
 
-        <div className="lg:flex lg:justify-center">
-          <p className="text-xlLg lg:text-base mb-10 lg:mb-0 lg:max-w-3xl">
+        <div className="xl:flex xl:justify-center">
+          <p className="text-xlLg xl:text-base mb-10 xl:mb-0 xl:max-w-3xl">
             El barrio Mariana en la zona montañosa de Humacao ha atestiguado más
             de tres décadas de liderato y acción comunitaria. En medio de una
             fallida respuesta gubernamental tras el paso del Huracán María, el
@@ -35,17 +35,17 @@ const Mariana = () => {
             comidas diarias durante tres meses consecutivos.
           </p>
         </div>
-        <div className="mt-10 lg:mt-0 lg:flex lg:justify-center">
+        <div className="mt-10 xl:mt-0 xl:flex xl:justify-center">
           <iframe
             src="https://www.youtube.com/embed/DG2rSpoWA_E"
             allowFullScreen
             frameborder="0"
-            className={`w-full h-52 lg:w-99.5 lg:h-90 lg:mt-10 rounded-lg ${
-              isTablet > 767 && isTablet < 1024 && "h-97"
+            className={`w-full h-52 xl:w-99.5 xl:h-90 xl:mt-10 rounded-lg ${
+              isTablet > 767 && isTablet < 1181 && "h-97"
             }`}
           ></iframe>
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden xl:block">
           <img
             src={Yellowshape}
             alt=""
@@ -53,11 +53,11 @@ const Mariana = () => {
           />
         </div>
         <div className="flex justify-center my-10">
-          <img src={Cube} alt="" className="w-10 lg:w-20 lg:mt-10 lg:mb-20" />
+          <img src={Cube} alt="" className="w-10 xl:w-20 xl:mt-10 xl:mb-20" />
         </div>
 
-        <div className="lg:flex lg:justify-center mx-1 lg:mx-0">
-          <p className="text-xlLg  lg:text-base lg:max-w-4xl">
+        <div className="xl:flex xl:justify-center mx-1 xl:mx-0">
+          <p className="text-xlLg  xl:text-base xl:max-w-4xl">
             Bajo la sombrilla del proyecto Imaginación Post-María, La Maraña
             colaboró en el desarrollo de dos proyectos de autogestión
             comunitaria: el Parque Mis Panitas en la Loma de la Niña Mariana y
@@ -69,26 +69,26 @@ const Mariana = () => {
           </p>
         </div>
       </div>
-      <div className="lg:mb-32 my-10 lg:my-0 lg:mt-16">
+      <div className="xl:mb-32 my-10 xl:my-0 xl:mt-16">
         {setCarouselPhotosHumacao(DataHumacaoPhotos)}
         <CarouselHumacao />
       </div>
 
       <div
-        className="w-full p-4 lg:py-24 lg:flex lg:justify-around"
+        className="w-full p-4 xl:py-24 xl:flex xl:justify-around"
         style={{ backgroundColor: "#F9A66B" }}
       >
         <div>
           <img
             src={Arecma}
             alt=""
-            className="hidden lg:block lg:mb-7 lg:mt-6 lg:w-20"
+            className="hidden xl:block xl:mb-7 xl:mt-6 xl:w-20"
           />
-          <h2 className="custom-font-shadow pt-10 lg:pt-0  text-4.5xl leading-10.5 lg:text-3xl lg:leading-9 lg:max-w-lg">
+          <h2 className="custom-font-shadow pt-10 xl:pt-0  text-4.5xl leading-10.5 xl:text-3xl xl:leading-9 xl:max-w-lg">
             ARECMA: Asociación Recreativa y Educativa Comunal del Barrio Mariana
           </h2>
         </div>
-        <p className="text-xlLg lg:text-base my-8 lg:my-4 lg:max-w-xl">
+        <p className="text-xlLg xl:text-base my-8 xl:my-4 xl:max-w-xl">
           La Asociación Recreativa y Educativa Comunal del Barrio Mariana es una
           organización sin fines de lucro de base comunitaria que desde el 1982
           ha trabajado por el bienestar y desarrollo integral del barrio.
