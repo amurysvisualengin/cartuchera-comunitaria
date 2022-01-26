@@ -7,7 +7,6 @@ import CardContentPhoto from "../cardContentPhoto/CardContentPhoto";
 import CardListContext from "../../context/CardListContext";
 import "./Card.css";
 import "../../App.css";
-import SimpleSlider from "../cardContentPhoto/SimpleSlider";
 
 const Card = (props) => {
   const [showExpand, setShowExpand] = useState(false);
@@ -71,12 +70,6 @@ const Card = (props) => {
           isMobile
             ? "absolute right-1 left-1 bottom-24 top-0 md:right-40 md:left-40 md:bottom-36 md:top-10 lg:right-80 lg:left-80 lg:bottom-24 lg:top-0 "
             : "p-6 m-2 mr-2 text-center card-item h-72 cursor-pointer hover-card"
-          /* isTablet < 1181 && isTablet > 820
-              ? "absolute right-80 left-80 bottom-24 top-0"
-              : isTablet <= 820 && isTablet > 768
-              ? "absolute right-40 left-40 bottom-36 top-10"
-              : "absolute right-1 left-1 bottom-24 top-0"
-            : "p-6 xl:m-2 xl:mr-2 text-center card-item xl:h-72 cursor-pointer hover-card" */
         }  rounded-md`}
         style={{ backgroundColor: color, borderColor: color }}
       >
@@ -131,35 +124,6 @@ const Card = (props) => {
                 src={img}
                 alt=""
               />
-              {/* <img
-                className={`${
-                  isTablet < 768
-                    ? type === "Presentation"
-                      ? mobileHeight < 569
-                        ? "top-20 h-56"
-                        : "top-24 "
-                      : type === "Herramientas"
-                      ? mobileHeight < 569
-                        ? "top-40"
-                        : "top-48"
-                      : (type === "Rompehielos" ||
-                          type === "Audiovisual" ||
-                          type === "Photo") &&
-                        mobileHeight < 569
-                      ? "top-32"
-                      : "top-40"
-                    : type === "Presentation"
-                    ? "top-40"
-                    : type === "Herramientas"
-                    ? "top-72"
-                    : "top-52"
-                } absolute bottom-0 w-40 ${
-                  cardContent === "disabled" && "pl-10 pr-10 w-full"
-                }`}
-                src={img}
-                alt=""
-                srcSet=""
-              /> */}
             </div>
           </div>
         )}

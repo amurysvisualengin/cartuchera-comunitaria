@@ -53,9 +53,7 @@ const Home = () => {
                 ¡ABRE LA CARTUCHERA!
               </Link>
             </li>
-            <li
-            // className="px-2 h-14  lg:w-90 flex items-center justify-center rounded-lg box-hover"
-            >
+            <li>
               <a
                 href="https://www.paypal.com/donate/?hosted_button_id=YVA6GKYHXCPGQ"
                 target="_blank"

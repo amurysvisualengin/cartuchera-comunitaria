@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import CloseButton from "../../assets/icons/close.svg";
 import CardListContext from "../../context/CardListContext";
 const CardContentText = (props) => {
-  const { cardContent, title, img, type, color, handleShowExpandFalse } = props;
+  const { cardContent, img, color, handleShowExpandFalse } = props;
   const { isMobile, setIsExpand, isTablet } = useContext(CardListContext);
 
   return (

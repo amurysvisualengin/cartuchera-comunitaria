@@ -30,7 +30,6 @@ const FooterForm = () => {
           className={`w-full lg:w-28 lg:mt-4 h-11 rounded items-center text-smTiny leading-7 suscribe-button ${
             !isMobile && "font-bold"
           }`}
-          // style={{ backgroundColor: "#37B0FF" }}
         >
           <p className="">Subscríbete</p>
         </button>

@@ -8,11 +8,7 @@ import { InlineShareButtons } from "sharethis-reactjs";
 
 import Family from "../../assets/icons/family-white.svg";
 import Paypal from "../../assets/imgs/paypal.png";
-import CreditCards from "../../assets/imgs/credit-cards.png";
 import Ath from "../../assets/imgs/ath-movil.png";
-import Facebook from "../../assets/icons/Facebook.svg";
-import Instagram from "../../assets/icons/instagram.svg";
-import Youtube from "../../assets/icons/youtube.svg";
 import GirlWhite from "../../assets/icons/girl-white.svg";
 import shape from "../../assets/icons/gray-shape.svg";
 import { useContext } from "react";
@@ -180,46 +176,6 @@ const Help = () => {
                 />
               </div>
             )}
-
-            {/* <div className="mt-4 mb-10 lg:mb-0 lg:mt-6 lg:-ml-5">
-              <div className="sharethis-inline-share-buttons"></div>
-            </div> */}
-
-            {/* <div className="flex justify-center lg:block mt-4 mb-10">
-              <ul className="flex">
-                <li className="mr-4">
-                  <a
-                    href="https://www.instagram.com/la_marana_pr/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src={Instagram}
-                      alt="instagram"
-                      className="filter invert"
-                    />
-                  </a>
-                </li>
-                <li className="mr-4">
-                  <a
-                    href="https://www.facebook.com/lamarana.pr/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={Facebook} alt="facebook" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.youtube.com/channel/UCKUy3fZFuIiynFWqP9zMiZg"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={Youtube} alt="" className="filter invert  w-9" />
-                  </a>
-                </li>
-              </ul>
-            </div> */}
           </div>
         </div>
       </div>

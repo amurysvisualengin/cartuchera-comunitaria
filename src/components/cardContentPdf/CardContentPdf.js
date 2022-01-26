@@ -60,13 +60,6 @@ const CardContentPdf = (props) => {
                     ? "inter-font text-lg mt-6"
                     : "custom-font text-1.9xl mt-10"
                 } `}
-                /* className={` ${
-                  !isMobile
-                    ? "custom-font lg:text-1.9xl w-111 mt-10"
-                    : isTablet < 767
-                    ? "text-xl w-90"
-                    : "custom-font text:base w-100"
-                }`} */
               >
                 {cardContent.subTitle}
               </h2>

@@ -3,7 +3,7 @@ import CardListContext from "../../context/CardListContext";
 import AllColors from "../../assets/icons/ico-all-colors.svg";
 
 const ColorFilterMobile = (props) => {
-  const { changeColorMobile, setChangeColorMobile, isTablet } =
+  const { changeColorMobile, setChangeColorMobile } =
     useContext(CardListContext);
 
   const changeColor = () => {

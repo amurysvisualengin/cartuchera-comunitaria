@@ -4,7 +4,6 @@ import CloseButton from "../../assets/icons/close.svg";
 
 import "../cardContentAudio/CardContentAudio.css";
 import "./CardContentPresentation.css";
-// import "./CardContentPresentation.css";
 import Facebook from "../../assets/icons/Facebook.svg";
 import Instagram from "../../assets/icons/instagram.svg";
 import Youtube from "../../assets/icons/youtube.svg";

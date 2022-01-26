@@ -13,7 +13,6 @@ import CardContentPdf from "../cardContentPdf/CardContentPdf";
 import CardContentText from "../cardContentText/CardContentText";
 import CardContentPresentation from "../cardContentPresentation/CardContentPresentation";
 import CardContentPhoto from "../cardContentPhoto/CardContentPhoto";
-import { handleReload } from "../../components/swiper/Swiper";
 
 const CardGrid = () => {
   const typesCard = Data;
@@ -60,7 +59,7 @@ const CardGrid = () => {
         {!isExpand && (
           <div>
             <Swiper />
-            <div>{/* <CardShuffle list={list} setList={setList} /> */}</div>
+            <div></div>
 
             <div
               className=" items-center flex justify-center h-20 px-4 absolute bottom-0 right-0 left-0 filters-shadow"

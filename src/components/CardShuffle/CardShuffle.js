@@ -19,21 +19,6 @@ const CardShuffle = (props) => {
     return (
       <div className="flex">
         <FilterMobile />
-        {/*  <button
-          onClick={() => {
-            handleClick();
-          }}
-          onTouchStart={() => {
-            handleClick();
-          }}
-          className="mt-24 ml-1 w-32 flex "
-        >
-          <img src={Mezcla} alt="Mezcla" className="ml-5" />
-          <label
-            htmlFor="button"
-            className="text-white ml-2 mr-2 cursor-pointer"
-          ></label>
-        </button> */}
       </div>
     );
   }

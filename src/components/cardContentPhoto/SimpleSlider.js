@@ -1,12 +1,9 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import CardListContext from "../../context/CardListContext";
-import { useContext } from "react";
 
 const SimpleSlider = (props) => {
   const { cardContent } = props;
-  // console.log(cardContent.picture.map((e, i) => console.log(e.img)));
 
   return (
     <div className="xl:max-w-4xl">

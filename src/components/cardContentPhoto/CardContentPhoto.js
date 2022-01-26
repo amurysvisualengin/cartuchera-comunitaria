@@ -4,7 +4,6 @@ import "./CardContentPhoto.css";
 import CloseButton from "../../assets/icons/close.svg";
 
 import SimpleSlider from "./SimpleSlider";
-// import SimpleImageSlider from "react-simple-image-slider";
 
 function CardContentPhoto(props) {
   const { cardContent, img, color, handleShowExpandFalse } = props;

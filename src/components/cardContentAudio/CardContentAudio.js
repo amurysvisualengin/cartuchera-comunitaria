@@ -4,7 +4,7 @@ import CardListContext from "../../context/CardListContext";
 import "./CardContentAudio.css";
 
 const CardContentAudio = (props) => {
-  const { cardContent, title, img, color, handleShowExpandFalse } = props;
+  const { cardContent, img, color, handleShowExpandFalse } = props;
   const { isMobile, isTablet } = useContext(CardListContext);
   const { setIsExpand } = useContext(CardListContext);
 

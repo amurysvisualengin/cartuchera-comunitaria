@@ -2,8 +2,7 @@ import React, { useContext } from "react";
 import CardListContext from "../../context/CardListContext";
 import CloseButton from "../../assets/icons/close.svg";
 const InfoMobile = () => {
-  const { showInformation, setShowInformation, isTablet } =
-    useContext(CardListContext);
+  const { showInformation, setShowInformation } = useContext(CardListContext);
   const infoContainer = [
     {
       title: "1. Reúne a tu comunidad",
