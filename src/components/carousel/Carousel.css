@@ -1,0 +1,9 @@
+.slick-slide {
+  margin: 0;
+}
+
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 10px;
+  margin-top: 10px;
+}

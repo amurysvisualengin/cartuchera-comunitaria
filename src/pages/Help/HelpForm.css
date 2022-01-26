@@ -1,0 +1,10 @@
+.input-style {
+  border: thin solid black;
+  border-radius: 0.25rem;
+}
+
+.button-style {
+  background-color: #9bc2d4;
+  border-radius: 0.25rem;
+  box-shadow: 3px 3px black;
+}

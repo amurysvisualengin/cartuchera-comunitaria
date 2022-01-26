@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+body {
+  font-size: 16px;
+  background-color: #f8f5ed;
+
+  /* overflow: hidden; */
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+}

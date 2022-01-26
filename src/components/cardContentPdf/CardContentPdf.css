@@ -1,0 +1,19 @@
+.button-color {
+  background-color: #343434;
+}
+
+.black-shadow {
+  box-shadow: 3px 3px #343434;
+}
+
+.hover-button img:hover {
+  filter: invert();
+}
+
+.circle {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  /* text-align: center; */
+}
