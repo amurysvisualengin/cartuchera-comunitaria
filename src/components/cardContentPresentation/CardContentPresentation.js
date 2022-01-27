@@ -18,7 +18,7 @@ const CardContentPresentation = (props) => {
       style={{ backgroundColor: isMobile ? color : "" }}
     >
       <div
-        className="flex justify-end xl:mt-4 2xl:mt-8 xl:mr-10 2xl:mr-14 hover-button"
+        className="flex justify-end xl:mt-4 2xl:mt-8 xl:mr-10 2xl:mr-14 xl:hover-button"
         onClick={() => {
           handleShowExpandFalse();
           setIsExpand(false);

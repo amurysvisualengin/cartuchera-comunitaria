@@ -61,7 +61,7 @@ const CardContentText = (props) => {
               {cardContent.kitType}
             </h2>
           )}
-          <div className="flex flex-wrap xl:max-w-5xl mt-10 xl:mb-20">
+          <div className="flex flex-wrap xl:max-w-5xl mt-10 mb-20">
             {cardContent.actionTitle.map((element, index) => (
               <div
                 className={`flex border-2 rounded border-black mr-3 w-full xl:w-97 mb-4 xl:mb-8 `}
