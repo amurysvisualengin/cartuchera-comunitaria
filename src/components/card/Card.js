@@ -19,14 +19,8 @@ const Card = (props) => {
     setShowExpand(!showExpand);
   };
 
-  /*  let timer = 0;
-  let isMove = false; */
-
   const handleTouchStart = () => {
-    // timer = 0;
-
     setInterval(() => {
-      // timer++;
       setTimer((prevState) => prevState++);
     }, 50);
   };
@@ -34,7 +28,6 @@ const Card = (props) => {
   const handleOnTouchMove = () => {
     setIsMove(true);
     setTimer(0);
-    // timer = 0;
   };
 
   const handleTouchEnd = () => {
@@ -49,7 +42,6 @@ const Card = (props) => {
         cardContent,
         handleShowExpandFalse,
       });
-      console.log("isOpen");
     } else setIsMove(false);
   };
 

@@ -33,7 +33,7 @@ const About = () => {
             <h1 className="custom-font-shadow text-4.5xl leading-10.5 mt-32 mb-4 xl:text-5.5xl xl:max-w-xl xl:mb-10  xl:leading-11">
               Sobre la cartuchera
             </h1>
-            {/* no funciona xl:custom-font */}
+
             <p className="text-xl hidden xl:flex xl:text-base mb-10 xl:w-96 custom-font">
               Herramientas participativas para el desarrollo sostenible de
               nuestras islas y sus comunidades.

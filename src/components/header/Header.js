@@ -113,7 +113,6 @@ const Header = () => {
           <button
             onClick={() => {
               setShowMenu(!showMenu);
-              console.log("click", showMenu);
             }}
           >
             <img src={Hamburguer} alt="menu button" className=" mt-0 mr-1" />

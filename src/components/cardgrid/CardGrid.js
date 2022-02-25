@@ -40,7 +40,6 @@ const CardGrid = () => {
               setList((prevList) =>
                 [...prevList].sort(() => Math.random() - 0.5)
               );
-              console.log("clock");
             }}
           >
             <CardShuffle list={list} setList={setList} />
