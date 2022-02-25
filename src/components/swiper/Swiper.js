@@ -35,6 +35,11 @@ function Swiper(props) {
       return newList;
     });
   };
+
+  const handleFirstTouch = () => {
+    setFirstTouch(true);
+  };
+
   useEffect(() => {}, [list]);
 
   return (
@@ -121,7 +126,7 @@ function Swiper(props) {
             className="swipe right-3 left-3 top-24 bottom-0"
             key={-1}
             preventSwipe={["up", "down"]}
-            onSwipe={() => setFirstTouch(true)}
+            onSwipe={handleFirstTouch}
           >
             <Card
               className="absolute xs:top-40 smd:top-52 md:top-32 sm:top-4 lg:top-10"
@@ -129,6 +134,7 @@ function Swiper(props) {
               color="black"
               img={StarterMobile}
               cardContent="disabled"
+              type="black card"
             />
           </MobileSwiper>
         )}

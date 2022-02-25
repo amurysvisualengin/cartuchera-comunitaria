@@ -42,6 +42,7 @@ const Card = (props) => {
         cardContent,
         handleShowExpandFalse,
       });
+      console.log("isOpen");
     } else setIsMove(false);
   };
 
@@ -56,7 +57,7 @@ const Card = (props) => {
   return (
     <React.Fragment>
       <div
-        onClick={() => type && handleShowExpand}
+        onClick={type && handleShowExpand}
         onTouchStart={handleTouchStart}
         onTouchMove={handleOnTouchMove}
         onTouchEnd={handleTouchEnd}
