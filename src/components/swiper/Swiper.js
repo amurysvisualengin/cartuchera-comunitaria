@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Card from "../card/Card";
 import "./Swiper.css";
 import StarterMobile from "../../assets/icons/starter-mobile.svg";
@@ -7,7 +7,7 @@ import MobileSwiper from "react-tinder-card";
 
 import { useState } from "react";
 
-function Swiper() {
+function Swiper(props) {
   const {
     typeMobile,
     setTypeMobile,
@@ -18,17 +18,24 @@ function Swiper() {
     setChangeColorMobile,
   } = useContext(CardListContext);
 
-  const { card, setCard } = useContext(CardListContext);
   const [reload, SetReload] = useState(false);
+  const { list, setList, listData } = props;
 
   const handleReload = () => {
+    setList([...listData].sort(() => Math.random() - 0.5));
     setChangeColorMobile("");
     setTypeMobile("");
-    setCard((prevCard) => [...prevCard].sort(() => Math.random() - 0.5));
     SetReload(!reload);
-    console.log("handlereload");
-    console.log(card);
   };
+
+  const handleDeleteCard = (element) => {
+    setList((prevList) => {
+      let newList = [...prevList];
+      newList.pop();
+      return newList;
+    });
+  };
+  useEffect(() => {}, [list]);
 
   return (
     <div
@@ -48,7 +55,7 @@ function Swiper() {
           </div>
         }
         {reload === false &&
-          card.map(
+          list.map(
             (element, index) =>
               // Conditional colors and card types
               ((changeColorMobile === "" && typeMobile === "") ||
@@ -58,6 +65,9 @@ function Swiper() {
                 (changeColorMobile === "" &&
                   typeMobile === element.typeId)) && (
                 <MobileSwiper
+                  onSwipe={() => {
+                    handleDeleteCard(element);
+                  }}
                   className="swipe right-3 left-3 top-24 bottom-0"
                   key={index}
                   preventSwipe={["up", "down"]}
@@ -77,7 +87,7 @@ function Swiper() {
               )
           )}
         {reload === true &&
-          card.map(
+          list.map(
             (element, index) =>
               // Conditional colors and card types
               ((changeColorMobile === "" && typeMobile === "") ||

@@ -61,7 +61,7 @@ const CardContentAudio = (props) => {
               {cardContent.videoType}
             </h2>
             {cardContent.videoInfoContainer.map((element, index) => (
-              <div className="overflow-hidden">
+              <div className="overflow-hidden" key={index}>
                 {!isMobile && (
                   <div className={`text-left items-center mt-10 w-100`}>
                     <div className="border-2 rounded border-black">
@@ -76,7 +76,7 @@ const CardContentAudio = (props) => {
                     <div className="mt-4">
                       <iframe
                         src={element.url}
-                        frameborder="0"
+                        frameBorder="0"
                         allowFullScreen
                         title="video"
                         className={`w-100 h-90`}
@@ -89,7 +89,7 @@ const CardContentAudio = (props) => {
                     <div className="mt-4">
                       <iframe
                         src={element.url}
-                        frameborder="0"
+                        frameBorder="0"
                         allowFullScreen
                         title="video"
                         className={`w-full rounded-md ${

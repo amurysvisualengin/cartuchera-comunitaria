@@ -80,6 +80,7 @@ const CardContentPdf = (props) => {
               >
                 {cardContent.beforeStarting.map((element, index) => (
                   <div
+                    key={index}
                     className={`flex-wrap text-left text-xs border-2 rounded border-black mr-4 mb-4 xl:mb-0
                 ${isMobile ? (isTablet < 767 ? "w-full" : "w-full") : "w-96"}
                 ${
@@ -133,6 +134,7 @@ const CardContentPdf = (props) => {
             <div className="xl:flex ">
               {cardContent.allReady.map((element, index) => (
                 <div
+                  key={index}
                   className={`block text-left border-2 border-black rounded mr-4 flex-grow mt-4 xl:mt-0
               ${isMobile ? (isTablet < 767 ? "w-full" : "w-full") : "w-96"}
               `}

@@ -45,10 +45,11 @@ const About = () => {
           </div>
           <div className="xl:flex xl:justify-center">
             <iframe
+              title="youtube video"
               src="https://www.youtube.com/embed/DG2rSpoWA_E"
               allowFullScreen
               frameborder="0"
-              className="w-full h-52 md:h-96 lg:h-99 xl:w-97.5 xl:w-100  xl:h-96"
+              className="w-full h-52 md:h-96 lg:h-99 xl:w-97.5  xl:h-96"
             ></iframe>
           </div>
         </div>

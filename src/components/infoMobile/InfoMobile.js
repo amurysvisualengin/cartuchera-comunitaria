@@ -53,7 +53,7 @@ const InfoMobile = () => {
             </h1>
             <div className="pb-20">
               {infoContainer.map((element, index) => (
-                <div className="text-white my-3 xl:mt-6">
+                <div className="text-white my-3 xl:mt-6" key={index}>
                   <h1 className="custom-font text-base xl:text-xlLg leading-6">
                     {element.title}
                   </h1>

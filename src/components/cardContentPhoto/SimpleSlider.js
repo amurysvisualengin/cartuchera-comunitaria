@@ -15,7 +15,7 @@ const SimpleSlider = (props) => {
         emulateTouch={true}
       >
         {cardContent.picture.map((e, i) => (
-          <img src={e.img} alt="" />
+          <img src={e.img} alt="" key={i} />
         ))}
       </Carousel>
     </div>

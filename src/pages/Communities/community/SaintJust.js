@@ -36,6 +36,7 @@ const SaintJust = () => {
       </div>
       <div className="mt-10 xl:flex xl:justify-center mx-4 xl:mx-0">
         <iframe
+          title="Saint Just video"
           src="https://www.youtube.com/embed/DG2rSpoWA_E"
           allowFullScreen
           frameborder="0"

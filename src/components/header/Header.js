@@ -30,7 +30,8 @@ const Header = () => {
       window.addEventListener("scroll", hideHeader);
       return () => window.removeEventListener("scroll", hideHeader);
     }
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isMobile]);
 
   useEffect(() => {
     if (showMenu) {
@@ -53,7 +54,6 @@ const Header = () => {
               <button
                 onClick={() => {
                   setShowMenu(!showMenu);
-                  console.log("click", showMenu);
                 }}
               >
                 <img

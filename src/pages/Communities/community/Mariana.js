@@ -37,6 +37,7 @@ const Mariana = () => {
         </div>
         <div className="mt-10 xl:mt-0 xl:flex xl:justify-center">
           <iframe
+            title="Mariana video"
             src="https://www.youtube.com/embed/DG2rSpoWA_E"
             allowFullScreen
             frameborder="0"

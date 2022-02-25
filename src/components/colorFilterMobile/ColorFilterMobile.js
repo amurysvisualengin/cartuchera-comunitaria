@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import CardListContext from "../../context/CardListContext";
 import AllColors from "../../assets/icons/ico-all-colors.svg";
 

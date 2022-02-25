@@ -1,7 +1,6 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Rompehielos from "../../assets/icons/Rompehielos.svg";
 import CardListContext from "../../context/CardListContext";
-import Presentacion from "../../assets/icons/presentacion.svg";
 import Herramientas from "../../assets/icons/Herramientas.svg";
 import Audiovisuales from "../../assets/icons/Audiovisuales.svg";
 import Fotos from "../../assets/icons/Fotos.svg";
@@ -31,6 +30,7 @@ const TypeFilterMobile = () => {
     <React.Fragment>
       {types.map((element, index) => (
         <div
+          key={index}
           onClick={() => {
             if (element.typeId === typeMobile) setTypeMobile("");
             else setTypeMobile(element.typeId);

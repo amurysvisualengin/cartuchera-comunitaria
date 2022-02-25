@@ -8,13 +8,8 @@ import FilterMobile from "../filterMobile/FilterMobile";
 import "../card/Card.css";
 
 const CardShuffle = (props) => {
-  const { list, setList } = props;
   const { isMobile } = useContext(CardListContext);
 
-  const handleClick = () => {
-    const newArr = list.sort(() => Math.random() - 0.5);
-    setList([...newArr]);
-  };
   if (isMobile) {
     return (
       <div className="flex">
@@ -26,9 +21,6 @@ const CardShuffle = (props) => {
   return (
     <div
       className={`p-6 pt-6 w-48 h-72 ml-2 mr-3 card-item bg-black cursor-pointer hover-card`}
-      onClick={() => {
-        handleClick();
-      }}
     >
       <div>
         <button className="flex">

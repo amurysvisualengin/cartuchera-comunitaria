@@ -1,4 +1,5 @@
-import React, { useState, useContext } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useContext, useEffect } from "react";
 import "./CardGrid.css";
 import Card from "../card/Card";
 import CardShuffle from "../CardShuffle/CardShuffle";
@@ -17,21 +18,36 @@ import CardContentPhoto from "../cardContentPhoto/CardContentPhoto";
 const CardGrid = () => {
   const typesCard = Data;
   const [list, setList] = useState(typesCard);
-  const shuffleList = list.sort(() => Math.random() - 0.5);
-
-  const { kitFilter, typeFilter, cardInfo } = useContext(CardListContext);
+  const [listData] = useState(typesCard);
+  const { kitFilter, typeFilter, cardInfo, typeMobile, changeColorMobile } =
+    useContext(CardListContext);
   const { isMobile, isExpand } = useContext(CardListContext);
+
+  useEffect(() => {
+    setList((prevList) => [...prevList].sort(() => Math.random() - 0.5));
+  }, []);
+
+  useEffect(() => {
+    setList([...listData].sort(() => Math.random() - 0.5));
+  }, [typeMobile, changeColorMobile]);
 
   if (!isMobile) {
     return (
       <div className="left-shadow">
         <div className="p-4 flex flex-wrap content-start items-center ml-20 mt-16">
-          <div>
+          <div
+            onClick={() => {
+              setList((prevList) =>
+                [...prevList].sort(() => Math.random() - 0.5)
+              );
+              console.log("clock");
+            }}
+          >
             <CardShuffle list={list} setList={setList} />
           </div>
 
-          {shuffleList.map((element, index) => (
-            <div>
+          {list.map((element, index) => (
+            <div key={index}>
               {((kitFilter === "" && typeFilter === "") ||
                 (kitFilter === "" && typeFilter === element.typeId) ||
                 (kitFilter === element.id && typeFilter === element.typeId) ||
@@ -44,6 +60,7 @@ const CardGrid = () => {
                   type={element.type}
                   cardContent={element.cardType}
                   cardNumber={element.cardNumber}
+                  uniqueId={element.uniqueId}
                 />
               )}
             </div>
@@ -58,8 +75,7 @@ const CardGrid = () => {
       <div>
         {!isExpand && (
           <div>
-            <Swiper />
-            <div></div>
+            <Swiper list={list} setList={setList} listData={listData} />
 
             <div
               className=" items-center flex justify-center h-20 px-4 absolute bottom-0 right-0 left-0 filters-shadow"

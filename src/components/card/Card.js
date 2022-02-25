@@ -10,28 +10,31 @@ import "../../App.css";
 
 const Card = (props) => {
   const [showExpand, setShowExpand] = useState(false);
+  const [timer, setTimer] = useState(0);
+  const [isMove, setIsMove] = useState(false);
   const { title, img, type, color, cardNumber, cardContent } = props;
-  const { setCardInfo, setIsExpand, isTablet, mobileHeight } =
-    useContext(CardListContext);
+  const { setCardInfo, setIsExpand, isTablet } = useContext(CardListContext);
 
   const handleShowExpandFalse = () => {
     setShowExpand(!showExpand);
   };
 
-  let timer = 0;
-  let isMove = false;
+  /*  let timer = 0;
+  let isMove = false; */
 
   const handleTouchStart = () => {
-    timer = 0;
+    // timer = 0;
 
     setInterval(() => {
-      timer++;
+      // timer++;
+      setTimer((prevState) => prevState++);
     }, 50);
   };
 
   const handleOnTouchMove = () => {
-    isMove = true;
-    timer = 0;
+    setIsMove(true);
+    setTimer(0);
+    // timer = 0;
   };
 
   const handleTouchEnd = () => {
@@ -46,8 +49,8 @@ const Card = (props) => {
         cardContent,
         handleShowExpandFalse,
       });
-    }
-    isMove = false;
+      console.log("isOpen");
+    } else setIsMove(false);
   };
 
   const handleShowExpand = () => {
@@ -57,12 +60,11 @@ const Card = (props) => {
   };
 
   const { isMobile } = useContext(CardListContext);
-  console.log(mobileHeight, "height");
-  console.log(isTablet, "width");
+
   return (
     <React.Fragment>
       <div
-        onClick={type && handleShowExpand}
+        onClick={() => type && handleShowExpand}
         onTouchStart={handleTouchStart}
         onTouchMove={handleOnTouchMove}
         onTouchEnd={handleTouchEnd}

@@ -18,6 +18,7 @@ const Home = () => {
       </div>
       <div className="xl:flex xl:justify-center mt-20 md:mt-0 xl:mt-0">
         <iframe
+          title="Animated video"
           src="https://player.vimeo.com/video/639634522?h=eebafcdd44"
           fullscreen
           frameborder="0"
