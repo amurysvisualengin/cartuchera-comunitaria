@@ -56,7 +56,7 @@ const Mariana = () => {
           <img
             src={Yellowshape}
             alt=""
-            className="absolute left-96 position-shape z-0"
+            className="absolute 2xl:left-96 position-shape z-0"
           />
         </div>
         <div className="flex justify-center my-10">
