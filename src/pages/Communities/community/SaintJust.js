@@ -6,9 +6,14 @@ import Carousel from "../../../components/carousel/Carousel";
 import DataCarolinaPhotos from "../../../assets/data/DataCarolinaPhotos.json";
 import CardListContext from "../../../context/CardListContext";
 import { useContext } from "react";
+import { useEffect } from "react";
 
 const SaintJust = () => {
   const { setCarouselPhotosCarolina, isTablet } = useContext(CardListContext);
+
+  useEffect(() => {
+    setCarouselPhotosCarolina(DataCarolinaPhotos);
+  });
 
   return (
     <div>
@@ -39,7 +44,7 @@ const SaintJust = () => {
           title="Saint Just video"
           src="https://www.youtube.com/embed/DG2rSpoWA_E"
           allowFullScreen
-          frameborder="0"
+          frameBorder="0"
           className={`w-full h-52 xl:w-99.3 xl:h-90 xl:mt-20 rounded-lg ${
             isTablet > 767 && isTablet < 1181 && "h-97"
           }`}
@@ -61,7 +66,6 @@ const SaintJust = () => {
         <img src={TransparentShape} alt="" className="absolute top-absolute" />
       </div>
       <div className="xl:mb-26 xl:mt-24 my-10 xl:my-0">
-        {setCarouselPhotosCarolina(DataCarolinaPhotos)}
         <Carousel />
       </div>
       <div

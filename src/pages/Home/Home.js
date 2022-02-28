@@ -21,7 +21,7 @@ const Home = () => {
           title="Animated video"
           src="https://player.vimeo.com/video/639634522?h=eebafcdd44"
           fullscreen
-          frameborder="0"
+          frameBorder="0"
           className="w-full h-52 md:w-full md:h-99 md:px-4 md:mt-0 lg:w-full lg:h-99 lg:mt-20 xl:w-99 xl:h-90 xl:mt-44"
         ></iframe>
       </div>

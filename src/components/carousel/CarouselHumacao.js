@@ -25,7 +25,7 @@ const Carousel = () => {
   return (
     <Slider {...settings}>
       {carouselPhotosHumacao.map((e, i) => (
-        <img src={e.img} alt="" />
+        <img src={e.img} alt="" key={i} />
       ))}
     </Slider>
   );

@@ -8,9 +8,15 @@ import CarouselHumacao from "../../../components/carousel/CarouselHumacao";
 import CardListContext from "../../../context/CardListContext";
 import { useContext } from "react";
 import DataHumacaoPhotos from "../../../assets/data/DataHumacaoPhotos.json";
+import { useEffect } from "react";
 
 const Mariana = () => {
   const { setCarouselPhotosHumacao, isTablet } = useContext(CardListContext);
+
+  useEffect(() => {
+    setCarouselPhotosHumacao(DataHumacaoPhotos);
+  }, []);
+
   return (
     <div className="overflow-hidden">
       <div className="mx-4 text-center">
@@ -40,7 +46,7 @@ const Mariana = () => {
             title="Mariana video"
             src="https://www.youtube.com/embed/DG2rSpoWA_E"
             allowFullScreen
-            frameborder="0"
+            frameBorder="0"
             className={`w-full h-52 xl:w-99.5 xl:h-90 xl:mt-10 rounded-lg ${
               isTablet > 767 && isTablet < 1181 && "h-97"
             }`}
@@ -71,7 +77,6 @@ const Mariana = () => {
         </div>
       </div>
       <div className="xl:mb-32 my-10 xl:my-0 xl:mt-16">
-        {setCarouselPhotosHumacao(DataHumacaoPhotos)}
         <CarouselHumacao />
       </div>
 

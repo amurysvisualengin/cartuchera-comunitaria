@@ -42,7 +42,6 @@ const Card = (props) => {
         cardContent,
         handleShowExpandFalse,
       });
-      console.log("isOpen");
     } else setIsMove(false);
   };
 

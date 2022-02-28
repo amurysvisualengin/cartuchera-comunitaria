@@ -13,7 +13,7 @@ const FooterForm = () => {
         id="mc-embedded-subscribe-form"
         name="mc-embedded-subscribe-form"
         target="_blank"
-        novalidate
+        noValidate
         className="w-screen lg:w-98 pr-8 lg:pr-0 lg:flex "
       >
         <input
