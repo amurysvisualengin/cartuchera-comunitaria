@@ -16,7 +16,6 @@ import Herramientas from "../../assets/icons/Herramientas.svg";
 import Check from "../../assets/icons/check.svg";
 import Presentacion from "../../assets/icons/presentacion.svg";
 import Fotos from "../../assets/icons/Fotos.svg";
-import CartucheraLogo from "../../assets/icons/cartuchera-logo.svg";
 import InfoMobile from "../infoMobile/InfoMobile";
 
 const Sidebar = (props) => {
@@ -112,7 +111,9 @@ const Sidebar = (props) => {
           <div className="flex mt-16">
             <img src={Check} alt="" className="mr-4" />
 
-            <h1 className="text-3xl custom-font hover:underline">Instrucciones</h1>
+            <h1 className="text-3xl custom-font hover:underline">
+              Instrucciones
+            </h1>
           </div>
         </button>
         <div className="fixed  top-0 left-0 bottom-0 z-50">
@@ -122,8 +123,9 @@ const Sidebar = (props) => {
         <div className="kits mt-14 items-center">
           <h2 className=" text- text-left custom-font">ORDENA POR KIT:</h2>
           <div className="text-left text-sm mt-4">
-            {filters.map((element) => (
+            {filters.map((element, index) => (
               <div
+                key={index}
                 onClick={() => {
                   if (element.id === kitFilter) {
                     setKitFilter("");
@@ -148,8 +150,9 @@ const Sidebar = (props) => {
           <div className="types-checkbox-parent">
             <div className=" ml-1 mr-12 rounded-md">
               <h2 className="text-xS mb-4 custom-font">ORDENA POR TIPO:</h2>
-              {types.map((element) => (
+              {types.map((element, index) => (
                 <div
+                  key={index}
                   onClick={() => {
                     if (typeFilter === element.typeId) {
                       setTypeFilter("");

@@ -6,15 +6,24 @@ import "./About.css";
 import Header from "../../components/header/Header";
 import Menu from "../../components/menu/Menu";
 import Carousel from "../../components/carousel/Carousel";
-
 import DondeNace from "../../assets/imgs/donde-nace.png";
 import DondeNace2 from "../../assets/imgs/donde-nace-2.png";
 import Childs from "../../assets/imgs/childs.png";
 import BlueShape from "../../assets/icons/blue-shape.svg";
 import YellowShape from "../../assets/icons/yellow-shape.svg";
+import { useContext } from "react";
+import CardListContext from "../../context/CardListContext";
+import DataCarolinaPhotos from "../../assets/data/DataCarolinaPhotos.json";
+import { useEffect } from "react";
 
 const About = () => {
   const types = DataAbout;
+  const { setCarouselPhotosCarolina } = useContext(CardListContext);
+
+  useEffect(() => {
+    setCarouselPhotosCarolina(DataCarolinaPhotos);
+  }, []);
+
   return (
     <div className="h-full overflow-x-hidden">
       <Header />
@@ -33,7 +42,7 @@ const About = () => {
             <h1 className="custom-font-shadow text-4.5xl leading-10.5 mt-32 mb-4 xl:text-5.5xl xl:max-w-xl xl:mb-10  xl:leading-11">
               Sobre la cartuchera
             </h1>
-            {/* no funciona xl:custom-font */}
+
             <p className="text-xl hidden xl:flex xl:text-base mb-10 xl:w-96 custom-font">
               Herramientas participativas para el desarrollo sostenible de
               nuestras islas y sus comunidades.
@@ -45,10 +54,11 @@ const About = () => {
           </div>
           <div className="xl:flex xl:justify-center">
             <iframe
+              title="youtube video"
               src="https://www.youtube.com/embed/DG2rSpoWA_E"
               allowFullScreen
-              frameborder="0"
-              className="w-full h-52 md:h-96 lg:h-99 xl:w-97.5 xl:w-100  xl:h-96"
+              frameBorder="0"
+              className="w-full h-52 md:h-96 lg:h-99 xl:w-97.5  xl:h-96"
             ></iframe>
           </div>
         </div>
@@ -73,21 +83,21 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="xl:mt-52 xl:mb-20">
-          <Carousel />
-        </div>
+      </div>
+      <div className="xl:mt-52 xl:mb-20">
+        <Carousel />
+      </div>
 
-        <div className="xl:flex xl:justify-center xl:text-center">
-          <div>
-            <h2 className="custom-font-shadow text-4.5xl leading-10.5 xl:text-5.5xl xl:leading-11 mb-9 xl:mb-6 mt-10">
-              ¿Para quién es?
-            </h2>
-            <p className="text-base leading-6 xl:text-base xl:w-100 xl:mt-6">
-              Toda persona, familia, grupo de vecinxs, organizaciones
-              comunitarias o entidades que se atrevan a soñar y diseñar un mejor
-              entorno puede usar esta cartuchera. ¡Es para todxs!
-            </p>
-          </div>
+      <div className="xl:flex xl:justify-center xl:text-center px-4">
+        <div>
+          <h2 className="custom-font-shadow text-4.5xl leading-10.5 xl:text-5.5xl xl:leading-11 mb-9 xl:mb-6 mt-10">
+            ¿Para quién es?
+          </h2>
+          <p className="text-base leading-6 xl:text-base xl:w-100 xl:mt-6">
+            Toda persona, familia, grupo de vecinxs, organizaciones comunitarias
+            o entidades que se atrevan a soñar y diseñar un mejor entorno puede
+            usar esta cartuchera. ¡Es para todxs!
+          </p>
         </div>
       </div>
       <div className="w-full mt-9 xl:mt-24">
@@ -170,6 +180,7 @@ const About = () => {
 
         {types.map((element, index) => (
           <div
+            key={index}
             className={`mb-16 xl:flex justify-center  xl:mt-24 xl:mb-28   ${
               index % 2 !== 0 ? "flex-row-reverse" : ""
             } `}

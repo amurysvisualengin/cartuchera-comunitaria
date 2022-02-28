@@ -1,6 +1,7 @@
 [
   {
     "id": "construccion-paticipativa",
+    "uniqueId": 1,
     "title": "Construcción Participativa",
     "img": "./images/construccion-participativa.svg",
     "color": "#BEBE3B",
@@ -18,6 +19,7 @@
   },
   {
     "id": "construccion-paticipativa",
+    "uniqueId": 2,
     "title": "Construcción Participativa",
     "img": "./images/camera.svg",
     "color": "#BEBE3B",
@@ -61,6 +63,7 @@
   },
   {
     "id": "construccion-paticipativa",
+    "uniqueId": 3,
     "title": "Construcción Participativa",
     "img": "./images/play.svg",
     "color": "#BEBE3B",
@@ -89,6 +92,7 @@
   },
   {
     "id": "construccion-paticipativa",
+    "uniqueId": 4,
     "title": "Construcción Participativa",
     "img": "./images/cube.svg",
     "color": "#BEBE3B",
@@ -125,6 +129,7 @@
 
   {
     "id": "construccion-paticipativa",
+    "uniqueId": 5,
     "cardNumber": 1,
     "title": "Guía de Proyecto Colaborativo",
     "img": "./images/saw.svg",
@@ -174,6 +179,7 @@
   },
   {
     "id": "construccion-paticipativa",
+    "uniqueId": 6,
     "cardNumber": 2,
     "title": "Espiral de Proyecto",
     "img": "./images/saw.svg",
@@ -223,6 +229,7 @@
   },
   {
     "id": "construccion-paticipativa",
+    "uniqueId": 7,
     "cardNumber": 3,
     "title": "Mapa de Equipos",
     "img": "./images/saw.svg",
@@ -272,6 +279,7 @@
   },
   {
     "id": "construccion-paticipativa",
+    "uniqueId": 8,
     "cardNumber": 4,
     "title": "Lista de Cotejo para Brigadas",
     "img": "./images/saw.svg",
@@ -327,6 +335,7 @@
 
   {
     "id": "procesos-comunitarios",
+    "uniqueId": 9,
     "title": "Procesos Comunitarios",
     "img": "./images/procesos-comunitarios.svg",
     "color": "#9BC2D4",
@@ -342,6 +351,7 @@
   },
   {
     "id": "procesos-comunitarios",
+    "uniqueId": 10,
     "title": "Procesos Comunitarios",
     "img": "./images/cube.svg",
     "color": "#9BC2D4",
@@ -377,6 +387,7 @@
 
   {
     "id": "procesos-comunitarios",
+    "uniqueId": 11,
     "title": "Procesos Comunitarios",
     "img": "./images/camera.svg",
     "color": "#9BC2D4",
@@ -444,6 +455,7 @@
   },
   {
     "id": "procesos-comunitarios",
+    "uniqueId": 12,
     "title": "Procesos Comunitarios",
     "img": "./images/play.svg",
     "color": "#9BC2D4",
@@ -467,6 +479,7 @@
   },
   {
     "id": "procesos-comunitarios",
+    "uniqueId": 13,
     "cardNumber": 1,
     "title": "Guía para el liderazgo participativo",
     "img": "./images/saw.svg",
@@ -513,6 +526,7 @@
 
   {
     "id": "procesos-comunitarios",
+    "uniqueId": 14,
     "cardNumber": 2,
     "title": "Plan de Emergencia Comunitario",
     "img": "./images/saw.svg",
@@ -562,6 +576,7 @@
   },
   {
     "id": "procesos-comunitarios",
+    "uniqueId": 15,
     "cardNumber": 3,
     "title": "Activos Comunitarios",
     "img": "./images/saw.svg",
@@ -612,6 +627,7 @@
   },
   {
     "id": "procesos-comunitarios",
+    "uniqueId": 16,
     "cardNumber": 4,
     "title": "Presupuesto Transparente",
     "img": "./images/saw.svg",
@@ -663,6 +679,7 @@
 
   {
     "id": "justicia-narrativa",
+    "uniqueId": 17,
     "title": "Justicia Narrativa",
     "img": "./images/justicia-narrativa.svg",
     "color": "#F9A66B",
@@ -723,6 +740,7 @@
   },
   {
     "id": "justicia-narrativa",
+    "uniqueId": 18,
     "title": "Justicia Narrativa",
     "img": "./images/play.svg",
     "color": "#F9A66B",
@@ -741,6 +759,7 @@
   },
   {
     "id": "justicia-narrativa",
+    "uniqueId": 19,
     "title": "Justicia Narrativa",
     "img": "./images/cube.svg",
     "color": "#F9A66B",
@@ -776,6 +795,7 @@
 
   {
     "id": "justicia-narrativa",
+    "uniqueId": 20,
     "cardNumber": 1,
     "title": "Guía para la Justicia Narrativa",
     "img": "./images/saw.svg",
@@ -826,6 +846,7 @@
   },
   {
     "id": "justicia-narrativa",
+    "uniqueId": 21,
     "cardNumber": 2,
     "title": "Visionando nuestro futuro",
     "img": "./images/saw.svg",
@@ -876,6 +897,7 @@
   },
   {
     "id": "justicia-narrativa",
+    "uniqueId": 22,
     "cardNumber": 3,
     "title": "Justicia Narrativa en la Práctica",
     "img": "./images/saw.svg",
@@ -927,6 +949,7 @@
 
   {
     "id": "mapeo-comunitario",
+    "uniqueId": 23,
     "title": "Mapeo Comunitario",
     "img": "./images/mapeo-comunitario.svg",
     "color": "#EF604B",
@@ -942,6 +965,7 @@
   },
   {
     "id": "mapeo-comunitario",
+    "uniqueId": 24,
     "title": "Mapeo Comunitario",
     "img": "./images/camera.svg",
     "color": "#EF604B",
@@ -997,6 +1021,7 @@
   },
   {
     "id": "mapeo-comunitario",
+    "uniqueId": 25,
     "title": "Mapeo Comunitario",
     "img": "./images/play.svg",
     "color": "#EF604B",
@@ -1020,6 +1045,7 @@
   },
   {
     "id": "mapeo-comunitario",
+    "uniqueId": 26,
     "title": "Mapeo Comunitario",
     "img": "./images/cube.svg",
     "color": "#EF604B",
@@ -1054,6 +1080,7 @@
   },
   {
     "id": "mapeo-comunitario",
+    "uniqueId": 27,
     "cardNumber": 1,
     "title": "Guía para recorridos comunitarios",
     "img": "./images/saw.svg",
@@ -1104,6 +1131,7 @@
   },
   {
     "id": "mapeo-comunitario",
+    "uniqueId": 28,
     "cardNumber": 2,
     "title": "Mapa de nuestra comunidad",
     "img": "./images/saw.svg",
@@ -1152,6 +1180,7 @@
   },
   {
     "id": "mapeo-comunitario",
+    "uniqueId": 29,
     "cardNumber": 3,
     "title": "Censo comunitario",
     "img": "./images/saw.svg",
@@ -1200,6 +1229,7 @@
   },
   {
     "id": "taller-imaginario",
+    "uniqueId": 30,
     "title": "Talleres Imaginario",
     "img": "./images/talleres-de-imaginario.svg",
     "color": "#E1AC47",
@@ -1215,6 +1245,7 @@
   },
   {
     "id": "taller-imaginario",
+    "uniqueId": 31,
     "title": "Talleres Imaginario",
     "img": "./images/cube.svg",
     "color": "#E1AC47",
@@ -1250,6 +1281,7 @@
 
   {
     "id": "taller-imaginario",
+    "uniqueId": 32,
     "title": "Talleres Imaginario",
     "img": "./images/camera.svg",
     "color": "#E1AC47",
@@ -1310,6 +1342,7 @@
 
   {
     "id": "taller-imaginario",
+    "uniqueId": 33,
     "title": "Talleres Imaginario",
     "img": "./images/play.svg",
     "color": "#E1AC47",
@@ -1328,6 +1361,7 @@
   },
   {
     "id": "taller-imaginario",
+    "uniqueId": 34,
     "cardNumber": 1,
     "title": "Guía de talleres de imaginario",
     "img": "./images/saw.svg",
@@ -1374,6 +1408,7 @@
   },
   {
     "id": "taller-imaginario",
+    "uniqueId": 35,
     "cardNumber": 2,
     "title": "Hojas de necesidades y sueños",
     "img": "./images/saw.svg",
@@ -1422,6 +1457,7 @@
   },
   {
     "id": "taller-imaginario",
+    "uniqueId": 36,
     "cardNumber": 3,
     "title": "Plantilla de prioridades comunitarias",
     "img": "./images/saw.svg",

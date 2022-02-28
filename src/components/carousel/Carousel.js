@@ -8,7 +8,6 @@ import CardListContext from "../../context/CardListContext";
 
 const Carousel = () => {
   const { isMobile, carouselPhotosCarolina } = useContext(CardListContext);
-  carouselPhotosCarolina.map((e, i) => console.log(e.img));
 
   const settings = {
     dots: true,
@@ -26,7 +25,7 @@ const Carousel = () => {
   return (
     <Slider {...settings}>
       {carouselPhotosCarolina.map((e, i) => (
-        <img src={e.img} alt="" />
+        <img src={e.img} alt="" key={i} />
       ))}
     </Slider>
   );

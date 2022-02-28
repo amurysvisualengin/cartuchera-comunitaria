@@ -47,7 +47,6 @@ const Routess = () => {
   });
   useEffect(() => {
     handleResize();
-    // handleTablet();
   }, []);
 
   return (

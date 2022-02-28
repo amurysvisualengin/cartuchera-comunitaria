@@ -7,9 +7,14 @@ import "./VueltaDeDos.css";
 import CarouselComerio from "../../../components/carousel/CarouselComerio";
 import DataComerioPhotos from "../../../assets/data/DataComerioPhotos.json";
 import CardListContext from "../../../context/CardListContext";
+import { useEffect } from "react";
 
 const VueltaDeDos = () => {
   const { setCarouselPhotosComerio, isTablet } = useContext(CardListContext);
+
+  useEffect(() => {
+    setCarouselPhotosComerio(DataComerioPhotos);
+  }, []);
 
   return (
     <div>
@@ -44,9 +49,10 @@ const VueltaDeDos = () => {
           </div>
           <div className="mt-10 xl:mt-0 xl:flex xl:justify-center">
             <iframe
+              title="Vuelta del dos video"
               src="https://www.youtube.com/embed/DG2rSpoWA_E"
               allowFullScreen
-              frameborder="0"
+              frameBorder="0"
               className={`w-full h-52 xl:w-99.3 xl:h-90 xl:mt-10 rounded-lg ${
                 isTablet > 767 && isTablet < 1181 && "h-97"
               }`}
@@ -127,7 +133,6 @@ const VueltaDeDos = () => {
           </div>
         </div>
         <div className="my-10 xl:my-0 xl:mt-14 xl:mb-26">
-          {setCarouselPhotosComerio(DataComerioPhotos)}
           <CarouselComerio />
         </div>
       </div>
