@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/cartuchera-comunitaria/static/css/main.1fc7bdd8.chunk.css",
-    "main.js": "/cartuchera-comunitaria/static/js/main.c894bd12.chunk.js",
-    "main.js.map": "/cartuchera-comunitaria/static/js/main.c894bd12.chunk.js.map",
-    "runtime-main.js": "/cartuchera-comunitaria/static/js/runtime-main.0eded166.js",
-    "runtime-main.js.map": "/cartuchera-comunitaria/static/js/runtime-main.0eded166.js.map",
-    "static/css/2.d65b3a7d.chunk.css": "/cartuchera-comunitaria/static/css/2.d65b3a7d.chunk.css",
-    "static/js/2.da3f6a49.chunk.js": "/cartuchera-comunitaria/static/js/2.da3f6a49.chunk.js",
-    "static/js/2.da3f6a49.chunk.js.map": "/cartuchera-comunitaria/static/js/2.da3f6a49.chunk.js.map",
+    "main.css": "/cartuchera-comunitaria/static/css/main.1b92dd50.chunk.css",
+    "main.js": "/cartuchera-comunitaria/static/js/main.f8639ccc.chunk.js",
+    "main.js.map": "/cartuchera-comunitaria/static/js/main.f8639ccc.chunk.js.map",
+    "runtime-main.js": "/cartuchera-comunitaria/static/js/runtime-main.708e567f.js",
+    "runtime-main.js.map": "/cartuchera-comunitaria/static/js/runtime-main.708e567f.js.map",
+    "static/css/2.2815459d.chunk.css": "/cartuchera-comunitaria/static/css/2.2815459d.chunk.css",
+    "static/js/2.015d954a.chunk.js": "/cartuchera-comunitaria/static/js/2.015d954a.chunk.js",
+    "static/js/2.015d954a.chunk.js.map": "/cartuchera-comunitaria/static/js/2.015d954a.chunk.js.map",
     "index.html": "/cartuchera-comunitaria/index.html",
-    "static/css/2.d65b3a7d.chunk.css.map": "/cartuchera-comunitaria/static/css/2.d65b3a7d.chunk.css.map",
-    "static/css/main.1fc7bdd8.chunk.css.map": "/cartuchera-comunitaria/static/css/main.1fc7bdd8.chunk.css.map",
-    "static/js/2.da3f6a49.chunk.js.LICENSE.txt": "/cartuchera-comunitaria/static/js/2.da3f6a49.chunk.js.LICENSE.txt",
+    "static/css/2.2815459d.chunk.css.map": "/cartuchera-comunitaria/static/css/2.2815459d.chunk.css.map",
+    "static/css/main.1b92dd50.chunk.css.map": "/cartuchera-comunitaria/static/css/main.1b92dd50.chunk.css.map",
+    "static/js/2.015d954a.chunk.js.LICENSE.txt": "/cartuchera-comunitaria/static/js/2.015d954a.chunk.js.LICENSE.txt",
     "static/media/Audiovisuales.96221ca9.svg": "/cartuchera-comunitaria/static/media/Audiovisuales.96221ca9.svg",
-    "static/media/Facebook.e1257039.svg": "/cartuchera-comunitaria/static/media/Facebook.e1257039.svg",
+    "static/media/Facebook.cd5189e7.svg": "/cartuchera-comunitaria/static/media/Facebook.cd5189e7.svg",
     "static/media/Fotos.22da7690.svg": "/cartuchera-comunitaria/static/media/Fotos.22da7690.svg",
     "static/media/Herramientas.4d3fd5db.svg": "/cartuchera-comunitaria/static/media/Herramientas.4d3fd5db.svg",
     "static/media/App.css": "/cartuchera-comunitaria/static/media/KGHAPPYSolid.0bbc547e.ttf",
@@ -36,7 +36,7 @@
     "static/media/gray-shape.d5c3fbf0.svg": "/cartuchera-comunitaria/static/media/gray-shape.d5c3fbf0.svg",
     "static/media/hamburguer.b1320e19.svg": "/cartuchera-comunitaria/static/media/hamburguer.b1320e19.svg",
     "static/media/ico-all-colors.9119bc0a.svg": "/cartuchera-comunitaria/static/media/ico-all-colors.9119bc0a.svg",
-    "static/media/instagram.ac787855.svg": "/cartuchera-comunitaria/static/media/instagram.ac787855.svg",
+    "static/media/instagram.96536f9e.svg": "/cartuchera-comunitaria/static/media/instagram.96536f9e.svg",
     "static/media/justicia-narrativa-cut.66be451e.svg": "/cartuchera-comunitaria/static/media/justicia-narrativa-cut.66be451e.svg",
     "static/media/mapeo-comunitario-cut.9e1306a4.svg": "/cartuchera-comunitaria/static/media/mapeo-comunitario-cut.9e1306a4.svg",
     "static/media/mezcla_icon.bce49813.svg": "/cartuchera-comunitaria/static/media/mezcla_icon.bce49813.svg",
@@ -54,13 +54,13 @@
     "static/media/yellow-shape-complete.fad18053.svg": "/cartuchera-comunitaria/static/media/yellow-shape-complete.fad18053.svg",
     "static/media/yellow-shape-left.0ba0db62.svg": "/cartuchera-comunitaria/static/media/yellow-shape-left.0ba0db62.svg",
     "static/media/yellow-shape.5070c797.svg": "/cartuchera-comunitaria/static/media/yellow-shape.5070c797.svg",
-    "static/media/youtube.7af78e3f.svg": "/cartuchera-comunitaria/static/media/youtube.7af78e3f.svg"
+    "static/media/youtube.d7648495.svg": "/cartuchera-comunitaria/static/media/youtube.d7648495.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0eded166.js",
-    "static/css/2.d65b3a7d.chunk.css",
-    "static/js/2.da3f6a49.chunk.js",
-    "static/css/main.1fc7bdd8.chunk.css",
-    "static/js/main.c894bd12.chunk.js"
+    "static/js/runtime-main.708e567f.js",
+    "static/css/2.2815459d.chunk.css",
+    "static/js/2.015d954a.chunk.js",
+    "static/css/main.1b92dd50.chunk.css",
+    "static/js/main.f8639ccc.chunk.js"
   ]
 }
